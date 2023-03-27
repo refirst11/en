@@ -1,0 +1,66 @@
+.nav .ul {
+  margin: 0;
+}
+// dark toggle
+.sizing {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.link_container {
+  z-index: 3;
+  position: relative;
+  display: inline-block;
+  padding: 12px 25px 16px;
+  width: 90px;
+  height: 42px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.Shadow {
+  z-index: 0;
+  position: absolute;
+  top: 2px;
+  width: 90px;
+  height: 42px;
+  background: var(--color-header);
+  box-shadow: 0 0 8px -6px rgb(0 0 0 / 40%);
+  border-radius: 8px;
+}
+
+.icon_position {
+  position: absolute;
+  top: 16px;
+  left: 6px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* 左右に余白を設ける */
+  align-items: center;
+  padding: 14px;
+  height: 120px;
+  width: 540px;
+}
+@media screen and (max-width: 739.98px) {
+  .link_container {
+    font-size: 12px;
+  }
+
+  .articles_hover {
+    width: 0;
+    height: 0;
+  }
+  .Shadow {
+    top: 0;
+  }
+  .icon_position {
+    position: absolute;
+    top: 14px;
+    left: 6px;
+  }
+  .container {
+    width: 100%;
+  }
+}

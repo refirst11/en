@@ -1,0 +1,55 @@
+form {
+  z-index: 0;
+  position: relative;
+  background: var(--color-bg);
+  color: var(--color-second-color);
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 5px 15px;
+  transition-duration: 0.5s;
+  box-shadow: 0 0 2px -0.5px var(--color-shadow);
+}
+
+input {
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--color-second-color);
+  border: none;
+  outline: none;
+  width: 300px;
+  height: 20px;
+  box-shadow: 0 0 2px -0.5px var(--color-shadow);
+}
+
+textarea {
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--color-second-color);
+  border: none;
+  outline: none;
+  width: 400px;
+  height: 300px;
+  resize: vertical;
+  overflow: auto;
+  font-size: 12px;
+  box-shadow: 0 0 2px -0.5px var(--color-shadow);
+}
+
+label {
+  display: block;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.massageButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  width: 200px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}

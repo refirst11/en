@@ -1,0 +1,25 @@
+@mixin Annotation {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: fit-content;
+  background: var(--color-bg);
+  border: solid 1px black;
+  padding: 8px 12px;
+  transform: translateX(160px) translateY(-16px);
+  transition-duration: 0.04s;
+}
+
+.Annotation_on {
+  @include Annotation;
+
+  visibility: visible;
+}
+
+.Annotation_off {
+  @include Annotation;
+
+  opacity: 0;
+  visibility: hidden;
+}

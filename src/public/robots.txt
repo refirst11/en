@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://su-pull.net
+
+# Sitemaps
+Sitemap: https://su-pull.net/sitemap.xml

@@ -1,0 +1,30 @@
+.heart {
+  width: 15px; /* 正方形を作る */
+  height: 15px; /* 正方形を作る */
+  position: relative; /* 基準位置とする */
+  display: inline-flex;
+  transform: rotate(45deg);
+  top: 2px;
+}
+
+.heart::before,
+.heart::after {
+  content: ''; /* 疑似要素に必須 */
+  width: 50%; /* ハートの丸い部分の大きさにかかわる */
+  height: 80%; /* ハートの高さにかかわる */
+  background: rgb(94 234 212); /* ハートの色 */
+  border-radius: 25px 25px 0 0; /* ハートの半円を生成 */
+  display: block; /* ブロック要素にする */
+  position: absolute; /* 相対位置に指定 */
+  transition: all 2s;
+}
+
+.heart::before {
+  transform: rotate(-45deg); /* 左に回転 */
+  left: 14%; /* 左からの位置を指定 */
+}
+
+.heart::after {
+  transform: rotate(45deg); /* 右に回転 */
+  right: 14%; /* 右からの位置を指定 */
+}

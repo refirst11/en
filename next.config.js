@@ -1,8 +1,38 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
+const securityHeaders = [
+  {
+    key: 'X-DNS-Prefetch-Control',
+    value: 'on',
   },
-}
 
-module.exports = nextConfig
+  {
+    key: 'X-XSS-Protection',
+    value: '1; mode=block',
+  },
+
+  {
+    key: 'X-Frame-Options',
+    value: 'SAMEORIGIN',
+  },
+
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff',
+  },
+
+  {
+    key: 'Referrer-Policy',
+    value: 'strict-origin-when-cross-origin',
+  },
+];
+
+module.exports = {
+  reactStrictMode: false,
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: securityHeaders,
+      },
+    ];
+  },
+};
