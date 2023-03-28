@@ -1,3 +1,5 @@
+'use client';
+
 import { Fragment, useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { IoMdSunny, IoMdMoon } from 'react-icons/io';
@@ -46,7 +48,7 @@ export const ToggleDarkMode = (): JSX.Element => {
 
   return (
     <Fragment>
-      {midNight && (
+      {true && (
         <div className="togglePosition">
           {process.env.NODE_ENV === 'development' && (
             <button

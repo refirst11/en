@@ -1,3 +1,5 @@
+'use client';
+
 import useHeaderScroll from 'hooks/useHeaderScroll';
 import { Fragment } from 'react';
 import styles from 'styles/components/ReturnStyles';

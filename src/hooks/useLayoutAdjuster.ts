@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 const useLayoutAdjuster = (lowContent: string, highContent: string) => {
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const [isNewClass, setIsNewClass] = useState('');
 
   useEffect(() => {

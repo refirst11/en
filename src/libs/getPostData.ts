@@ -9,7 +9,7 @@ import PostDatMap from 'types/PostDataMap';
 import PostData from 'types/PostData';
 
 const getPostData = async (slug: string): Promise<PostData> => {
-  const folder = path.join(process.cwd(), 'entries');
+  const folder = path.join(process.cwd(), '/src/entries');
   const fullPath = path.join(folder, `${slug}.md`);
   const file = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter<string, PostDatMap>(file);

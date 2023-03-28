@@ -1,14 +1,16 @@
-import fs from 'fs';
+import fs from 'fs/promises';
 import path from 'path';
 
-const getSlugPath = () => {
-  const folder = path.join(process.cwd(), 'entries');
-  const files = fs.readdirSync(folder);
-  const posts = files.map((fileName) => {
-    return {
-      slug: fileName.replace(/\.md$/, ''),
-    };
-  });
+const getSlugPath = async () => {
+  const folder = path.join(process.cwd(), '/src/entries');
+  const files = await fs.readdir(folder);
+  const posts = await Promise.all(
+    files.map((fileName) => {
+      return {
+        slug: fileName.replace(/\.md$/, ''),
+      };
+    })
+  );
   return posts;
 };
 

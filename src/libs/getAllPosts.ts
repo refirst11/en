@@ -5,7 +5,7 @@ import PostsData from 'types/PostsData';
 import PostsDataMap from 'types/PostsDataMap';
 
 const getAllPosts = async (skip?: number, limit?: number): Promise<PostsData[]> => {
-  const folder = path.join(process.cwd(), 'entries');
+  const folder = path.join(process.cwd(), '/src/entries');
   const files = await fs.readdir(folder);
   const posts = await Promise.all(
     files

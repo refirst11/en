@@ -5,8 +5,8 @@ import currentActive from 'libs/currentActive';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import styles from 'styles/components/HeaderStyles';
-import ToggleDarkMode from 'components/DarkToggle';
-import { HiRss } from 'react-icons/hi';
+// import ToggleDarkMode from 'components/DarkToggle';
+// import { HiRss } from 'react-icons/hi';
 import { RiQuillPenLine, RiHome4Line } from 'react-icons/ri';
 
 const Header = (): JSX.Element => {

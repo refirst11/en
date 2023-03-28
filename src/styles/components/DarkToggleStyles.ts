@@ -9,6 +9,8 @@ const styles = css`
   }
 
   .flex_box {
+    border: none;
+    cursor: pointer;
     width: 40px;
     height: 40px;
     display: flex;

@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect, Fragment } from 'react';
 import styles from 'styles/components/ClockStyles';
 

@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { Fragment, useEffect, useCallback } from 'react';
 import styles from 'styles/pages/ArticlesStyles';
@@ -11,7 +13,7 @@ const getKey: SWRInfiniteKeyLoader = (pageIndex, previousPageData: PostsProps[])
   if (previousPageData && !previousPageData.length) {
     return null;
   }
-  return `/api/posts?page=${pageIndex}`;
+  return `/app/api/posts?page=${pageIndex}`;
 };
 
 const Infinite = ({ posts }: PostsProps): JSX.Element => {

@@ -1,33 +1,32 @@
-import { motion } from 'framer-motion';
+'use client';
+
+import { AnimatePresence, motion } from 'framer-motion';
 import { ReactNode } from 'react';
 import useLayoutAdjuster from 'hooks/useLayoutAdjuster';
+import { usePathname } from 'next/navigation';
 
 type AnimateProps = {
   children: ReactNode;
   className?: string;
 };
 
-const variants = {
-  hidden: { opacity: 0, scale: 0.92, x: -600 },
-  enter: { opacity: 1, scale: 1, x: 0 },
-  exit: { opacity: 0, scale: 0.92, x: 600, transition: { duration: 0.18 } },
-};
-
 const Animate = ({ children, className }: AnimateProps): JSX.Element => {
   const { ref, isNewClass } = useLayoutAdjuster('layout_center_content', 'layout_top_content');
-
+  const pathname = usePathname();
   return (
-    <motion.main
-      ref={ref}
-      className={`pages_root ${isNewClass} ${className}`}
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      variants={variants}
-      transition={{ duration: 0.28 }}
-    >
-      {children}
-    </motion.main>
+    <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
+      <motion.main
+        ref={ref}
+        key={pathname}
+        className={`pages_root ${isNewClass} ${className}`}
+        initial={{ opacity: 0, scale: 0.92, x: -600 }}
+        animate={{ opacity: 1, scale: 1, x: 0 }}
+        exit={{ opacity: 0, scale: 0.92, x: 600 }}
+        transition={{ duration: 1.18 }}
+      >
+        {children}
+      </motion.main>
+    </AnimatePresence>
   );
 };
 // transition context--
