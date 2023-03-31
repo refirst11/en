@@ -3,7 +3,8 @@ import SEO from 'components/Seo';
 // import Params from 'types/Params';
 import getPostData from 'libs/getPostData';
 import getSlugPath from 'libs/getSlugPath';
-
+import { useRouter } from 'next/navigation';
+import { IoIosArrowRoundBack } from 'react-icons/io';
 type Params = {
   params: {
     slug: string;
@@ -12,11 +13,15 @@ type Params = {
 
 const Page = async ({ params }: Params) => {
   const post = await getPostData(params.slug);
+  const router = useRouter();
   return (
     <>
       <SEO title={post.title} description={post.subtitle} />
-      <div className="Time2">{format(new Date(post.date as string | number | Date), 'MMMM eeee, do yyyy')}</div>
-      <h1 className="color_link">{post.title}</h1>
+      <button className="router_back">
+        <IoIosArrowRoundBack size={24} onClick={router.back} />
+      </button>
+      <div className="size_time">{format(new Date(post.date as string | number | Date), 'MMMM eeee, do yyyy')}</div>
+      <h1 className="color_h1">{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </>
   );

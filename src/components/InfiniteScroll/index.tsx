@@ -13,9 +13,9 @@ const getKey: SWRInfiniteKeyLoader = (pageIndex, previousPageData: PostsProps[])
   if (previousPageData && !previousPageData.length) {
     return null;
   }
-  return `/pages/api?page=${pageIndex}`;
+  return `/api?page=${pageIndex}`;
 };
-
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 const Infinite = ({ posts }: PostsProps): JSX.Element => {
   const { data, size, setSize, isLoading } = useSWRInfinite<PostsData>(getKey, {
     revalidateFirstPage: false,
@@ -63,7 +63,7 @@ const Infinite = ({ posts }: PostsProps): JSX.Element => {
         </ul>
       </InfiniteScroll>
 
-      {/* <div>{hasMore == true ? 'true' : null}</div> */}
+      <div>{hasMore == true ? 'true' : null}</div>
       <style jsx>{styles}</style>
     </Fragment>
   );
