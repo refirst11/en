@@ -1,7 +1,6 @@
 import SEO from 'components/Seo';
 import getAllPosts from 'libs/getAllPosts';
 import PostsData from 'components/PostsData';
-import Motion from 'components/Animation/Motion';
 
 async function getPosts() {
   const posts = await getAllPosts();
@@ -12,10 +11,10 @@ async function Page() {
   const posts = await getPosts();
 
   return (
-    <>
+    <div className="layout_center_content">
       <SEO title="su-pull - articles" description="articles" />
       <PostsData posts={posts} />
-    </>
+    </div>
   );
 }
 

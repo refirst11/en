@@ -11,7 +11,7 @@ const PostsData = ({ posts }: PostsProps) => {
   return (
     <Fragment>
       <input value={keyword} type="text" onChange={(e) => setKeyword(e.target.value)} className="search_box" />
-      {keyword ? <SearchResults posts={posts} keyword={keyword} /> : <InfiniteScroll posts={posts.slice(0, 8)} />}
+      {keyword ? <SearchResults posts={posts} keyword={keyword} /> : <InfiniteScroll posts={posts.slice(0, 2)} />}
       <style jsx>{styles}</style>
     </Fragment>
   );

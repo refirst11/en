@@ -1,16 +1,14 @@
 import Text from 'components/Text';
 import { Fragment, useState, useMemo } from 'react';
 import { usePathname } from 'next/navigation';
-import currentActive from 'libs/currentActive';
+import isCurrentLink from 'libs/isCurrentLink';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import styles from 'styles/components/HeaderStyles';
-// import ToggleDarkMode from 'components/DarkToggle';
-// import { HiRss } from 'react-icons/hi';
 import { RiQuillPenLine, RiHome4Line } from 'react-icons/ri';
 
 const Header = (): JSX.Element => {
-  const pathname = usePathname() as string;
+  const pathname = usePathname();
   const [isHover, setIsHover] = useState('');
 
   const Headers: { name: string; href: string; icon: JSX.Element }[] = useMemo(
@@ -43,7 +41,7 @@ const Header = (): JSX.Element => {
                 }}
                 onMouseLeave={() => setIsHover('')}
               >
-                <Link href={href} className={`link_container ${currentActive(href, pathname) && 'after_color'}`}>
+                <Link href={href} className={`link_container ${isCurrentLink(href, pathname) && 'after_color'}`}>
                   {icon} {name}
                 </Link>
                 <AnimatePresence>

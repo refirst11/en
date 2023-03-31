@@ -1,6 +1,4 @@
-'use client';
-
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import Head from 'next/head';
 import Header from 'components/Layout/Header';
 import Footer from 'components/Layout/Footer';
@@ -12,7 +10,7 @@ type LayoutProps = {
 };
 
 const Layout = ({ children }: LayoutProps): JSX.Element => {
-  const pathname = usePathname() as string;
+  const pathname = usePathname();
   return (
     <ThemeProvider>
       <Head>
@@ -26,7 +24,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
         <meta name="twitter:site" content="@pull1102" />
         <meta name="twitter:creator" content="@pull1102" />
       </Head>
-      <Header />
+      {!pathname.includes('/posts/') && pathname !== '/mail' && <Header />}
       {children}
       <Footer />
     </ThemeProvider>

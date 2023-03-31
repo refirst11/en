@@ -7,11 +7,21 @@
   height: 20px;
   width: 20px;
 }
+
+.flex_box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #ffffff;
+}
 .link_container {
   z-index: 3;
   position: relative;
   display: inline-block;
-  padding: 12px 25px 16px;
+  padding: 12px 24px 16px;
   width: 90px;
   height: 42px;
   white-space: nowrap;
@@ -21,7 +31,7 @@
 .Shadow {
   z-index: 0;
   position: absolute;
-  top: 2px;
+  top: 0px;
   width: 90px;
   height: 42px;
   background: var(--color-header);
@@ -39,11 +49,19 @@
   display: flex;
   justify-content: space-between; /* 左右に余白を設ける */
   align-items: center;
-  padding: 14px;
   height: 120px;
-  width: 540px;
+  width: 512px;
 }
+
+.slug_margin_top {
+  margin-top: -60px;
+}
+
 @media screen and (max-width: 739.98px) {
+  .slug_margin_top {
+    margin-top: -80px;
+  }
+
   .link_container {
     font-size: 12px;
   }

@@ -1,0 +1,102 @@
+form {
+  z-index: 0;
+  position: relative;
+  background: var(--color-bg);
+  color: var(--color-second-color);
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 5px 15px;
+  transition-duration: 0.5s;
+  box-shadow: 0 0 2px -0.5px var(--color-shadow);
+}
+
+.error_style {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  white-space: nowrap;
+}
+
+input {
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--color-second-color);
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 20px;
+  box-shadow: 0 0 2px -0.5px var(--color-shadow);
+}
+
+textarea {
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--color-second-color);
+  border: none;
+  outline: none;
+  width: 400px;
+  height: 300px;
+  resize: vertical;
+  overflow: auto;
+  font-size: 12px;
+  box-shadow: 0 0 2px -0.5px var(--color-shadow);
+}
+
+label {
+  display: block;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.massageButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  width: 200px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.Mail {
+  position: absolute;
+  inset: 0%;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.visited_icon {
+  position: relative;
+  border-radius: 50%;
+  right: 120px;
+  top: 25px;
+  box-shadow: 0 0 6px -3px rgb(0 0 0 / 60%);
+  transition-duration: 0.8s;
+}
+
+.visited_icon:hover {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+.success {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  white-space: nowrap;
+  color: rgb(64 144 200);
+}
+
+.router_back {
+  position: absolute;
+  top: 120px;
+  transform: translateY(-100%);
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  color: var(--color-second-color);
+}

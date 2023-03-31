@@ -1,11 +1,7 @@
-@import 'settings';
-@import 'parts';
 @import 'syntax';
-@import 'annotation';
-@import 'icons';
 @import 'motion';
-@import './scroll/scrollbar';
-@import 'form';
+@import 'scroll/scrollbar';
+@import 'contact/form';
 
 * {
   box-sizing: border-box;
@@ -16,33 +12,21 @@
   --color-second-color: rgb(150 150 150);
   --color-light: rgb(90, 90, 90);
   --color-bg: #f9f9f9;
+  --color-h1: rgb(0, 160, 185);
   --color-code: #f1f1f1;
   --color-header: #f1f1f1;
-  --color-pink: rgb(0, 160, 185);
-  --color-icon: lightsalmon;
-  --color-link: #3297fd;
   --color-shadow: rgb(0 0 0 / 50%);
-  --color-menuBorder: darkgray;
-  --color-headBorder: rgb(94 234 212);
-  --color-TwitterCards: skyblue;
-  --color-TwitterBg: rgb(55 65 81);
 }
 
 :root[data-theme='dark'] {
   --color-text: rgb(209 213 219);
   --color-second-color: rgb(175 170 165);
   --color-light: rgb(209 213 219);
-  --color-bg: rgb(25 25 28); //#191919;
+  --color-bg: rgb(25 25 28);
+  --color-h1: rgb(240, 120, 200);
   --color-code: #333;
-  --color-header: rgb(29, 29, 29);
-  --color-pink: rgb(240, 120, 200);
-  --color-icon: mediumvioletred;
-  --color-link: #7bf;
+  --color-header: rgb(32, 32, 32);
   --color-shadow: rgb(255 255 255 / 50%);
-  --color-menuBorder: dimgray;
-  --color-headBorder: orangered;
-  --color-TwitterCards: lightsalmon;
-  --color-TwitterBg: rgb(55 65 81);
 }
 
 html {
@@ -67,7 +51,7 @@ body {
   box-shadow: 0 0 8px -6px rgb(0 0 0 / 40%);
   pointer-events: none;
   position: absolute;
-  transform: translate(480px);
+  transform: translateX(480px);
 }
 
 .pages_root {
@@ -79,7 +63,7 @@ body {
   }
 
   li {
-    margin: 16px 14px;
+    margin: 8px 14px;
     list-style-type: disc;
     word-break: keep-all;
   }
@@ -95,7 +79,6 @@ body {
   margin: auto;
   width: fit-content;
   height: fit-content;
-  transform: translate(-50%, -50%);
 }
 
 .layout_top_content {
@@ -117,7 +100,7 @@ dt {
 }
 
 dd {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   margin-left: 0;
 }
 
@@ -136,21 +119,6 @@ a {
 
 .pages_link a {
   text-decoration: underline;
-}
-
-.resizeImageSlug img {
-  width: 65%;
-  height: 65%;
-}
-
-.resizeImageProf img {
-  width: 45%;
-  height: 45%;
-}
-
-.resizeImageEnv img {
-  transform: scale(0.95);
-  width: 100%;
 }
 
 ul {

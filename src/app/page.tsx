@@ -2,11 +2,10 @@ import DarkToggle from 'components/DarkToggle';
 import SEO from 'components/Seo';
 import Image from 'next/image';
 import profilePic from 'public/pull.jpg';
-import Motion from 'components/Animation/Motion';
 
 const Index = (): JSX.Element => {
   return (
-    <>
+    <div className="layout_center_content">
       <SEO title="su-pull - home" description="Index Top Page" />
       <Image className="main_icon" src={profilePic} alt="icon" quality={100} width={120} height={120} />
       <DarkToggle />
@@ -42,7 +41,7 @@ const Index = (): JSX.Element => {
         Remember, simple code is often the best code, so let's always strive for simplicity. Are you ready to take your
         first step?
       </p>
-    </>
+    </div>
   );
 };
 

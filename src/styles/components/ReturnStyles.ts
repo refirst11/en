@@ -9,8 +9,8 @@ const styles = css`
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    right: 25px;
-    bottom: 25px;
+    right: 30px;
+    bottom: 80px;
     border-top: solid 2px gray;
     border-left: solid 2px gray;
     border-bottom: solid 2px #111;
@@ -26,7 +26,7 @@ const styles = css`
   .Active {
     opacity: 0;
     visibility: hidden;
-    transition-duration: 0.2s;
+    transition-duration: 0.4s;
   }
 
   .rotateCircle:hover {

@@ -11,6 +11,7 @@ const styles = css`
 
   .time {
     font-size: 10px;
+    white-space: nowrap;
   }
 
   .title {
@@ -26,26 +27,44 @@ const styles = css`
     color: var(--color-second);
   }
 
-  .color_link {
-    color: var(--color-pink);
-  }
-
-  .color_link:hover {
-    color: inherit;
-  }
-
   .search_box {
     position: relative;
-    width: 380px;
-    left: 100px;
-    right: 0;
+    width: 520px;
+    left: 28px;
+    padding: 0 8px;
     margin: auto;
   }
 
-  .cross {
-    position: relative;
-    left: -50px;
-    color: var(--color-text);
+  .loading_ui {
+    color: var(--color-second-color);
+  }
+
+  .spinner {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-top: 3px solid rgb(72 72 72 / 20%);
+    border-right: 3px solid rgb(72 72 72 / 20%);
+    border-bottom: 3px solid rgb(72 72 72 / 20%);
+    border-left: 3px solid rgb(206, 136, 136);
+    animation: spin 1.2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   @media screen and (max-width: 739.98px) {
@@ -55,11 +74,6 @@ const styles = css`
 
     .title {
       width: 200px;
-    }
-
-    .articles {
-      padding: 0 20px;
-      width: 100%;
     }
 
     .search_box {

@@ -1,8 +1,6 @@
 'use client';
 
 import { ReactNode } from 'react';
-import useLayoutAdjuster from 'hooks/useLayoutAdjuster';
-
 import { SWRConfig } from 'swr';
 import GlobalFont from 'components/Font';
 import fetcher from 'libs/fetcher';

@@ -1,5 +1,3 @@
-@import 'settings';
-
 @media screen and (max-width: 739.98px) {
   [data-rehype-pretty-code-fragment] div {
     top: 10px;
@@ -13,7 +11,7 @@
     border-radius: 50%;
     pointer-events: none;
     position: absolute;
-    transform: translate(0px) scale(0.88);
+    transform: scale(0.88);
     right: 20px;
   }
 
@@ -36,14 +34,6 @@
     padding: 120px 16px;
   }
 
-  .Text {
-    position: absolute;
-    display: inline-flex;
-    transform: translate(0);
-    left: 10px;
-    top: 18px;
-  }
-
   h1 {
     font-size: 18px;
   }
@@ -60,25 +50,6 @@
     width: 100%;
   }
 
-  /* ブログとコンタクトのスケール再定義 */
-
-  .loader {
-    bottom: 180px;
-  }
-
-  .CardBox {
-    transform: scale(0.96);
-  }
-
-  .Mail {
-    z-index: 0;
-    position: relative;
-  }
-
-  .Mail form input {
-    width: 240px;
-  }
-
   .Mail form textarea {
     width: 305px;
     height: 220px;
@@ -86,34 +57,5 @@
 
   dd {
     margin-bottom: 12px;
-  }
-
-  .none {
-    display: block;
-  }
-
-  .bottom {
-    display: none;
-  }
-
-  .resizeImageProf img {
-    width: 65%;
-    height: 65%;
-  }
-
-  .resizeImageEnv img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .resizeImageSlug img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .FlexImage {
-    flex-direction: column;
-    transform: translateY(0%);
-    gap: 40px;
   }
 }

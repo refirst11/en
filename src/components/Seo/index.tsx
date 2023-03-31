@@ -13,7 +13,7 @@ const Seo = ({ title, date, description }: StProp) => {
       <meta property="og:title" content={title} />
       <meta property="description" content={description} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={`https://su-pull.net/api/og?title=${title}&date=${date}`} />
+      <meta property="og:image" content={`https://su-pull.net/api/ogp?title=${title}&date=${date}`} />
     </Head>
   );
 };

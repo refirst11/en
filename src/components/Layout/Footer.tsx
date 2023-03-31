@@ -9,25 +9,21 @@ const Footer = (): JSX.Element => {
   return (
     <Fragment>
       <footer className="footer_main">
-        <div className="footer_text">
-          <br />
-          <Link href="/privacy">
-            <u>Privacy Policy</u>
-          </Link>{' '}
-          2020-2023 © su+pu
+        <div className="footer_container">
+          <div className="footer_text">2023 © su pu</div>
+          <div className="footer_icon">
+            <a href="https://github.com/su-pull" target="_blank">
+              <RiGithubFill size={22} />
+            </a>
+            <Link href="/mail" prefetch={false}>
+              <HiOutlineMail size={22} />
+            </Link>
+            <a href="/feed.xml" target="_blank">
+              <HiRss size={22} />
+            </a>
+          </div>
         </div>
         <ScrollToTop />
-        <div className="footer_icon">
-          <a href="https://github.com/su-pull" target="_blank">
-            <RiGithubFill size={26} />
-          </a>
-          <Link href="/mail" prefetch={false}>
-            <HiOutlineMail size={26} />
-          </Link>
-          <a href="/atom.xml" target="_blank">
-            <HiRss size={26} />
-          </a>
-        </div>
       </footer>
       <style jsx>{styles}</style>
     </Fragment>

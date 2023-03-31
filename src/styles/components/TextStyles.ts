@@ -7,12 +7,9 @@ const styles = css`
     font-size: 20px;
     left: 0;
     top: 24px;
-    border-bottom: 1px solid var(--color-light);
-    padding: 2px 10px;
   }
   @media screen and (max-width: 739.98px) {
     .Text {
-      /* top: 100px; */
       font-size: 18px;
       left: 16px;
     }

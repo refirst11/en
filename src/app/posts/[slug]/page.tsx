@@ -1,5 +1,4 @@
 import { format } from 'date-fns';
-import styles from 'styles/pages/DetailsStyles';
 import SEO from 'components/Seo';
 // import Params from 'types/Params';
 import getPostData from 'libs/getPostData';
