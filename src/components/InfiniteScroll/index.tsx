@@ -17,7 +17,7 @@ const getKey: SWRInfiniteKeyLoader = (pageIndex, previousPageData: PostsProps[])
 };
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 const Infinite = ({ posts }: PostsProps): JSX.Element => {
-  const { data, size, setSize, isLoading } = useSWRInfinite<PostsData>(getKey, {
+  const { data, size, setSize, isLoading } = useSWRInfinite<PostsData>(getKey, fetcher, {
     revalidateFirstPage: false,
     // fallbackData: posts,
   });
