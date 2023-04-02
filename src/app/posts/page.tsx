@@ -11,10 +11,10 @@ async function Page() {
   const posts = await getPosts();
 
   return (
-    <div className="layout_center_content">
+    <>
       <SEO title="su-pull - articles" description="articles" />
       <PostsData posts={posts} />
-    </div>
+    </>
   );
 }
 

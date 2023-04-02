@@ -2,15 +2,15 @@ import { useEffect, useRef, useState } from 'react';
 
 const useLayoutAdjuster = (lowContent: string, highContent: string) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [isNewClass, setIsNewClass] = useState('');
+  const [isToggleClass, setIsToggleClass] = useState('');
 
   useEffect(() => {
     const contentHeight = ref.current?.offsetHeight;
     const isContentWindow = (contentHeight as number) < window.innerHeight;
-    setIsNewClass(isContentWindow ? lowContent : highContent);
-  }, [ref, isNewClass, lowContent, highContent]);
+    setIsToggleClass(isContentWindow ? lowContent : highContent);
+  }, [ref.current?.offsetHeight, lowContent, highContent]);
 
-  return { ref, isNewClass };
+  return { ref, isToggleClass };
 };
 
 export default useLayoutAdjuster;
