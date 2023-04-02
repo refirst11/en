@@ -4,7 +4,7 @@ import SEO from 'components/Seo';
 import getPostData from 'libs/getPostData';
 import getSlugPath from 'libs/getSlugPath';
 import RouterBack from 'components/RouterBack';
-import styles from 'styles/pages/DetailsStyles';
+import styles from './styles.module.scss';
 
 type Params = {
   params: {
@@ -19,10 +19,11 @@ const Page = async ({ params }: Params) => {
     <>
       <SEO title={post.title} description={post.subtitle} />
       <RouterBack />
-      <div className="size_time">{format(new Date(post.date as string | number | Date), 'MMMM eeee, do yyyy')}</div>
-      <h1 className="color_h1">{post.title}</h1>
+      <div className={styles.size_time}>
+        {format(new Date(post.date as string | number | Date), 'MMMM eeee, do yyyy')}
+      </div>
+      <h1 className={styles.color_h1}>{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      {/* <style jsx>{styles}</style> */}
     </>
   );
 };

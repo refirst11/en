@@ -57,13 +57,13 @@ const Infinite = ({ posts }: PostsProps): JSX.Element => {
               </Link>
             </li>
           ))}
-          <button style={{ textAlign: 'right' }} onClick={() => setSize(size + 1)}>
+        </ul>
+        {hasMore && (
+          <button className="loading_ui" onClick={() => setSize(size + 1)}>
             Loading..
           </button>
-        </ul>
+        )}
       </InfiniteScroll>
-
-      <div>{hasMore == true ? 'true' : null}</div>
       <style jsx>{styles}</style>
     </Fragment>
   );
