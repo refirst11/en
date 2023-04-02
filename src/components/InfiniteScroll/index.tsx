@@ -13,13 +13,13 @@ const getKey: SWRInfiniteKeyLoader = (pageIndex, previousPageData: PostsProps[])
   if (previousPageData && !previousPageData.length) {
     return null;
   }
-  return `/api?page=${pageIndex}`;
+  return `/api/posts?page=${pageIndex}`;
 };
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 const Infinite = ({ posts }: PostsProps): JSX.Element => {
   const { data, size, setSize, isLoading } = useSWRInfinite<PostsData>(getKey, fetcher, {
     revalidateFirstPage: false,
-    // fallbackData: posts,
+    fallbackData: posts,
   });
   const flattenedData = data?.flat();
 
