@@ -4,13 +4,12 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useMail } from 'hooks/useMail';
 import Seo from 'components/Seo';
-import Animate from 'components/Animation';
+import RouterBack from 'components/RouterBack';
 
-const Page = (): JSX.Element => {
+const Mail = (): JSX.Element => {
   const { mail, setMail, name, setName, message, setMessage, Submit } = useMail();
   const [error, setError] = useState<null | boolean>(null);
   const [useInitialize, setInitialize] = useState(true);
-
   const Send = (): void => {
     if (validateEmail(mail) === true) {
       Submit();
@@ -40,12 +39,12 @@ const Page = (): JSX.Element => {
       <AnimatePresence mode="wait">
         <motion.div
           onClick={() => setInitialize(!useInitialize)}
-          initial={{ opacity: 1, scale: 1, x: -5 }}
-          animate={{ opacity: 1, scale: 1, x: 5 }}
+          initial={{ opacity: 1, scale: 1, y: -2 }}
+          animate={{ opacity: 1, scale: 1, y: 2 }}
           exit={{ opacity: 1, x: 0 }}
           transition={{ type: 'spring', duration: 1, bounce: 1 }}
         >
-          <label htmlFor="status">
+          <label htmlFor="status" className="error_style">
             {error === null ? '' : error === false ? 'd0n3s' : 'email is required for available'}
           </label>
         </motion.div>
@@ -89,14 +88,12 @@ const Page = (): JSX.Element => {
   );
 
   return (
-    <Animate className="Mail wrapper">
+    <div className="Mail wrapper">
       <Seo title="su-pull - mail" description="My Mail" />
-      <div className="wrapper Card">
-        <div className="Card CardBox">
-          <div className="TwitterTexts">success!!</div>
-          <img className="Circle" src="/picture/Nanamin240.png" width={80} height={80} />
-          <div className="CardTexts">please wait for my reply</div>
-        </div>
+      <RouterBack />
+      <div className="layout_center_content">
+        <img className="visited_icon" src="/alum.png" width={80} height={80} />
+        <div className="success">success!!</div>
       </div>
       {error === null ? (
         MailFormDom
@@ -124,8 +121,8 @@ const Page = (): JSX.Element => {
           </motion.div>
         </AnimatePresence>
       )}
-    </Animate>
+    </div>
   );
 };
 
-export default Page;
+export default Mail;
