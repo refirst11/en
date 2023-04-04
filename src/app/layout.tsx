@@ -15,9 +15,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <AppProvider>
-          <Adjuster>{children}</Adjuster>
-        </AppProvider>
+        <StyledJsxRegistry>
+          <AppProvider>
+            <Adjuster>{children}</Adjuster>
+          </AppProvider>
+        </StyledJsxRegistry>
       </body>
     </html>
   );
