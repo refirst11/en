@@ -4,6 +4,7 @@
   }
 
   div[data-rehype-pretty-code-fragment] code {
+    overflow: scroll;
     font-size: 12.4px;
   }
 
