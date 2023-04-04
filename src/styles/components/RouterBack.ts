@@ -5,6 +5,7 @@ const styles = css`
     position: absolute;
     top: 122px;
     transform: translateY(-100%);
+    top: 32px;
     right: 0;
     width: 40px;
     height: 40px;

@@ -52,6 +52,9 @@ pre {
   padding: 0 20px;
   line-height: 1.5;
   border-left: solid 4px transparent;
+}
+
+[data-rehype-pretty-code-fragment] .line span {
   font-size: 14.4px;
 }
 

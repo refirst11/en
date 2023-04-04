@@ -13,7 +13,7 @@ const Adjuster = ({ children }: AnimateProps): JSX.Element => {
   const isClass = isToggleClass ? 'layout_center_content' : 'layout_top_content';
   const pathname = usePathname();
   return (
-    <main ref={ref} className={`pages_root ${isClass} ${pathname.includes('/posts/') && ''}`}>
+    <main ref={ref} className={`pages_root ${isClass} ${pathname.includes('/posts/') && 'slug_margin_top'}`}>
       {children}
     </main>
   );
