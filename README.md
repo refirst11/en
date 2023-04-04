@@ -2,7 +2,7 @@
 
 - [Next.js](https://nextjs.org/) - The standard web static generate framework
 - [Styled JSX](https://nextjs.org/blog/styling-next-with-styled-jsx) - css scopes component in simple standard
-- [Vercel](https://vercel.com/) - a beautiful of fast server
+- [Vercel](https://vercel.com/) - a very faster server
 - [Shiki](https://shiki.matsu.io/) - is minimal and cool syntax highlighting
 
 ## License
