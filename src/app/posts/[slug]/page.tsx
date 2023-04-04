@@ -33,14 +33,14 @@ const Page = async ({ params }: Params) => {
   const post = await getPostData(params.slug);
 
   return (
-    <>
+    <div className="layout_top_content">
       <RouterBack />
       <div className={styles.size_time}>
         {format(new Date(post.date as string | number | Date), 'MMMM eeee, do yyyy')}
       </div>
       <h1 className={styles.color_h1}>{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
-    </>
+    </div>
   );
 };
 

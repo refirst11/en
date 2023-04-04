@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <StyledJsxRegistry>
           <AppProvider>
-            <Adjuster>{children}</Adjuster>
+            <main className="pages_root">{children}</main>
           </AppProvider>
         </StyledJsxRegistry>
       </body>
