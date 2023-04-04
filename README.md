@@ -7,7 +7,7 @@
 
 ## License
 
-The images from alum.ico and png are licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).  
+The images from alum.ico and png a licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).  
 Please adhere to the terms of the CC BY-NC-ND 4.0 license and refrain from using the material illegally.
 
-un-copyrighted source code is licensed under the MIT license.
+source code is licensed under the MIT license.
