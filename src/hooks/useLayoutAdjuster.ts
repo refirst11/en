@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import useSWRInfinite from 'swr/infinite';
 import getKey from 'libs/getKey';
@@ -11,7 +11,7 @@ const useLayoutAdjuster = (lowCss: string, highCss: string) => {
   const { data } = useSWRInfinite<PostsData>(getKey, {
     revalidateFirstPage: false,
   });
-  useEffect(() => {
+  useLayoutEffect(() => {
     const contentHeight = ref.current?.offsetHeight;
     const isContentWindow = (contentHeight as number) < window.innerHeight;
     setIsToggleClass(isContentWindow ? lowCss : highCss);
