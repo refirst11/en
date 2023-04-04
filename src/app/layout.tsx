@@ -1,6 +1,6 @@
 import 'styles/globals.scss';
+import 'styles/mobile.scss';
 import AppProvider from 'components/AppProvider';
-import StyledJsxRegistry from './registry';
 import Adjuster from 'components/Adjuster';
 import { Metadata } from 'next';
 
