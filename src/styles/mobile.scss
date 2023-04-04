@@ -20,8 +20,9 @@
     border-radius: 50%;
     pointer-events: none;
     position: absolute;
-    transform: scale(0.88) translateX(20px) translateY(18px);
-    right: 20px;
+    transform: scale(0.88) translate(0);
+    right: 4px;
+    margin-top: 16px;
   }
 
   body {
