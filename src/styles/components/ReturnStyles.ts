@@ -30,6 +30,12 @@ const styles = css`
   }
 
   .rotateCircle:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rotateCircle:hover {
     transition-duration: 0.4s;
     animation: 0.8s rotating;
   }
