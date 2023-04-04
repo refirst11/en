@@ -44,14 +44,11 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   text-align: center;
+  width: 600px;
   word-break: break-all;
   margin: auto;
   min-height: 100vh;
   font-size: 14px;
-}
-
-main {
-  width: 600px;
 }
 
 button {
