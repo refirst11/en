@@ -22,11 +22,7 @@
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "^13.2.4",
-    "next-sitemap": "^4.0.6",
-    "next-themes": "^0.2.1",
-    "nextjs-google-analytics": "^2.1.0",
     "nodemailer": "6.7.3",
-    "prettier": "2.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
@@ -36,9 +32,7 @@
     "remark": "^14.0.2",
     "remark-rehype": "^10.1.0",
     "ress": "^5.0.2",
-    "rss": "1.2.2",
     "sass": "1.50.0",
-    "sass-mq": "^6.0.0",
     "shiki": "^0.14.1",
     "swr": "^2.1.1",
     "typescript": "^4.9.5"
@@ -46,24 +40,20 @@
   "devDependencies": {
     "@commitlint/cli": "17.0.3",
     "@commitlint/config-conventional": "^17.4.4",
-    "@graphql-codegen/client-preset": "2.0.0",
     "@next/eslint-plugin-next": "^12.0.1",
     "@types/node": "18.6.2",
     "@types/nodemailer": "^6.4.4",
-    "@types/rss": "0.0.29",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
-    "conventional-changelog-lint-config-developers": "^4.2.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^13.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.1",
-    "lint-staged": "12.3.7",
-    "stylelint-config-prettier": "9.0.3",
-    "stylelint-config-recommended-scss": "6.0.0",
-    "stylelint-config-standard-scss": "3.0.0",
-    "stylelint-scss": "^4.5.0"
+    "lint-staged": "12.3.7"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --fix"
   }
 }
