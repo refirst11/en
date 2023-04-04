@@ -2,6 +2,11 @@
 @import 'motion';
 @import 'scroll/scrollbar';
 @import 'contact/form';
+@import 'mobile';
+
+* {
+  box-sizing: border-box;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
