@@ -4,6 +4,7 @@ import getPostData from 'lib/getPostData';
 import getSlugPath from 'lib/getSlugPath';
 import RouterBack from 'components/RouterBack';
 import styles from './styles.module.scss';
+import 'ress';
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const post = await getPostData(params.slug);
