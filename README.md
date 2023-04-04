@@ -1,7 +1,3 @@
-## Stories...
-[su-pull.net](https://www.su-pull.net/)  
-
-After used REST and GraphQL-based CMSs, I finally settled on a simple Markdown format that can be managed with code,  additionally, this repository was experimental, and the commits are a testament to my learning.
 
 ## Using
 - [Next.js](https://nextjs.org/) - The standard web static generate framework  
