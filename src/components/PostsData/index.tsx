@@ -1,5 +1,5 @@
 'use client';
-import styles from 'styles/pages/ArticlesStyles';
+import styles from 'styles/app/ArticlesStyles';
 
 import InfiniteScroll from 'components/InfiniteScroll';
 import SearchResults from 'components/SearchResults';

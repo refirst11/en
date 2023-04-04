@@ -38,6 +38,8 @@ const styles = css`
   .loading_ui {
     color: var(--color-second-color);
     font-family: inherit;
+    position: absolute;
+    right: 0;
   }
 
   .spinner {

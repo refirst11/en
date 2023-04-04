@@ -56,12 +56,16 @@ button {
   cursor: pointer;
 }
 
+.p__width {
+  width: 380px;
+}
+
 .main_icon {
   border-radius: 50%;
   box-shadow: 0 0 8px -6px rgb(0 0 0 / 40%);
   pointer-events: none;
   position: absolute;
-  transform: translateX(520px);
+  transform: translateX(400px) translateY(20px);
 }
 
 .pages_root {
