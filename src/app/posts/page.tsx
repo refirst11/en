@@ -7,13 +7,8 @@ export const metadata: Metadata = {
   description: 'articles',
 };
 
-async function getPosts() {
-  const posts = await getAllPosts();
-  return posts;
-}
-
 async function Page() {
-  const posts = await getPosts();
+  const posts = await getAllPosts();
 
   return (
     <>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: process.env.PROD_URL,
     type: 'website',
     images: {
-      url: `https://su-pull.net/api/ogp?title=蒼刀&date=1994`,
+      url: `${process.env.PROD_URL}/api/ogp?title=蒼刀&date=1994`,
     },
   },
 };
@@ -23,17 +23,10 @@ const Page = (): JSX.Element => {
   return (
     <>
       <Image className="main_icon" src={profilePic} alt="icon" quality={100} width={80} height={80} />
-      <dl>
-        <dt>Generated</dt>
-        <dd>
-          / <a href="https://engineers-box.net/">engineers-box</a>
-        </dd>
-      </dl>
-      <br />
-      <p>
+      <p className="p__width">
         I am a designer based in Tokyo, creating <a href="https://github.com/su-pull/macintosh-ahk">Juster</a>, key
-        bindings, and macros.
-        <br />I have self taught drawing and design, My incentive is to be involved in the most cutting-edge the fields.
+        bindings, and macros. I have self taught drawing and design, My incentive is to be involved in the most
+        cutting-edge the fields.
       </p>
       <hr />
       <h1>Career</h1>

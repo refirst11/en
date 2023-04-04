@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       url: process.env.PROD_URL,
       type: 'website',
       images: {
-        url: `https://su-pull.net/api/ogp?title=${post.title}&date=${post.date}`,
+        url: `${process.env.PROD_ENV}/api/ogp?title=${post.title}&date=${post.date}`,
       },
     },
   };
