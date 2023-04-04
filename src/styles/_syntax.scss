@@ -33,7 +33,7 @@ pre {
   padding: 20px 0;
   margin: 32px 0;
   width: 600px;
-
+  overflow: scroll;
   transition: all 0.8s;
   box-shadow: 0 0 8px -6px rgb(0 0 0 / 40%);
 }
@@ -52,12 +52,12 @@ pre {
   padding: 0 20px;
   line-height: 1.5;
   border-left: solid 4px transparent;
+  font-size: 14.4px;
 }
 
 div[data-rehype-pretty-code-fragment] pre code {
   display: grid;
   grid-auto-rows: minmax(auto, 1fr);
-  font-size: inherit;
 }
 
 div[data-rehype-pretty-code-fragment] .line.highlighted {
