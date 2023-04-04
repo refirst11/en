@@ -54,7 +54,7 @@ pre {
   border-left: solid 4px transparent;
 }
 
-div[data-rehype-pretty-code-fragment] code {
+div[data-rehype-pretty-code-fragment] pre code {
   display: grid;
   grid-auto-rows: minmax(auto, 1fr);
   font-size: 14.4px;
