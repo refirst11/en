@@ -6,7 +6,7 @@ import PostsData from 'types/PostsData';
 
 const useLayoutAdjuster = (lowCss: string, highCss: string) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [isToggleClass, setIsToggleClass] = useState('layout_center_content');
+  const [isToggleClass, setIsToggleClass] = useState('');
   const pathname = usePathname();
   const { data } = useSWRInfinite<PostsData>(getKey, {
     revalidateFirstPage: false,
