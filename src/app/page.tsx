@@ -1,14 +1,16 @@
-import DarkToggle from 'components/DarkToggle';
-import SEO from 'components/Seo';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import profilePic from 'public/pull.jpg';
+
+export const metadata: Metadata = {
+  title: 'su-pull - home',
+  description: 'Index Top Page',
+};
 
 const Index = (): JSX.Element => {
   return (
     <>
-      <SEO title="su-pull - home" description="Index Top Page" />
       <Image className="main_icon" src={profilePic} alt="icon" quality={100} width={120} height={120} />
-      <DarkToggle />
       <dl>
         <dt>Name</dt>
         <dd>Sou Watanabe</dd>
