@@ -11,6 +11,12 @@
     font-size: 12.4px;
   }
 
+  div [data-rehype-pretty-code-fragment] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   pre {
     font-size: 1em;
     max-width: 100%;
