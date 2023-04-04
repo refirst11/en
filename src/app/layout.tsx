@@ -1,5 +1,6 @@
 import 'styles/globals.scss';
 import 'styles/mobile.scss';
+import 'ress';
 import AppProvider from 'components/AppProvider';
 import StyledJsxRegistry from './registry';
 import Adjuster from 'components/Adjuster';
