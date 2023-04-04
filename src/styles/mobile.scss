@@ -8,9 +8,18 @@
     width: fit-content;
   }
 
+  div [data-rehype-pretty-code-fragment] code {
+    overflow-x: scroll;
+    height: 100%;
+    width: 100%;
+    font-size: 12.4px;
+  }
+
   pre {
     width: 100%;
-    overflow-x: scroll;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 12.4px;
   }
 
   .p__width {
