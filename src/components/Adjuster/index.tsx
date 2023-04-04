@@ -10,7 +10,7 @@ type AnimateProps = {
 
 const Animate = ({ children }: AnimateProps): JSX.Element => {
   const { ref, isToggleClass } = useLayoutJuster();
-  const isClass = isToggleClass ? 'layout_center_content' : 'layout_top_content';
+  const isClass = isToggleClass ? 'layout_center_content' : '';
   const pathname = usePathname();
   return (
     <main ref={ref} className={`pages_root ${isClass} ${pathname.includes('/posts/') && 'slug_margin_top'}`}>
