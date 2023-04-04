@@ -1,29 +1,41 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import profilePic from 'public/pull.jpg';
+import profilePic from '@public/alum.png';
 
 export const metadata: Metadata = {
-  title: 'su-pull - home',
-  description: 'Index Top Page',
+  title: 'su-pull',
+  description: 'su-pull of web',
+  icons: {
+    icon: '/alum.ico',
+  },
+  openGraph: {
+    title: 'im a developer and designer.',
+    description: 'application link xml',
+    url: process.env.PROD_URL,
+    type: 'website',
+    images: {
+      url: `https://su-pull.net/api/ogp?title=蒼刀&date=1994`,
+    },
+  },
 };
 
-const Index = (): JSX.Element => {
+const Page = (): JSX.Element => {
   return (
     <>
-      <Image className="main_icon" src={profilePic} alt="icon" quality={100} width={120} height={120} />
+      <Image className="main_icon" src={profilePic} alt="icon" quality={100} width={80} height={80} />
       <dl>
-        <dt>Name</dt>
-        <dd>Sou Watanabe</dd>
-        <dt>Location</dt>
-        <dd>Tokyo</dd>
         <dt>Generated</dt>
         <dd>
-          <a href="https://github.com/su-pull/macintosh-ahk">Macintosh-ahk</a> /{' '}
-          <a href="https://engineers-box.net/">engineers-box</a>
+          / <a href="https://engineers-box.net/">engineers-box</a>
         </dd>
       </dl>
+      <br />
+      <p>
+        I am a designer based in Tokyo, creating <a href="https://github.com/su-pull/macintosh-ahk">Juster</a>, key
+        bindings, and macros.
+        <br />I have self taught drawing and design, My incentive is to be involved in the most cutting-edge the fields.
+      </p>
       <hr />
-
       <h1>Career</h1>
       <ul>
         <li>1994 Born in Kitakyushu, Fukuoka, Japan</li>
@@ -32,16 +44,12 @@ const Index = (): JSX.Element => {
         <li>2017 Left PC DEPOT Co., Ltd.</li>
         <li>2018 Passed the High School Equivalency Exam</li>
         <li>2019 Self-studied design</li>
-        <li>2021 Started learning programming languages</li>
-        <li>2022 Built a GraphQL API.</li>
+        <li>2021 Started learning programming and git</li>
+        <li>2022 Built a REST and GraphAPI.</li>
+        <li>2023 Feedbacks in Front End Framework API experimental features</li>
       </ul>
-      <br />
-      <hr />
-      <p>
-        I have been self-taught in drawing and design and My goal is to be involved in the most cutting-edge fields.
-      </p>
     </>
   );
 };
 
-export default Index;
+export default Page;

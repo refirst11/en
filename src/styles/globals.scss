@@ -50,12 +50,18 @@ body {
   font-size: 14px;
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .main_icon {
   border-radius: 50%;
   box-shadow: 0 0 8px -6px rgb(0 0 0 / 40%);
   pointer-events: none;
   position: absolute;
-  transform: translateX(480px);
+  transform: translateX(520px);
 }
 
 .pages_root {

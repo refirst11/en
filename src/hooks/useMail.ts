@@ -5,17 +5,20 @@ export const useMail = () => {
   const [mail, setMail] = useState('');
   const [message, setMessage] = useState('');
 
-  const Submit = async (): Promise<void> => {
-    await fetch('/api/mail', {
+  const Submit = async () => {
+    await fetch('/api/contact', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
       body: `
-名前
+Username
 ${name}
 
-メール
+Mail
 ${mail}
 
-お問い合わせ内容
+Message
 ${message}
 `,
     });

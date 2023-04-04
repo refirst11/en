@@ -11,6 +11,15 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   return {
     title: post.title,
     description: post.subtitle,
+    openGraph: {
+      title: post.title,
+      description: post.subtitle,
+      url: process.env.PROD_URL,
+      type: 'website',
+      images: {
+        url: `https://su-pull.net/api/ogp?title=${post.title}&date=${post.date}`,
+      },
+    },
   };
 }
 

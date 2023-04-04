@@ -33,6 +33,7 @@ textarea {
   margin-right: auto;
   margin-left: auto;
   color: var(--color-second-color);
+  background: var(--color-bg);
   border: none;
   outline: none;
   width: 400px;
@@ -62,13 +63,13 @@ label {
   border-radius: 10px;
 }
 
-.Mail {
-  position: absolute;
-  inset: 0%;
-  margin: auto;
-  width: fit-content;
-  height: fit-content;
-}
+// .Mail {
+//   position: absolute;
+//   inset: 0%;
+//   margin: auto;
+//   width: fit-content;
+//   height: fit-content;
+// }
 
 .visited_icon {
   position: relative;
@@ -90,14 +91,4 @@ label {
   right: 40px;
   white-space: nowrap;
   color: rgb(64 144 200);
-}
-
-.router_back {
-  position: absolute;
-  top: 120px;
-  transform: translateY(-100%);
-  right: 0px;
-  width: 40px;
-  height: 40px;
-  color: var(--color-second-color);
 }

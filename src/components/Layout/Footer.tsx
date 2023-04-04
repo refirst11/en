@@ -15,16 +15,12 @@ const Footer = (): JSX.Element => {
             <a href="https://github.com/su-pull" target="_blank">
               <RiGithubFill size={22} />
             </a>
-            {process.env.NODE_ENV === 'development' && (
-              <>
-                <Link href="/mail" prefetch={false}>
-                  <HiOutlineMail size={22} />
-                </Link>
-                <a href="/feed.xml" target="_blank">
-                  <HiRss size={22} />
-                </a>
-              </>
-            )}
+            <Link href="/mail" prefetch={false}>
+              <HiOutlineMail size={22} />
+            </Link>
+            <a href="/feed.xml" target="_blank">
+              <HiRss size={22} />
+            </a>
           </div>
         </div>
         <ScrollToTop />

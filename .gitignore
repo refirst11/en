@@ -26,17 +26,8 @@ yarn-error.log*
 
 # local env files
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # vercel
 .vercel
 
-# codegen file
-codegen.yml
-
-# rss feed
-/public/rss/atom.xml
-/public/rss/feed.json
-/public/rss/feed.xml
+next-env.d.ts

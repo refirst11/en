@@ -1,6 +1,7 @@
 'use client';
+
 import { ReactNode } from 'react';
-import useLayoutAdjuster from 'hooks/useLayoutAdjuster';
+import useLayoutJuster from 'hooks/useLayoutJuster';
 import { usePathname } from 'next/navigation';
 
 type AnimateProps = {
@@ -8,10 +9,11 @@ type AnimateProps = {
 };
 
 const Animate = ({ children }: AnimateProps): JSX.Element => {
-  const { ref, isToggleClass } = useLayoutAdjuster('layout_center_content', 'layout_top_content');
+  const { ref, isToggleClass } = useLayoutJuster();
+  const isClass = isToggleClass ? 'layout_center_content' : 'layout_top_content';
   const pathname = usePathname();
   return (
-    <main ref={ref} className={`pages_root ${isToggleClass} ${pathname.includes('/posts/') && 'slug_margin_top'}`}>
+    <main ref={ref} className={`pages_root ${isClass} ${pathname.includes('/posts/') && 'slug_margin_top'}`}>
       {children}
     </main>
   );

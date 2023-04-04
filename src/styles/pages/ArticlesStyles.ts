@@ -38,9 +38,6 @@ const styles = css`
   .loading_ui {
     color: var(--color-second-color);
     font-family: inherit;
-    background: none;
-    border: none;
-    cursor: pointer;
   }
 
   .spinner {
