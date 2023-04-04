@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import useSWRInfinite from 'swr/infinite';
-import getKey from 'libs/getKey';
+import getKey from 'lib/getKey';
 import PostsData from 'types/PostsData';
 
 const useLayoutAdjuster = () => {

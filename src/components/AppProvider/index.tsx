@@ -3,7 +3,7 @@
 import { ReactNode } from 'react';
 import { SWRConfig } from 'swr';
 import GlobalFont from 'components/Font';
-import fetcher from 'libs/fetcher';
+import fetcher from 'lib/fetcher';
 import Layout from 'components/Layout';
 
 type Provider = {

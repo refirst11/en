@@ -1,4 +1,4 @@
-import getAllPosts from 'libs/getAllPosts';
+import getAllPosts from 'lib/getAllPosts';
 
 export async function GET() {
   const items = await getAllPosts();

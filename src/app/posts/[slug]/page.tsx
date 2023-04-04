@@ -1,7 +1,7 @@
 import { format } from 'date-fns';
 import { Metadata } from 'next';
-import getPostData from 'libs/getPostData';
-import getSlugPath from 'libs/getSlugPath';
+import getPostData from 'lib/getPostData';
+import getSlugPath from 'lib/getSlugPath';
 import RouterBack from 'components/RouterBack';
 import styles from './styles.module.scss';
 

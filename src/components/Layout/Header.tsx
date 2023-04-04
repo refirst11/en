@@ -1,7 +1,7 @@
 import Text from 'components/Text';
 import { Fragment, useState, useMemo } from 'react';
 import { usePathname } from 'next/navigation';
-import isCurrentLink from 'libs/isCurrentLink';
+import isCurrentLink from 'lib/isCurrentLink';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import styles from 'styles/components/HeaderStyles';

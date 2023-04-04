@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { Fragment, useEffect, useCallback } from 'react';
 import styles from 'styles/pages/ArticlesStyles';
 import useSWRInfinite from 'swr/infinite';
-import getKey from 'libs/getKey';
+import getKey from 'lib/getKey';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import pageSize from 'libs/pageSize';
+import pageSize from 'lib/pageSize';
 import PostsData from 'types/PostsData';
 import PostsProps from 'types/PostsProps';
 

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import getAllPosts from 'libs/getAllPosts';
+import getAllPosts from 'lib/getAllPosts';
 import PostsData from 'components/PostsData';
 
 export const metadata: Metadata = {
