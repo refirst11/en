@@ -5,21 +5,15 @@
 
   [data-rehype-pretty-code-fragment] code .line span {
     font-size: 12.4px;
-    width: fit-content;
   }
 
-  div [data-rehype-pretty-code-fragment] code {
-    overflow-x: scroll;
-    height: 100%;
-    width: 100%;
+  div [data-rehype-pretty-code-fragment] pre code .line {
     font-size: 12.4px;
   }
 
   pre {
     width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    font-size: 12.4px;
+    overflow-x: scroll;
   }
 
   .p__width {
@@ -38,10 +32,6 @@
   body {
     width: 100%;
     height: 100%;
-    text-align: unset;
-    word-break: normal;
-    margin: auto;
-    min-height: auto;
   }
 
   p {
