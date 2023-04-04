@@ -3,10 +3,6 @@
 @import 'scroll/scrollbar';
 @import 'contact/form';
 
-* {
-  box-sizing: border-box;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --color-text: rgb(209 213 219);

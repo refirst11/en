@@ -8,7 +8,7 @@ type AnimateProps = {
   children: ReactNode;
 };
 
-const Animate = ({ children }: AnimateProps): JSX.Element => {
+const Adjuster = ({ children }: AnimateProps): JSX.Element => {
   const { ref, isToggleClass } = useLayoutJuster();
   const isClass = isToggleClass ? 'layout_center_content' : 'layout_top_content';
   const pathname = usePathname();
@@ -19,4 +19,4 @@ const Animate = ({ children }: AnimateProps): JSX.Element => {
   );
 };
 
-export default Animate;
+export default Adjuster;
