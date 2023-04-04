@@ -7,16 +7,6 @@
     font-size: 12.4px;
   }
 
-  div [data-rehype-pretty-code-fragment] pre code .line {
-    font-size: 12.4px;
-  }
-
-  div [data-rehype-pretty-code-fragment] {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
   div [data-rehype-pretty-code-fragment] pre {
     max-width: 100%;
     overflow: auto;
@@ -36,15 +26,8 @@
   }
 
   body {
-    width: auto;
+    width: fit-content;
     height: 100%;
-  }
-
-  p {
-    font-size: 12px;
-  }
-
-  li {
     font-size: 12px;
   }
 
