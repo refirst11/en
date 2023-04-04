@@ -1,10 +1,10 @@
-import { useInsertionEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 const useLayoutAdjuster = (lowCss: string, highCss: string) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [isToggleClass, setIsToggleClass] = useState('');
+  const [isToggleClass, setIsToggleClass] = useState('layout_center_content');
   const pathname = usePathname();
-  useInsertionEffect(() => {
+  useEffect(() => {
     const contentHeight = ref.current?.offsetHeight;
     const isContentWindow = (contentHeight as number) < window.innerHeight;
     setIsToggleClass(isContentWindow ? lowCss : highCss);
