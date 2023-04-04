@@ -9,6 +9,7 @@
 
   pre {
     width: 100%;
+    overflow: scroll;
   }
 
   .p__width {
@@ -27,7 +28,7 @@
     width: 100%;
     height: 100%;
     text-align: unset;
-    width: fit-content;
+    // width: fit-content;
     word-break: normal;
     margin: auto;
     // min-height: auto;
