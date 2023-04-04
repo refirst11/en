@@ -3,21 +3,15 @@
 import Link from 'next/link';
 import { Fragment, useEffect, useCallback } from 'react';
 import styles from 'styles/pages/ArticlesStyles';
-import useSWRInfinite, { SWRInfiniteKeyLoader } from 'swr/infinite';
+import useSWRInfinite from 'swr/infinite';
+import getKey from 'libs/getKey';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import pageSize from 'libs/pageSize';
 import PostsData from 'types/PostsData';
 import PostsProps from 'types/PostsProps';
 
-const getKey: SWRInfiniteKeyLoader = (pageIndex, previousPageData: PostsProps[]) => {
-  if (previousPageData && !previousPageData.length) {
-    return null;
-  }
-  return `/api/posts?page=${pageIndex}`;
-};
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
 const Infinite = ({ posts }: PostsProps): JSX.Element => {
-  const { data, size, setSize, isLoading } = useSWRInfinite<PostsData>(getKey, fetcher, {
+  const { data, size, setSize, isLoading } = useSWRInfinite<PostsData>(getKey, {
     revalidateFirstPage: false,
     fallbackData: posts,
   });

@@ -40,6 +40,7 @@ const styles = css`
     font-family: inherit;
     background: none;
     border: none;
+    cursor: pointer;
   }
 
   .spinner {
