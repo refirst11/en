@@ -14,7 +14,7 @@ const useLayoutAdjuster = (lowCss: string, highCss: string) => {
   useEffect(() => {
     const contentHeight = ref.current?.offsetHeight;
     const isContentWindow = (contentHeight as number) < window.innerHeight;
-    setIsToggleClass(isContentWindow ? lowCss : highCss);
+    return setIsToggleClass(isContentWindow ? lowCss : highCss);
   }, [pathname, data, lowCss, highCss]);
 
   return { ref, isToggleClass };

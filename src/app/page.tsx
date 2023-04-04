@@ -38,10 +38,7 @@ const Index = (): JSX.Element => {
       <br />
       <hr />
       <p>
-        Welcome to my webpage! Let's enjoy writing code and developing applications together.
-        <br />
-        Remember, simple code is often the best code, so let's always strive for simplicity. Are you ready to take your
-        first step?
+        I have been self-taught in drawing and design and My goal is to be involved in the most cutting-edge fields.
       </p>
     </>
   );

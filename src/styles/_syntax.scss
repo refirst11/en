@@ -1,31 +1,33 @@
-:root[data-theme='light'] {
-  --shiki-color-text: #555555; // 1
-  --shikii-color-background: #ffffff;
-  --shiki-token-constant: rgb(255, 130, 130); // 1
-  --shiki-token-string: #2e2c40;
-  --shiki-token-comment: #555555;
-  --shiki-token-keyword: #6fd5e7;
-  --shiki-token-parameter: 555555;
-  --shiki-token-function: #ff8ebb;
-  --shiki-token-string-expression: #ff9e9e;
-  --shiki-token-punctuation: 555555;
-  --shiki-token-link: 555555;
+@media (prefers-color-scheme: light) {
+  :root {
+    --shiki-color-text: #555555; // 1
+    --shikii-color-background: #ffffff;
+    --shiki-token-constant: rgb(255, 130, 130); // 1
+    --shiki-token-string: #2e2c40;
+    --shiki-token-comment: #555555;
+    --shiki-token-keyword: #6fd5e7;
+    --shiki-token-parameter: 555555;
+    --shiki-token-function: #ff8ebb;
+    --shiki-token-string-expression: #ff9e9e;
+    --shiki-token-punctuation: 555555;
+    --shiki-token-link: 555555;
+  }
 }
-
-:root[data-theme='dark'] {
-  --shiki-color-text: #ffffff;
-  --shiki-color-background: #202020;
-  --shiki-token-constant: #afffff;
-  --shiki-token-string: #ffffff;
-  --shiki-token-comment: #ffffff;
-  --shiki-token-keyword: #77b7d7;
-  --shiki-token-parameter: #ffffff;
-  --shiki-token-function: #ffffff;
-  --shiki-token-string-expression: #7c99dc;
-  --shiki-token-punctuation: #ffffff;
-  --shiki-token-link: #ffffff;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shiki-color-text: #ffffff;
+    --shiki-color-background: #202020;
+    --shiki-token-constant: #afffff;
+    --shiki-token-string: #ffffff;
+    --shiki-token-comment: #ffffff;
+    --shiki-token-keyword: #77b7d7;
+    --shiki-token-parameter: #ffffff;
+    --shiki-token-function: #ffffff;
+    --shiki-token-string-expression: #7c99dc;
+    --shiki-token-punctuation: #ffffff;
+    --shiki-token-link: #ffffff;
+  }
 }
-
 pre {
   border-radius: 20px;
   padding: 20px 0;
