@@ -19,7 +19,7 @@ const generateSEOData = ({ title, subtitle, date }: SeoData) => {
       card: 'summary_large_image',
       title: title,
       description: subtitle,
-      images: `${process.env.PROD_ENV}/api/ogp?title=${title}&date=${date}`,
+      images: `${process.env.PROD_URL}/api/ogp?title=${title}&date=${date}`,
       site: '@pull1102',
       creator: '@pull1102',
     },
