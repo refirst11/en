@@ -8,7 +8,6 @@
     "start": "next start",
     "commitlint": "commitlint -e $GIT_PARAMS",
     "eslint": "eslint --ext .ts,.tsx --fix .",
-    "prettier": "prettier --write .",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
   },
