@@ -27,19 +27,9 @@ const styles = css`
     color: var(--color-second);
   }
 
-  .search_box {
-    position: relative;
-    width: 520px;
-    left: 28px;
-    padding: 0 8px;
-    margin: auto;
-  }
-
   .loading_ui {
     color: var(--color-second-color);
     font-family: inherit;
-    position: absolute;
-    right: 0;
   }
 
   .spinner {
@@ -77,13 +67,6 @@ const styles = css`
 
     .title {
       width: 200px;
-    }
-
-    .search_box {
-      position: relative;
-      top: 0px;
-      width: 80%;
-      left: 10%;
     }
   }
 `;

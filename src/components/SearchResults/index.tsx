@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import styles from 'components/InfiniteScroll/styles';
 import PostsProps from 'types/PostsProps';
