@@ -5,25 +5,11 @@ import getPostData from 'lib/getPostData';
 import getSlugPath from 'lib/getSlugPath';
 import RouterBack from 'components/RouterBack';
 import styles from './styles.module.scss';
+import generateSEOData from 'lib/generateSEOData';
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const post = await getPostData(params.slug);
-
-  return {
-    title: post.title,
-    description: post.subtitle,
-    openGraph: {
-      title: post.title,
-      description: post.subtitle,
-      url: process.env.PROD_URL,
-      type: 'website',
-      images: {
-        url: `${process.env.PROD_ENV}/api/ogp?title=${post.title}&date=${post.date}`,
-        width: 1200,
-        height: 600,
-      },
-    },
-  };
+  return generateSEOData({ title: post.title, subtitle: post.subtitle, date: post.date });
 }
 
 const Page = async ({ params }: Params) => {

@@ -1,25 +1,9 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import profilePic from '@public/alum.png';
+import generateSEOData from 'lib/generateSEOData';
 
-export const metadata: Metadata = {
-  title: 'su-pull',
-  description: 'su-pull of web',
-  icons: {
-    icon: '/alum.ico',
-  },
-  openGraph: {
-    title: 'im a developer and designer.',
-    description: 'application link xml',
-    url: process.env.PROD_URL,
-    type: 'website',
-    images: {
-      url: `${process.env.PROD_URL}/api/ogp?title=蒼刀&date=1994`,
-      width: 1200,
-      height: 600,
-    },
-  },
-};
+export const metadata: Metadata = generateSEOData({ title: 'su-pull', subtitle: 'About', date: '1994' });
 
 const Page = (): JSX.Element => {
   return (

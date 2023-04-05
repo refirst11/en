@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { useMail } from 'hooks/useMail';
 import RouterBack from 'components/RouterBack';
 import Image from 'next/image';
-import contactPic from '@public/alum.png';
+import profilePic from '@public/alum.png';
 
 const Mail = (): JSX.Element => {
   const { mail, setMail, name, setName, message, setMessage, Submit } = useMail();
@@ -92,7 +92,7 @@ const Mail = (): JSX.Element => {
     <div className="Mail">
       <RouterBack />
       <div className="layout_center_content">
-        <Image className="visited_icon" src="/alum.png" alt="art" quality={100} width={80} height={80} />
+        <Image className="visited_icon" src={profilePic} alt="art" quality={100} width={80} height={80} />
         <div className="success">success!!</div>
       </div>
       {error === null ? (
