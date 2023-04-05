@@ -30,6 +30,7 @@ const styles = css`
   .loading_ui {
     color: var(--color-second-color);
     font-family: inherit;
+    padding: 4px 6px;
   }
 
   .spinner {
