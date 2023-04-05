@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Fragment, useEffect, useCallback } from 'react';
-import styles from 'styles/app/ArticlesStyles';
+import styles from 'styles/pages/ArticlesStyles';
 import useSWRInfinite from 'swr/infinite';
 import getKey from 'lib/getKey';
 import InfiniteScroll from 'react-infinite-scroll-component';

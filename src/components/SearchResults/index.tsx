@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import styles from 'styles/app/ArticlesStyles';
+import styles from 'styles/pages/ArticlesStyles';
 import PostsProps from 'types/PostsProps';
 
 type keywordProps = {
