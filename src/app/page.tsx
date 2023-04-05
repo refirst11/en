@@ -23,6 +23,7 @@ const Page = (): JSX.Element => {
         <li>2017 Left PC DEPOT Co., Ltd.</li>
         <li>2018 Passed the High School Equivalency Exam</li>
         <li>2019 Self-studied design</li>
+        <li>2020 Self-studied design</li>
         <li>2021 Started learning programming and git</li>
         <li>2022 Built a REST and GraphAPI.</li>
         <li>2023 Feedbacks in Front End Framework API experimental features</li>
