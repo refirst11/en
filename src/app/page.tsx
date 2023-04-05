@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     type: 'website',
     images: {
       url: `${process.env.PROD_URL}/api/ogp?title=蒼刀&date=1994`,
+      width: 1200,
+      height: 600,
     },
   },
 };

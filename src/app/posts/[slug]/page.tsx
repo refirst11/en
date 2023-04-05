@@ -19,6 +19,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       type: 'website',
       images: {
         url: `${process.env.PROD_ENV}/api/ogp?title=${post.title}&date=${post.date}`,
+        width: 1200,
+        height: 600,
       },
     },
   };

@@ -17,16 +17,14 @@ export async function GET(req: NextRequest) {
       <div
         style={{
           display: 'flex',
-          background: 'white',
+          background: '#fffffe',
           width: '100%',
           height: '100%',
-          padding: '40px',
         }}
       >
         <div
           style={{
-            color: 'purple',
-            fontWeight: 'bold',
+            color: 'rgb(150 150 150)',
             fontSize: '24px',
             width: '100%',
             height: '100%',
@@ -38,18 +36,19 @@ export async function GET(req: NextRequest) {
           }}
         >
           <img
-            src="https://su-pull.net/pull.jpg"
-            alt="miya-ta"
+            src="https://www.su-pull.net/alum.png"
             style={{
               position: 'absolute',
-              width: '300px',
-              height: '300px',
-              borderRadius: '50%',
-              left: '0px',
-              bottom: '0px',
+              width: '200px',
+              height: '200px',
+              borderRadius: '8px',
+              right: '-40',
+              top: '-60',
+              transform: 'rotate(-40deg) scaleX(-1)',
+              boxShadow: '0 0 4px -1px var(--color-shadow)',
             }}
           />
-          #{title}
+          {title}
           <div
             style={{
               display: 'flex',
@@ -63,14 +62,6 @@ export async function GET(req: NextRequest) {
           </div>
         </div>
       </div>
-    ),
-    {
-      status: 200,
-      headers: {
-        'Cache-Control': 'no-cache',
-      },
-      width: 1200,
-      height: 600,
-    }
+    )
   );
 }
