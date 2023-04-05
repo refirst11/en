@@ -1,17 +1,4 @@
 @media screen and (max-width: 739.98px) {
-  [data-rehype-pretty-code-fragment] div {
-    top: 10px;
-  }
-
-  div [data-rehype-pretty-code-fragment] pre code .line span {
-    font-size: 12.4px;
-  }
-
-  pre {
-    max-width: 100%;
-    overflow: auto;
-  }
-
   .p__width {
     width: 80%;
   }
@@ -46,5 +33,17 @@
   .Mail form textarea {
     width: 305px;
     height: 220px;
+  }
+  pre {
+    max-width: 100%;
+    overflow: auto;
+  }
+
+  [data-rehype-pretty-code-fragment] div {
+    top: 10px;
+  }
+
+  [data-rehype-pretty-code-fragment] code .line span {
+    font-size: 12.4px;
   }
 }
