@@ -73,7 +73,7 @@ const Mail = (): JSX.Element => {
         required
       />
 
-      <label htmlFor="massage">Message</label>
+      <label htmlFor="massage">Message*</label>
       <textarea
         className="textarea"
         value={message}
