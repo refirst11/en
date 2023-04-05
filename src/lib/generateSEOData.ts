@@ -16,7 +16,7 @@ const generateSEOData = ({ title, subtitle, date }: SeoData) => {
       },
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title: title,
       description: subtitle,
       images: `${process.env.PROD_URL}/api/ogp?title=${title}&date=${date}`,
