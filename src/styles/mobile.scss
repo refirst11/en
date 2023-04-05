@@ -34,16 +34,4 @@
     width: 305px;
     height: 220px;
   }
-  pre {
-    max-width: 100%;
-    overflow: auto;
-  }
-
-  [data-rehype-pretty-code-fragment] div {
-    top: 10px;
-  }
-
-  [data-rehype-pretty-code-fragment] code .line span {
-    font-size: 12.4px;
-  }
 }
