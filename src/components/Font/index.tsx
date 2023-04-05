@@ -12,8 +12,6 @@ const GlobalFont = (): JSX.Element => {
         }
         code {
           font-family: ${source.style.fontFamily}, 'ui-monospace', 'monospace';
-          font-size: 12.4px;
-          -webkit-text-size-adjust: none;
         }
         p code {
           font-family: ${inter.style.fontFamily}, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
