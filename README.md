@@ -6,8 +6,8 @@
 - [Shiki](https://shiki.matsu.io/) - is minimal and cool syntax highlighting
 
 ## License
+source code is licensed under the MIT license.  
+The images from alum a licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).  
 
-The images from alum.ico and png a licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).  
-Please adhere to the terms of the CC BY-NC-ND 4.0 license and refrain from using the material illegally.
 
-source code is licensed under the MIT license.
+
