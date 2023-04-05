@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import styles from 'styles/pages/ArticlesStyles';
+import styles from 'components/InfiniteScroll/styles';
 import PostsProps from 'types/PostsProps';
 
 type keywordProps = {

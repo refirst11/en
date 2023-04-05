@@ -1,6 +1,6 @@
 import { usePathname } from 'next/navigation';
 import { Fragment } from 'react';
-import styles from 'styles/components/TextStyles';
+import styles from './styles';
 
 const Text = (): JSX.Element => {
   const pathname = usePathname();

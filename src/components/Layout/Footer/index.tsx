@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Fragment } from 'react';
-import styles from 'styles/components/FooterStyles';
+import styles from './styles';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
 import ScrollToTop from 'components/ScrollToTop';

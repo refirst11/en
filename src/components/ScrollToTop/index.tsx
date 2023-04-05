@@ -1,6 +1,6 @@
 import useHeaderScroll from 'hooks/useHeaderScroll';
 import { Fragment } from 'react';
-import styles from 'styles/components/ReturnStyles';
+import styles from './styles';
 import { BiUpArrowAlt } from 'react-icons/bi';
 
 const ScrollToTop = () => {

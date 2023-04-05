@@ -1,5 +1,4 @@
 'use client';
-import styles from 'styles/pages/ArticlesStyles';
 
 import InfiniteScroll from 'components/InfiniteScroll';
 import SearchResults from 'components/SearchResults';
@@ -12,7 +11,6 @@ const PostsData = ({ posts }: PostsProps) => {
     <Fragment>
       <input value={keyword} type="text" onChange={(e) => setKeyword(e.target.value)} className="search_box" />
       {keyword ? <SearchResults posts={posts} keyword={keyword} /> : <InfiniteScroll posts={posts.slice(0, 3)} />}
-      <style jsx>{styles}</style>
     </Fragment>
   );
 };

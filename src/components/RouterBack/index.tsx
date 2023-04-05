@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { IoIosArrowRoundBack } from 'react-icons/io';
-import styles from 'styles/components/RouterBack';
+import styles from './styles';
 
 const RouterBack = () => {
   const router = useRouter();

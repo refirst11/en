@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import isCurrentLink from 'lib/isCurrentLink';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
-import styles from 'styles/components/HeaderStyles';
+import styles from './styles';
 import { RiQuillPenLine, RiHome4Line } from 'react-icons/ri';
 
 const Header = (): JSX.Element => {

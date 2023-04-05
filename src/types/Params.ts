@@ -1,5 +1,6 @@
 type Params = {
-  slug: string;
+  params: {
+    slug: string;
+  };
 };
-
 export default Params;

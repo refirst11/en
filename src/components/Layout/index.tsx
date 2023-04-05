@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import Head from 'next/head';
 import Header from 'components/Layout/Header';
 import Footer from 'components/Layout/Footer';
 import { usePathname } from 'next/navigation';

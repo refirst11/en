@@ -2,13 +2,13 @@
 
 import Link from 'next/link';
 import { Fragment, useEffect, useCallback } from 'react';
-import styles from 'styles/pages/ArticlesStyles';
 import useSWRInfinite from 'swr/infinite';
 import getKey from 'lib/getKey';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import pageSize from 'lib/pageSize';
 import PostsData from 'types/PostsData';
 import PostsProps from 'types/PostsProps';
+import styles from './styles';
 
 const Infinite = ({ posts }: PostsProps): JSX.Element => {
   const { data, size, setSize, isLoading } = useSWRInfinite<PostsData>(getKey, {
