@@ -34,7 +34,10 @@
   }
 }
 
-html,
+html {
+  text-size-adjust: 100%;
+}
+
 body {
   position: relative;
   transition-duration: 0.8s;

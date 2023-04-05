@@ -29,7 +29,7 @@ const styles = css`
     transition-duration: 0.4s;
   }
 
-  .rotateCircle:hover {
+  .rotateCircle {
     display: flex;
     justify-content: center;
     align-items: center;
