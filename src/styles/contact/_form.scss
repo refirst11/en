@@ -26,15 +26,15 @@ input {
   width: 100%;
   height: 20px;
   border-radius: 2px;
-  box-shadow: 0 0 1px var(--color-shadow);
-  background: var(--color-bg);
+  box-shadow: 0 0 2px -0.5px var(--color-shadow);
+  background: transparent;
 }
 
 textarea {
   margin-right: auto;
   margin-left: auto;
   color: var(--color-second-color);
-  background: var(--color-bg);
+  background: transparent;
   border: none;
   outline: none;
   width: 400px;
@@ -42,7 +42,7 @@ textarea {
   resize: vertical;
   overflow: auto;
   font-size: 12px;
-  box-shadow: 0 0 1px var(--color-shadow);
+  box-shadow: 0 0 2px -0.5px var(--color-shadow);
 }
 
 label {
