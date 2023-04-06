@@ -1,10 +1,12 @@
+'use client';
+
 import useBottomActive from 'hooks/useBottomActive';
 import { Fragment } from 'react';
 import styles from './styles';
 import { IoIosArrowRoundUp } from 'react-icons/io';
 
 const ScrollToTop = () => {
-  const { isBottomActive } = useBottomActive(1);
+  const { isBottomActive } = useBottomActive(120);
   const returnTop = () => {
     window.scrollTo({
       top: 0,

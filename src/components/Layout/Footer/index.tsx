@@ -3,7 +3,6 @@ import { Fragment } from 'react';
 import styles from './styles';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
-import ScrollToTop from 'components/ScrollToTop';
 
 const Footer = (): JSX.Element => {
   return (
@@ -23,7 +22,6 @@ const Footer = (): JSX.Element => {
             </a>
           </div>
         </div>
-        <ScrollToTop />
       </footer>
       <style jsx>{styles}</style>
     </Fragment>

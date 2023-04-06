@@ -6,6 +6,7 @@ import getSlugPath from 'lib/getSlugPath';
 import RouterBack from 'components/RouterBack';
 import styles from './styles.module.scss';
 import generateSEOData from 'lib/generateSEOData';
+import ScrollToTop from 'components/ScrollToTop';
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const post = await getPostData(params.slug);
@@ -23,6 +24,7 @@ const Page = async ({ params }: Params) => {
       </div>
       <h1 className={styles.color_h1}>{post.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <ScrollToTop />
     </>
   );
 };
