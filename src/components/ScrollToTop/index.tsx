@@ -6,7 +6,7 @@ import styles from './styles';
 import { IoIosArrowRoundUp } from 'react-icons/io';
 
 const ScrollToTop = () => {
-  const { isBottomActive } = useBottomActive(120);
+  const { isBottomActive } = useBottomActive(20);
   const returnTop = () => {
     window.scrollTo({
       top: 0,

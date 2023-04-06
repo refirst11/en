@@ -10,7 +10,7 @@ const useBottomActive = (activePoint: number) => {
       const currentScroll = window.pageYOffset;
       const distanceFromBottom = contentHeight - (currentScroll + windowHeight);
 
-      if (distanceFromBottom <= activePoint && distanceFromBottom > 70) {
+      if (distanceFromBottom <= activePoint) {
         setIsBottomActive(true);
       } else {
         setIsBottomActive(false);

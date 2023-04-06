@@ -11,7 +11,7 @@ import PostsProps from 'types/PostsProps';
 import styles from './styles';
 
 const Infinite = ({ posts }: PostsProps): JSX.Element => {
-  const { data, size, setSize, isLoading } = useSWRInfinite<PostsData>(getKey, {
+  const { data, size, setSize } = useSWRInfinite<PostsData>(getKey, {
     revalidateFirstPage: false,
     fallbackData: posts,
   });
@@ -36,7 +36,7 @@ const Infinite = ({ posts }: PostsProps): JSX.Element => {
       <InfiniteScroll
         next={loadMorePosts}
         hasMore={hasMore}
-        loader={isLoading && <div className="spinner" />}
+        loader={size > 1 && <div className="spinner" />}
         dataLength={size}
       >
         <ul>
