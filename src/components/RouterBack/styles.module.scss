@@ -1,0 +1,34 @@
+.post_to_posts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 142px;
+  transform: translateY(-100%);
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  color: var(--color-second-color);
+}
+.mail_to_posts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 120px;
+  transform: translateY(-100%);
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  color: var(--color-second-color);
+}
+
+@media screen and (max-width: 739.98px) {
+  .post_to_posts {
+    right: 18px;
+  }
+
+  .mail_to_posts {
+    right: 6px;
+  }
+}

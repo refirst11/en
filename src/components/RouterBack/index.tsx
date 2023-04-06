@@ -2,18 +2,24 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 import { IoIosArrowRoundBack } from 'react-icons/io';
-import styles from './styles';
+import styles from './styles.module.scss';
+import Link from 'next/link';
 
 const RouterBack = () => {
-  const router = useRouter();
   const pathname = usePathname();
+  const router = useRouter();
 
   return (
     <>
-      <button className={pathname === '/mail' ? 'router_back-form' : 'router_back'}>
-        <IoIosArrowRoundBack size={24} onClick={router.back} />
-      </button>
-      <style jsx>{styles}</style>
+      {pathname.includes('/posts/') ? (
+        <Link href="/posts" className={styles.post_to_posts}>
+          <IoIosArrowRoundBack size={24} />
+        </Link>
+      ) : (
+        <button className={styles.mail_to_posts}>
+          <IoIosArrowRoundBack size={24} onClick={router.back} />
+        </button>
+      )}
     </>
   );
 };

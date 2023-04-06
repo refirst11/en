@@ -17,23 +17,28 @@ form {
   white-space: nowrap;
 }
 
-.input {
-  margin-right: auto;
-  margin-left: auto;
-  color: var(--color-second-color);
-  border: none;
+.area_container {
+  box-shadow: inset 0 0 2px -0.5px var(--color-shadow);
+  border-radius: 4px;
   width: 100%;
-  height: 20px;
-  border-radius: 2px;
-  box-shadow: 0 0 2px -0.5px var(--color-shadow);
-  background: transparent;
 }
 
-.textarea {
+input {
   margin-right: auto;
   margin-left: auto;
   color: var(--color-second-color);
-  background: transparent;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 20px;
+}
+
+textarea {
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--color-second-color);
+  background: none;
   border: none;
   outline: none;
   width: 400px;
@@ -41,13 +46,12 @@ form {
   resize: vertical;
   overflow: auto;
   font-size: 12px;
-  box-shadow: 0 0 2px -0.5px var(--color-shadow);
 }
 
 label {
   display: block;
   flex-direction: column;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .massageButton {

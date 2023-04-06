@@ -16,11 +16,9 @@ const Mail = (): JSX.Element => {
     const isValid = validateEmail(mail);
     isValid &&
       (await Submit(),
-      [setMail, setName, setMessage].map((setState) =>
-        setTimeout(() => {
-          setState('');
-        }, 1000)
-      ));
+      setTimeout(() => {
+        setMail(''), setName(''), setMessage('');
+      }, 1400));
     setError(!isValid);
   };
 
@@ -35,51 +33,51 @@ const Mail = (): JSX.Element => {
 
   const MailFormDom = (
     <form>
-      <AnimatePresence mode="wait">
-        <motion.div
-          onClick={() => setInitialize(!useInitialize)}
-          initial={{ opacity: 1, scale: 1, y: -2 }}
-          animate={{ opacity: 1, scale: 1, y: 2 }}
-          exit={{ opacity: 1, x: 0 }}
-          transition={{ type: 'spring', duration: 1, bounce: 1 }}
-        >
-          <label htmlFor="status" className="error_style">
-            {error === null ? '' : error === false ? 'complete' : 'email is required for available'}
-          </label>
-        </motion.div>
-      </AnimatePresence>
+      <motion.div
+        onClick={() => setInitialize(!useInitialize)}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.4 }}
+      >
+        <label htmlFor="status" className="error_style">
+          {error === null ? '' : error === false ? 'complete' : '*email is required for available'}
+        </label>
+      </motion.div>
 
       <label htmlFor="name">Name*</label>
-      <input
-        className="input"
-        value={name}
-        type="text"
-        name="name"
-        aria-label="Name area"
-        onChange={(e) => setName(e.target.value)}
-        required
-      />
+      <div className="area_container">
+        <input
+          value={name}
+          type="text"
+          name="name"
+          aria-label="Name area"
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+      </div>
 
       <label htmlFor="email">Mail*</label>
-      <input
-        className="input"
-        value={mail}
-        type="text"
-        name="name"
-        aria-label="Name area"
-        onChange={(e) => setMail(e.target.value)}
-        required
-      />
+      <div className="area_container">
+        <input
+          value={mail}
+          type="text"
+          name="name"
+          aria-label="Name area"
+          onChange={(e) => setMail(e.target.value)}
+          required
+        />
+      </div>
 
       <label htmlFor="massage">Message*</label>
-      <textarea
-        className="textarea"
-        value={message}
-        name="massage"
-        aria-label="Massage area"
-        onChange={(e) => setMessage(e.target.value)}
-        required
-      />
+      <div className="area_container">
+        <textarea
+          value={message}
+          name="massage"
+          aria-label="Massage area"
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        />
+      </div>
       <div onClick={Send} className={`massageButton ${error === false ? 'noAction' : null}`}>
         {error === null ? 'Submit' : error === false ? 'Success!' : 'Retry!'}
       </div>
@@ -94,29 +92,33 @@ const Mail = (): JSX.Element => {
         <div className="success">success!!</div>
       </div>
       {error === null ? (
-        MailFormDom
+        <AnimatePresence mode="wait">{error === null && <motion.div>{MailFormDom}</motion.div>}</AnimatePresence>
       ) : error === false ? (
         <AnimatePresence mode="wait">
-          <motion.div
-            initial={{ opacity: 1, scale: 1 }}
-            animate={{ opacity: 0, scale: 0 }}
-            exit={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
-          >
-            {MailFormDom}
-          </motion.div>
+          {!error && (
+            <motion.div
+              key="1"
+              initial={{ opacity: 1, scale: 1 }}
+              animate={{ opacity: 0, scale: 0 }}
+              exit={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 1 }}
+            >
+              {MailFormDom}
+            </motion.div>
+          )}
         </AnimatePresence>
       ) : (
         <AnimatePresence mode="wait">
-          <motion.div
-            onClick={() => setInitialize(!useInitialize)}
-            initial={{ opacity: 1, scale: 1, x: -5 }}
-            animate={{ opacity: 1, scale: 1, x: 5 }}
-            exit={{ opacity: 1, x: 0 }}
-            transition={{ type: 'spring', duration: 1, bounce: 1 }}
-          >
-            {MailFormDom}
-          </motion.div>
+          {error && (
+            <motion.div
+              key="2"
+              onClick={() => setError(null)}
+              animate={{ y: -4, transition: { type: 'spring', duration: 1, bounce: 1 } }}
+              exit={{ y: 0 }}
+            >
+              {MailFormDom}
+            </motion.div>
+          )}
         </AnimatePresence>
       )}
     </div>
