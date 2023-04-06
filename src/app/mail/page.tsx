@@ -11,28 +11,26 @@ const Mail = (): JSX.Element => {
   const { mail, setMail, name, setName, message, setMessage, Submit } = useMail();
   const [error, setError] = useState<null | boolean>(null);
   const [useInitialize, setInitialize] = useState(true);
-  const Send = (): void => {
-    if (validateEmail(mail) === true) {
-      Submit();
-      setMail('');
-      setName('');
-      setMessage('');
-    } else false;
+
+  const Send = async (): Promise<void> => {
+    const isValid = validateEmail(mail);
+    isValid &&
+      (await Submit(),
+      [setMail, setName, setMessage].map((setState) =>
+        setTimeout(() => {
+          setState('');
+        }, 1000)
+      ));
+    setError(!isValid);
   };
 
-  const validateEmail = (checkString: string): boolean => {
+  const validateEmail = (email: string): boolean => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (regex.test(checkString) === true) {
-      setError(false);
-      return true;
-    } else {
-      setError(true);
-      return false;
-    }
+    return regex.test(email);
   };
 
   useEffect(() => {
-    setError(null);
+    return setError(null);
   }, [useInitialize]);
 
   const MailFormDom = (
@@ -46,7 +44,7 @@ const Mail = (): JSX.Element => {
           transition={{ type: 'spring', duration: 1, bounce: 1 }}
         >
           <label htmlFor="status" className="error_style">
-            {error === null ? '' : error === false ? 'd0n3s' : 'email is required for available'}
+            {error === null ? '' : error === false ? 'complete' : 'email is required for available'}
           </label>
         </motion.div>
       </AnimatePresence>
