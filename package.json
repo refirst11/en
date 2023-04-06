@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@types/react": "^18.0.19",
+    "@vercel/analytics": "^0.1.11",
     "@vercel/og": "^0.0.21",
     "classnames": "^2.3.1",
     "date-fns": "^2.29.2",
