@@ -1,10 +1,10 @@
-import useHeaderScroll from 'hooks/useHeaderScroll';
+import useBottomActive from 'hooks/useBottomActive';
 import { Fragment } from 'react';
 import styles from './styles';
-import { BiUpArrowAlt } from 'react-icons/bi';
+import { IoIosArrowRoundUp } from 'react-icons/io';
 
 const ScrollToTop = () => {
-  const { isHeaderActive } = useHeaderScroll(1);
+  const { isBottomActive } = useBottomActive(1);
   const returnTop = () => {
     window.scrollTo({
       top: 0,
@@ -16,9 +16,9 @@ const ScrollToTop = () => {
     <Fragment>
       <button
         onClick={returnTop}
-        className={`ReturnTopPosition rotateCircle ${isHeaderActive ? 'NoActive' : 'Active'}`}
+        className={`ReturnTopPosition rotateCircle ${isBottomActive ? 'isBottom' : 'isNotBottom'}`}
       >
-        <BiUpArrowAlt size={18} />
+        <IoIosArrowRoundUp size={18} />
       </button>
       <style jsx>{styles}</style>
     </Fragment>

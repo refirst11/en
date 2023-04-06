@@ -34,7 +34,7 @@ const styles = css`
   }
 
   .spinner {
-    position: absolute;
+    position: fixed;
     bottom: 60px;
     right: 60px;
     width: 30px;

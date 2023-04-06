@@ -4,27 +4,25 @@ const styles = css`
   .ReturnTopPosition {
     z-index: 4;
     position: fixed;
-    color: var(--color-text);
-    background: var(--color-bg);
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    right: 30px;
-    bottom: 80px;
-    border-top: solid 2px gray;
-    border-left: solid 2px gray;
-    border-bottom: solid 2px #111;
-    border-right: solid 2px #111;
+    color: var(--color-second-color);
+    height: 80px;
+    width: 80px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
     cursor: pointer;
   }
 
-  .NoActive {
+  .isBottom {
     opacity: 1;
+    transform: translateY(0px);
     transition-duration: 0.4s;
   }
 
-  .Active {
+  .isNotBottom {
     opacity: 0;
+    transform: translateY(200px);
     visibility: hidden;
     transition-duration: 0.4s;
   }
@@ -33,29 +31,6 @@ const styles = css`
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .rotateCircle:hover {
-    transition-duration: 0.4s;
-    animation: 0.8s rotating;
-  }
-
-  @keyframes rotating {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    25% {
-      transform: rotate(45deg);
-    }
-
-    50% {
-      transform: rotate(-45deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
   }
 `;
 
