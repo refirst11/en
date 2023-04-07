@@ -3,15 +3,15 @@ import Image from 'next/image';
 import profilePic from '@public/alum.png';
 import generateSEOData from 'lib/generateSEOData';
 
-export const metadata: Metadata = generateSEOData({ title: 'su-pull', subtitle: 'About', date: '1994' });
+export const metadata: Metadata = generateSEOData({ title: 'Home', subtitle: 'About', date: '1994' });
 
 const Page = (): JSX.Element => {
   return (
     <>
       <Image className="main_icon" src={profilePic} alt="icon" quality={100} width={80} height={80} />
       <p className="p__width">
-        I am a designer based in Tokyo, creating <a href="https://github.com/su-pull/macintosh-ahk">Juster</a>, key
-        bindings, and macros. I have self taught drawing and design, My incentive is to be involved in the most
+        I am a designer developer based in Tokyo, creating <a href="https://github.com/su-pull/macintosh-ahk">Juster</a>
+        , key bindings, and macros. I have self taught drawing and design, My incentive is to be involved in the most
         cutting-edge the fields.
       </p>
       <hr />

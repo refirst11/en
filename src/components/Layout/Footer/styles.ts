@@ -1,9 +1,15 @@
 import css from 'styled-jsx/css';
 
 const styles = css`
+  /* .under {
+    text-decoration: solid underline 0.1px;
+    cursor: help;
+  } */
   .footer_text {
     position: relative;
     font-size: 12px;
+    text-align: left;
+    color: var(--color-light);
   }
   .footer_icon {
     position: static;

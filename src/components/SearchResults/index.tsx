@@ -11,7 +11,7 @@ const SearchResults = ({ posts, keyword }: PostsProps & keywordProps) => {
     <ul>
       {posts.map(
         ({ slug, title, subtitle, date }) =>
-          title.toLocaleLowerCase().match(keyword.toLocaleLowerCase()) && (
+          (title.toLocaleLowerCase().match(keyword.toLocaleLowerCase()) || date.match(keyword)) && (
             <li key={slug}>
               <Link href={`/posts/${slug}`} className="container">
                 <h2 className="title">

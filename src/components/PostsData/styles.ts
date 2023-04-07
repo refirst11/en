@@ -10,8 +10,9 @@ const styles = css`
   }
 
   .search_container {
-    box-shadow: inset 0 0 2px -0.5px var(--color-shadow);
-    border-radius: 4px;
+    box-shadow: 0 0 2px -0.4px var(--color-shadow);
+    border: solid 0.4px var(--color-border);
+    border-radius: 2px;
     width: fit-content;
     margin-left: 28px;
   }

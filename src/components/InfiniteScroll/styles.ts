@@ -34,16 +34,16 @@ const styles = css`
   }
 
   .spinner {
-    position: fixed;
-    bottom: 60px;
-    right: 60px;
-    width: 30px;
-    height: 30px;
+    position: absolute;
+    bottom: 120px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    border-top: 3px solid rgb(72 72 72 / 20%);
-    border-right: 3px solid rgb(72 72 72 / 20%);
-    border-bottom: 3px solid rgb(72 72 72 / 20%);
-    border-left: 3px solid rgb(206, 136, 136);
+    border-top: 2px solid rgb(72 72 72 / 20%);
+    border-right: 2px solid rgb(72 72 72 / 20%);
+    border-bottom: 2px solid rgb(72 72 72 / 20%);
+    border-left: 2px solid rgb(206, 136, 136);
     animation: spin 1.2s linear infinite;
   }
 

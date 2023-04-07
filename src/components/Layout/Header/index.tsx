@@ -1,4 +1,4 @@
-import Text from 'components/Text';
+import Text from 'components/Layout/Text';
 import { Fragment, useState, useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 import isCurrentLink from 'lib/isCurrentLink';

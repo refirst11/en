@@ -4,7 +4,7 @@ import PostsData from 'components/PostsData';
 import generateSEOData from 'lib/generateSEOData';
 
 export const metadata: Metadata = generateSEOData({
-  title: 'su-pull - posts',
+  title: 'Posts',
   subtitle: 'posts articles',
   date: undefined,
 });
