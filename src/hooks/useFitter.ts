@@ -1,9 +1,9 @@
-import { RefObject, useState, useInsertionEffect } from 'react';
+import { RefObject, useState, useEffect } from 'react';
 
 const useLayoutAdjuster = (ref: RefObject<HTMLElement>) => {
   const [isFitted, setIsFitted] = useState(true);
 
-  useInsertionEffect(() => {
+  useEffect(() => {
     const observer = new ResizeObserver((entries) => {
       entries.forEach((entry) => {
         setIsFitted(entry.target.clientHeight < window.innerHeight);
