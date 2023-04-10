@@ -11,7 +11,8 @@ import PostsProps from 'types/PostsProps';
 import styles from './styles';
 
 const Infinite = ({ posts }: PostsProps): JSX.Element => {
-  const { data, size, setSize, isValidating } = useSWRInfinite<PostsData>(getKey, {
+  // isValidating and Spinner UI is seamless ux.
+  const { data, size, setSize } = useSWRInfinite<PostsData>(getKey, {
     revalidateFirstPage: false,
     fallbackData: posts,
   });
@@ -33,7 +34,12 @@ const Infinite = ({ posts }: PostsProps): JSX.Element => {
 
   return (
     <Fragment>
-      <InfiniteScroll next={loadMorePosts} hasMore={hasMore} loader={''} dataLength={size}>
+      <InfiniteScroll
+        next={loadMorePosts}
+        hasMore={hasMore}
+        loader={size > 1 && <div className="spinner" />}
+        dataLength={size}
+      >
         <ul>
           {flattenedData?.map(({ slug, title, subtitle, date }) => (
             <li key={slug}>
@@ -46,7 +52,6 @@ const Infinite = ({ posts }: PostsProps): JSX.Element => {
               </Link>
             </li>
           ))}
-          {isValidating && <div className="spinner" />}
         </ul>
         {hasMore && (
           <button className="loading_ui" onClick={() => setSize(size + 1)}>

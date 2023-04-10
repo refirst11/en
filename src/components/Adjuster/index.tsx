@@ -2,8 +2,8 @@
 
 import { ReactNode, useRef } from 'react';
 import { usePathname } from 'next/navigation';
-import useFitter from 'react-page-fitter';
-// import useFitter from 'hooks/useFitter';
+// import useFitter from 'react-page-fitter';
+import useFitter from 'hooks/useFitter';
 
 type AdjusterProps = {
   children: ReactNode;
