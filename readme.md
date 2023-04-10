@@ -1,3 +1,6 @@
+[![Build Status](https://img.shields.io/badge/build-passing-lightblue)](https://www.su-pull.net/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-lightblue)](https://opensource.org/licenses/MIT)
+
 ## Using
 
 - [Next.js](https://nextjs.org/) - The standard web static generate framework
