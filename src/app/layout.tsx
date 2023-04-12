@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   },
 };
 
+export const fetchCache = 'force-cache';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

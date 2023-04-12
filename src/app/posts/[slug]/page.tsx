@@ -7,13 +7,18 @@ import RouterBack from 'components/RouterBack';
 import styles from './styles.module.scss';
 import generateSEOData from 'lib/generateSEOData';
 
+const getPost = async (slug: string) => {
+  const post = await getPostData(slug);
+  return post;
+};
+
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const post = await getPostData(params.slug);
+  const post = await getPost(params.slug);
   return generateSEOData({ title: post.title, subtitle: post.subtitle, date: post.date });
 }
 
-const Page = async ({ params }: Params) => {
-  const post = await getPostData(params.slug);
+async function Page({ params }: Params) {
+  const post = await getPost(params.slug);
 
   return (
     <>
@@ -25,7 +30,7 @@ const Page = async ({ params }: Params) => {
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
     </>
   );
-};
+}
 
 export async function generateStaticParams() {
   const posts = await getSlugPath();
