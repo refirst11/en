@@ -9,8 +9,13 @@ export const metadata: Metadata = generateSEOData({
   date: undefined,
 });
 
-async function Page() {
+async function getPosts() {
   const posts = await getAllPosts();
+  return posts;
+}
+
+async function Page() {
+  const posts = await getPosts();
 
   return (
     <>
