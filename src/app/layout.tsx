@@ -4,6 +4,7 @@ import AppProvider from 'components/AppProvider';
 import StyledJsxRegistry from './registry';
 import Adjuster from 'components/Adjuster';
 import { Metadata } from 'next';
+import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   icons: {
@@ -11,9 +12,13 @@ export const metadata: Metadata = {
   },
 };
 
+type RootLayoutProps = {
+  children: ReactNode;
+};
+
 export const fetchCache = 'force-cache';
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body>

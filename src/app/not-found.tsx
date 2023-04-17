@@ -15,7 +15,7 @@ const NotFound = (): JSX.Element => {
       <p>Request page is not found</p>
       <dl>
         <Link href="/" className="redLinks scale">
-          Return to TOP page
+          Return to Top page
         </Link>
       </dl>
     </>

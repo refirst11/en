@@ -13,7 +13,7 @@ const PostsData = ({ posts }: PostsProps) => {
       <div className="search_container">
         <input value={keyword} type="text" onChange={(e) => setKeyword(e.target.value)} className="search_box" />
       </div>
-      {keyword ? <SearchResults posts={posts} keyword={keyword} /> : <InfiniteScroll posts={posts.slice(0, 2)} />}
+      {keyword ? <SearchResults posts={posts} keyword={keyword} /> : <InfiniteScroll posts={posts.slice(0, 3)} />}
       <style jsx>{styles}</style>
     </Fragment>
   );
