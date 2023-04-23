@@ -12,6 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
     "@vercel/analytics": "^0.1.11",
     "@vercel/og": "^0.0.21",
     "classnames": "^2.3.1",
@@ -26,7 +27,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-infinite-scroll-component": "^6.1.0",
-    "react-page-fitter": "^1.0.0",
+    "react-page-fitter": "^1.1.4",
     "rehype-pretty-code": "^0.9.4",
     "rehype-stringify": "^9.0.3",
     "remark": "^14.0.2",

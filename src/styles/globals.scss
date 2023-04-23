@@ -92,7 +92,7 @@ button {
   }
 }
 
-.layout_center_content {
+.fit_in {
   position: absolute;
   inset: 0%;
   margin: auto;
@@ -100,7 +100,7 @@ button {
   height: fit-content;
 }
 
-.layout_top_content {
+.fit_out {
   position: relative;
 }
 
