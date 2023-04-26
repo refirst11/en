@@ -9,12 +9,13 @@ type AdjusterProps = {
 };
 
 const Adjuster = ({ children }: AdjusterProps): JSX.Element => {
-  const isFit = useFitter();
   const pathname = usePathname();
+  const isFit = useFitter();
   return (
     <>
       {isFit !== undefined && (
         <Main
+          location={pathname}
           className={`pages_root ${pathname.includes('/posts/') && 'slug_margin_top'}`}
           classFitIn="fit_in"
           classFitOut="fit_out"
