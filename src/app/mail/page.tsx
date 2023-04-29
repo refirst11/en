@@ -87,7 +87,7 @@ const Mail = (): JSX.Element => {
   return (
     <div className="Mail">
       <RouterBack />
-      <div className="layout_center_content">
+      <div className="fit_in">
         <Image className="visited_icon" src={profilePic} alt="art" quality={100} width={80} height={80} />
         <div className="success">success!!</div>
       </div>
