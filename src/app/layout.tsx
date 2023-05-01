@@ -2,7 +2,7 @@ import 'styles/globals.scss';
 import 'styles/mobile.scss';
 import AppProvider from 'components/AppProvider';
 import StyledJsxRegistry from './registry';
-import Adjuster from 'components/Adjuster';
+import PageRoot from 'components/PageRoot';
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body>
         <StyledJsxRegistry>
           <AppProvider>
-            <Adjuster>{children}</Adjuster>
+            <PageRoot>{children}</PageRoot>
           </AppProvider>
         </StyledJsxRegistry>
       </body>

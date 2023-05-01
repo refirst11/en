@@ -8,7 +8,7 @@ type AdjusterProps = {
   children: ReactNode;
 };
 
-const Adjuster = ({ children }: AdjusterProps): JSX.Element => {
+const PageRoot = ({ children }: AdjusterProps): JSX.Element => {
   const pathname = usePathname();
   const isFit = useFitter();
   return (
@@ -27,4 +27,4 @@ const Adjuster = ({ children }: AdjusterProps): JSX.Element => {
   );
 };
 
-export default Adjuster;
+export default PageRoot;
