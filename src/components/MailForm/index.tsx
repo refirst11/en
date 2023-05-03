@@ -10,16 +10,18 @@ import styles from './styles.module.scss';
 
 const MailForm = (): JSX.Element => {
   const { mail, setMail, name, setName, message, setMessage, Submit } = useMail();
-  const [error, setError] = useState<null | boolean>(null);
-
+  const [error, setError] = useState<undefined | boolean>(undefined);
+  const [isSended, setIsSended] = useState(false);
   const Send = async (): Promise<void> => {
+    if (isSended) return;
     const isValid = validateEmail(mail);
+    setIsSended(isValid && true);
+    setError(!isValid);
     isValid &&
       (await Submit(),
       setTimeout(() => {
         setMail(''), setName(''), setMessage('');
       }, 1400));
-    setError(!isValid);
   };
 
   const validateEmail = (email: string): boolean => {
@@ -31,7 +33,7 @@ const MailForm = (): JSX.Element => {
     <form>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.4 }}>
         <label htmlFor="status" className={styles.error_style}>
-          {error === null ? '' : error === false ? 'complete' : '*email is required for available'}
+          {error === undefined ? '' : error === false ? 'complete' : '*email is required for available'}
         </label>
       </motion.div>
 
@@ -69,9 +71,9 @@ const MailForm = (): JSX.Element => {
           required
         />
       </div>
-      <div onClick={Send} className={styles.massageButton}>
-        {error === null ? 'Submit' : error === false ? 'Success!' : 'Retry!'}
-      </div>
+      <button type="button" disabled={error} onClick={Send} className={styles.massageButton}>
+        {error === undefined ? 'Submit' : error === false ? 'Success!' : 'Retry!'}
+      </button>
     </form>
   );
 
@@ -82,8 +84,8 @@ const MailForm = (): JSX.Element => {
         <Image className={styles.visited_icon} src={profilePic} alt="art" quality={100} width={80} height={80} />
         <div className={styles.success}>success!!</div>
       </div>
-      {error === null ? (
-        <AnimatePresence mode="wait">{error === null && <motion.div>{MailFormDom}</motion.div>}</AnimatePresence>
+      {error === undefined ? (
+        <AnimatePresence mode="wait">{error === undefined && <motion.div>{MailFormDom}</motion.div>}</AnimatePresence>
       ) : error === false ? (
         <AnimatePresence mode="wait">
           {!error && (
@@ -103,7 +105,7 @@ const MailForm = (): JSX.Element => {
           {error && (
             <motion.div
               key="2"
-              onClick={() => setError(null)}
+              onClick={() => setError(undefined)}
               animate={{ y: -4, transition: { type: 'spring', duration: 1, bounce: 1 } }}
               exit={{ y: 0 }}
             >
