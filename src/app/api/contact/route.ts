@@ -1,7 +1,7 @@
 import { createTransport } from 'nodemailer';
-import { NextResponse, NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 
-export async function POST(request: NextRequest): Promise<NextResponse> {
+export async function POST(request: Request): Promise<NextResponse> {
   const body = await request.text();
   const transporter = createTransport({
     host: 'smtp.gmail.com',
@@ -13,7 +13,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     },
   });
 
-  transporter.sendMail({
+  await transporter.sendMail({
     to: process.env.MAIL_ADDRESS,
     subject: 'Contact message',
     text: body,

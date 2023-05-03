@@ -11,8 +11,8 @@ const Page = (): JSX.Element => {
       <Image className="main_icon" src={profilePic} alt="icon" quality={100} width={80} height={80} />
       <p className="p__width">
         I am a designer developer based in Tokyo. <br />I spend my time on the{' '}
-        <a href="https://projects-s.vercel.app/">projects</a>, I was self taught drawing and design, My incentive is to
-        be involved in the most cutting-edge the fields.
+        <a href="https://works.su-pull.net/">projects</a>, I was self taught drawing and design, My incentive is to be
+        involved in the most cutting-edge the fields.
       </p>
       <hr />
       <h1>Career</h1>

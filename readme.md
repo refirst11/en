@@ -1,15 +1,15 @@
-[![Build Status](https://img.shields.io/badge/build-passing-lightblue)](https://www.su-pull.net/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-lightblue)](https://opensource.org/licenses/MIT)
+![code size](https://img.shields.io/github/languages/code-size/su-pull/www.su-pull.net)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
-## Using
+## Stacks
 
-- [Next.js](https://nextjs.org/) - The standard web static generate framework
-- [Styled JSX](https://nextjs.org/blog/styling-next-with-styled-jsx) - css scopes component in simple standard
-- [Vercel](https://vercel.com/) - a very faster server
+- [Next.js](https://nextjs.org/) - standard web static generate React framework this App Router
+- [Vercel](https://vercel.com/) - very faster Next.js server
+- [Rehype Pretty Code](https://rehype-pretty-code.netlify.app/) - markdown syntax highlight
 
 ## License
-source code is licensed under the MIT license.  
-The images from alum a licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).  
 
+MIT license.
 
-
+You can fork this blog, deploy and start using it right next rule.  
+The images from alum a licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).

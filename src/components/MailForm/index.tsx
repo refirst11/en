@@ -80,7 +80,7 @@ const MailForm = (): JSX.Element => {
       <RouterBack />
       <div className={styles.fit_icons}>
         <Image className={styles.visited_icon} src={profilePic} alt="art" quality={100} width={80} height={80} />
-        <div className="success">success!!</div>
+        <div className={styles.success}>success!!</div>
       </div>
       {error === null ? (
         <AnimatePresence mode="wait">{error === null && <motion.div>{MailFormDom}</motion.div>}</AnimatePresence>

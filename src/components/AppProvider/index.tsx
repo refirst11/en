@@ -6,6 +6,7 @@ import { Analytics } from '@vercel/analytics/react';
 import GlobalFont from 'components/Font';
 import fetcher from 'lib/fetcher';
 import Layout from 'components/Layout';
+import PageRoot from 'components/PageRoot';
 
 type Provider = {
   children: ReactNode;
@@ -16,7 +17,9 @@ const AppProvider = ({ children }: Provider): JSX.Element => {
     <SWRConfig value={{ fetcher }}>
       <GlobalFont />
       <Analytics mode={'production'} />
-      <Layout>{children}</Layout>
+      <Layout>
+        <PageRoot>{children}</PageRoot>
+      </Layout>
     </SWRConfig>
   );
 };
