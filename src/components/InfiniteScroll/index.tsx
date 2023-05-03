@@ -8,7 +8,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import pageSize from 'lib/pageSize';
 import PostsData from 'types/PostsData';
 import PostsProps from 'types/PostsProps';
-import styles from './styles';
+import styles from './styles.module.scss';
 
 const Infinite = ({ posts }: PostsProps): JSX.Element => {
   // isValidating and Spinner UI is seamless ux.
@@ -37,29 +37,29 @@ const Infinite = ({ posts }: PostsProps): JSX.Element => {
       <InfiniteScroll
         next={loadMorePosts}
         hasMore={hasMore}
-        loader={size > 1 && <div className="spinner" />}
+        loader={size > 1 && <div className={styles.spinner} />}
         dataLength={size}
+        className={styles.list}
       >
         <ul>
           {flattenedData?.map(({ slug, title, subtitle, date }) => (
-            <li key={slug}>
-              <Link href={`/posts/${slug}`} className="container">
-                <h2 className="title">
+            <li className={styles.list_item} key={slug}>
+              <Link href={`/posts/${slug}`} className={styles.container}>
+                <h2 className={styles.title}>
                   {title}
-                  <div className="subtitle">{subtitle}</div>
+                  <div className={styles.subtitle}>{subtitle}</div>
                 </h2>
-                <time className="time">{date}</time>
+                <time className={styles.time}>{date}</time>
               </Link>
             </li>
           ))}
         </ul>
         {hasMore && (
-          <button className="loading_ui" onClick={() => setSize(size + 1)}>
+          <button className={styles.loading_ui} onClick={() => setSize(size + 1)}>
             Loading..
           </button>
         )}
       </InfiniteScroll>
-      <style jsx>{styles}</style>
     </Fragment>
   );
 };

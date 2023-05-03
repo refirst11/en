@@ -1,14 +1,9 @@
-form {
-  z-index: 0;
-  position: relative;
-  background: var(--color-bg);
-  color: var(--color-second-color);
-  font-size: 12px;
-  border-radius: 8px;
-  padding: 5px 15px;
-  transition-duration: 0.5s;
-  box-shadow: 0 0 2px -0.4px var(--color-shadow); // light
-  border: solid 0.4px var(--color-border); // dark
+.fit_icons {
+  position: absolute;
+  inset: 0%;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
 }
 
 .error_style {
@@ -23,37 +18,6 @@ form {
   border: solid 0.4px var(--color-border); // dark
   border-radius: 4px;
   width: 100%;
-}
-
-input {
-  margin-right: auto;
-  margin-left: auto;
-  color: var(--color-second-color);
-  background: none;
-  border: none;
-  outline: none;
-  width: 100%;
-  height: 20px;
-}
-
-textarea {
-  margin-right: auto;
-  margin-left: auto;
-  color: var(--color-second-color);
-  background: none;
-  border: none;
-  outline: none;
-  width: 400px;
-  height: 300px;
-  resize: vertical;
-  overflow: auto;
-  font-size: 12px;
-}
-
-label {
-  display: block;
-  flex-direction: column;
-  margin: 8px 0;
 }
 
 .massageButton {
@@ -89,4 +53,11 @@ label {
   right: 40px;
   white-space: nowrap;
   color: rgb(64 144 200);
+}
+
+@media screen and (max-width: 739.98px) {
+  .mobile_width form textarea {
+    width: 305px;
+    height: 220px;
+  }
 }

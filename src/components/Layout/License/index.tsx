@@ -1,5 +1,7 @@
+'use client';
+
 import { useState, ReactNode } from 'react';
-import styles from './styles';
+import styles from './styles.module.scss';
 
 type LicenseProps = {
   children: ReactNode;
@@ -8,12 +10,15 @@ type LicenseProps = {
 const License = ({ children }: LicenseProps) => {
   const [show, setShow] = useState(false);
   return (
-    <span onMouseEnter={() => setTimeout(() => setShow(true), 1400)} onMouseLeave={() => setShow(false)}>
+    <span
+      className={styles.under}
+      onMouseEnter={() => setTimeout(() => setShow(true), 1400)}
+      onMouseLeave={() => setShow(false)}
+    >
       {children}
-      <span className={show ? 'visible_license' : 'hide_license'}>
+      <span className={show ? styles.visible_license : styles.hide_license}>
         The source code of this site is licensed under the MIT License.
       </span>
-      <style jsx>{styles}</style>
     </span>
   );
 };

@@ -1,7 +1,15 @@
 @import 'syntax';
-@import 'motion';
-@import 'scroll/scrollbar';
-@import 'contact/form';
+@import 'forms';
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+  border-radius: 2px;
+}
 
 * {
   box-sizing: border-box;
@@ -73,37 +81,6 @@ button {
   transform: translateX(400px) translateY(20px);
 }
 
-.pages_root {
-  text-align: left;
-  padding: 120px 0;
-
-  ul {
-    margin: 0 16px;
-  }
-
-  li {
-    margin: 8px 14px;
-    list-style-type: disc;
-    word-break: keep-all;
-  }
-
-  li p {
-    margin: 0;
-  }
-}
-
-.fit_in {
-  position: absolute;
-  inset: 0%;
-  margin: auto;
-  width: fit-content;
-  height: fit-content;
-}
-
-.fit_out {
-  position: relative;
-}
-
 blockquote {
   margin: 0;
   padding-left: 20px;
@@ -130,19 +107,6 @@ dl {
 a {
   color: var(--color-second-color);
   text-decoration: none;
-}
-
-// a:hover {
-//   color: var(--color-light);
-//   transition: all 0.4s;
-// }
-
-.after_color {
-  color: var(--color-light);
-}
-
-.pages_link a {
-  text-decoration: underline;
 }
 
 ul {

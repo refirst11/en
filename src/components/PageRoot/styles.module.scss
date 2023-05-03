@@ -1,0 +1,35 @@
+.pages_root {
+  text-align: left;
+  padding: 120px 0;
+
+  ul {
+    margin: 0 16px;
+  }
+
+  li {
+    margin: 8px 14px;
+    list-style-type: disc;
+    word-break: keep-all;
+  }
+}
+
+.fit_in {
+  position: absolute;
+  inset: 0%;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.fit_out {
+  position: relative;
+}
+
+@media screen and (max-width: 739.98px) {
+  .slug_margin_top {
+    margin-top: -80px;
+  }
+  .pages_root {
+    padding: 120px 16px;
+  }
+}

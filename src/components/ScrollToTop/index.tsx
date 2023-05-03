@@ -2,7 +2,7 @@
 
 import useBottomActive from 'hooks/useBottomActive';
 import { Fragment } from 'react';
-import styles from './styles';
+import styles from './styles.module.scss';
 import { IoIosArrowRoundUp } from 'react-icons/io';
 
 const ScrollToTop = () => {
@@ -18,11 +18,12 @@ const ScrollToTop = () => {
     <Fragment>
       <button
         onClick={returnTop}
-        className={`ReturnTopPosition rotateCircle ${isBottomActive ? 'isBottom' : 'isNotBottom'}`}
+        className={`${styles.ReturnTopPosition} ${styles.rotateCircle} ${
+          isBottomActive ? styles.isBottom : styles.isNotBottom
+        }`}
       >
         <IoIosArrowRoundUp size={18} />
       </button>
-      <style jsx>{styles}</style>
     </Fragment>
   );
 };

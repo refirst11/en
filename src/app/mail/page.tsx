@@ -6,6 +6,7 @@ import { useMail } from 'hooks/useMail';
 import RouterBack from 'components/RouterBack';
 import Image from 'next/image';
 import profilePic from '@public/alum.png';
+import styles from './styles.module.scss';
 
 const Mail = (): JSX.Element => {
   const { mail, setMail, name, setName, message, setMessage, Submit } = useMail();
@@ -39,13 +40,13 @@ const Mail = (): JSX.Element => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.4 }}
       >
-        <label htmlFor="status" className="error_style">
+        <label htmlFor="status" className={styles.error_style}>
           {error === null ? '' : error === false ? 'complete' : '*email is required for available'}
         </label>
       </motion.div>
 
       <label htmlFor="name">Name*</label>
-      <div className="area_container">
+      <div className={styles.area_container}>
         <input
           value={name}
           type="text"
@@ -57,7 +58,7 @@ const Mail = (): JSX.Element => {
       </div>
 
       <label htmlFor="email">Mail*</label>
-      <div className="area_container">
+      <div className={styles.area_container}>
         <input
           value={mail}
           type="text"
@@ -69,7 +70,7 @@ const Mail = (): JSX.Element => {
       </div>
 
       <label htmlFor="massage">Message*</label>
-      <div className="area_container">
+      <div className={styles.area_container}>
         <textarea
           value={message}
           name="massage"
@@ -78,17 +79,17 @@ const Mail = (): JSX.Element => {
           required
         />
       </div>
-      <div onClick={Send} className={`massageButton ${error === false ? 'noAction' : null}`}>
+      <div onClick={Send} className={styles.massageButton}>
         {error === null ? 'Submit' : error === false ? 'Success!' : 'Retry!'}
       </div>
     </form>
   );
 
   return (
-    <div className="Mail">
+    <div className={styles.mobile_width}>
       <RouterBack />
-      <div className="fit_in">
-        <Image className="visited_icon" src={profilePic} alt="art" quality={100} width={80} height={80} />
+      <div className={styles.fit_icons}>
+        <Image className={styles.visited_icon} src={profilePic} alt="art" quality={100} width={80} height={80} />
         <div className="success">success!!</div>
       </div>
       {error === null ? (

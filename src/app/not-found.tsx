@@ -14,9 +14,7 @@ const NotFound = (): JSX.Element => {
       <h1>ClientSide Error status code 404</h1>
       <p>Request page is not found</p>
       <dl>
-        <Link href="/" className="redLinks scale">
-          Return to Top page
-        </Link>
+        <Link href="/">Return to Top page</Link>
       </dl>
     </>
   );

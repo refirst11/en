@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import isCurrentLink from 'lib/isCurrentLink';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
-import styles from './styles';
+import styles from './styles.module.scss';
 import { RiQuillPenLine, RiHome4Line } from 'react-icons/ri';
 
 const Header = (): JSX.Element => {
@@ -16,12 +16,12 @@ const Header = (): JSX.Element => {
       {
         name: 'Posts',
         href: '/posts',
-        icon: <RiQuillPenLine className="icon_position" size={12} />,
+        icon: <RiQuillPenLine className={styles.icon_position} size={12} />,
       },
       {
         name: 'Home',
         href: '/',
-        icon: <RiHome4Line className="icon_position" size={12} />,
+        icon: <RiHome4Line className={styles.icon_position} size={12} />,
       },
     ],
     []
@@ -29,10 +29,10 @@ const Header = (): JSX.Element => {
 
   return (
     <Fragment>
-      <header>
+      <header className={styles.header__main}>
         <Text />
-        <nav className="header__nav">
-          <ul className="header__ul">
+        <nav className={styles.header__nav}>
+          <ul className={styles.header__ul}>
             {Headers.map(({ name, href, icon }) => (
               <li
                 key={href}
@@ -41,14 +41,17 @@ const Header = (): JSX.Element => {
                 }}
                 onMouseLeave={() => setIsHover('')}
               >
-                <Link href={href} className={`link_container ${isCurrentLink(href, pathname) && 'after_color'}`}>
+                <Link
+                  href={href}
+                  className={`${styles.link_container} ${isCurrentLink(href, pathname) && styles.after_color}`}
+                >
                   {icon} {name}
                 </Link>
                 <AnimatePresence>
                   {isHover === href && (
                     <motion.div
-                      layoutId="Shadow"
-                      className="Shadow"
+                      layoutId="shadow"
+                      className={styles.shadow}
                       transition={{ duration: 0.2 }}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
@@ -61,7 +64,6 @@ const Header = (): JSX.Element => {
           </ul>
         </nav>
       </header>
-      <style jsx>{styles}</style>
     </Fragment>
   );
 };

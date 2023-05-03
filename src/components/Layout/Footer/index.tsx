@@ -1,22 +1,19 @@
 import Link from 'next/link';
 import { Fragment } from 'react';
-import styles from './styles';
+import styles from './styles.module.scss';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
-import License from 'components/Layout/License';
 
 const Footer = (): JSX.Element => {
   return (
     <Fragment>
-      <footer className="footer_main">
-        <div className="footer_container">
-          <div className="footer_text">
+      <footer className={styles.footer_main}>
+        <div className={styles.footer_container}>
+          <div className={styles.footer_text}>
             {'2023 © '}
-            <License>
-              <u className="under"> {'su pu'}</u>
-            </License>
+            {'su + pu'}
           </div>
-          <div className="footer_icon">
+          <div className={styles.footer_icon}>
             <a href="https://github.com/su-pull" target="_blank">
               <RiGithubFill size={22} />
             </a>
@@ -29,7 +26,6 @@ const Footer = (): JSX.Element => {
           </div>
         </div>
       </footer>
-      <style jsx>{styles}</style>
     </Fragment>
   );
 };

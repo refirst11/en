@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from 'components/InfiniteScroll/styles';
+import styles from 'components/InfiniteScroll/styles.module.scss';
 import PostsProps from 'types/PostsProps';
 
 type keywordProps = {
@@ -8,23 +8,24 @@ type keywordProps = {
 
 const SearchResults = ({ posts, keyword }: PostsProps & keywordProps) => {
   return (
-    <ul>
-      {posts.map(
-        ({ slug, title, subtitle, date }) =>
-          (title.toLocaleLowerCase().match(keyword.toLocaleLowerCase()) || date.match(keyword)) && (
-            <li key={slug}>
-              <Link href={`/posts/${slug}`} className="container">
-                <h2 className="title">
-                  {title}
-                  <div className="subtitle">{subtitle}</div>
-                </h2>
-                <time className="time">{date}</time>
-              </Link>
-            </li>
-          )
-      )}
-      <style jsx>{styles}</style>
-    </ul>
+    <div className={styles.list}>
+      <ul>
+        {posts.map(
+          ({ slug, title, subtitle, date }) =>
+            (title.toLocaleLowerCase().match(keyword.toLocaleLowerCase()) || date.match(keyword)) && (
+              <li key={slug}>
+                <Link href={`/posts/${slug}`} className={styles.container}>
+                  <h2 className={styles.title}>
+                    {title}
+                    <div className={styles.subtitle}>{subtitle}</div>
+                  </h2>
+                  <time className={styles.time}>{date}</time>
+                </Link>
+              </li>
+            )
+        )}
+      </ul>
+    </div>
   );
 };
 
