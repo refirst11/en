@@ -8,6 +8,9 @@ export const useMail = () => {
   const Submit = async () => {
     await fetch('/api/contact', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'text/plain',
+      },
       body: `
 Username
 ${name}
