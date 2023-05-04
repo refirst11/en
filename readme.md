@@ -1,6 +1,3 @@
-![code size](https://img.shields.io/github/languages/code-size/su-pull/www.su-pull.net)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
-
 ## Stacks
 
 - [Next.js](https://nextjs.org/) - standard web static generate React framework this App Router
