@@ -1,9 +1,5 @@
 import { NextRequest, ImageResponse } from 'next/server';
 
-export const config = {
-  runtime: 'edge',
-};
-
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url as string);
   const hasTitle = searchParams.has('title');
