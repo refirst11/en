@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode } from 'react';
+import { ReactNode, useEffect, useRef, useState } from 'react';
 import useFitter, { Main } from 'react-page-fitter';
 import { usePathname } from 'next/navigation';
 import styles from './styles.module.scss';
@@ -11,10 +11,11 @@ type AdjusterProps = {
 
 const PageRoot = ({ children }: AdjusterProps): JSX.Element => {
   const pathname = usePathname();
-  const isFit = useFitter();
+  const { isRendering } = useFitter();
+
   return (
     <>
-      {isFit !== undefined && (
+      {isRendering !== undefined && (
         <Main
           location={pathname}
           className={`${styles.pages_root} ${pathname.includes('/posts/') && styles.slug_margin_top}`}
