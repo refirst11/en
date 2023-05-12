@@ -11,21 +11,18 @@ type AdjusterProps = {
 
 const PageRoot = ({ children }: AdjusterProps): JSX.Element => {
   const pathname = usePathname();
-  const { isRendering } = useFitter();
+  const isFit = useFitter();
+  if (isFit === undefined) return <div className={styles.spinner} />;
 
   return (
-    <>
-      {isRendering !== undefined && (
-        <Main
-          location={pathname}
-          className={`${styles.pages_root} ${pathname.includes('/posts/') && styles.slug_margin_top}`}
-          classFitIn={styles.fit_in}
-          classFitOut={styles.fit_out}
-        >
-          {children}
-        </Main>
-      )}
-    </>
+    <Main
+      location={pathname}
+      className={`${styles.pages_root} ${pathname.includes('/posts/') && styles.slug_margin_top}`}
+      classFitIn={styles.fit_in}
+      classFitOut={styles.fit_out}
+    >
+      {children}
+    </Main>
   );
 };
 
