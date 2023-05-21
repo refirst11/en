@@ -11,7 +11,7 @@ const Footer = (): JSX.Element => {
         <div className={styles.footer_container}>
           <div className={styles.footer_text}>
             {'2023 © '}
-            {'su + pu'}
+            {'su pu'}
           </div>
           <div className={styles.footer_icon}>
             <a href="https://github.com/su-pull" target="_blank">
