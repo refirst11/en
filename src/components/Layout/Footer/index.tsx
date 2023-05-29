@@ -5,14 +5,14 @@ import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
 
 const Footer = (): JSX.Element => {
+  const time = new Date();
+  const year = time.getFullYear();
+
   return (
     <Fragment>
       <footer className={styles.footer_main}>
         <div className={styles.footer_container}>
-          <div className={styles.footer_text}>
-            {'2023 © '}
-            {'su pu'}
-          </div>
+          <div className={styles.footer_text}>{[year, ' © S.watanabe. license MIT']}</div>
           <div className={styles.footer_icon}>
             <a href="https://github.com/su-pull" target="_blank">
               <RiGithubFill size={22} />
