@@ -6,7 +6,7 @@ import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   icons: {
-    icon: '/alum.ico',
+    icon: '/favicon.ico',
   },
 };
 
