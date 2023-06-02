@@ -20,7 +20,7 @@ const Footer = (): JSX.Element => {
             <Link href="/mail" prefetch={false}>
               <HiOutlineMail size={22} />
             </Link>
-            <a href="/feed.xml" target="_blank">
+            <a href="https://www.su-pull.net/feed.xml">
               <HiRss size={22} />
             </a>
           </div>
