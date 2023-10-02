@@ -1,91 +1,31 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import { Metadata } from 'next';
+import generateSEOData from 'lib/generateSEOData';
+import ExternalLink from 'components/ExternalLink';
 
-const inter = Inter({ subsets: ['latin'] })
+export const metadata: Metadata = generateSEOData({ title: 'About', subtitle: 'personal page', date: '1994' });
 
-export default function Home() {
+const Page = (): JSX.Element => {
+  const url = process.env.PROJECTS_URL || '';
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+      <p>
+        I've creates ideas and designs software, and currently living in Tokyo.
+        <br />
+        like to work on
+        <ExternalLink href={url}> my projects</ExternalLink> and I want newest and most advanced areas.
+      </p>
+      <h1>history</h1>
+      <ul>
+        <li>1994: Kitakyushu, Fukuoka</li>
+        <li>2014: Traveled to USA → Canada → Seattle</li>
+        <li>2016: Join PC DEPOT Co., Ltd. - to 2017</li>
+        <li>2018: Passed the Japan high school certification</li>
+        <li>2019: Learning design - to 2020</li>
+        <li>2021: Learning programming and git (developer)</li>
+        <li>2022: Intern and Creates a Interface librarys</li>
+      </ul>
+    </>
+  );
+};
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default Page;

@@ -1,0 +1,25 @@
+.search_box {
+  width: 600px;
+  padding: 0 4px;
+}
+
+.search_container {
+  position: relative;
+  left: 15px;
+  width: fit-content;
+  border: solid 0.4px var(--color-border);
+  border-radius: 2px;
+  box-shadow: 0 0 2px -0.4px var(--color-shadow);
+}
+
+@media screen and (max-width: 739.98px) {
+  .search_box {
+    width: 300px;
+  }
+
+  .search_container {
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%, 0);
+  }
+}

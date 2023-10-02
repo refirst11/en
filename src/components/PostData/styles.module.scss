@@ -1,0 +1,27 @@
+@media screen and (max-width: 739.98px) {
+  .negative_margin {
+    margin-top: -60px;
+  }
+}
+
+.color_h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: normal;
+  color: var(--color-h1);
+}
+
+.return {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.a_hover {
+  a:hover {
+    text-decoration: underline;
+  }
+}

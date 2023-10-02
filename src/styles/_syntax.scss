@@ -1,0 +1,105 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --shiki-color-text: #555555; // 1
+    --shikii-color-background: #ffffff;
+    --shiki-token-constant: rgb(255, 130, 130); // 1
+    --shiki-token-string: #2e2c40;
+    --shiki-token-comment: #555555;
+    --shiki-token-keyword: #6fd5e7;
+    --shiki-token-parameter: 555555;
+    --shiki-token-function: #ff8ebb;
+    --shiki-token-string-expression: #ff9e9e;
+    --shiki-token-punctuation: 555555;
+    --shiki-token-link: 555555;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shiki-color-text: #ffffff;
+    --shiki-color-background: #202020;
+    --shiki-token-constant: #afffff;
+    --shiki-token-string: #ffffff;
+    --shiki-token-comment: #ffffff;
+    --shiki-token-keyword: #77b7d7;
+    --shiki-token-parameter: #ffffff;
+    --shiki-token-function: #ffffff;
+    --shiki-token-string-expression: #7c99dc;
+    --shiki-token-punctuation: #ffffff;
+    --shiki-token-link: #ffffff;
+  }
+}
+pre {
+  width: 600px;
+  padding: 20px 0;
+  margin: 32px 0;
+  overflow: auto;
+  border-radius: 4px;
+  box-shadow: 0 0 2px -0.5px rgb(0 0 0 / 40%);
+  transition: all 0.8s;
+}
+
+code {
+  font-family: var(--source);
+}
+
+[data-rehype-pretty-code-fragment] div {
+  position: relative;
+  top: 10px;
+  height: 0;
+  margin-right: 2px;
+  font-size: 14px;
+  color: gray;
+  text-align: right;
+}
+
+[data-rehype-pretty-code-fragment] .line {
+  padding: 0 20px;
+  line-height: 1.5;
+  border-left: solid 4px transparent;
+}
+
+[data-rehype-pretty-code-fragment] code .line span {
+  font-size: 14.4px;
+}
+
+p code {
+  padding: 0 5px 2px 5px;
+  color: var(--color-h1);
+  background: var(--color-code);
+  border-radius: 2px;
+}
+
+div[data-rehype-pretty-code-fragment] pre code {
+  display: grid;
+  grid-auto-rows: minmax(auto, 1fr);
+}
+
+div[data-rehype-pretty-code-fragment] .line.highlighted {
+  background: rgb(123 137 192 / 6.5%);
+  border-color: lightblue;
+}
+
+code[data-line-numbers] {
+  counter-reset: lineNumber;
+}
+
+code[data-line-numbers] .line::before {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.75rem;
+  color: #718096;
+  text-align: right;
+  content: counter(lineNumber);
+  counter-increment: lineNumber;
+}
+
+@media screen and (max-width: 739.98px) {
+  pre {
+    width: 100%;
+    overflow: auto;
+  }
+
+  [data-rehype-pretty-code-fragment] code .line span {
+    font-size: 12.4px;
+  }
+}

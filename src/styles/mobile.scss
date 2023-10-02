@@ -1,0 +1,26 @@
+@media screen and (max-width: 739.98px) {
+  .main_icon {
+    right: 8px;
+    margin-top: 16px;
+    transform: scale(0.88) translate(0);
+  }
+
+  html {
+    -webkit-text-size-adjust: none;
+  }
+
+  body {
+    width: 100%;
+    padding: 120px 24px;
+    // global of min-height: 100vh;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}

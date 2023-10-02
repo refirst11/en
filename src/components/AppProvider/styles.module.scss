@@ -1,0 +1,13 @@
+.pages_root {
+  text-align: left;
+
+  li {
+    margin: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 739.98px) {
+  .pages_root {
+    width: 100%;
+  }
+}
