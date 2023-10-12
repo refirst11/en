@@ -1,7 +1,7 @@
 # @su-pull's web family
 
 - [https://su-pull.net](https://su-pull.net)
-- [https://projects.su-pull.net](https://pj.su-pull.net)
+- [https://projects.su-pull.net](https://projects.su-pull.net)
 
 ## Uses and Respect
 
