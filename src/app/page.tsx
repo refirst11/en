@@ -21,8 +21,8 @@ const Page = (): JSX.Element => {
         <li>2016: Join PC DEPOT Co., Ltd. - to 2017</li>
         <li>2018: Passed the Japan high school certification</li>
         <li>2019: Learning design - to 2020</li>
-        <li>2021: Learning programming and git (developer)</li>
-        <li>2022: Intern and Creates a Interface librarys</li>
+        <li>2021: Learning programming and git (developer) to 2022</li>
+        <li>2023: Intern and Creates a Interface librarys</li>
       </ul>
     </>
   );
