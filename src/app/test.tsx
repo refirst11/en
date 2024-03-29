@@ -1,7 +1,7 @@
 "use client"
 
 import { ReactNode } from 'react';
-import clix from 'components/test
+import clix from 'lib/clix
 import style from './'
 
 type LayoutProps = {
