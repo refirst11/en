@@ -1,8 +1,8 @@
-'use client';
+'use client'
 
-import { ReactNode } from 'react';
-import { useClix } from 'lib/clix;
-import styles from './styles.module.scss';
+import { ReactNode } from 'react'
+import { useClix } from 'lib/clix
+import styles from './styles.module.scss'
 
 type PegProp = {
   children: ReactNode;
