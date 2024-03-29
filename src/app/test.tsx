@@ -1,19 +1,21 @@
 "use client"
 
 import { ReactNode } from 'react';
-import clix from 'lib/clix
-import style from './'
+import clix from 'lib/clix;
+import styles from './styles.module.scss'
 
-type LayoutProps = {
+
+
+type PegProp = {
   children: ReactNode;
 };
 
-const Layout = ({ children }: LayoutProps): JSX.Element => {
+const Peg = ({ children }: PegProp): JSX.Element => {
   return (
-    <p>
+    <p className={clix([styles.base, styles.initial, styles.exit],0.2)}>
       {children}
     </p>
   );
 };
 
-export default Layout;
+export default Peg;
