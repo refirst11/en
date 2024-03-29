@@ -77,7 +77,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     const cleanup = ref.current[0]
 
     return () => {
-      //setState(cleanup)
+      setState(cleanup)
     }
   }, [])
 
