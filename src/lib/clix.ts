@@ -4,7 +4,7 @@ let anchor: HTMLAnchorElement | null
 let firstmount = false
 const useCapture = true
 
-export const clix = (classes: [string, string, string?], exit?: number) => {
+export const useClix = (classes: [string, string, string?], exit?: number) => {
   const ref = useRef(classes)
   const [hasDelay, setHasDelay] = useState(false)
   const [state, setState] = useState('')
