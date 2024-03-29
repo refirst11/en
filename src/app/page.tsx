@@ -11,12 +11,12 @@ const Page = (): JSX.Element => {
   const url = process.env.PROJECTS_URL || '';
   return (
     <>
-      <p>
+      <Peg>
         I've creates ideas and designs software, and currently living in Tokyo.
         <br />
-        like to work on
+        like  work on
         <ExternalLink href={url}> my projects</ExternalLink> and I want newest and most advanced areas.
-      </p>
+      </Peg>
       <h1>history</h1>
       <ul>
         <li>1994: Kitakyushu, Fukuoka</li>
