@@ -65,7 +65,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     document.body.addEventListener('click', clickHandler, useCapture)
 
     return () => {
-      document.body.removeEventListener('click', clickHandler, useCapture)
+      document.body.removeEventListener('click', clickHandler, useCapture)      
     }
   }, [clickHandler, innerEffect])
 
@@ -77,7 +77,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     const cleanup = ref.current[0]
 
     return () => {
-      setState(cleanup)
+      //setState(cleanup)
     }
   }, [])
 
