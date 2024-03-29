@@ -1,4 +1,3 @@
-'use client';
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 
 let anchor: HTMLAnchorElement | null
@@ -72,7 +71,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
 
   // ---------- Initial styles. entry the class second of array //
   useLayoutEffect(() => {
-    setState(ref.current[0] + ' ' + ref.current[1])
+    if(firstmount) setState(ref.current[0] + ' ' + ref.current[1])
 
     firstmount = true
     const cleanup = ref.current[0]
