@@ -1,3 +1,4 @@
+'use client';
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 
 let anchor: HTMLAnchorElement | null
