@@ -10,7 +10,7 @@ type PegProp = {
 
 const Peg = ({ children }: PegProp): JSX.Element => {
   return (
-    <p className={useClix([styles.base, styles.init, styles.exit],0.2)}>
+    <p className={useClix([styles.base, styles.init, styles.exit],0.5)}>
       {children}
     </p>
   );
