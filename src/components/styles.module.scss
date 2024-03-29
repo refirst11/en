@@ -1,0 +1,13 @@
+.initial {
+  transition: all 0.5s
+  opacity: 0
+}
+
+.base {
+  opacity: 1
+}
+
+.exit {
+ transition: all 0.2s
+  opacity: 0
+}
