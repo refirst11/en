@@ -1,7 +1,7 @@
 'use client'
 
 import { ReactNode } from 'react'
-import { useClix } from 'lib/clix
+import { useClix } from 'lib/clix'
 import styles from './styles.module.scss'
 
 type PegProp = {
