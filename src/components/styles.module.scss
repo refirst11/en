@@ -1,12 +1,11 @@
 .base {
   transition: all 0.5s;
-  opacity: 1;
+  opacity: 0;
 }
 
 .init {
   transition: all 0.5s;
   opacity: 1;
-  translate: rotate(30deg)
 }
 
 .exit {
