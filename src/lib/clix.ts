@@ -75,12 +75,12 @@ export const useClix = (base: string, classes: [string, string?], exit?: number)
     setState(base)
   
     firstmount = true
-    const cleanup = ref.current[0]
+    const cleanup = base
 
     return () => {
       setState(cleanup)
     }
   }, [])
 
-  return state !== '' ? state : ref.current[0]
+  return state !== '' ? state : base
 }
