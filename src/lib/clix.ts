@@ -21,54 +21,58 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     else return null
   }
 
-  const clickHandler = useCallback(
-    (e: MouseEvent) => {
-      const target = eventTargetHTMLElement(e)
-      if (target == null) return
+ const clickHandler = useCallback(
+  (e: MouseEvent) => {
+    const target = eventTargetHTMLElement(e);
+    if (target == null) return;
 
-      const anchorElement = target.closest('a')
-      if (anchorElement == null) return
-      if (window.location.href === anchorElement.href) return
+    const anchorElement = target.closest('a');
+    if (anchorElement == null) return;
 
-      const classElement = getClientClassElement()
-      if (classElement == null) return
+    if (window.location.href === anchorElement.href) return;
 
-      if (!ref.current[2]) return
-      setState(ref.current[0] + ' ' + ref.current[2])
-      e.preventDefault()
-      if (typeof exit != 'undefined')
-        setTimeout(() => {
-          setHasDelay(true)
-        }, exit * 1000)
-      anchor = anchorElement
-    },
-    [exit, getClientClassElement]
-  )
+    const classElement = getClientClassElement();
+    if (classElement == null) return;
 
-  const innerEffect = useCallback(() => {
-    const clickEvent = new MouseEvent('click', {
-      view: window,
-      bubbles: true,
-      cancelable: true
-    })
-    if (!hasDelay) return
-    if (anchor == null) return
+    if (!ref.current[2]) return;
 
-    anchor.dispatchEvent(clickEvent)
-    anchor = null
-  }, [hasDelay])
+    setState(ref.current[0] + ' ' + ref.current[2]);
+    e.preventDefault();
 
-  // ---------- Entry Effect//
-  // ---------- Exits styles. entry the class third of array //
-  useEffect(() => {
-    innerEffect()
-    document.body.addEventListener('click', clickHandler, useCapture)
-
-    return () => {
-      document.body.removeEventListener('click', clickHandler, useCapture)
+    if (typeof exit !== 'undefined') {
+      anchor = anchorElement;
+      setTimeout(() => {
+        const clickEvent = new MouseEvent('click', {
+          view: window,
+          bubbles: true,
+          cancelable: true,
+        });
+        if (anchor) {
+          anchor.dispatchEvent(clickEvent);
+          anchor = null;
+        }
+      }, exit * 1000);
     }
-  }, [clickHandler, innerEffect, hasDelay, anchor])
+  },
+  [exit, getClientClassElement]
+);
 
+useEffect(() => {
+  document.body.addEventListener('click', clickHandler, useCapture);
+  return () => {
+    document.body.removeEventListener('click', clickHandler, useCapture);
+    if (anchor) {
+      const clickEvent = new MouseEvent('click', {
+        view: window,
+        bubbles: true,
+        cancelable: true,
+      });
+      anchor.dispatchEvent(clickEvent);
+      anchor = null;
+    }
+  };
+}, [clickHandler]);
+  
   // ---------- Initial styles. entry the class second of array //
   useEffect(() => {
     if (firstmount) setState(ref.current[0] + ' ' + ref.current[1])
