@@ -67,7 +67,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     return () => {
       document.body.removeEventListener('click', clickHandler, useCapture)
     }
-  }, [clickHandler, innerEffect])
+  }, [clickHandler, innerEffect, hasDelay])
 
   // ---------- Initial styles. entry the class second of array //
   useLayoutEffect(() => {
