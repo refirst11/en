@@ -7,7 +7,7 @@ const useCapture = true
 export const useClix = (classes: [string, string, string?], exit?: number) => {
   const ref = useRef(classes)
   const [hasDelay, setHasDelay] = useState(false)
-  const [state, setState] = useState('')
+  const [state, setState] = useState(ref.current[1])
 
   const getClientClassElement = useCallback(() => {
     const oneClassElement = document.getElementsByClassName(ref.current[0])[0]
@@ -81,5 +81,5 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     }
   }, [])
 
-  return state != '' ? state : ref.current[1]
+  return state
 }
