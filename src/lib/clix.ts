@@ -1,10 +1,10 @@
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 
 let anchor: HTMLAnchorElement | null
 let firstmount = false
 const useCapture = true
 
-export const useClix = (classes: [string, string, string?], exit?: number) => {
+export const clix = (classes: [string, string, string?], exit?: number) => {
   const ref = useRef(classes)
   const [hasDelay, setHasDelay] = useState(false)
   const [state, setState] = useState('')
@@ -21,60 +21,56 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     else return null
   }
 
- const clickHandler = useCallback(
-  (e: MouseEvent) => {
-    const target = eventTargetHTMLElement(e);
-    if (target == null) return;
+  const clickHandler = useCallback(
+    (e: MouseEvent) => {
+      const target = eventTargetHTMLElement(e)
+      if (target == null) return
 
-    const anchorElement = target.closest('a');
-    if (anchorElement == null) return;
+      const anchorElement = target.closest('a')
+      if (anchorElement == null) return
+      if (window.location.href === anchorElement.href) return
 
-    if (window.location.href === anchorElement.href) return;
+      const classElement = getClientClassElement()
+      if (classElement == null) return
 
-    const classElement = getClientClassElement();
-    if (classElement == null) return;
+      if (!ref.current[2]) return
+      setState(ref.current[0] + ' ' + ref.current[2])
+      e.preventDefault()
+      if (typeof exit != 'undefined')
+        setTimeout(() => {
+          setHasDelay(true)
+        }, exit * 1000)
+      anchor = anchorElement
+    },
+    [exit, getClientClassElement]
+  )
 
-    if (!ref.current[2]) return;
+  const innerEffect = useCallback(() => {
+    const clickEvent = new MouseEvent('click', {
+      view: window,
+      bubbles: true,
+      cancelable: true
+    })
+    if (!hasDelay) return
+    if (anchor == null) return
 
-    setState(ref.current[0] + ' ' + ref.current[2]);
-    e.preventDefault();
+    anchor.dispatchEvent(clickEvent)
+    anchor = null
+  }, [hasDelay])
 
-    if (typeof exit !== 'undefined') {
-      anchor = anchorElement;
-      setTimeout(() => {
-        const clickEvent = new MouseEvent('click', {
-          view: window,
-          bubbles: true,
-          cancelable: true,
-        });
-        if (anchor) {
-          anchor.dispatchEvent(clickEvent);
-          anchor = null;
-        }
-      }, exit * 1000);
+  // ---------- Entry Effect//
+  // ---------- Exits styles. entry the class third of array //
+  useLayoutEffect(() => {
+    innerEffect()
+    document.body.addEventListener('click', clickHandler, useCapture)
+
+    return () => {
+      document.body.removeEventListener('click', clickHandler, useCapture)
     }
-  },
-  [exit, getClientClassElement]
-);
+  }, [clickHandler, innerEffect])
 
-useEffect(() => {
-  document.body.addEventListener('click', clickHandler, useCapture);
-  return () => {
-    document.body.removeEventListener('click', clickHandler, useCapture);
-    if (anchor) {
-      const clickEvent = new MouseEvent('click', {
-        view: window,
-        bubbles: true,
-        cancelable: true,
-      });
-      anchor.dispatchEvent(clickEvent);
-      anchor = null;
-    }
-  };
-}, [clickHandler]);
-  
   // ---------- Initial styles. entry the class second of array //
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (firstmount) setState(ref.current[0] + ' ' + ref.current[1])
     else setState(ref.current[1])
     firstmount = true
