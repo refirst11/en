@@ -70,7 +70,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
   }, [clickHandler, innerEffect, hasDelay, anchor])
 
   // ---------- Initial styles. entry the class second of array //
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (firstmount) setState(ref.current[0] + ' ' + ref.current[1])
     else setState(ref.current[1])
     firstmount = true
