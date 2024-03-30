@@ -81,5 +81,5 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     }
   }, [])
 
-  return firstmount ? ref.current[1] : state
+  return state != '' ? state : ref.current[1]
 }
