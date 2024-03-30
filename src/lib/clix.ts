@@ -33,8 +33,8 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
       const classElement = getClientClassElement()
       if (classElement == null) return
 
-      // if (!ref.current[2]) return
-      // setState(ref.current[0] + ' ' + ref.current[2])
+      if (!ref.current[2]) return
+      setState(ref.current[0] + ' ' + ref.current[2])
       
       e.preventDefault()
       if (typeof exit != 'undefined')
@@ -75,7 +75,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     setState(ref.current[0] + ' ' + ref.current[1])
   
     firstmount = true
-    const cleanup = ref.current[1]
+    const cleanup = ref.current[0]
 
     return () => {
       setState(cleanup)
