@@ -1,13 +1,13 @@
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 
 let anchor: HTMLAnchorElement | null
-let firstmount = true
+let firstmount = false
 const useCapture = true
 
-export const useClix = (classes: [string, string, string?], exit?: number) => {
+export const clix = (classes: [string, string, string?], exit?: number) => {
   const ref = useRef(classes)
   const [hasDelay, setHasDelay] = useState(false)
-  const [state, setState] = useState(ref.current[1])
+  const [state, setState] = useState('')
 
   const getClientClassElement = useCallback(() => {
     const oneClassElement = document.getElementsByClassName(ref.current[0])[0]
@@ -65,21 +65,21 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     document.body.addEventListener('click', clickHandler, useCapture)
 
     return () => {
-      document.body.removeEventListener('click', clickHandler, useCapture)      
+      document.body.removeEventListener('click', clickHandler, useCapture)
     }
   }, [clickHandler, innerEffect])
 
   // ---------- Initial styles. entry the class second of array //
   useLayoutEffect(() => {
-    setState(ref.current[0] + ' ' + ref.current[1])
-      
-    firstmount = false
-    const cleanup = ref.current[1]
+    if (firstmount) setState(ref.current[0] + ' ' + ref.current[1])
+
+    firstmount = true
+    const cleanup = ref.current[0]
 
     return () => {
       setState(cleanup)
     }
   }, [])
 
-  return state !== '' ? state : ref.current[1]
+  return state !== '' ? state : ref.current[0]
 }
