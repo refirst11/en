@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 
 let anchor: HTMLAnchorElement | null
 let firstmount = false
@@ -33,7 +33,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
       const classElement = getClientClassElement()
       if (classElement == null) return
 
-      if (!ref.current[2]) return
+      // if (!ref.current[2]) return
       setState(ref.current[0] + ' ' + ref.current[2])
       e.preventDefault()
       if (typeof exit != 'undefined')
@@ -60,7 +60,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
 
   // ---------- Entry Effect//
   // ---------- Exits styles. entry the class third of array //
-  useEffect(() => {
+  useLayoutEffect(() => {
     innerEffect()
     document.body.addEventListener('click', clickHandler, useCapture)
 
