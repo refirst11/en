@@ -61,13 +61,16 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
   // ---------- Entry Effect//
   // ---------- Exits styles. entry the class third of array //
   useLayoutEffect(() => {
-    document.body.addEventListener('pointerdown', clickHandler, useCapture)
-    innerEffect()
+    document.body.addEventListener('click', clickHandler, useCapture)
     
     return () => {
-      document.body.removeEventListener('pointerdown', clickHandler, useCapture)
+      document.body.removeEventListener('click', clickHandler, useCapture)
     }
   }, [clickHandler, innerEffect])
+
+  useEffect(() => {
+    innerEffect()
+  },[])
 
   // ---------- Initial styles. entry the class second of array //
   useLayoutEffect(() => {
