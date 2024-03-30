@@ -4,7 +4,7 @@ let anchor: HTMLAnchorElement | null
 let firstmount = false
 const useCapture = true
 
-export const useClix = (base: string, classes: [string, string?], exit?: number) => {
+export const useClix = (classes: [string, string, string?], exit?: number) => {
   const ref = useRef(classes)
   const [hasDelay, setHasDelay] = useState(false)
   const [state, setState] = useState('')
@@ -33,8 +33,8 @@ export const useClix = (base: string, classes: [string, string?], exit?: number)
       const classElement = getClientClassElement()
       if (classElement == null) return
 
-      if (!ref.current[1]) return
-      setState(ref.current[1])
+      if (!ref.current[2]) return
+      setState(ref.current[2])
       
       e.preventDefault()
       if (typeof exit != 'undefined')
@@ -72,15 +72,15 @@ export const useClix = (base: string, classes: [string, string?], exit?: number)
 
   // ---------- Initial styles. entry the class second of array //
   useLayoutEffect(() => {
-    setState(base)
+    setState(ref.current[0])
   
     firstmount = true
-    const cleanup = base
+    const cleanup = ref.current[1]
 
     return () => {
       setState(cleanup)
     }
   }, [])
 
-  return state !== '' ? state : base
+  return state !== '' ? state : ref.current[1]
 }
