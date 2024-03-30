@@ -33,7 +33,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
       const classElement = getClientClassElement()
       if (classElement == null) return
 
-      // if (!ref.current[2]) return
+      if (!ref.current[2]) return
       setState(ref.current[0] + ' ' + ref.current[2])
       e.preventDefault()
       if (typeof exit != 'undefined')
@@ -61,9 +61,9 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
   // ---------- Entry Effect//
   // ---------- Exits styles. entry the class third of array //
   useLayoutEffect(() => {
-    innerEffect()
     document.body.addEventListener('click', clickHandler, useCapture)
-
+    innerEffect()
+    
     return () => {
       document.body.removeEventListener('click', clickHandler, useCapture)
     }
