@@ -78,7 +78,8 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
     const cleanup = ref.current[1]
 
     return () => {
-      setState(cleanup)
+      if (firstmount) setState(ref.current[0]
+      else setState(cleanup)
     }
   }, [])
 
