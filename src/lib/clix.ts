@@ -81,7 +81,7 @@ export const useClix = (base: string, classes: [string, string?], exit?: number)
     return () => {
       setState(cleanup)
     }
-  }, [])
+  }, [base])
   
   return state || defaultValue
 }
