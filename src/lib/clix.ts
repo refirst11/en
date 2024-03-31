@@ -6,7 +6,7 @@ const useCapture = true
 
 export const useClix = (classes: [string, string, string?], exit?: number) => {
   const ref = useRef(classes)
-  const defaultValue = firstMount ? ref.current[0] : ref.current[1]
+  const defaultValue = firstmount ? ref.current[0] : ref.current[1]
   const [hasDelay, setHasDelay] = useState(false)
   const [state, setState] = useState('')
   
