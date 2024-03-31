@@ -9,10 +9,9 @@ type PegProp = {
   children: ReactNode;
 };
 
-const anima = useAnimation(styles.base, [styles.init, styles.exit], 0.5)
 const Peg = ({ children }: PegProp): JSX.Element => {
   return (
-    <p className={anima}>
+    <p className={useAnimation(styles.base, [styles.init, styles.exit], 0.5)}>
       {children}
     </p>
   );
