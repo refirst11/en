@@ -1,7 +1,7 @@
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 
 let anchor: HTMLAnchorElement | null
-let firstmount = false
+let firstmount = true
 const useCapture = true
 
 export const useClix = (classes: [string, string, string?], exit?: number) => {
@@ -74,13 +74,13 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
   useLayoutEffect(() => {
     setState(ref.current[0])
   
-    firstmount = true
+    firstmount = false
     const cleanup = ref.current[1]
 
     return () => {
-      firstmount ? setState(ref.current[0]) : setState(cleanup)
+      setState(cleanup)
     }
   }, [])
 
-  return state !== '' ? state : ref.current[0]
+  return state !== '' ? state : firstmount? ref.current[0] : ref.current[1]
 }
