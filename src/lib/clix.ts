@@ -34,7 +34,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
       if (classElement == null) return
 
       if (!ref.current[2]) return
-      setState(ref.current[0] + ' ' + ref.current[2])
+      setState(ref.current[2])
       
       e.preventDefault()
       if (typeof exit != 'undefined')
@@ -72,7 +72,7 @@ export const useClix = (classes: [string, string, string?], exit?: number) => {
 
   // ---------- Initial styles. entry the class second of array //
   useLayoutEffect(() => {
-    setState(ref.current[0] + ' ' + ref.current[1])
+    setState(ref.current[0])
   
     firstmount = true
     const cleanup = ref.current[1]
