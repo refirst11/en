@@ -9,10 +9,9 @@ type PegProp = {
   children: ReactNode;
 };
 
-let anima = useClix([styles.base, styles.init, styles.exit], 0.5)
 const Peg = ({ children }: PegProp): JSX.Element => {
   return (
-    <p className={anima}>
+    <p className={useClix([styles.base, styles.init, styles.exit], 0.5)}>
       {children}
     </p>
   );
