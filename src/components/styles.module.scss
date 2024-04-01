@@ -1,7 +1,7 @@
 .base {
   transition: all 0.5s;
   opacity: 1;
-  transform: translateY(0px) scale(1)
+  transform: translateY(0px) scale(1);
 }
 
 .init {
@@ -13,5 +13,5 @@
 .exit {
   transition: all 0.5s;
   opacity: 0;
-  transform: scale(0)
+  transform: scale(0);
 }
