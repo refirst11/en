@@ -1,15 +1,15 @@
 .base {
-  transition: all 1.2s;
+  transition: all 1s;
   opacity: 1;
   transform: translateY(0px);
 }
 
 .init {
   opacity: 0;
-  transform: translateY(-12px);
+  transform: translateY(-8px);
 }
 
 .exit {
-  transition: all 0.5s;
+  transition: all 0.4s;
   opacity: 0;
 }
