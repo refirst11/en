@@ -1,8 +1,7 @@
 'use client'
 
 import { ReactNode } from 'react'
-import { useClix } from 'lib/clix'
-import { useAnimation } from 'lib/anima'
+import { useAnimation } from 'lib/clix'
 import styles from './styles.module.scss'
 
 type PegProp = {
