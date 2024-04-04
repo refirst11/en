@@ -10,6 +10,8 @@
 
 @media screen and (max-width: 739.98px) {
   .pages_root {
+    transition: all 0.7s;
+    opacity: 1;  
     width: 100%;
   }
 }
