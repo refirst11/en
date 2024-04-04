@@ -1,4 +1,8 @@
 .pages_root {
+  transition: all 0.7s;
+  opacity: 1;
+  transform: translateY(0px);
+  
   text-align: left;
 
   li {
@@ -10,4 +14,14 @@
   .pages_root {
     width: 100%;
   }
+}
+
+.init {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.exit {
+  transition: all 0.2s;
+  opacity: 0;
 }
