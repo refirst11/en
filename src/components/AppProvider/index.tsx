@@ -14,7 +14,7 @@ const AppProvider = ({ children }: Provider): JSX.Element => {
   return (
     <Layout>
       <Analytics mode={'production'} />
-      <main className={useAnimation(styles.pages_root, [styles.init, styles.exit], 0.2)}>{children}</main>
+      <main className={useAnimation(styles.pages_root, [styles.init])}>{children}</main>
     </Layout>
   );
 };
