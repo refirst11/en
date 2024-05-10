@@ -3,6 +3,7 @@
 import { AnimatePresence, LazyMotion, domAnimation, m } from 'framer-motion';
 import { useState } from 'react';
 import { useMail } from 'hooks/useMail';
+import Animate from 'components/Animate';
 import Image from 'next/image';
 import profilePic from '@public/alum.png';
 import styles from './styles.module.scss';
@@ -77,52 +78,54 @@ const MailForm = (): JSX.Element => {
   );
 
   return (
-    <LazyMotion features={domAnimation}>
-      <div className={styles.mobile_width}>
-        <div className={styles.fit_icons}>
-          <Image
-            className={styles.visited_icon}
-            src={profilePic}
-            priority
-            alt="art"
-            quality={100}
-            width={80}
-            height={80}
-          />
-          <div className={styles.success}>success!!</div>
+    <Animate>
+      <LazyMotion features={domAnimation}>
+        <div className={styles.mobile_width}>
+          <div className={styles.fit_icons}>
+            <Image
+              className={styles.visited_icon}
+              src={profilePic}
+              priority
+              alt="art"
+              quality={100}
+              width={80}
+              height={80}
+            />
+            <div className={styles.success}>success!!</div>
+          </div>
+          {error === undefined ? (
+            <AnimatePresence mode="wait">{error === undefined && <m.div>{MailFormDom}</m.div>}</AnimatePresence>
+          ) : error === false ? (
+            <AnimatePresence mode="wait">
+              {!error && (
+                <m.div
+                  key="1"
+                  initial={{ opacity: 1, scale: 1 }}
+                  animate={{ opacity: 0, scale: 0 }}
+                  exit={{ opacity: 1 }}
+                  transition={{ duration: 0.8, delay: 1 }}
+                >
+                  {MailFormDom}
+                </m.div>
+              )}
+            </AnimatePresence>
+          ) : (
+            <AnimatePresence mode="wait">
+              {error && (
+                <m.div
+                  key="2"
+                  onClick={() => setError(undefined)}
+                  animate={{ y: -4, transition: { type: 'spring', duration: 1, bounce: 1 } }}
+                  exit={{ y: 0 }}
+                >
+                  {MailFormDom}
+                </m.div>
+              )}
+            </AnimatePresence>
+          )}
         </div>
-        {error === undefined ? (
-          <AnimatePresence mode="wait">{error === undefined && <m.div>{MailFormDom}</m.div>}</AnimatePresence>
-        ) : error === false ? (
-          <AnimatePresence mode="wait">
-            {!error && (
-              <m.div
-                key="1"
-                initial={{ opacity: 1, scale: 1 }}
-                animate={{ opacity: 0, scale: 0 }}
-                exit={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 1 }}
-              >
-                {MailFormDom}
-              </m.div>
-            )}
-          </AnimatePresence>
-        ) : (
-          <AnimatePresence mode="wait">
-            {error && (
-              <m.div
-                key="2"
-                onClick={() => setError(undefined)}
-                animate={{ y: -4, transition: { type: 'spring', duration: 1, bounce: 1 } }}
-                exit={{ y: 0 }}
-              >
-                {MailFormDom}
-              </m.div>
-            )}
-          </AnimatePresence>
-        )}
-      </div>
-    </LazyMotion>
+      </LazyMotion>
+    </Animate>
   );
 };
 

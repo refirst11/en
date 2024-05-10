@@ -1,4 +1,4 @@
-import Peg from 'components/Peg';
+import Animate from 'components/Animate';
 import { Metadata } from 'next';
 import generateSEOData from 'lib/generateSEOData';
 import ExternalLink from 'components/ExternalLink';
@@ -8,13 +8,13 @@ export const metadata: Metadata = generateSEOData({ title: 'About', subtitle: 'p
 const Page = (): JSX.Element => {
   const url = process.env.PROJECTS_URL || '';
   return (
-    <>
-      <Peg>
+    <Animate>
+      <p>
         I've creates ideas and designs software, and currently living in Tokyo.
         <br />
-        like  work on
+        like work on
         <ExternalLink href={url}> my projects</ExternalLink> and I want newest and most advanced areas.
-      </Peg>
+      </p>
       <h1>history</h1>
       <ul>
         <li>1994: Kitakyushu, Fukuoka</li>
@@ -25,7 +25,7 @@ const Page = (): JSX.Element => {
         <li>2021: Learning programming and git (developer) to 2022</li>
         <li>2023: Intern and Creates a Interface librarys</li>
       </ul>
-    </>
+    </Animate>
   );
 };
 
