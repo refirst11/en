@@ -7,11 +7,12 @@
 
 .init {
   opacity: 0;
+  scale: 1.1;
   transform: translateY(-8px);
 }
 
 .exit {
   transition: all 0.2s;
   opacity: 0;
-  scale: 1.1
+  scale: 1.1;
 }
