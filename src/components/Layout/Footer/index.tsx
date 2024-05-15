@@ -13,7 +13,7 @@ const Footer = (): JSX.Element => {
       <div className={styles.footer_container}>
         <div className={styles.footer_text}>{year + ' © S.watanabe.'}</div>
         <div className={styles.footer_icon}>
-          <a href="https://github.com/su-pull">
+          <a href="https://github.com/refirst11">
             <RiGithubFill size={22} />
           </a>
           <Link href="/mail">
