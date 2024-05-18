@@ -1,6 +1,6 @@
 import 'styles/globals.scss';
 import 'styles/mobile.scss';
-import AppProvider from 'components/AppProvider';
+import App from 'components/AppProvider';
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { Playfair_Display } from 'next/font/google';
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="prefetch" href="/feed.xml" />
       </head>
       <body className={font}>
-        <AppProvider>{children}</AppProvider>
+        <App>{children}</App>
       </body>
     </html>
   );
