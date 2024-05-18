@@ -3,7 +3,7 @@
 import { AnimatePresence, LazyMotion, domAnimation, m } from 'framer-motion';
 import { useState } from 'react';
 import { useMail } from 'hooks/useMail';
-import Animate from 'components/Animate';
+import Animation from 'components/Animation';
 import Image from 'next/image';
 import profilePic from '@public/alum.png';
 import styles from './styles.module.scss';
@@ -78,7 +78,7 @@ const MailForm = (): JSX.Element => {
   );
 
   return (
-    <Animate>
+    <Animation>
       <LazyMotion features={domAnimation}>
         <div className={styles.mobile_width}>
           <div className={styles.fit_icons}>
@@ -125,7 +125,7 @@ const MailForm = (): JSX.Element => {
           )}
         </div>
       </LazyMotion>
-    </Animate>
+    </Animation>
   );
 };
 
