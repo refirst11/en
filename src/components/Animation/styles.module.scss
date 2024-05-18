@@ -1,18 +1,16 @@
 .base {
-  transition: all 0.7s;
+  transition: all 0.6877777s;
   opacity: 1;
   scale: 1;
-  transform: translateY(0px);
 }
 
 .init {
   opacity: 0;
-  scale: 1.1;
-  transform: translateY(-8px);
+  scale: 0.8;
 }
 
 .exit {
-  transition: all 0.2s;
+  transition: all 0.17s;
   opacity: 0;
   scale: 1.1;
 }
