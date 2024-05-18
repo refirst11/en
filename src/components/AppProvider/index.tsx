@@ -1,21 +1,18 @@
-'use client';
-
 import type { ReactNode } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import Layout from 'components/Layout';
-import styles from './styles.module.scss';
 
-type Provider = {
+type AppProp = {
   children: ReactNode;
 };
 
-const AppProvider = ({ children }: Provider): JSX.Element => {
+const App = ({ children }: AppProp): JSX.Element => {
   return (
     <Layout>
       <Analytics mode={'production'} />
-      <main className={styles.pages_root}>{children}</main>
+      {children}
     </Layout>
   );
 };
 
-export default AppProvider;
+export default App;
