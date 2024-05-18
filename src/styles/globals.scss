@@ -66,6 +66,22 @@ body {
   background-color: var(--color-bg);
 }
 
+main {
+  text-align: left;
+
+  li {
+    margin: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 739.98px) {
+  main {
+    transition: all 0.7s;
+    opacity: 1;
+    width: 100%;
+  }
+}
+
 button {
   cursor: pointer;
   background: none;
