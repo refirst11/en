@@ -8,10 +8,10 @@ type PegProp = {
   children: ReactNode;
 };
 
-const Animate = ({ children }: PegProp): JSX.Element => {
+const Animation = ({ children }: PegProp): JSX.Element => {
   const animate = useAnimation(styles.base, [styles.init, styles.exit], 0.2);
 
-  return <div className={animate}>{children}</div>;
+  return <main className={animate}>{children}</main>;
 };
 
-export default Animate;
+export default Animation;
