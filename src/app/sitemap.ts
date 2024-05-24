@@ -1,23 +1,25 @@
-import getAllPosts from 'lib/getAllPosts';
+import type { MetadataRoute } from 'next';
 
-async function getPosts() {
-  const posts = await getAllPosts();
-  return posts;
-}
-
-export default async function sitemap() {
-  const posts = await getPosts();
-  const url = process.env.PROD_URL;
-
-  const post = posts.map((post) => ({
-    url: url + '/' + post.slug,
-    lastModified: new Date(post.date),
-  }));
-
-  const routes = ['', '/posts', '/mail'].map((route) => ({
-    url: url + route,
-    lastModified: new Date(),
-  }));
-
-  return [...routes, ...post];
+export default function sitemap(): MetadataRoute.Sitemap {
+  const url = process.env.PROD_URL || '';
+  return [
+    {
+      url: url,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 1,
+    },
+    {
+      url: url + '/posts',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 1.2,
+    },
+    {
+      url: url + '/mail',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+  ];
 }
