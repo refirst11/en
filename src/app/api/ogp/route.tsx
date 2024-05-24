@@ -1,4 +1,5 @@
-import { NextRequest, ImageResponse } from 'next/server';
+import { ImageResponse } from 'next/og';
+import { NextRequest } from 'next/server';
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url as string);
