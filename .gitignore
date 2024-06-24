@@ -33,9 +33,6 @@ yarn-error.log*
 next-env.d.ts
 .husky/
 
-# prettier
-.vscode
-
 # eslint cache file
 .eslintcache
 
