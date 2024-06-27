@@ -7,6 +7,8 @@ export const metadata: Metadata = generateSEOData({ title: 'About', subtitle: 'p
 
 const Page = (): JSX.Element => {
   const url = process.env.PROJECTS_URL || '';
+  const fire = process.env.FIREMOTION || '';
+  const type = process.env.TYPEDCSSX || '';
   return (
     <Animation>
       <p>
@@ -17,13 +19,17 @@ const Page = (): JSX.Element => {
       </p>
       <h1>history</h1>
       <ul>
-        <li>1994: Kitakyushu, Fukuoka</li>
+        <li>1994: Born</li>
         <li>2014: Traveled to USA → Canada → Seattle</li>
-        <li>2016: Join PC DEPOT Co., Ltd. - to 2017</li>
+        <li>2016: Joined PC SHOP - to 2017</li>
         <li>2018: Passed the Japan high school certification</li>
         <li>2019: Learning design - to 2020</li>
         <li>2021: Learning programming and git (developer) to 2022</li>
-        <li>2023: Intern and Creates a Interface librarys</li>
+        <li>2023: Intern and Creates a React librarys</li>
+        <li>
+          2024: Creates <ExternalLink href={fire}>firemotion</ExternalLink> and{' '}
+          <ExternalLink href={type}>typedcssx</ExternalLink>
+        </li>
       </ul>
     </Animation>
   );
