@@ -11,7 +11,7 @@ const Footer = (): JSX.Element => {
   return (
     <footer className={styles.footer_main}>
       <div className={styles.footer_container}>
-        <div className={styles.footer_text}>{year + ' © S.watanabe.'}</div>
+        <div className={styles.footer_text}>{year + ' © Refirst.'}</div>
         <div className={styles.footer_icon}>
           <a href="https://github.com/refirst11">
             <RiGithubFill size={22} />
