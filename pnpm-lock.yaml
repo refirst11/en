@@ -12,8 +12,8 @@ dependencies:
     specifier: ^2.5.1
     version: 2.5.1
   firemotion:
-    specifier: 0.7.0
-    version: 0.7.0
+    specifier: ^0.8.0
+    version: 0.8.0
   framer-motion:
     specifier: ^10.18.0
     version: 10.18.0(react-dom@18.3.1)(react@18.3.1)
@@ -1922,8 +1922,8 @@ packages:
       path-exists: 4.0.0
     dev: true
 
-  /firemotion@0.7.0:
-    resolution: {integrity: sha512-tS8M7kttCj1C24fW4oQm4LUfQEuxGPhNPBtq3BUoM7ZXQ65ZF7niz3Q6xUxVWs4C1/orXy5zI57u2LPfdpOFiA==}
+  /firemotion@0.8.0:
+    resolution: {integrity: sha512-h1lUVqGzuZJVDgM0a4znSgWPe6ViJQ60hf1MF4IzZxVgeXUQQq9OI5r/MVqq3Fnx3i8xcMBH+SWXADxK5q1xFQ==}
     dev: false
 
   /flat-cache@3.2.0:
