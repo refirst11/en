@@ -2,7 +2,6 @@ import Link from 'next/link';
 import styles from './styles.module.scss';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
-import ExternalLink from 'components/ExternalLink';
 
 const Footer = (): JSX.Element => {
   const time = new Date();

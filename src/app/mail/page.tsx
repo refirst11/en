@@ -1,5 +1,5 @@
-import MailForm from 'components/MailForm';
-import generateSEOData from 'lib/generateSEOData';
+import MailForm from '@/components/MailForm';
+import generateSEOData from '@/lib/generateSEOData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = generateSEOData({

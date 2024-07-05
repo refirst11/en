@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import { useEffect, useCallback } from 'react';
 import useSWRInfinite from 'swr/infinite';
-import getKey from 'lib/getKey';
-import fetcher from 'lib/fetcher';
+import getKey from '@/lib/getKey';
+import fetcher from '@/lib/fetcher';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import pageSize from 'lib/pageSize';
-import PostsData from 'types/PostsData';
-import PostsProps from 'types/PostsProps';
+import pageSize from '@/lib/pageSize';
+import PostsData from '@/types/PostsData';
+import PostsProps from '@/types/PostsProps';
 import styles from './styles.module.scss';
 
 const Infinite = ({ posts }: PostsProps): JSX.Element => {

@@ -1,7 +1,7 @@
-import Animation from 'components/Animation';
+import Animation from '@/components/Animation';
 import { Metadata } from 'next';
-import generateSEOData from 'lib/generateSEOData';
-import ExternalLink from 'components/ExternalLink';
+import generateSEOData from '@/lib/generateSEOData';
+import ExternalLink from '@/components/ExternalLink';
 import styles from './styles.module.scss';
 
 export const metadata: Metadata = generateSEOData({ title: 'About', subtitle: 'personal page', date: '1994' });

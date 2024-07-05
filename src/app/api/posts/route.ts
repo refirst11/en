@@ -2,8 +2,8 @@
 
 import { NextResponse } from 'next/server';
 
-import pageSize from 'lib/pageSize';
-import getAllPosts from 'lib/getAllPosts';
+import pageSize from '@/lib/pageSize';
+import getAllPosts from '@/lib/getAllPosts';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);

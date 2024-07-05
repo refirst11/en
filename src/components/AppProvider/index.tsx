@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Analytics } from '@vercel/analytics/react';
-import Layout from 'components/Layout';
+import Layout from '@/components/Layout';
 
 type AppProp = {
   children: ReactNode;

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import PostProps from 'types/PostProps';
+import PostProps from '@/types/PostProps';
+import Animation from '@/components/Animation';
 import { HiOutlineBackspace } from 'react-icons/hi';
 import Link from 'next/link';
-import Animation from 'components/Animation';
 
 const ReturnLink = () => {
   return (

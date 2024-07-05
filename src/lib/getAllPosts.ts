@@ -1,8 +1,8 @@
 import fs from 'fs/promises';
 import matter from 'gray-matter';
 import path from 'path';
-import PostsData from 'types/PostsData';
-import PostsDataMap from 'types/PostsDataMap';
+import PostsData from '@/types/PostsData';
+import PostsDataMap from '@/types/PostsDataMap';
 
 const getAllPosts = async (skip?: number, limit?: number): Promise<PostsData[]> => {
   const folder = path.join(process.cwd(), '/src/entries');

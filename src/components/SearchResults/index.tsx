@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import styles from 'components/InfiniteScroll/styles.module.scss';
-import PostsProps from 'types/PostsProps';
+import styles from '@/components/InfiniteScroll/styles.module.scss';
+import PostsProps from '@/types/PostsProps';
 
 type keywordProps = {
   keyword: string;

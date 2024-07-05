@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import generateSEOData from 'lib/generateSEOData';
+import generateSEOData from '@/lib/generateSEOData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = generateSEOData({

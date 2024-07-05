@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import isCurrentLink from 'lib/isCurrentLink';
+import isCurrentLink from '@/lib/isCurrentLink';
 import Link from 'next/link';
 import styles from './styles.module.scss';
 

@@ -1,11 +1,11 @@
 'use client';
 
-import InfiniteScroll from 'components/InfiniteScroll';
-import SearchResults from 'components/SearchResults';
+import InfiniteScroll from '@/components/InfiniteScroll';
+import SearchResults from '@/components/SearchResults';
 import { useState } from 'react';
-import PostsProps from 'types/PostsProps';
+import PostsProps from '@/types/PostsProps';
 import styles from './styles.module.scss';
-import Animation from 'components/Animation';
+import Animation from '@/components/Animation';
 
 const PostsData = ({ posts }: PostsProps) => {
   const [keyword, setKeyword] = useState('');

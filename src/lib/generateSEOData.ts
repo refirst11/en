@@ -1,4 +1,4 @@
-import SeoData from 'types/SeoData';
+import SeoData from '@/types/SeoData';
 
 const generateSEOData = ({ title, subtitle, date }: SeoData) => {
   return {

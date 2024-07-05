@@ -1,6 +1,6 @@
-import 'styles/globals.scss';
-import 'styles/mobile.scss';
-import App from 'components/AppProvider';
+import '@/styles/globals.scss';
+import '@/styles/mobile.scss';
+import App from '@/components/AppProvider';
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { Playfair_Display } from 'next/font/google';

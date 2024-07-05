@@ -2,10 +2,9 @@
 
 import { AnimatePresence, LazyMotion, domAnimation, m } from 'framer-motion';
 import { useState } from 'react';
-import { useMail } from 'hooks/useMail';
-import Animation from 'components/Animation';
+import { useMail } from '@/hooks/useMail';
+import Animation from '@/components/Animation';
 import Image from 'next/image';
-import profilePic from '@public/alum.png';
 import styles from './styles.module.scss';
 
 const MailForm = (): JSX.Element => {
@@ -84,7 +83,7 @@ const MailForm = (): JSX.Element => {
           <div className={styles.fit_icons}>
             <Image
               className={styles.visited_icon}
-              src={profilePic}
+              src={'/alum.png'}
               priority
               alt="art"
               quality={100}

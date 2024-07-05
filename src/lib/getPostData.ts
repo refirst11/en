@@ -5,8 +5,8 @@ import { remark } from 'remark';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypePrettyCode from 'rehype-pretty-code';
-import PostDatMap from 'types/PostDataMap';
-import PostData from 'types/PostData';
+import PostDatMap from '@/types/PostDataMap';
+import PostData from '@/types/PostData';
 
 const getPostData = async (slug: string): Promise<PostData> => {
   const folder = path.join(process.cwd(), '/src/entries');
