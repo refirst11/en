@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run compile && next build",
     "start": "next start",
     "commitlint": "commitlint -e $GIT_PARAMS",
     "eslint": "eslint --ext .ts,.tsx --fix .",
     "stylelint": "stylelint \"**/*.scss\" --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
-    "find:unused": "next-unused"
+    "find:unused": "next-unused",
+    "compile": "cd node_modules/typedcssx && npm run compile"
   },
   "dependencies": {
     "@vercel/analytics": "^0.1.11",
