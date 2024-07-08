@@ -1,4 +1,4 @@
-import Animation from '@/components/Animation';
+import Animation from '@/components/Animation/index.css';
 import { Metadata } from 'next';
 import generateSEOData from '@/lib/generateSEOData';
 import ExternalLink from '@/components/ExternalLink';

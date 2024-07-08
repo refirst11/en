@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import PostProps from '@/types/PostProps';
-import Animation from '@/components/Animation';
 import { HiOutlineBackspace } from 'react-icons/hi';
 import Link from 'next/link';
 
@@ -15,7 +14,7 @@ const ReturnLink = () => {
 
 const PostData = ({ post }: PostProps) => {
   return (
-    <Animation>
+    <main>
       <div className={styles.negative_margin}>
         <h1 className={styles.color_h1}>
           {post.title}
@@ -23,7 +22,7 @@ const PostData = ({ post }: PostProps) => {
         </h1>
         <div className={styles.a_hover} dangerouslySetInnerHTML={{ __html: post.content }} />
       </div>
-    </Animation>
+    </main>
   );
 };
 

@@ -3,7 +3,7 @@
 import { AnimatePresence, LazyMotion, domAnimation, m } from 'framer-motion';
 import { useState } from 'react';
 import { useMail } from '@/hooks/useMail';
-import Animation from '@/components/Animation';
+import Animation from '@/components/Animation/index.css';
 import Image from 'next/image';
 import styles from './styles.module.scss';
 
