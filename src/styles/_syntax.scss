@@ -1,16 +1,16 @@
 @media (prefers-color-scheme: light) {
   :root {
-    --shiki-color-text: #555555; // 1
-    --shikii-color-background: #ffffff;
-    --shiki-token-constant: rgb(255, 130, 130); // 1
+    --shiki-color-text: #555555;
+    --shiki-color-background: #ffffff;
+    --shiki-token-constant: rgb(207, 85, 154);
     --shiki-token-string: #2e2c40;
     --shiki-token-comment: #555555;
-    --shiki-token-keyword: #6fd5e7;
-    --shiki-token-parameter: 555555;
+    --shiki-token-keyword: #52c2d6;
+    --shiki-token-parameter: #555555;
     --shiki-token-function: #ff8ebb;
-    --shiki-token-string-expression: #ff9e9e;
-    --shiki-token-punctuation: 555555;
-    --shiki-token-link: 555555;
+    --shiki-token-string-expression: #4b5563;
+    --shiki-token-punctuation: #555555;
+    --shiki-token-link: #555555;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -22,7 +22,7 @@
     --shiki-token-comment: #ffffff;
     --shiki-token-keyword: #77b7d7;
     --shiki-token-parameter: #ffffff;
-    --shiki-token-function: #ffffff;
+    --shiki-token-function: #afffff;
     --shiki-token-string-expression: #7c99dc;
     --shiki-token-punctuation: #ffffff;
     --shiki-token-link: #ffffff;
@@ -39,7 +39,7 @@ pre {
 }
 
 code {
-  font-family: var(--source);
+  font-family: 'Consolas', 'Menlo', 'Ubuntu Mono', 'DejaVu Sans Mono', 'Courier New', 'Courier', monospace;
 }
 
 [data-rehype-pretty-code-fragment] div {
@@ -59,7 +59,7 @@ code {
 }
 
 [data-rehype-pretty-code-fragment] code .line span {
-  font-size: 14.4px;
+  font-size: 12.8px;
 }
 
 p code {
