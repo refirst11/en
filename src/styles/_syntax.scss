@@ -54,12 +54,11 @@ code {
 
 [data-rehype-pretty-code-fragment] .line {
   padding: 0 20px;
-  line-height: 1.5;
   border-left: solid 4px transparent;
 }
 
 [data-rehype-pretty-code-fragment] code .line span {
-  font-size: 12.8px;
+  font-size: 12px;
 }
 
 p code {
@@ -100,6 +99,6 @@ code[data-line-numbers] .line::before {
   }
 
   [data-rehype-pretty-code-fragment] code .line span {
-    font-size: 12.4px;
+    font-size: 10px;
   }
 }
