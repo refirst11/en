@@ -50,7 +50,7 @@ const styles = Style.create({
     border: '1px solid #ddd',
     borderRadius: '5px',
     opacity: 0.7,
-    transition: 'all 0.8s ease-out',
+    transition: 'all 0.4s ease-out',
   },
 
   visible: {
