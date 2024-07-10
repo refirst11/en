@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from './styles.module.scss';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
+import { IoLogoOctocat } from 'react-icons/io';
 
 const Footer = (): JSX.Element => {
   const time = new Date();
@@ -12,6 +13,9 @@ const Footer = (): JSX.Element => {
       <div className={styles.footer_container}>
         <div className={styles.footer_text}>{year + ' © Refirst.'}</div>
         <div className={styles.footer_icon}>
+          <Link href="/cat">
+            <IoLogoOctocat size={22} />
+          </Link>
           <a href="https://github.com/refirst11">
             <RiGithubFill size={22} />
           </a>
