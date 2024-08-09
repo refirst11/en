@@ -1,7 +1,7 @@
 'use client';
 
 import { ReactNode } from 'react';
-import { useAnimation } from 'firemotion';
+import useFiremotion from 'firemotion';
 import { Style } from 'typedcssx';
 
 type AnimationProps = {
@@ -9,14 +9,14 @@ type AnimationProps = {
 };
 
 const Animation = ({ children }: AnimationProps): JSX.Element => {
-  const animate = useAnimation(styles.base, [styles.init, styles.exit], 0.2);
+  const animate = useFiremotion(styles.base, [styles.init, styles.exit], 0.2);
   return <main className={animate}>{children}</main>;
 };
 
 const styles = Style.create({
   base: {
     opacity: 1,
-    transition: 'all 0.6877777s',
+    transition: 'all 0.6877777s ease-in-out',
     scale: 1,
   },
 
@@ -27,7 +27,7 @@ const styles = Style.create({
 
   exit: {
     opacity: 0,
-    transition: 'all 0.17s',
+    transition: 'all 0.17s linear',
     scale: 1.1,
   },
 });
