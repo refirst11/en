@@ -10,6 +10,7 @@ const Page = (): JSX.Element => {
   const url = process.env.PROJECTS_URL || '';
   const fire = process.env.FIREMOTION || '';
   const type = process.env.TYPEDCSSX || '';
+  const snow = process.env.SNOWYUI || '';
   return (
     <Animation>
       <p>
@@ -26,10 +27,15 @@ const Page = (): JSX.Element => {
         <li>2018: Passed the Japan high school certification</li>
         <li>2019: Learning design - to 2020</li>
         <li>2021: Learning programming and git (developer) to 2022</li>
-        <li>2023: Intern and Creates React library</li>
+        <li>2023: Java Intern ship 1month</li>
         <li>
-          2024: Creates <ExternalLink href={type}>Typed CSS X</ExternalLink> and{' '}
-          <ExternalLink href={fire}>firemotion</ExternalLink>
+          2024: Creates <ExternalLink href={fire}>firemotion</ExternalLink>
+        </li>
+        <li>
+          2024: Creates <ExternalLink href={type}>Typed CSS X</ExternalLink>
+        </li>
+        <li>
+          2024: Creates <ExternalLink href={snow}>Snowy UI</ExternalLink>
         </li>
       </ul>
     </Animation>
