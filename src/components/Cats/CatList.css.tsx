@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { usePhotograph } from 'firemotion';
+import { usePhotograph } from '@/lib/use-photograph';
 import { Style } from 'typedcssx';
 import CatImage from '@/types/CatImage';
 
