@@ -1,14 +1,15 @@
 import React from 'react';
 import CatList from '@/components/Cats/CatList.css';
 import fetchCatData from '@/lib/fetchCatData';
+import Animation from '@/components/Animation/index.css';
 
 const HomePage = async () => {
   const catData = await fetchCatData();
 
   return (
-    <main>
+    <Animation>
       <CatList cats={catData} />
-    </main>
+    </Animation>
   );
 };
 

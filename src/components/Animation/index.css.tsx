@@ -9,26 +9,26 @@ type AnimationProps = {
 };
 
 const Animation = ({ children }: AnimationProps): JSX.Element => {
-  const animate = useFiremotion(styles.base, [styles.init, styles.exit], 0.2);
+  const animate = useFiremotion(styles.base, [styles.entry, styles.exit], 0.2);
   return <main className={animate}>{children}</main>;
 };
 
 const styles = Style.create({
   base: {
     opacity: 1,
-    transition: 'all 0.6877777s ease-in-out',
-    scale: 1,
+    clipPath: 'inset(0% 0% 0% 0%)',
+    transition: 'all 0.5s ease-in-out',
   },
 
-  init: {
+  entry: {
     opacity: 0,
-    scale: 1.1,
+    clipPath: 'inset(100% 0% 0% 0%)',
   },
 
   exit: {
     opacity: 0,
+    clipPath: 'inset(100% 0% 0% 0%)',
     transition: 'all 0.17s linear',
-    scale: 1.1,
   },
 });
 
