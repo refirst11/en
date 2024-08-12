@@ -66,8 +66,8 @@ dependencies:
     specifier: ^2.2.5
     version: 2.2.5(react@18.3.1)
   typedcssx:
-    specifier: ^1.3.8
-    version: 1.3.8
+    specifier: ^2.0.6
+    version: 2.0.6
   typescript:
     specifier: ^4.9.5
     version: 4.9.5
@@ -626,10 +626,6 @@ packages:
       tslib: 2.6.3
     dev: false
 
-  /@types/css-modules@1.0.5:
-    resolution: {integrity: sha512-oeKafs/df9lwOvtfiXVliZsocFVOexK9PZtLQWuPeuVCFR7jwiqlg60lu80JTe5NFNtH3tnV6Fs/ySR8BUPHAw==}
-    dev: false
-
   /@types/debug@4.1.12:
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
     dependencies:
@@ -667,12 +663,6 @@ packages:
   /@types/node@18.6.2:
     resolution: {integrity: sha512-KcfkBq9H4PI6Vpu5B/KoPeuVDAbmi+2mDBqGPGUgoL7yXQtcWGu2vJWmmRkneWK3Rh0nIAX192Aa87AqKHYChQ==}
     dev: true
-
-  /@types/node@20.14.10:
-    resolution: {integrity: sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==}
-    dependencies:
-      undici-types: 5.26.5
-    dev: false
 
   /@types/nodemailer@6.4.15:
     resolution: {integrity: sha512-0EBJxawVNjPkng1zm2vopRctuWVCxk34JcIlRuXSf54habUWdz1FB7wHDqOqvDa8Mtpt0Q3LTXQkAs2LNyK5jQ==}
@@ -5332,11 +5322,9 @@ packages:
       possible-typed-array-names: 1.0.0
     dev: true
 
-  /typedcssx@1.3.8:
-    resolution: {integrity: sha512-a5bEtwqDQrG+isiB3sOSgHbJ7kECpqjZU2YWPiNz0I7BhvS9sqNksCZOHm1/XkiYBcNkapFoyHzTpWxi/XqZyA==}
+  /typedcssx@2.0.6:
+    resolution: {integrity: sha512-5RFJ7u0tc7Wxj9ZYcAg09R/+KQpQ2yKzvPxxFhkMSHTM7SZyLWMh/y5vII0pGi0wIwQfFNePtCnziDD/qX0q4w==}
     dependencies:
-      '@types/css-modules': 1.0.5
-      '@types/node': 20.14.10
       fast-glob: 3.3.2
       tsx: 4.16.2
     dev: false
@@ -5360,10 +5348,6 @@ packages:
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
     dev: true
-
-  /undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
-    dev: false
 
   /unified@10.1.2:
     resolution: {integrity: sha512-pUSWAi/RAnVy1Pif2kAoeWNBa3JVrx0MId2LASj8G+7AiHWoKZNTomq6LG326T68U7/e263X6fTdcXIy7XnF7Q==}
