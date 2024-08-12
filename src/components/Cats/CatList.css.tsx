@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { usePhotograph } from '@/lib/use-photograph';
-import { Style } from 'typedcssx';
+import Style from 'typedcssx';
 import CatImage from '@/types/CatImage';
 
 type CatListProps = {
