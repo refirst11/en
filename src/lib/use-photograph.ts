@@ -27,8 +27,6 @@ export const usePhotograph = (attach: string) => {
 
     if (isVisible) {
       imageRef.current.classList.add(attach);
-    } else {
-      imageRef.current.classList.remove(attach);
     }
   }, [isVisible, attach]);
 
