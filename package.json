@@ -17,7 +17,7 @@
   "dependencies": {
     "@vercel/analytics": "^0.1.11",
     "classnames": "^2.5.1",
-    "firemotion": "^1.0.1",
+    "firemotion": "^1.0.2",
     "framer-motion": "^10.18.0",
     "fs": "0.0.1-security",
     "gray-matter": "^4.0.3",
