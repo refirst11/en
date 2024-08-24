@@ -9,7 +9,7 @@ type AnimationProps = {
 };
 
 const Animation = ({ children }: AnimationProps): JSX.Element => {
-  const animate = useFiremotion(styles.base, [styles.entry, styles.exit], 0.35);
+  const animate = useFiremotion(styles.base, [styles.entry, styles.exit], 0.48);
   return <main className={animate}>{children}</main>;
 };
 
@@ -19,19 +19,19 @@ const styles = Style.create({
       padding: '120px 0',
     },
     opacity: 1,
-    clipPath: 'inset(0% 0% 0% 0%)',
-    transition: 'all 0.5s ease-in-out',
+    clipPath: 'circle(150% at 50% 50%)',
+    transition: 'all 1s',
   },
 
   entry: {
     opacity: 0,
-    clipPath: 'inset(100% 0% 0% 0%)',
+    clipPath: 'circle(0% at 50% 50%)',
   },
 
   exit: {
     opacity: 0,
-    clipPath: 'inset(100% 0% 0% 0%)',
-    transition: 'all 0.28s linear',
+    transition: 'all 0.4s',
+    clipPath: 'circle(0% at 50% 50%)',
   },
 });
 
