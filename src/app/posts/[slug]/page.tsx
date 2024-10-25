@@ -11,12 +11,14 @@ const getPost = async (slug: string) => {
 };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const post = await getPost(params.slug);
+  const resolveParams = await params;
+  const post = await getPost(resolveParams.slug);
   return generateSEOData({ title: post.title, subtitle: post.subtitle, date: post.date });
 }
 
 async function Page({ params }: Params) {
-  const post = await getPost(params.slug);
+  const resolveParams = await params;
+  const post = await getPost(resolveParams.slug);
 
   return <PostData post={post} />;
 }
