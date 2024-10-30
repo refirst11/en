@@ -32,10 +32,7 @@ const Page = (): JSX.Element => {
           2024: Creates <ExternalLink href={fire}>firemotion</ExternalLink>
         </li>
         <li>
-          2024: Creates <ExternalLink href={type}>Typed CSS X</ExternalLink>
-        </li>
-        <li>
-          2024: Creates <ExternalLink href={snow}>Snowy UI</ExternalLink>
+          2024: Creates <ExternalLink href={type}>TypedX</ExternalLink>
         </li>
       </ul>
     </Animation>
