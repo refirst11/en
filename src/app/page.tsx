@@ -1,16 +1,16 @@
-import Animation from '@/components/Animation/index.css';
+import Animation from '@/components/Animation';
 import { Metadata } from 'next';
 import generateSEOData from '@/lib/generateSEOData';
 import ExternalLink from '@/components/ExternalLink';
 import styles from './styles.module.scss';
 
-export const metadata: Metadata = generateSEOData({ title: 'About', subtitle: 'personal page', date: '1994' });
+export const metadata: Metadata = generateSEOData({ title: 'Top', subtitle: 'personal page', date: '1994' });
 
 const Page = (): JSX.Element => {
   const url = process.env.PROJECTS_URL || '';
   const fire = process.env.FIREMOTION || '';
-  const type = process.env.TYPEDCSSX || '';
-  const snow = process.env.SNOWYUI || '';
+  const elter = process.env.ELTER || '';
+
   return (
     <Animation>
       <p>
@@ -32,7 +32,7 @@ const Page = (): JSX.Element => {
           2024: Creates <ExternalLink href={fire}>firemotion</ExternalLink>
         </li>
         <li>
-          2024: Creates <ExternalLink href={type}>TypedX</ExternalLink>
+          2024: Creates <ExternalLink href={elter}>elter</ExternalLink>
         </li>
       </ul>
     </Animation>

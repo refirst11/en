@@ -10,7 +10,7 @@ const Header = (): JSX.Element => {
   const Headers: { href: string; name: string }[] = [
     {
       href: '/',
-      name: 'About',
+      name: 'Top',
     },
     {
       href: '/posts',
