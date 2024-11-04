@@ -2,36 +2,14 @@
 
 import React from 'react';
 import { usePhotograph } from '@/lib/use-photograph';
-import Style from 'typedcssx';
+import elter from 'elter';
 import CatImage from '@/types/CatImage';
 
 type CatListProps = {
   cats: CatImage[];
 };
 
-const CatItem = ({ cat }: { cat: CatImage }) => {
-  const imageRef = usePhotograph(styles.visible);
-
-  return (
-    <img ref={imageRef} className={styles.cat_item} src={cat.url} alt={`Cat ${cat.id}`} width={250} height={200} />
-  );
-};
-
-const CatList = ({ cats }: CatListProps) => {
-  return (
-    <>
-      <h1 className={styles.heading}>Cat Images</h1>
-      <div className={styles.cat_list}>
-        {cats.map((cat) => (
-          <CatItem key={cat.id} cat={cat} />
-        ))}
-      </div>
-      <h1 className={styles.heading}>credit at The Cat API</h1>
-    </>
-  );
-};
-
-const styles = Style.create({
+const styles = elter.create({
   heading: {
     textAlign: 'center',
   },
@@ -58,5 +36,27 @@ const styles = Style.create({
     opacity: 1,
   },
 });
+
+const CatItem = ({ cat }: { cat: CatImage }) => {
+  const imageRef = usePhotograph(styles.visible);
+
+  return (
+    <img ref={imageRef} className={styles.cat_item} src={cat.url} alt={`Cat ${cat.id}`} width={250} height={200} />
+  );
+};
+
+const CatList = ({ cats }: CatListProps) => {
+  return (
+    <>
+      <h1 className={styles.heading}>Cat Images</h1>
+      <div className={styles.cat_list}>
+        {cats.map((cat) => (
+          <CatItem key={cat.id} cat={cat} />
+        ))}
+      </div>
+      <h1 className={styles.heading}>credit at The Cat API</h1>
+    </>
+  );
+};
 
 export default CatList;

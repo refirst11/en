@@ -5,7 +5,7 @@ import SearchResults from '@/components/SearchResults';
 import { useState } from 'react';
 import PostsProps from '@/types/PostsProps';
 import styles from './styles.module.scss';
-import Animation from '@/components/Animation/index.css';
+import Animation from '@/components/Animation';
 
 const PostsData = ({ posts }: PostsProps) => {
   const [keyword, setKeyword] = useState('');

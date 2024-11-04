@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react';
 import useFiremotion from 'firemotion';
-import cssx, { max_lg } from 'typedcssx';
+import elter, { max_lg } from 'elter';
 
 type AnimationProps = {
   children: ReactNode;
@@ -13,25 +13,25 @@ const Animation = ({ children }: AnimationProps): JSX.Element => {
   return <main className={animate}>{children}</main>;
 };
 
-const styles = cssx.create({
+const styles = elter.create({
   base: {
     [max_lg]: {
       padding: '120px 0',
     },
     opacity: 1,
-    clipPath: 'circle(150% at 50% 50%)',
-    padding: '20px 20px 2rem 2rem',
+    clipPath: 'inset(0% 0% 0% 0%)',
+    transition: 'all 0.5s ease-in-out',
   },
 
   entry: {
     opacity: 0,
-    clipPath: 'circle(0% at 50% 50%)',
+    clipPath: 'inset(100% 0% 0% 0%)',
   },
 
   exit: {
     opacity: 0,
-    transition: 'all 0.4s',
-    clipPath: 'circle(0% at 50% 50%)',
+    clipPath: 'inset(100% 0% 0% 0%)',
+    transition: 'all 0.17s linear',
   },
 });
 

@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 import PostProps from '@/types/PostProps';
 import { HiOutlineBackspace } from 'react-icons/hi';
 import Link from 'next/link';
-import Animation from '@/components/Animation/index.css';
+import Animation from '@/components/Animation';
 
 const ReturnLink = () => {
   return (
