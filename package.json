@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "cssx --log && next build",
+    "build": "elter --compile && next build",
     "start": "next start",
     "commitlint": "commitlint -e $GIT_PARAMS",
     "eslint": "eslint --ext .ts,.tsx --fix .",
@@ -44,6 +44,7 @@
     "@types/react": "^18.3.3",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
+    "elter": "^1.0.5",
     "eslint": "^7.32.0",
     "eslint-config-next": "^13.5.6",
     "eslint-config-prettier": "^8.10.0",
@@ -56,7 +57,6 @@
     "stylelint": "^15.11.0",
     "stylelint-config-recess-order": "^4.6.0",
     "stylelint-config-recommended": "^12.0.0",
-    "typedcssx": "^3.3.5",
     "typescript": "^5.5.4"
   },
   "lint-staged": {

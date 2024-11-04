@@ -90,6 +90,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^5.62.0
         version: 5.62.0(eslint@7.32.0)(typescript@5.5.4)
+      elter:
+        specifier: ^1.0.5
+        version: 1.0.5
       eslint:
         specifier: ^7.32.0
         version: 7.32.0
@@ -126,9 +129,6 @@ importers:
       stylelint-config-recommended:
         specifier: ^12.0.0
         version: 12.0.0(stylelint@15.11.0(typescript@5.5.4))
-      typedcssx:
-        specifier: ^3.3.5
-        version: 3.3.5
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -1160,6 +1160,10 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+
+  elter@1.0.5:
+    resolution: {integrity: sha512-5Pzq9OxzsF4hkPHbsqDA38KFzjW3NvjTYDEAAk9BfzLYRvrIi+PWLJLnvzcNb14B9QyOTaTVSeOLkPBLqaSIjg==}
+    hasBin: true
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -2944,8 +2948,8 @@ packages:
     peerDependencies:
       typescript: '>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta'
 
-  tsx@4.19.1:
-    resolution: {integrity: sha512-0flMz1lh74BR4wOvBjuh9olbnwqCPc35OOlfyzHba0Dc+QNUeWX/Gq2YTbnwcWPO3BMd8fkzRVrHcsR+a7z7rA==}
+  tsx@4.19.2:
+    resolution: {integrity: sha512-pOUl6Vo2LUq/bSa8S5q7b91cgNSjctn9ugq/+Mvow99qW6x/UZYwzxy/3NmqoT66eHYfCVvFvACC58UBPFf28g==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -2983,10 +2987,6 @@ packages:
   typed-array-length@1.0.6:
     resolution: {integrity: sha512-/OxDN6OtAk5KBpGb28T+HZc2M+ADtvRxXrKKbUwtsLgdoxgX13hyy7ek6bFRl5+aBs2yZzB0c4CnQfAtVypW/g==}
     engines: {node: '>= 0.4'}
-
-  typedcssx@3.3.5:
-    resolution: {integrity: sha512-REX1eJvx4E0uJB9HpAcD5Y3FglSKQMHa9ZJPyCHqxiHr7eKvQzCkCb2q3VqMmfzF4Dkj5wXvwF2U0OxKijgSyg==}
-    hasBin: true
 
   typescript@3.9.10:
     resolution: {integrity: sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==}
@@ -4128,6 +4128,11 @@ snapshots:
       esutils: 2.0.3
 
   eastasianwidth@0.2.0: {}
+
+  elter@1.0.5:
+    dependencies:
+      globby: 14.0.2
+      tsx: 4.19.2
 
   emoji-regex@8.0.0: {}
 
@@ -6398,7 +6403,7 @@ snapshots:
       tslib: 1.14.1
       typescript: 5.5.4
 
-  tsx@4.19.1:
+  tsx@4.19.2:
     dependencies:
       esbuild: 0.23.1
       get-tsconfig: 4.7.6
@@ -6450,11 +6455,6 @@ snapshots:
       has-proto: 1.0.3
       is-typed-array: 1.1.13
       possible-typed-array-names: 1.0.0
-
-  typedcssx@3.3.5:
-    dependencies:
-      globby: 14.0.2
-      tsx: 4.19.1
 
   typescript@3.9.10: {}
 
