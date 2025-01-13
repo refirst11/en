@@ -2,27 +2,27 @@
 
 import React from 'react';
 import { usePhotograph } from '@/lib/use-photograph';
-import elter from 'elter';
+import { css } from '@plumeria/core';
 import CatImage from '@/types/CatImage';
 
 type CatListProps = {
   cats: CatImage[];
 };
 
-const styles = elter.create({
+const styles = css.create({
   heading: {
     textAlign: 'center',
   },
   cat_list: {
     display: 'flex',
     flexWrap: 'wrap',
-    gap: 20,
+    gap: '20px',
     justifyContent: 'center',
     marginTop: '40px',
   },
 
   cat_item: {
-    padding: 10,
+    padding: '20px',
     objectFit: 'cover',
     filter: 'blur(30px)',
     border: '1px solid #ddd',

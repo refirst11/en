@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react';
 import useFiremotion from 'firemotion';
-import elter, { max_lg } from 'elter';
+import { css } from '@plumeria/core';
 
 type AnimationProps = {
   children: ReactNode;
@@ -13,24 +13,24 @@ const Animation = ({ children }: AnimationProps): JSX.Element => {
   return <main className={animate}>{children}</main>;
 };
 
-const styles = elter.create({
+const styles = css.create({
   base: {
-    [max_lg]: {
+    clipPath: 'inset(0% 0% 0% 0%)',
+    opacity: 1,
+    transition: 'all 0.5s ease-in-out',
+    [css.media.max_lg]: {
       padding: '120px 0',
     },
-    opacity: 1,
-    clipPath: 'inset(0% 0% 0% 0%)',
-    transition: 'all 0.5s ease-in-out',
   },
 
   entry: {
-    opacity: 0,
     clipPath: 'inset(100% 0% 0% 0%)',
+    opacity: 0,
   },
 
   exit: {
-    opacity: 0,
     clipPath: 'inset(100% 0% 0% 0%)',
+    opacity: 0,
     transition: 'all 0.17s linear',
   },
 });
