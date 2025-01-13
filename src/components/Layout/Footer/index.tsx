@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import { HiRss, HiOutlineMail } from 'react-icons/hi';
 import { RiGithubFill } from 'react-icons/ri';
 import { IoLogoOctocat } from 'react-icons/io';
+import { JSX } from 'react';
 
 const Footer = (): JSX.Element => {
   const time = new Date();

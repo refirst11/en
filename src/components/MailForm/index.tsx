@@ -1,7 +1,7 @@
 'use client';
 
 import { AnimatePresence, LazyMotion, domAnimation, m } from 'framer-motion';
-import { useState } from 'react';
+import { JSX, useState } from 'react';
 import { useMail } from '@/hooks/useMail';
 import Animation from '@/components/Animation';
 import Image from 'next/image';
@@ -114,7 +114,7 @@ const MailForm = (): JSX.Element => {
                 <m.div
                   key="2"
                   onClick={() => setError(undefined)}
-                  animate={{ y: -4, transition: { type: 'spring', duration: 1, bounce: 1 } }}
+                  animate={{ transition: { type: 'spring', duration: 1, bounce: 1 }, y: -4 }}
                   exit={{ y: 0 }}
                 >
                   {MailFormDom}

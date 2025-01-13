@@ -14,45 +14,45 @@ export async function GET(req: NextRequest) {
       <div
         style={{
           display: 'flex',
-          background: '#fffffe',
           width: '100%',
           height: '100%',
+          background: '#fffffe',
         }}
       >
         <div
           style={{
-            color: 'rgb(150 150 150)',
-            fontSize: '24px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
             width: '100%',
             height: '100%',
             padding: '200px',
-            display: 'flex',
+            fontSize: '24px',
+            color: 'rgb(150 150 150)',
             textAlign: 'center',
-            alignItems: 'center',
-            justifyContent: 'center',
           }}
         >
           <img
             src={url + '/alum.png'}
             style={{
               position: 'absolute',
+              top: -60,
+              right: -40,
               width: '200px',
               height: '200px',
               borderRadius: '8px',
-              right: '-40',
-              top: '-60',
-              transform: 'rotate(-40deg) scaleX(-1)',
               boxShadow: '0 0 4px -1px var(--color-shadow)',
+              transform: 'rotate(-40deg) scaleX(-1)',
             }}
           />
           {title}
           <div
             style={{
-              display: 'flex',
               position: 'absolute',
-              fontSize: '24px',
-              bottom: '20px',
               right: '40px',
+              bottom: '20px',
+              display: 'flex',
+              fontSize: '24px',
             }}
           >
             {date}

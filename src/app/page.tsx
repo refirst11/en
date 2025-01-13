@@ -3,13 +3,13 @@ import { Metadata } from 'next';
 import generateSEOData from '@/lib/generateSEOData';
 import ExternalLink from '@/components/ExternalLink';
 import styles from './styles.module.scss';
+import { JSX } from 'react';
 
 export const metadata: Metadata = generateSEOData({ title: 'Top', subtitle: 'personal page', date: '1994' });
 
 const Page = (): JSX.Element => {
   const url = process.env.PROJECTS_URL || '';
-  const fire = process.env.FIREMOTION || '';
-  const elter = process.env.ELTER || '';
+  // const fire = process.env.FIREMOTION || '';
 
   return (
     <Animation>
@@ -28,12 +28,12 @@ const Page = (): JSX.Element => {
         <li>2019: Learning design - to 2020</li>
         <li>2021: Learning programming and git (developer) to 2022</li>
         <li>2023: Java Intern ship 1month</li>
-        <li>
-          2024: Creates <ExternalLink href={fire}>firemotion</ExternalLink>
-        </li>
-        <li>
-          2024: Creates <ExternalLink href={elter}>elter</ExternalLink>
-        </li>
+        <li>2024: Create firemotion</li>
+        <li>2024: Create TypedCSSX ( archived )</li>
+        <li>2024: Create elter ( archived )</li>
+        <li>2025: Create eslint-plugin-object-css</li>
+        <li>2025: Create zss-engine</li>
+        <li>2025: Create plumeria</li>
       </ul>
     </Animation>
   );

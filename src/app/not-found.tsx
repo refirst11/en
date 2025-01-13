@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import generateSEOData from '@/lib/generateSEOData';
 import { Metadata } from 'next';
+import { JSX } from 'react';
 
 export const metadata: Metadata = generateSEOData({
   title: 'not found 404',

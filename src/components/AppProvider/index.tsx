@@ -1,5 +1,4 @@
-import type { ReactNode } from 'react';
-import { Analytics } from '@vercel/analytics/react';
+import type { JSX, ReactNode } from 'react';
 import Layout from '@/components/Layout';
 
 type AppProp = {
@@ -7,12 +6,7 @@ type AppProp = {
 };
 
 const App = ({ children }: AppProp): JSX.Element => {
-  return (
-    <Layout>
-      <Analytics mode={'production'} />
-      {children}
-    </Layout>
-  );
+  return <Layout>{children}</Layout>;
 };
 
 export default App;

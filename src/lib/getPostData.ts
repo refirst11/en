@@ -26,10 +26,10 @@ const getPostData = async (slug: string): Promise<PostData> => {
     .process(content);
   const contentHtml = processedContent.toString();
   const post: PostData = {
+    content: contentHtml,
     title: data.title as string,
     subtitle: data.subtitle as string,
     date: data.date as string,
-    content: contentHtml,
   };
   return post;
 };

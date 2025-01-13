@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode } from 'react';
+import { JSX, ReactNode } from 'react';
 import useFiremotion from 'firemotion';
 import { css } from '@plumeria/core';
 

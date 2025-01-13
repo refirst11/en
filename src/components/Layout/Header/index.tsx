@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import isCurrentLink from '@/lib/isCurrentLink';
 import Link from 'next/link';
 import styles from './styles.module.scss';
+import { JSX } from 'react';
 
 const Header = (): JSX.Element => {
   const pathname = usePathname();

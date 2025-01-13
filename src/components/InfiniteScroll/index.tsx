@@ -11,7 +11,7 @@ import PostsData from '@/types/PostsData';
 import PostsProps from '@/types/PostsProps';
 import styles from './styles.module.scss';
 
-const Infinite = ({ posts }: PostsProps): JSX.Element => {
+const Infinite = ({ posts }: PostsProps) => {
   // isValidating and Spinner UI is seamless ux.
   const { data, size, setSize } = useSWRInfinite<PostsData>(getKey, fetcher, {
     revalidateFirstPage: false,
