@@ -17,7 +17,7 @@ type RootLayoutProps = {
   children: ReactNode;
 };
 
-export const fetchCache = 'force-cache';
+export const dynamic = 'force-static';
 export const dynamicParams = false;
 
 export default function RootLayout({ children }: RootLayoutProps) {
