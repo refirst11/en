@@ -11,11 +11,10 @@
     "stylelint": "stylelint \"**/*.scss\" --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky install",
-    "find:unused": "next-unused",
     "compile": "cd node_modules/typedcssx && npm run compiler"
   },
   "dependencies": {
-    "@plumeria/core": "^0.1.0",
+    "@plumeria/core": "^0.1.1",
     "classnames": "^2.5.1",
     "eslint": "8.57.0",
     "firemotion": "^1.0.2",
@@ -39,7 +38,6 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.3.4",
-    "@piro0919/next-unused": "^0.2.2",
     "@types/node": "^22.2.0",
     "@types/nodemailer": "^6.4.15",
     "@types/react": "19.0.0",
