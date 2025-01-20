@@ -14,7 +14,8 @@
     "compile": "cd node_modules/typedcssx && npm run compiler"
   },
   "dependencies": {
-    "@plumeria/core": "^0.1.1",
+    "@plumeria/core": "^0.2.2",
+    "@plumeria/next": "^0.2.0",
     "classnames": "^2.5.1",
     "eslint": "8.57.0",
     "firemotion": "^1.0.2",

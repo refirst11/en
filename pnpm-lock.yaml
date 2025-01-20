@@ -9,8 +9,11 @@ importers:
   .:
     dependencies:
       '@plumeria/core':
-        specifier: ^0.1.1
-        version: 0.1.1
+        specifier: ^0.2.2
+        version: 0.2.2
+      '@plumeria/next':
+        specifier: ^0.2.0
+        version: 0.2.0
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -525,9 +528,12 @@ packages:
   '@plumeria/compiler@0.1.1':
     resolution: {integrity: sha512-aeicmdIIZoMwd+gxBUI4Iv5FeqacxFB0p7HSn9ggI/1WML5JXZR95irj9dHQdXMqq7PRXR/D3s+dwLod9p+7tw==}
 
-  '@plumeria/core@0.1.1':
-    resolution: {integrity: sha512-ZOpAePLwKNu8uFjZxbVD3QCZDCyk3Dz0JoPY2ax6EfvvuaHo1gOlR4/AlOSN3fA26JY3FvrTdLTfNVTFL2Pifg==}
+  '@plumeria/core@0.2.2':
+    resolution: {integrity: sha512-yC+89oBCURhQH5uN1YhtGpAq3IEWDoCNjNu3lQ4JdeCUyk+zEALesUgUSCVrgn6j5wGtCDI7ZMhOeRvodhHFtg==}
     hasBin: true
+
+  '@plumeria/next@0.2.0':
+    resolution: {integrity: sha512-l1q1jht4uPtam83PkwNjv5mhdQrIoPP7nau10hhf3XimF/nOwMM5emGfU6wigXEFgN2Yk/V+vk7VTtqAIYL7tQ==}
 
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
@@ -2874,8 +2880,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zss-engine@0.1.2:
-    resolution: {integrity: sha512-hFR9wAgBRU3hnQqSghHg56laEfQ8AJn4Ty5kl5mroyZI9O/gzn/6j72Ca4bTMhD571c/H07Ov0mlZ9vMt9S2KA==}
+  zss-engine@0.2.2:
+    resolution: {integrity: sha512-364pq6MVTi3yyh9Hkar9YCLbEmGiYWAzFH0b7rmet87bH2lkuBrsqV3B5lSOrkXjw/TAPl84pBLtm46YlYpkIw==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -3149,11 +3155,13 @@ snapshots:
       postcss-combine-duplicated-selectors: 10.0.3(postcss@8.5.1)
       tsx: 4.19.2
 
-  '@plumeria/core@0.1.1':
+  '@plumeria/core@0.2.2':
     dependencies:
       '@plumeria/collection': 0.1.1
       '@plumeria/compiler': 0.1.1
-      zss-engine: 0.1.2
+      zss-engine: 0.2.2
+
+  '@plumeria/next@0.2.0': {}
 
   '@rtsao/scc@1.1.0': {}
 
@@ -6053,7 +6061,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zss-engine@0.1.2:
+  zss-engine@0.2.2:
     dependencies:
       csstype: 3.1.3
 
