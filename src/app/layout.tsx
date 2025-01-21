@@ -4,6 +4,7 @@ import App from '@/components/AppProvider';
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { Playfair_Display } from 'next/font/google';
+import { ServerCSS } from '@plumeria/next';
 
 const playfair = Playfair_Display({ subsets: ['latin'], weight: '400', variable: '--source' });
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <link rel="prefetch" href={url} />
         <link rel="prefetch" href="/feed.xml" />
+        <ServerCSS />
       </head>
       <body className={font}>
         <App>{children}</App>
