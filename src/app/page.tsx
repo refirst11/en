@@ -9,12 +9,11 @@ export const metadata: Metadata = generateSEOData({ title: 'Top', subtitle: 'per
 
 const Page = (): JSX.Element => {
   const url = process.env.PROJECTS_URL || '';
-  // const fire = process.env.FIREMOTION || '';
 
   return (
     <Animation>
       <p>
-        I've creates ideas and designs software, and currently living in Tokyo.
+        I&apos;ve creates ideas and designs software, and currently living in Tokyo.
         <br />
         like work on
         <ExternalLink href={url}> my projects</ExternalLink> and I want newest and most advanced areas.
@@ -33,7 +32,7 @@ const Page = (): JSX.Element => {
         <li>2024: Create elter ( archived )</li>
         <li>2025: Create eslint-plugin-object-css</li>
         <li>2025: Create zss-engine</li>
-        <li>2025: Create plumeria</li>
+        <li>2025: Create plumeria ( css-in-js )</li>
       </ul>
     </Animation>
   );
