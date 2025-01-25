@@ -1,25 +1,17 @@
 import eslint from '@eslint/js';
-import { FlatCompat } from '@eslint/eslintrc';
+import tseslint from 'typescript-eslint';
 import objectCss from 'eslint-plugin-object-css';
 
-const __dirname = import.meta.dirname;
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
+const eslintConfig = tseslint.config(
   eslint.configs.recommended,
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  ...tseslint.configs.strict,
+  objectCss.flatConfigs.recommended,
   {
-    files: ['**/*.{ts,js,jsx,tsx}'],
-    plugins: {
-      'object-css': objectCss,
-    },
+    files: ['**/*.{ts,tsx}'],
     rules: {
-      'object-css/recess-order': 'warn',
-      'object-css/valid-value': 'error',
+      '@typescript-eslint/no-unused-expressions': 'off',
     },
-  },
-];
+  }
+);
 
 export default eslintConfig;
