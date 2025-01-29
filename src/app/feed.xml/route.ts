@@ -1,4 +1,4 @@
-import getAllPosts from '@/lib/getAllPosts';
+import getAllPosts from 'lib/getAllPosts';
 
 const getPosts = async () => {
   const posts = await getAllPosts();

@@ -1,40 +1,114 @@
-import Animation from '@/components/Animation';
 import { Metadata } from 'next';
-import generateSEOData from '@/lib/generateSEOData';
-import ExternalLink from '@/components/ExternalLink';
-import styles from './styles.module.scss';
+import generateSEOData from 'lib/generateSEOData';
+import { css, cx } from '@plumeria/core';
 import { JSX } from 'react';
 
-export const metadata: Metadata = generateSEOData({ title: 'Top', subtitle: 'personal page', date: '1994' });
+const styles = css.create({
+  name: {
+    position: 'relative',
+    bottom: 20,
+    [css.media.max('width: 800px')]: {
+      bottom: 32,
+    },
+  },
+  list: {
+    position: 'relative',
+    top: 40,
+    width: '480px',
+    [cx('& li', css.pseudo.hover)]: {
+      color: '#80a3db',
+    },
+    [css.media.max('width: 800px')]: {
+      width: '100%',
+      '& li': {
+        width: '100%',
+      },
+    },
+
+    '& li': {
+      position: 'relative',
+      top: -32,
+      right: 8,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      width: 496,
+      padding: 16,
+      margin: 0,
+      fontWeight: '500',
+      color: 'black',
+      listStyle: 'none',
+      borderRadius: 12,
+    },
+    '& li div': {
+      position: 'relative',
+      top: 2,
+      flex: 1,
+      height: '1px',
+      margin: '0 8px',
+      background: '#d9d9d9',
+    },
+  },
+  date: {
+    marginLeft: 4,
+    fontWeight: '400',
+    color: 'gray',
+  },
+});
+
+export const metadata: Metadata = generateSEOData({ title: 'about', subtitle: 'personal page', date: '1994' });
 
 const Page = (): JSX.Element => {
-  const url = process.env.PROJECTS_URL || '';
-
   return (
-    <Animation>
+    <>
+      <h1 className={styles.name}>Re First</h1>
       <p>
-        I&apos;ve creates ideas and designs software, and currently living in Tokyo.
-        <br />
-        like work on
-        <ExternalLink href={url}> my projects</ExternalLink> and I want newest and most advanced areas.
+        I&apos;ve creates ideas and designs software, and currently living in JPN. like work on Ever since I grew up, I
+        have had a wide interest in the world of Audio, Engineering and Information Technology.
       </p>
-      <h1>history</h1>
       <ul className={styles.list}>
-        <li>1994: Born</li>
-        <li>2014: Traveled to USA → Canada → Seattle</li>
-        <li>2016: Joined PC SHOP - to 2017</li>
-        <li>2018: Passed the Japan high school certification</li>
-        <li>2019: Learning design - to 2020</li>
-        <li>2021: Learning programming and git (developer) to 2022</li>
-        <li>2023: Java Intern ship 1month</li>
-        <li>2024: Create firemotion</li>
-        <li>2024: Create TypedCSSX ( archived )</li>
-        <li>2024: Create elter ( archived )</li>
-        <li>2025: Create eslint-plugin-object-css</li>
-        <li>2025: Create zss-engine</li>
-        <li>2025: Create plumeria ( css-in-js )</li>
+        <li>
+          <span>Java Intern ship 1month</span>
+          <div />
+          <span className={styles.date}>2023</span>
+        </li>
+        <li>
+          <span>Learning programming and git to 2022</span>
+          <div />
+          <span className={styles.date}>2021</span>
+        </li>
+        <li>
+          <span>Learning design - to 2020</span>
+          <div />
+          <span className={styles.date}>2019</span>
+        </li>
+        <li>
+          <span>Passed the Japan high school certification</span>
+          <div />
+          <span className={styles.date}>2018</span>
+        </li>
+        <li>
+          <span>Leave PC SHOP</span>
+          <div />
+          <span className={styles.date}>2017</span>
+        </li>
+        <li>
+          <span>Joined PC SHOP</span>
+          <div />
+          <span className={styles.date}>2016</span>
+        </li>
+        <li>
+          <span>Experiences until then become to mental illness</span>
+          <div />
+          <span className={styles.date}>2015</span>
+        </li>
+        <li>
+          <span>Traveled Canada Seattle</span>
+          <div />
+          <span className={styles.date}>2014</span>
+        </li>
       </ul>
-    </Animation>
+    </>
   );
 };
 

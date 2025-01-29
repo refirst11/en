@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
-import getAllPosts from '@/lib/getAllPosts';
-import PostsData from '@/components/PostsData';
-import generateSEOData from '@/lib/generateSEOData';
+import getAllPosts from 'lib/getAllPosts';
+import generateSEOData from 'lib/generateSEOData';
+import PostsData from 'components/PostsData';
 
 export const metadata: Metadata = generateSEOData({
-  title: 'Posts',
-  subtitle: 'posts articles',
+  title: 'personal',
+  subtitle: 'personal articles',
   date: undefined,
 });
 

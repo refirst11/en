@@ -1,3 +1,5 @@
+// Wallis
+
 const isCurrentLink = (href: string, currentPath: string): boolean => {
   if (href === '/') {
     return href === currentPath;
@@ -7,5 +9,3 @@ const isCurrentLink = (href: string, currentPath: string): boolean => {
 };
 
 export default isCurrentLink;
-
-// Wallis
