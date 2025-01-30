@@ -3,7 +3,6 @@ type PostsData = {
   title: string;
   subtitle: string;
   date: string;
-  length?: number;
 };
 
 export default PostsData;

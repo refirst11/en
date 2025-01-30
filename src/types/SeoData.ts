@@ -1,6 +1,6 @@
 type SeoData = {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   date?: string;
 };
 

@@ -22,7 +22,7 @@ const styles = css.create({
   },
 });
 
-export const metadata: Metadata = generateSEOData({ title: 'about', subtitle: 'personal page', date: '1994' });
+export const metadata: Metadata = generateSEOData({ title: 'Projects - Refirst' });
 
 const Page = (): JSX.Element => {
   return (

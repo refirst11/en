@@ -1,4 +1,0 @@
-{
-  "extends": ["stylelint-config-recommended", "stylelint-config-recess-order"],
-  "customSyntax": "postcss-scss"
-}

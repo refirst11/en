@@ -15,7 +15,7 @@ export async function GET() {
           <![CDATA[su-pull]]>
         </title>
         <description>
-          <![CDATA[S.watanabe's web site]]>
+          <![CDATA[Refirst's Website]]>
         </description>
         <link>${URL}</link>
         <generator>Next.js Route Handlers</generator>
