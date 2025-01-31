@@ -61,7 +61,7 @@ export const metadata: Metadata = generateSEOData({ title: 'Refirst' });
 const Page = (): JSX.Element => {
   return (
     <>
-      <h1 className={styles.name}>Re First</h1>
+      <h1 className={styles.name}>Refirst</h1>
       <p>
         I&apos;ve creates ideas and designs software, and currently living in JPN. like work on Ever since I grew up, I
         have had a wide interest in the world of Audio, Engineering and Information Technology.
