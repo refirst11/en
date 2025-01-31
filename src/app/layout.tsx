@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { Instrument_Sans } from 'next/font/google';
 import { ServerCSS } from '@plumeria/next';
-import 'styles/global.ts';
+import 'styles/global';
 
 const playfair = Instrument_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
