@@ -1,5 +1,5 @@
-import styles from './styles.module.scss';
 import { JSX } from 'react';
+import { styles } from './styles';
 
 const Footer = (): JSX.Element => {
   const time = new Date();
