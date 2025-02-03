@@ -36,13 +36,13 @@ const Page = (): JSX.Element => {
         </a>
         <a href="https://github.com/zss-in-js/zss-engine">
           <span>zss-engine</span>
-          <span className={styles.tag}>Runtime of Zero-Runtime Style Sheet</span>
+          <span className={styles.tag}>Zero-Runtime Style Sheet Engine</span>
           <div />
           <span className={styles.date}>2025</span>
         </a>
         <a href="https://github.com/zss-in-js/eslint-plugin-object-css">
           eslint-plugin-object-css
-          <span className={styles.tag}>Linter for object CSS in JS</span>
+          <span className={styles.tag}>Linting for object CSS in JS</span>
           <div />
           <span className={styles.date}>2025</span>
         </a>
@@ -54,29 +54,30 @@ const Page = (): JSX.Element => {
         </a>
         <a href="https://github.com/refirst11/firemotion">
           firemotion
-          <span className={styles.tag}>Static css based page transition animations</span>
+          <span className={styles.tag}>Static based page transition motion</span>
           <div />
           <span className={styles.date}>2024</span>
         </a>
+        <a href="https://projects.su-pull.net/react-page-fitter">
+          React Fukuwarai
+          <span className={styles.tag}>Make draggable</span>
+          <div />
+          <span className={styles.date}>2023</span>
+        </a>
+        <a href="https://projects.su-pull.net/react-text-scaler">
+          React Text Scaler
+          <span className={styles.tag}>Scaling Text for User Interface</span>
+          <div />
+          <span className={styles.date}>2023</span>
+        </a>
+
+        <a href="https://projects.su-pull.net/react-magic-card">
+          React Magic Card
+          <span className={styles.tag}>Beautiful slide images</span>
+          <div />
+          <span className={styles.date}>2023</span>
+        </a>
       </div>
-      <ul className={styles.list2}>
-        <div>
-          Created other projects (would you visit on{' '}
-          <a href="https://github.com/refirst11">
-            <u>Github</u>
-          </a>
-          )
-        </div>
-        <li>
-          <a href="https://projects.su-pull.net/react-page-fitter">React Fukuwarai</a>
-        </li>
-        <li>
-          <a href="https://projects.su-pull.net/react-text-scaler">React Text Scaler</a>
-        </li>
-        <li>
-          <a href="https://projects.su-pull.net/react-magic-card">React Magic Card</a>
-        </li>
-      </ul>
     </>
   );
 };
