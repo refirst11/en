@@ -42,9 +42,7 @@ export const listup = {
     fontWeight: '400',
     color: 'gray',
     [css.media.max('width: 800px')]: {
-      ':not(time)': {
-        display: 'none',
-      },
+      display: 'none',
     },
   },
   date: {
