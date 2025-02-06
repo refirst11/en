@@ -28,7 +28,7 @@ const Page = (): JSX.Element => {
   return (
     <>
       <div className={styles.list}>
-        <a href="https://plumeria-docs.vercel.app/">
+        <a href="https://plumeria.dev">
           <span>Plumeria</span>
           <span className={styles.tag}>CSS in JS with emphasis on ease of use</span>
           <div />
@@ -58,20 +58,20 @@ const Page = (): JSX.Element => {
           <div />
           <span className={styles.date}>2024</span>
         </a>
-        <a href="https://projects.su-pull.net/react-page-fitter">
+        <a href="https://projects-refirst.vercel.app/react-page-fitter">
           React Fukuwarai
           <span className={styles.tag}>Make draggable</span>
           <div />
           <span className={styles.date}>2023</span>
         </a>
-        <a href="https://projects.su-pull.net/react-text-scaler">
+        <a href="https://projects-refirst.vercel.app/react-text-scaler">
           React Text Scaler
           <span className={styles.tag}>Scaling Text for User Interface</span>
           <div />
           <span className={styles.date}>2023</span>
         </a>
 
-        <a href="https://projects.su-pull.net/react-magic-card">
+        <a href="https://projects-refirst.vercel.app/react-magic-card">
           React Magic Card
           <span className={styles.tag}>Beautiful slide images</span>
           <div />
