@@ -12,8 +12,8 @@ importers:
         specifier: ^0.2.4
         version: 0.2.4
       '@plumeria/next':
-        specifier: ^0.2.4
-        version: 0.2.4
+        specifier: ^0.2.6
+        version: 0.2.6
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -454,8 +454,8 @@ packages:
     resolution: {integrity: sha512-VvRI5cllS+wD/WwEkKGDe+TjvBghUcBJ5LbM75P7EJjyQy0whjiw01Uq7A20AtHkJdNs8JG6RZS8KutvaDxY6g==}
     hasBin: true
 
-  '@plumeria/next@0.2.4':
-    resolution: {integrity: sha512-SqsBmo0XBrNjxdhG/7Ea7xkLhbohT2+MvLGZ9Rn8LNvT8L67TfM9j3Q/kH0Ootx3S6ktsm2rZ0h6AsJ5+T2tjg==}
+  '@plumeria/next@0.2.6':
+    resolution: {integrity: sha512-TnFUun2jjzv+iwAaW/uaEPFtLFQZGepK1KVUQCAwuq4uuvNCO2N+Yhxkwhvb4E5d0G9GLZx8uEZd+qSpMKaz0Q==}
 
   '@shikijs/core@2.1.0':
     resolution: {integrity: sha512-v795KDmvs+4oV0XD05YLzfDMe9ISBgNjtFxP4PAEv5DqyeghO1/TwDqs9ca5/E6fuO95IcAcWqR6cCX9TnqLZA==}
@@ -1627,7 +1627,7 @@ snapshots:
       '@plumeria/compiler': 0.1.1
       zss-engine: 0.2.3
 
-  '@plumeria/next@0.2.4': {}
+  '@plumeria/next@0.2.6': {}
 
   '@shikijs/core@2.1.0':
     dependencies:
