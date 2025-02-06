@@ -1,13 +1,13 @@
 # @Refirst's Website
 
-- [https://su-pull.net](https://su-pull.net)
-- [https://projects.su-pull.net](https://projects.su-pull.net)
+- [https://refirst.vercel.app](https://refirst.vercel.app)
+- [https://projects-refirst.vercel.app](https://projects-refirst.vercel.app)
 
 ## Uses and Respect
 
-- [Vercel](https://vercel.com/) - a very faster app server
 - [Next.js](https://nextjs.org/) - is a standard web React Framework
 - [shiki](https://shiki.matsu.io/) - is a beautiful Syntax Highlighter
+- [plumeria](https://plumeria.dev) - is a simple syntax Zero-Runtime CSS-in-JS
 
 ## License
 
