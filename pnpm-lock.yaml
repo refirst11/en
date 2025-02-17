@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@plumeria/core':
-        specifier: ^0.2.5
-        version: 0.2.5
+        specifier: ^0.4.0
+        version: 0.4.0
       '@plumeria/next':
         specifier: ^0.3.0
         version: 0.3.0
@@ -447,11 +447,11 @@ packages:
   '@plumeria/collection@0.1.2':
     resolution: {integrity: sha512-uPzIAxbXzL7MExsR3GKpOBMU/sJdethYDy2z/iCetCIsx9jOx1+kEvcZBvRIXwCXsZsejRL1Cinino5sgdzOOg==}
 
-  '@plumeria/compiler@0.1.2':
-    resolution: {integrity: sha512-eSyC9zEw5sPI1IL4iSkX+W8Qs2w7ga+mk+IiAckjafJKDCgCZvRBiNtgBqvLkZPrCTRbUk49XwTE6m7pXjZ2ww==}
+  '@plumeria/compiler@0.4.0':
+    resolution: {integrity: sha512-B9dl68zcB753jv8udpfP/847GILOthyhahualSS/ENUlkA0xnk1A32OQITvJoCGr3P5R5GGYWps+LdwHVgCXWg==}
 
-  '@plumeria/core@0.2.5':
-    resolution: {integrity: sha512-6k7TmpPjao1sXgNRHkXPfE4AmyEUN2XXz7RgW0RwTVlqOH8D+gtfsBa7PVWUtmGmHvnMTzkJocZqJ42vUMS6NQ==}
+  '@plumeria/core@0.4.0':
+    resolution: {integrity: sha512-CyYjqGafiCVhUU/i9PsYNrTnpuVtRB6aVlqdJ4Fr/y0uovbzxmKhSinRNOzflFToJ9fdbNyHnSqs8BWX+oY8+w==}
     hasBin: true
 
   '@plumeria/next@0.3.0':
@@ -1108,8 +1108,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.1:
-    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
+  postcss@8.5.2:
+    resolution: {integrity: sha512-MjOadfU3Ys9KYoX0AdkBlFEF1Vx37uCCeN4ZHnmwm9FfpbsGWMZeBLMmmpY+6Ocqod7mkdZ0DT31OlbsFrLlkA==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -1594,17 +1594,17 @@ snapshots:
 
   '@plumeria/collection@0.1.2': {}
 
-  '@plumeria/compiler@0.1.2':
+  '@plumeria/compiler@0.4.0':
     dependencies:
       fast-glob: 3.3.3
-      postcss: 8.5.1
-      postcss-combine-duplicated-selectors: 10.0.3(postcss@8.5.1)
+      postcss: 8.5.2
+      postcss-combine-duplicated-selectors: 10.0.3(postcss@8.5.2)
       tsx: 4.19.2
 
-  '@plumeria/core@0.2.5':
+  '@plumeria/core@0.4.0':
     dependencies:
       '@plumeria/collection': 0.1.2
-      '@plumeria/compiler': 0.1.2
+      '@plumeria/compiler': 0.4.0
       zss-engine: 0.2.3
 
   '@plumeria/next@0.3.0': {}
@@ -2416,9 +2416,9 @@ snapshots:
 
   picomatch@2.3.1: {}
 
-  postcss-combine-duplicated-selectors@10.0.3(postcss@8.5.1):
+  postcss-combine-duplicated-selectors@10.0.3(postcss@8.5.2):
     dependencies:
-      postcss: 8.5.1
+      postcss: 8.5.2
       postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.1.2:
@@ -2432,7 +2432,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.1:
+  postcss@8.5.2:
     dependencies:
       nanoid: 3.3.8
       picocolors: 1.1.1

@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@plumeria/core": "^0.2.5",
+    "@plumeria/core": "^0.4.0",
     "@plumeria/next": "^0.3.0",
     "gray-matter": "^4.0.3",
     "next": "^15.1.6",
