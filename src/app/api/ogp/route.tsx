@@ -7,7 +7,7 @@ export async function GET(req: NextRequest) {
   const title = hasTitle && searchParams.get('title')?.slice(0, 100);
   const hasDate = searchParams.has('date');
   const date = hasDate && searchParams.get('date')?.slice(0, 50);
-  const url = process.env.PROD_URL;
+  const url = process.env.VERCEL_URL;
 
   return new ImageResponse(
     (
