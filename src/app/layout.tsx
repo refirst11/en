@@ -22,13 +22,11 @@ export const dynamicParams = false;
 
 export default function RootLayout({ children }: RootLayoutProps) {
   const font = playfair.className;
-  const url = process.env.PROJECTS_URL || '';
+
   return (
     <ViewTransitions>
       <html lang="en">
         <head>
-          <link rel="prefetch" href={url} />
-          <link rel="prefetch" href="/feed.xml" />
           <ServerCSS />
         </head>
         <body className={font}>
