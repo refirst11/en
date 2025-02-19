@@ -7,6 +7,7 @@ const styles = css.create({
   name: {
     position: 'relative',
     bottom: 20,
+    left: 4,
     [css.media.max('width: 800px')]: {
       bottom: 32,
     },
