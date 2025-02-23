@@ -1,0 +1,33 @@
+@layer next-view-transitions {
+  ::view-transition-old(root) {
+    transform-origin: var(--click-x) var(--click-y);
+    animation: scale-out-absorb 0.2s ease-in forwards;
+  }
+
+  ::view-transition-new(root) {
+    transform-origin: var(--click-x) var(--click-y);
+    animation: scale-in-expand 0.4s ease-out forwards;
+  }
+
+  @keyframes scale-out-absorb {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+
+  @keyframes scale-in-expand {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

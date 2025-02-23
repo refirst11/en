@@ -5,6 +5,8 @@ import { ReactNode } from 'react';
 import { Instrument_Sans } from 'next/font/google';
 import { ServerCSS } from '@plumeria/next';
 import 'styles/global';
+import './view.css';
+import { Set } from './set-xy';
 
 const playfair = Instrument_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
@@ -25,6 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <ViewTransitions>
+      <Set />
       <html lang="en">
         <head>
           <ServerCSS />
