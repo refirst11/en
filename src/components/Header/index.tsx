@@ -5,6 +5,7 @@ import isCurrentLink from 'lib/isCurrentLink';
 import { Link } from 'next-view-transitions';
 import { JSX } from 'react';
 import { styles } from './styles';
+import { cx } from '@plumeria/core';
 
 const Header = (): JSX.Element => {
   const pathname = usePathname();
@@ -32,7 +33,7 @@ const Header = (): JSX.Element => {
               <li key={href}>
                 <Link
                   href={href}
-                  className={`${styles.link_container} ${isCurrentLink(href, pathname) && styles.after_color}`}
+                  className={cx(styles.link_container, isCurrentLink(href, pathname) && styles.after_color)}
                 >
                   {name}
                 </Link>
