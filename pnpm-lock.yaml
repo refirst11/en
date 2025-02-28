@@ -12,8 +12,8 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0
       '@plumeria/core':
-        specifier: ^0.6.0
-        version: 0.6.0
+        specifier: ^0.6.1
+        version: 0.6.1
       '@plumeria/next':
         specifier: ^0.4.0
         version: 0.4.0
@@ -468,8 +468,8 @@ packages:
     resolution: {integrity: sha512-nWUmKJPsBLcwrOlrmml9UZKSgSEMB+15dTdTDrypr2mstFS0YNKTZljaPUyK3lLSxLvQX3IMPL12pBw3+VdjZg==}
     hasBin: true
 
-  '@plumeria/core@0.6.0':
-    resolution: {integrity: sha512-24l+YEo+ZgSHDDPWSAJS59Uz28q0lsxd8wbwEz6wnJUtMCSjFqk45IahgYixju5OscaH9Dcmy0XY0JMKKnfQMw==}
+  '@plumeria/core@0.6.1':
+    resolution: {integrity: sha512-Qa5KnYZmAHiYu9AgsWPlz3pdeJw1tA43v1DEw1QRkIlIqAeCOG0+6bNvTd2DLjom03ltxJ1WH0Y1+fZzZfnNJw==}
 
   '@plumeria/next@0.4.0':
     resolution: {integrity: sha512-VEnQi3XGGSLG1rtJJbwmq/pliC0c1XJhzuqBNms7PvwcPCvtvomz9kGLhJhoiEISqAL4mA/dTii4T0amLqRc5A==}
@@ -1627,7 +1627,7 @@ snapshots:
       postcss-combine-duplicated-selectors: 10.0.3(postcss@8.5.3)
       tsx: 4.19.3
 
-  '@plumeria/core@0.6.0':
+  '@plumeria/core@0.6.1':
     dependencies:
       '@plumeria/collection': 0.2.0
       zss-engine: 0.2.5
