@@ -2,7 +2,7 @@ import getAllPosts from 'lib/getAllPosts';
 import type { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const url = process.env.VERCEL_URL || '';
+  const url = process.env.PROD_URL || '';
   const posts = await getAllPosts();
   const currentDate = new Date();
   const personal: MetadataRoute.Sitemap = posts.map((post) => ({
