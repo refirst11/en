@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@plumeria/compiler": "^0.6.0",
-    "@plumeria/core": "^0.6.1",
-    "@plumeria/next": "^0.4.0",
+    "@plumeria/core": "^0.6.6",
+    "@plumeria/next": "^0.5.2",
     "gray-matter": "^4.0.3",
     "next": "^15.1.7",
     "next-view-transitions": "^0.3.4",
