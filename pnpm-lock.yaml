@@ -12,20 +12,20 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0
       '@plumeria/core':
-        specifier: ^0.6.6
-        version: 0.6.6
+        specifier: ^0.6.8
+        version: 0.6.8
       '@plumeria/next':
-        specifier: ^0.5.2
-        version: 0.5.2
+        specifier: ^0.5.3
+        version: 0.5.3
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
       next:
         specifier: ^15.1.7
         version: 15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.50.0)
-      next-view-transitions:
-        specifier: ^0.3.4
-        version: 0.3.4(next@15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.50.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      next-link-transitions:
+        specifier: ^0.1.1
+        version: 0.1.1
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -468,11 +468,11 @@ packages:
     resolution: {integrity: sha512-nWUmKJPsBLcwrOlrmml9UZKSgSEMB+15dTdTDrypr2mstFS0YNKTZljaPUyK3lLSxLvQX3IMPL12pBw3+VdjZg==}
     hasBin: true
 
-  '@plumeria/core@0.6.6':
-    resolution: {integrity: sha512-UQ1THd1y5RQLFWFZY5H/d1M9P1B1UxBgn7mrAbFAS7dhklBwE/HCI5IgfUWHT0GLfuP/y9dAJV9HkteQl/RUKQ==}
+  '@plumeria/core@0.6.8':
+    resolution: {integrity: sha512-D3pDa3kxWy6mCkVFq8szkFf40jxGjIeLuPq9AabP5x2LcUSzW3gQs9wUaB0EfDsk9Nl4G2fWAzrIptRgZjIrnQ==}
 
-  '@plumeria/next@0.5.2':
-    resolution: {integrity: sha512-z+8PcofQNP2DH/4HAfT5T4d0ngcfmWR+nVU5PyyMdQWAdIwR5EhF8M3IMd40+xI5cDOXhaT6OvOa5VXaXb93YQ==}
+  '@plumeria/next@0.5.3':
+    resolution: {integrity: sha512-i1MD/ADr738bhq9xa3WF+ikaoqoE9hY5HTlpVn3rIA4fPJjgYcvM54IJiyTRsD8gGGSmGCarbbAh+sZzOPTLLA==}
 
   '@shikijs/core@2.5.0':
     resolution: {integrity: sha512-uu/8RExTKtavlpH7XqnVYBrfBkUc20ngXiX9NSrBhOVZYv/7XQRKUyhtkeflY5QsxC0GbJThCerruZfsUaSldg==}
@@ -1045,12 +1045,8 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  next-view-transitions@0.3.4:
-    resolution: {integrity: sha512-SSiskenQ8JkEFGzPjvFwC5LGGoqgTxM5dxexkeugxvcXFLpWI2ZUh4IsCURD3ovW+8Ue7xXlrtrpy8b7XR7IwQ==}
-    peerDependencies:
-      next: '>=14.0.0'
-      react: ^18.2.0
-      react-dom: ^18.2.0
+  next-link-transitions@0.1.1:
+    resolution: {integrity: sha512-JGmzrzJkyje1/m8gaNG8rejmDj/5zyAunbsrARDoNQtwneNYcekbnQY/zK9pwiqsr/ipJLX4EJJF60whfUuhwg==}
 
   next@15.1.7:
     resolution: {integrity: sha512-GNeINPGS9c6OZKCvKypbL8GTsT5GhWPp4DM0fzkXJuXMilOO2EeFxuAY6JZbtk6XIl6Ws10ag3xRINDjSO5+wg==}
@@ -1356,8 +1352,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zss-engine@0.2.6:
-    resolution: {integrity: sha512-PgOIRAllSaZvedmvjBuajKf5tORcJg5YLtSwtimffHzZq9vWpEv6D+PYI4xsix3gLzceFSUoDLtz0Z2kC2sNNg==}
+  zss-engine@0.2.8:
+    resolution: {integrity: sha512-eRNMK91iI+fabQUjLHqMo3DSLtZlLJxNT6xiqix3Rl+oSRF4TP1PmYu3EqiRfqEZ5HaJm/03fOVAJJD5MLY3oQ==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -1627,12 +1623,12 @@ snapshots:
       postcss-combine-duplicated-selectors: 10.0.3(postcss@8.5.3)
       tsx: 4.19.3
 
-  '@plumeria/core@0.6.6':
+  '@plumeria/core@0.6.8':
     dependencies:
       '@plumeria/collection': 0.4.0
-      zss-engine: 0.2.6
+      zss-engine: 0.2.8
 
-  '@plumeria/next@0.5.2': {}
+  '@plumeria/next@0.5.3': {}
 
   '@shikijs/core@2.5.0':
     dependencies:
@@ -2373,11 +2369,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next-view-transitions@0.3.4(next@15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.50.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
-    dependencies:
-      next: 15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.50.0)
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
+  next-link-transitions@0.1.1: {}
 
   next@15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.50.0):
     dependencies:
@@ -2714,7 +2706,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zss-engine@0.2.6:
+  zss-engine@0.2.8:
     dependencies:
       csstype: 3.1.3
 
