@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import generateSEOData from 'lib/generateSEOData';
-import { css, cx } from '@plumeria/core';
+import { css } from '@plumeria/core';
 import { JSX } from 'react';
 
 const styles = css.create({
@@ -16,9 +16,6 @@ const styles = css.create({
     position: 'relative',
     top: 40,
     width: '480px',
-    [cx('& li', css.pseudo.hover)]: {
-      color: '#80a3db',
-    },
     [css.media.max('width: 800px')]: {
       width: '100%',
       '& li': {

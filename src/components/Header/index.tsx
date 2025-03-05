@@ -2,10 +2,11 @@
 
 import { usePathname } from 'next/navigation';
 import isCurrentLink from 'lib/isCurrentLink';
-import { Link } from 'next-view-transitions';
+import { Link } from 'next-link-transitions';
 import { JSX } from 'react';
 import { styles } from './styles';
 import { cx } from '@plumeria/core';
+import { animation } from 'lib/viewTransition';
 
 const Header = (): JSX.Element => {
   const pathname = usePathname();
@@ -34,6 +35,8 @@ const Header = (): JSX.Element => {
                 <Link
                   href={href}
                   className={cx(styles.link_container, isCurrentLink(href, pathname) && styles.after_color)}
+                  entry={animation.entry}
+                  old={animation.old}
                 >
                   {name}
                 </Link>

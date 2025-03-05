@@ -1,11 +1,12 @@
 import React from 'react';
 import PostProps from 'types/PostProps';
-import { Link } from 'next-view-transitions';
+import { Link } from 'next-link-transitions';
 import { styles } from './styles';
+import { animation } from 'lib/viewTransition';
 
 const ReturnLink = () => {
   return (
-    <Link className={styles.back} href="/personal">
+    <Link className={styles.back} href="/personal" old={animation.old} entry={animation.entry}>
       back
     </Link>
   );

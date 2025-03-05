@@ -6,7 +6,7 @@ export const listup = {
     top: 40,
     width: '480px',
     [cx('& a', css.pseudo.hover)]: {
-      background: '#f2efef',
+      background: '#eeeeee',
     },
     [css.media.max('width: 800px')]: {
       width: '100%',

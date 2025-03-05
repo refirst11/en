@@ -4,7 +4,7 @@ css.global({
   pre: {
     width: 480,
     padding: 20,
-    margin: '32px 0',
+    margin: '0 0 32px 0',
     overflow: 'auto',
     borderRadius: 4,
     boxShadow: '0 0 2px -0.5px rgb(0 0 0 / 0.4)',
