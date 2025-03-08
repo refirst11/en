@@ -28,6 +28,12 @@ const Page = (): JSX.Element => {
   return (
     <>
       <div className={styles.list}>
+        <a href="https://github.com/refirst11/next-link-transitions">
+          <span>next-link-transitions</span>
+          <span className={styles.tag}>View Transition API for Next SC</span>
+          <div />
+          <span className={styles.date}>2025</span>
+        </a>
         <a href="https://plumeria.dev">
           <span>Plumeria</span>
           <span className={styles.tag}>CSS in JS with emphasis on ease of use</span>
