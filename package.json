@@ -13,7 +13,7 @@
     "@plumeria/next": "^0.5.3",
     "gray-matter": "^4.0.3",
     "next": "^15.1.7",
-    "next-link-transitions": "^0.1.1",
+    "next-link-transitions": "^0.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rehype-stringify": "^10.0.1",
