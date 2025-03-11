@@ -31,16 +31,15 @@ const Header = (): JSX.Element => {
         <nav className={styles.header_nav}>
           <ul className={styles.header_ul}>
             {Headers.map(({ name, href }) => (
-              <li key={href}>
-                <Link
-                  href={href}
-                  className={cx(styles.link_container, isCurrentLink(href, pathname) && styles.after_color)}
-                  entry={animation.entry}
-                  old={animation.old}
-                >
-                  {name}
-                </Link>
-              </li>
+              <Link
+                key={href}
+                href={href}
+                className={cx(styles.link_container, isCurrentLink(href, pathname) && styles.after_color)}
+                next={animation.next}
+                old={animation.old}
+              >
+                {name}
+              </Link>
             ))}
           </ul>
         </nav>

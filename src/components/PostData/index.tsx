@@ -6,7 +6,7 @@ import { animation } from 'lib/viewTransition';
 
 const ReturnLink = () => {
   return (
-    <Link className={styles.back} href="/personal" old={animation.old} entry={animation.entry}>
+    <Link className={styles.back} href="/personal" old={animation.old} next={animation.next}>
       back
     </Link>
   );

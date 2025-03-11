@@ -19,7 +19,7 @@ const newTransition = css.keyframes({
 });
 
 export const animation = css.create({
-  entry: {
+  next: {
     viewTransitionName: newTransition,
   },
   old: {
