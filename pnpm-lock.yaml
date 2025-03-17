@@ -8,15 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@plumeria/compiler':
-        specifier: ^0.6.1
-        version: 0.6.1
       '@plumeria/core':
         specifier: ^0.7.1
         version: 0.7.1
-      '@plumeria/next':
-        specifier: ^0.5.6
-        version: 0.5.6
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -51,6 +45,12 @@ importers:
       '@eslint/js':
         specifier: ^9.21.0
         version: 9.22.0
+      '@plumeria/compiler':
+        specifier: ^0.6.1
+        version: 0.6.1
+      '@plumeria/next':
+        specifier: ^0.5.6
+        version: 0.5.6
       '@shikijs/rehype':
         specifier: ^2.5.0
         version: 2.5.0
@@ -63,9 +63,9 @@ importers:
       eslint:
         specifier: 9.19.0
         version: 9.19.0
-      eslint-plugin-object-css:
-        specifier: ^0.5.1
-        version: 0.5.2
+      eslint-plugin-stylefix:
+        specifier: ^0.0.2
+        version: 0.0.2
       prettier:
         specifier: ^2.8.8
         version: 2.8.8
@@ -732,8 +732,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-plugin-object-css@0.5.2:
-    resolution: {integrity: sha512-KuLoBP/KAQS8zx2YuI3p3lqqSbMzpPcAV9M3QggD7PQSfbqECf6HIpdLkVyjRteYRvNJSgk3q9AAZf4gb7+idQ==}
+  eslint-plugin-stylefix@0.0.2:
+    resolution: {integrity: sha512-A541L+jYKRDn+x79xDrx62ayUJS18nWilR6qFhWPCGaalR3HsiBOzVxHh2GVfZBwWW/SP0FjJiS1jWOTCX5+Ew==}
 
   eslint-scope@8.3.0:
     resolution: {integrity: sha512-pUNxi75F8MJ/GdeKtVLSbYg4ZI34J6C0C7sbL4YOp2exGwen7ZsuBqKzUhXd0qMQ362yET3z+uPwKeg/0C2XCQ==}
@@ -1952,7 +1952,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-plugin-object-css@0.5.2: {}
+  eslint-plugin-stylefix@0.0.2: {}
 
   eslint-scope@8.3.0:
     dependencies:
