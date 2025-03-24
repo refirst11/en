@@ -65,8 +65,8 @@ css.global({
       top: 40,
       width: '100%',
       padding: '0 24px',
-      opacity: 1,
       transition: 'all 0.7s',
+      opacity: 1,
     },
     '& li': {
       margin: '8px 16px',
