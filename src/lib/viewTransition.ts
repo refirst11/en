@@ -28,12 +28,12 @@ export const animation = css.create({
 });
 
 css.global({
-  [css.pseudo.viewTransitionOld(oldTransition)]: {
+  [css.pseudo.fn.viewTransitionOld(oldTransition)]: {
     animationName: oldTransition,
     animationDuration: '0.4s',
     animationTimingFunction: 'ease',
   },
-  [css.pseudo.viewTransitionNew(newTransition)]: {
+  [css.pseudo.fn.viewTransitionNew(newTransition)]: {
     animationName: newTransition,
     animationDuration: '0.4s',
     animationTimingFunction: 'ease',
