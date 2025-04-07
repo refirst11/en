@@ -5,7 +5,7 @@ const oldTransition = css.keyframes({
     opacity: 1,
   },
   to: {
-    opacity: 0,
+    opacity: 1,
   },
 });
 
@@ -30,12 +30,12 @@ export const animation = css.create({
 css.global({
   [css.pseudo.fn.viewTransitionOld(oldTransition)]: {
     animationName: oldTransition,
-    animationDuration: '0.4s',
+    animationDuration: '0.3s',
     animationTimingFunction: 'ease',
   },
   [css.pseudo.fn.viewTransitionNew(newTransition)]: {
     animationName: newTransition,
-    animationDuration: '0.4s',
+    animationDuration: '0.3s',
     animationTimingFunction: 'ease',
   },
   pre: {
