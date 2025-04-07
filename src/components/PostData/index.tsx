@@ -2,7 +2,7 @@ import React from 'react';
 import PostProps from 'types/PostProps';
 import { Link } from 'next-link-transitions';
 import { styles } from './styles';
-import { animation } from 'lib/viewTransition';
+import { animation } from 'styles/global';
 
 const ReturnLink = () => {
   return (
