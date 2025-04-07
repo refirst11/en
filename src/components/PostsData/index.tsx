@@ -1,7 +1,7 @@
 import { Link } from 'next-link-transitions';
 import PostsProps from 'types/PostsProps';
 import { styles } from './styles';
-import { animation } from 'lib/viewTransition';
+import { animation } from 'styles/global';
 
 const PostsData = ({ posts }: PostsProps) => {
   return (
