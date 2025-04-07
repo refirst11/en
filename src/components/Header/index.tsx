@@ -6,7 +6,7 @@ import { Link } from 'next-link-transitions';
 import { JSX } from 'react';
 import { styles } from './styles';
 import { cx } from '@plumeria/core';
-import { animation } from 'lib/viewTransition';
+import { animation } from 'styles/global';
 
 const Header = (): JSX.Element => {
   const pathname = usePathname();

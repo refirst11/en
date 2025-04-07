@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 import Header from 'components/Header';
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { Instrument_Sans } from 'next/font/google';
-import { ServerCSS } from '@plumeria/next';
+import '@plumeria/core/stylesheet';
 import 'styles/global';
+const { ServerCSS } = require('@plumeria/next');
 
 const playfair = Instrument_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
@@ -18,6 +20,7 @@ type RootLayoutProps = {
 };
 
 export const dynamicParams = false;
+export const dynamic = 'force-static';
 
 export default function RootLayout({ children }: RootLayoutProps) {
   const font = playfair.className;
