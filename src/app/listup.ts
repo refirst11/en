@@ -1,6 +1,6 @@
 import { css, cx } from '@plumeria/core';
 
-export const listup = {
+export const styles = css.create({
   list: {
     position: 'relative',
     top: 40,
@@ -50,4 +50,4 @@ export const listup = {
     fontWeight: '400',
     color: 'gray',
   },
-};
+});

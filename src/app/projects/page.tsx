@@ -1,26 +1,7 @@
 import { Metadata } from 'next';
 import generateSEOData from 'lib/generateSEOData';
 import { JSX } from 'react';
-import { css } from '@plumeria/core';
-import { listup } from 'app/listup';
-
-const styles = css.create({
-  ...listup,
-  list2: {
-    position: 'relative',
-    top: 40,
-    width: '100%',
-    padding: '0 16px',
-    '& li': {
-      paddingTop: 5,
-    },
-
-    '& li a': {
-      fontWeight: 'bold',
-      color: 'black',
-    },
-  },
-});
+import { styles } from 'app/listup';
 
 export const metadata: Metadata = generateSEOData({ title: 'Projects - Refirst' });
 

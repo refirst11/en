@@ -1,6 +1,6 @@
 import { Link } from 'next-link-transitions';
 import PostsProps from 'types/PostsProps';
-import { styles } from './styles';
+import { styles } from 'app/listup';
 import { animation } from 'styles/global';
 
 const PostsData = ({ posts }: PostsProps) => {
