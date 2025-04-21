@@ -9,15 +9,21 @@ const Page = (): JSX.Element => {
   return (
     <>
       <div className={styles.list}>
+        <a href="https://github.com/refirst11/rscute">
+          <span>rscute</span>
+          <span className={styles.tag}>Faster executor for TypeScript with path resolution</span>
+          <div />
+          <span className={styles.date}>2025</span>
+        </a>
         <a href="https://github.com/refirst11/next-link-transitions">
           <span>next-link-transitions</span>
           <span className={styles.tag}>View Transition API for Next SC</span>
           <div />
           <span className={styles.date}>2025</span>
         </a>
-        <a href="https://plumeria.dev">
-          <span>Plumeria</span>
-          <span className={styles.tag}>CSS in JS with emphasis on ease of use</span>
+        <a href="https://github.com/zss-in-js/zss-engine">
+          <span>zss-utils</span>
+          <span className={styles.tag}>Zero-Runtime Style Sheet Utilities</span>
           <div />
           <span className={styles.date}>2025</span>
         </a>
@@ -27,9 +33,15 @@ const Page = (): JSX.Element => {
           <div />
           <span className={styles.date}>2025</span>
         </a>
-        <a href="https://github.com/zss-in-js/eslint-plugin-object-css">
-          eslint-plugin-object-css
+        <a href="https://github.com/zss-in-js/eslint-plugin-zss-lint">
+          eslint-plugin-zss-lint
           <span className={styles.tag}>Linting for object CSS in JS</span>
+          <div />
+          <span className={styles.date}>2025</span>
+        </a>
+        <a href="https://plumeria.dev">
+          <span>Plumeria</span>
+          <span className={styles.tag}>CSS in JS with faster development cycle</span>
           <div />
           <span className={styles.date}>2025</span>
         </a>
