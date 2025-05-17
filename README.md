@@ -7,7 +7,7 @@
 
 - [Next.js](https://nextjs.org/) - is a standard web React Framework
 - [shiki](https://shiki.matsu.io/) - is a beautiful Syntax Highlighter
-- [plumeria](https://plumeria.dev) - is a simple syntax Zero-Runtime CSS-in-JS
+- [plumeria](https://plumeria.dev) - is a Command-line Zero-Runtime CSS-in-JS
 
 ## License
 
