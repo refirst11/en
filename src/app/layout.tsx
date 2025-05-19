@@ -3,7 +3,7 @@ import Header from 'components/Header';
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { Instrument_Sans } from 'next/font/google';
-import '@plumeria/core/stylesheet';
+import '@plumeria/core/stylesheet.css';
 import 'styles/global';
 const { ServerCSS } = require('@plumeria/next');
 

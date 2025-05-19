@@ -3,12 +3,14 @@ import generateSEOData from 'lib/generateSEOData';
 import { css } from '@plumeria/core';
 import { JSX } from 'react';
 
+const MD = css.media.maxWidth(768);
+
 const styles = css.create({
   name: {
     position: 'relative',
     bottom: 20,
     left: 4,
-    [css.media.max('width: 800px')]: {
+    [MD]: {
       bottom: 32,
     },
   },
@@ -16,7 +18,7 @@ const styles = css.create({
     position: 'relative',
     top: 40,
     width: '480px',
-    [css.media.max('width: 800px')]: {
+    [MD]: {
       width: '100%',
       '& li': {
         width: '100%',

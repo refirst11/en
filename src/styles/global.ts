@@ -1,5 +1,7 @@
 import { css } from '@plumeria/core';
 
+const MD = css.media.maxWidth(768);
+
 const oldTransition = css.keyframes({
   from: {
     opacity: 1,
@@ -46,7 +48,7 @@ css.global({
     borderRadius: 4,
     boxShadow: '0 0 2px -0.5px rgb(0 0 0 / 0.4)',
     transition: 'all 0.8s',
-    [css.media.max('width: 800px')]: {
+    [MD]: {
       width: '100%',
       overflow: 'auto',
     },
@@ -68,7 +70,7 @@ css.global({
     height: '100%',
     padding: 0,
     margin: 0,
-    [css.media.max_md]: {
+    [MD]: {
       WebkitTextSizeAdjust: 'none',
     },
   },
@@ -86,7 +88,7 @@ css.global({
     textAlign: 'center',
     wordBreak: 'break-all',
     backgroundColor: '#fffffe',
-    [css.media.max_md]: {
+    [MD]: {
       width: '100%',
       padding: '0 24px',
       fontSize: 12,
@@ -98,7 +100,7 @@ css.global({
     top: 200,
     width: 480,
     textAlign: 'left',
-    [css.media.max_md]: {
+    [MD]: {
       top: 40,
       width: '100%',
       padding: '0 24px',
@@ -140,7 +142,7 @@ css.global({
   h1: {
     fontSize: 20,
     fontWeight: 'normal',
-    [css.media.max_md]: {
+    [MD]: {
       fontSize: 18,
     },
   },
@@ -151,7 +153,7 @@ css.global({
     fontSize: 18,
     fontWeight: 'normal',
     color: 'rgb(117, 117, 117)',
-    [css.media.max_md]: {
+    [MD]: {
       fontSize: 16,
     },
   },

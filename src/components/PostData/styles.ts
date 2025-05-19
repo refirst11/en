@@ -1,5 +1,7 @@
 import { css } from '@plumeria/core';
 
+const MD = css.media.maxWidth(768);
+
 export const styles = css.create({
   back: {
     position: 'absolute',
@@ -10,7 +12,7 @@ export const styles = css.create({
   post: {
     position: 'relative',
     transform: 'translateY(-100px)',
-    [css.media.max_md]: {
+    [MD]: {
       transform: 'none',
     },
   },

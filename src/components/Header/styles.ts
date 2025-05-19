@@ -1,5 +1,7 @@
 import { css } from '@plumeria/core';
 
+const MD = css.media.maxWidth(768);
+
 export const styles = css.create({
   header_main: {
     position: 'absolute',
@@ -15,7 +17,7 @@ export const styles = css.create({
     alignItems: 'flex-end',
     width: 'max-content',
     height: 220,
-    [css.media.max('width: 739.98px')]: {
+    [MD]: {
       top: 30,
       right: 16,
       height: 18,

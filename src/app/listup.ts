@@ -1,5 +1,7 @@
 import { css, cx } from '@plumeria/core';
 
+const MD = css.media.maxWidth(800);
+
 export const styles = css.create({
   list: {
     position: 'relative',
@@ -8,7 +10,7 @@ export const styles = css.create({
     [cx('& a', css.pseudo.hover)]: {
       background: '#eeeeee',
     },
-    [css.media.max('width: 800px')]: {
+    [MD]: {
       width: '100%',
       '& a': {
         width: '100%',
@@ -41,7 +43,7 @@ export const styles = css.create({
     marginLeft: 3,
     fontWeight: '400',
     color: 'gray',
-    [css.media.max('width: 800px')]: {
+    [MD]: {
       display: 'none',
     },
   },

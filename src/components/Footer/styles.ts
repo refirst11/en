@@ -1,5 +1,7 @@
 import { css } from '@plumeria/core';
 
+const MD = css.media.maxWidth(768);
+
 export const styles = css.create({
   footer_text: {
     position: 'relative',
@@ -7,7 +9,7 @@ export const styles = css.create({
     color: 'gray',
     textAlign: 'left',
     userSelect: 'none',
-    [css.media.max_md]: {
+    [MD]: {
       left: 24,
     },
   },
@@ -22,7 +24,7 @@ export const styles = css.create({
     justifyContent: 'flex-start',
     width: 800,
     height: 80,
-    [css.media.max_md]: {
+    [MD]: {
       right: 36,
       width: 'auto',
     },
