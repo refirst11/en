@@ -41,7 +41,7 @@ css.global({
     animationTimingFunction: 'ease',
   },
   pre: {
-    width: 480,
+    width: 506,
     padding: 20,
     margin: '0 0 32px 0',
     overflow: 'auto',
@@ -58,7 +58,8 @@ css.global({
   },
 
   code: {
-    fontFamily: "Menlo, Monaco, Consolas, 'Droid Sans Mono', 'Liberation Mono', 'Courier New', monospace",
+    fontFamily:
+      "var(--geist-mono), Menlo, Monaco, Consolas, 'Droid Sans Mono', 'Liberation Mono', 'Courier New', monospace",
   },
 
   '*': {
@@ -80,8 +81,7 @@ css.global({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '480px',
-    minHeight: '100vh',
+    width: 506,
     margin: '0 auto',
     fontSize: '14px',
     color: 'rgb(55 65 81)',
@@ -98,7 +98,8 @@ css.global({
   main: {
     position: 'absolute',
     top: 200,
-    width: 480,
+    width: 506,
+    minHeight: '100vh',
     textAlign: 'left',
     [MD]: {
       top: 40,

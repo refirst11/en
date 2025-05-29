@@ -9,6 +9,18 @@ const Page = (): JSX.Element => {
   return (
     <>
       <div className={styles.list}>
+        <a href="https://github.com/rust-gear-project/rust-gear">
+          <span>@rust-gear/glob</span>
+          <span className={styles.tag}>rapid faster glob powerd by Rust native(napi-rs)</span>
+          <div />
+          <span className={styles.date}>2025</span>
+        </a>
+        <a href="https://github.com/refirst11/kpx">
+          <span>kpx</span>
+          <span className={styles.tag}>TypeScript Module Loader(Key Process Execute)</span>
+          <div />
+          <span className={styles.date}>2025</span>
+        </a>
         <a href="https://github.com/refirst11/rscute">
           <span>rscute</span>
           <span className={styles.tag}>Faster executor for TypeScript with path resolution</span>

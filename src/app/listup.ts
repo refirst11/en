@@ -6,7 +6,7 @@ export const styles = css.create({
   list: {
     position: 'relative',
     top: 40,
-    width: '480px',
+    width: 'fit-content',
     [cx('& a', css.pseudo.hover)]: {
       background: '#eeeeee',
     },
@@ -22,7 +22,7 @@ export const styles = css.create({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      width: 496,
+      width: 520,
       padding: '16px',
       fontWeight: '600',
       color: 'black',

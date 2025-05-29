@@ -17,7 +17,7 @@ const styles = css.create({
   list: {
     position: 'relative',
     top: 40,
-    width: '480px',
+    width: 'fit-content',
     [MD]: {
       width: '100%',
       '& li': {
@@ -32,7 +32,7 @@ const styles = css.create({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      width: 496,
+      width: 520,
       padding: 16,
       margin: 0,
       fontWeight: '500',
@@ -64,7 +64,7 @@ const Page = (): JSX.Element => {
       <h1 className={styles.name}>Refirst</h1>
       <p>
         I&apos;ve creates ideas and designs software, and currently living in JPN. like work on Ever since I grew up, I
-        have had a wide interest in the world of Audio, Engineering and Information Technology.
+        have had a wide interest in the world of Audio environment and for engineers.
       </p>
       <ul className={styles.list}>
         <li>
