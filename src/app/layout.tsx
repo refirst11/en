@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 import Header from 'components/Header';
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
 import '@plumeria/core/stylesheet.css';
 import 'styles/global';
-const { ServerCSS } = require('@plumeria/next');
+import { ServerCSS } from '@plumeria/next';
 
 const geist = Geist({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 const geist_mono = Geist_Mono({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--geist-mono' });
