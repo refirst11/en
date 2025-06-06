@@ -9,7 +9,8 @@
     "compile": "css"
   },
   "dependencies": {
-    "@plumeria/core": "0.9.7",
+    "@plumeria/compiler": "0.9.6",
+    "@plumeria/core": "^0.9.10",
     "gray-matter": "^4.0.3",
     "next": "^15.3.2",
     "next-link-transitions": "^0.2.1",
@@ -23,13 +24,13 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
-    "@plumeria/compiler": "^0.9.4",
     "@plumeria/eslint-plugin": "^0.1.1",
     "@plumeria/next": "^0.6.5",
     "@shikijs/rehype": "^2.5.0",
     "@types/node": "^22.14.0",
     "@types/react": "19.0.0",
     "eslint": "9.19.0",
+    "kpx": "^0.2.2",
     "prettier": "^2.8.8",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.25.0"
