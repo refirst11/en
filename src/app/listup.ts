@@ -1,4 +1,4 @@
-import { css, cx } from '@plumeria/core';
+import { css, cx, ps } from '@plumeria/core';
 
 const MD = css.media.maxWidth(800);
 
@@ -7,7 +7,7 @@ export const styles = css.create({
     position: 'relative',
     top: 40,
     width: 'fit-content',
-    [cx('& a', css.pseudo.hover)]: {
+    [cx('& a', ps.hover)]: {
       background: '#eeeeee',
     },
     [MD]: {

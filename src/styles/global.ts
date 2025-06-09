@@ -1,4 +1,4 @@
-import { css } from '@plumeria/core';
+import { css, ps } from '@plumeria/core';
 
 const MD = css.media.maxWidth(768);
 
@@ -30,12 +30,12 @@ export const animation = css.create({
 });
 
 css.global({
-  [css.pseudo.fn.viewTransitionOld(oldTransition)]: {
+  [ps.fn.viewTransitionOld(oldTransition)]: {
     animationName: oldTransition,
     animationDuration: '0.3s',
     animationTimingFunction: 'ease',
   },
-  [css.pseudo.fn.viewTransitionNew(newTransition)]: {
+  [ps.fn.viewTransitionNew(newTransition)]: {
     animationName: newTransition,
     animationDuration: '0.3s',
     animationTimingFunction: 'ease',

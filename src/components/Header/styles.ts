@@ -1,4 +1,4 @@
-import { css } from '@plumeria/core';
+import { css, ps } from '@plumeria/core';
 
 const MD = css.media.maxWidth(768);
 
@@ -36,7 +36,7 @@ export const styles = css.create({
     justifyContent: 'center',
     width: 60,
     height: 40,
-    [css.pseudo.hover]: {
+    [ps.hover]: {
       color: '#515151',
       textDecoration: 'underline',
     },
