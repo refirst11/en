@@ -9,8 +9,8 @@
     "compile": "css"
   },
   "dependencies": {
-    "@plumeria/compiler": "0.10.0",
-    "@plumeria/core": "^0.10.5",
+    "@plumeria/compiler": "0.11.0",
+    "@plumeria/core": "^0.11.0",
     "gray-matter": "^4.0.3",
     "next": "^15.3.2",
     "next-link-transitions": "^0.2.1",
