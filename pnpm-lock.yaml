@@ -49,8 +49,8 @@ importers:
         specifier: ^9.21.0
         version: 9.28.0
       '@plumeria/eslint-plugin':
-        specifier: ^0.1.1
-        version: 0.1.1
+        specifier: ^0.2.3
+        version: 0.2.3
       '@plumeria/next':
         specifier: ^0.6.5
         version: 0.6.6
@@ -332,8 +332,8 @@ packages:
   '@plumeria/core@0.11.0':
     resolution: {integrity: sha512-Oy0AYONdMKgbtwDSMExy7vp+dh7VQw6x6FjkHFj8QwP+2wYYyr7zzEcpzeqIbZPdzoD6mMw0zyzLjEWYfNgjpA==}
 
-  '@plumeria/eslint-plugin@0.1.1':
-    resolution: {integrity: sha512-NdtNYmmELXjxaCfKOmyUM3IyJKesNx2xrdrnsSHtImQk77ySUrCjMKCvvBmmaZSY80gpbnvhXCnScFiNBMKPYw==}
+  '@plumeria/eslint-plugin@0.2.3':
+    resolution: {integrity: sha512-OfUPfnTL/BEsL+Au/ATSwyG2W3UUH+Co78QrZ2DX9aCSOZOOhO7kNEdGuNzJdtSRQj7qms1P4sXe7Xm53OGMpg==}
 
   '@plumeria/next@0.6.6':
     resolution: {integrity: sha512-MFG6S3dcoBysSIAlMOjw5MnVydz7m5/WzX5pgLb9YWcXwikQ0npEXTVrK9XjJ+T1dk90/fbu3pt+Gx0xip2CoQ==}
@@ -1626,7 +1626,7 @@ snapshots:
       zss-engine: 0.2.44
       zss-utils: 0.2.4
 
-  '@plumeria/eslint-plugin@0.1.1': {}
+  '@plumeria/eslint-plugin@0.2.3': {}
 
   '@plumeria/next@0.6.6': {}
 

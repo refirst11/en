@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
-    "@plumeria/eslint-plugin": "^0.1.1",
+    "@plumeria/eslint-plugin": "^0.2.3",
     "@plumeria/next": "^0.6.5",
     "@shikijs/rehype": "^2.5.0",
     "@types/node": "^22.14.0",
