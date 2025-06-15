@@ -61,51 +61,51 @@ export const metadata: Metadata = generateSEOData({ title: 'Refirst' });
 const Page = (): JSX.Element => {
   return (
     <>
-      <h1 className={styles.name}>Refirst</h1>
+      <h1 className={css.props(styles.name)}>Refirst</h1>
       <p>
         I&apos;ve creates ideas and designs software, and currently living in JPN. like work on Ever since I grew up, I
         have had a wide interest in the world of Audio environment and for engineers.
       </p>
-      <ul className={styles.list}>
+      <ul className={css.props(styles.list)}>
         <li>
           <span>Java Intern ship 1month</span>
           <div />
-          <span className={styles.date}>2023</span>
+          <span className={css.props(styles.date)}>2023</span>
         </li>
         <li>
           <span>Learning programming and git to 2022</span>
           <div />
-          <span className={styles.date}>2021</span>
+          <span className={css.props(styles.date)}>2021</span>
         </li>
         <li>
           <span>Learning design - to 2020</span>
           <div />
-          <span className={styles.date}>2019</span>
+          <span className={css.props(styles.date)}>2019</span>
         </li>
         <li>
           <span>Passed the Japan high school certification</span>
           <div />
-          <span className={styles.date}>2018</span>
+          <span className={css.props(styles.date)}>2018</span>
         </li>
         <li>
           <span>Leave PC SHOP</span>
           <div />
-          <span className={styles.date}>2017</span>
+          <span className={css.props(styles.date)}>2017</span>
         </li>
         <li>
           <span>Joined PC SHOP</span>
           <div />
-          <span className={styles.date}>2016</span>
+          <span className={css.props(styles.date)}>2016</span>
         </li>
         <li>
           <span>Experiences until then become to mental illness</span>
           <div />
-          <span className={styles.date}>2015</span>
+          <span className={css.props(styles.date)}>2015</span>
         </li>
         <li>
           <span>Traveled Canada Seattle</span>
           <div />
-          <span className={styles.date}>2014</span>
+          <span className={css.props(styles.date)}>2014</span>
         </li>
       </ul>
     </>

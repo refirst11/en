@@ -5,7 +5,7 @@ import isCurrentLink from 'lib/isCurrentLink';
 import { Link } from 'next-link-transitions';
 import { JSX } from 'react';
 import { styles } from './styles';
-import { cx } from '@plumeria/core';
+import { css } from '@plumeria/core';
 import { animation } from 'styles/global';
 
 const Header = (): JSX.Element => {
@@ -26,17 +26,17 @@ const Header = (): JSX.Element => {
   ];
 
   return (
-    <header className={styles.header_main}>
+    <header className={css.props(styles.header_main)}>
       {!pathname.includes('personal/') && (
-        <nav className={styles.header_nav}>
-          <ul className={styles.header_ul}>
+        <nav className={css.props(styles.header_nav)}>
+          <ul className={css.props(styles.header_ul)}>
             {Headers.map(({ name, href }) => (
               <Link
                 key={href}
                 href={href}
-                className={cx(styles.link_container, isCurrentLink(href, pathname) && styles.after_color)}
-                next={animation.next}
-                old={animation.old}
+                className={css.props(styles.link_container, isCurrentLink(href, pathname) && styles.after_color)}
+                next={css.props(animation.next)}
+                old={css.props(animation.old)}
               >
                 {name}
               </Link>
