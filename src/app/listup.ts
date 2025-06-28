@@ -16,20 +16,20 @@ export const styles = css.create({
         width: '100%',
       },
     },
+  },
 
-    '& a': {
-      position: 'relative',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      width: 520,
-      padding: '16px',
-      fontWeight: '600',
-      color: 'black',
-      listStyle: 'none',
-      borderRadius: 12,
-    },
-    '& a div': {
+  link: {
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: 520,
+    padding: '16px',
+    fontWeight: '600',
+    color: 'black',
+    listStyle: 'none',
+    borderRadius: 12,
+    '& div': {
       position: 'relative',
       top: 2,
       flex: 1,
