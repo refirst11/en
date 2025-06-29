@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@plumeria/compiler':
-        specifier: 0.11.0
-        version: 0.11.0
+        specifier: 0.12.0
+        version: 0.12.0
       '@plumeria/core':
-        specifier: ^0.11.5
-        version: 0.11.5
+        specifier: ^0.12.0
+        version: 0.12.0
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -44,6 +44,9 @@ importers:
       unified:
         specifier: ^11.0.5
         version: 11.0.5
+      zss-engine:
+        specifier: ^0.2.48
+        version: 0.2.48
     devDependencies:
       '@eslint/js':
         specifier: ^9.21.0
@@ -325,12 +328,12 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@plumeria/compiler@0.11.0':
-    resolution: {integrity: sha512-RtkEAvOkjb1Pd39P4Ta4wU3fv9P67c4hsma6sInIEziq3PV0qQf6r9TvmXh3m0fJiolwzceydsUC3i+Y3mgSMA==}
+  '@plumeria/compiler@0.12.0':
+    resolution: {integrity: sha512-pLOkKhXaAW+xtjDXe2snPbOLgCiXTRpSdHUBdjLsJAw/YLqCoNwD3eznrGG6eWvtWDQ7ouUMwrbgZz1lgTe4wg==}
     hasBin: true
 
-  '@plumeria/core@0.11.5':
-    resolution: {integrity: sha512-jHYnu62zwV9hG/T9pKKx08XSvapQ1FUnZ5Sm/yH+bB6ZCSyHfltoy/TkC98hG/DTUqiXE+n7UtEpobAX+MPcdg==}
+  '@plumeria/core@0.12.0':
+    resolution: {integrity: sha512-uGhQ5VImlQhKIat6s1Z/QmWauE8QrdDj4Yuq9Kify+239uW3bqNmuaeqFFwqwZ4eAk5lY2fy1nlCcFlXjByAdg==}
 
   '@plumeria/eslint-plugin@0.2.3':
     resolution: {integrity: sha512-OfUPfnTL/BEsL+Au/ATSwyG2W3UUH+Co78QrZ2DX9aCSOZOOhO7kNEdGuNzJdtSRQj7qms1P4sXe7Xm53OGMpg==}
@@ -1414,8 +1417,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zss-engine@0.2.46:
-    resolution: {integrity: sha512-Gd48767R6GAIMXtOHnDQFvhUYILHpSQhsBfwtObjFqO0YyI8Z2DDy/vkfvkzX/3wp/W/aT1Fd+4XYI24T1RBpw==}
+  zss-engine@0.2.48:
+    resolution: {integrity: sha512-2MerqwNEHKI1p0zdjIpR35xyaiOzNqQrAfD4EHS41ZBz14+caisKC/2uCbstLqwv99PUZ6ztOT5T3q4aQg0weg==}
 
   zss-utils@0.2.4:
     resolution: {integrity: sha512-FPgERlp/upSkQ20XEgHCperRzVi+IIzBGYDzq9eK3ORvRhrmWbhoYxx/ulXU/fFTbuHOu319aOQAmBO00X23ew==}
@@ -1610,7 +1613,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@plumeria/compiler@0.11.0':
+  '@plumeria/compiler@0.12.0':
     dependencies:
       '@rust-gear/glob': 0.2.2
       '@swc/core': 1.12.3
@@ -1621,9 +1624,9 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@0.11.5':
+  '@plumeria/core@0.12.0':
     dependencies:
-      zss-engine: 0.2.46
+      zss-engine: 0.2.48
       zss-utils: 0.2.4
 
   '@plumeria/eslint-plugin@0.2.3': {}
@@ -2827,7 +2830,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zss-engine@0.2.46:
+  zss-engine@0.2.48:
     dependencies:
       csstype: 3.1.3
 

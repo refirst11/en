@@ -28,15 +28,15 @@ const Header = (): JSX.Element => {
   return (
     <header className={css.props(styles.header_main)}>
       {!pathname.includes('personal/') && (
-        <nav className={css.props(styles.header_nav)}>
-          <ul className={css.props(styles.header_ul)}>
+        <nav className={styles.$header_nav}>
+          <ul className={styles.$header_ul}>
             {Headers.map(({ name, href }) => (
               <Link
                 key={href}
                 href={href}
                 className={css.props(styles.link_container, isCurrentLink(href, pathname) && styles.after_color)}
-                next={css.props(animation.next)}
-                old={css.props(animation.old)}
+                next={animation.$next}
+                old={animation.$old}
               >
                 {name}
               </Link>

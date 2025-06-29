@@ -9,8 +9,8 @@
     "compile": "css"
   },
   "dependencies": {
-    "@plumeria/compiler": "0.11.0",
-    "@plumeria/core": "^0.11.5",
+    "@plumeria/compiler": "0.12.0",
+    "@plumeria/core": "^0.12.0",
     "gray-matter": "^4.0.3",
     "next": "^15.3.2",
     "next-link-transitions": "^0.2.1",
@@ -20,7 +20,8 @@
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.1",
     "sass": "1.50.0",
-    "unified": "^11.0.5"
+    "unified": "^11.0.5",
+    "zss-engine": "^0.2.48"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
