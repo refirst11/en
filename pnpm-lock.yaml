@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@plumeria/core':
-        specifier: 0.13.7
-        version: 0.13.7
+        specifier: 0.13.8
+        version: 0.13.8
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -326,8 +326,8 @@ packages:
     resolution: {integrity: sha512-9ogfUz3bmK+4cc6JTzKE8yj6AZ2o9h0uUtO7/EuRHMyHzRac8w1YbEkIgUHWEM5Th5l41YYRmhuTe3vA9nbKTA==}
     hasBin: true
 
-  '@plumeria/core@0.13.7':
-    resolution: {integrity: sha512-DxytoyF59DaUEvXnwTee9R1djOGuOW5DaPzqSqY6/15e9aiCYPVnlNb59LmjAIMMV1Ig6AaBhMZ5pTZ2V18uLA==}
+  '@plumeria/core@0.13.8':
+    resolution: {integrity: sha512-Js1tYHHHlAyeSwLV6yKhjg4jVQxBY1bU94CK+DTDdJFPErLF5dG/FnuRQhuhu5mW/MV7Kebnu0+MBaDPL600iw==}
 
   '@plumeria/eslint-plugin@0.2.4':
     resolution: {integrity: sha512-wr3L1Rwi0cWfuepqWKFVxuPQJm4QRFJgdVrse7jPhzqhS9oPZu8ZLJpf0NRNx351C5RigEcfeqGXITCqkzsFsA==}
@@ -1622,7 +1622,7 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@0.13.7':
+  '@plumeria/core@0.13.8':
     dependencies:
       zss-engine: 0.2.63
       zss-utils: 0.2.4
