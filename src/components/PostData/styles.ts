@@ -1,6 +1,5 @@
 import { css } from '@plumeria/core';
-
-const MD = css.media.maxWidth(768);
+import { breakpoints } from 'lib/mediaQuery';
 
 export const styles = css.create({
   back: {
@@ -12,7 +11,7 @@ export const styles = css.create({
   post: {
     position: 'relative',
     transform: 'translateY(-100px)',
-    [MD]: {
+    [breakpoints.md]: {
       transform: 'none',
     },
   },

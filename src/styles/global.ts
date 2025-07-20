@@ -1,33 +1,6 @@
 import { css, ps } from '@plumeria/core';
-
-const MD = css.media.maxWidth(768);
-
-const oldTransition = css.keyframes({
-  from: {
-    opacity: 1,
-  },
-  to: {
-    opacity: 1,
-  },
-});
-
-const newTransition = css.keyframes({
-  from: {
-    opacity: 0,
-  },
-  to: {
-    opacity: 1,
-  },
-});
-
-export const animation = css.create({
-  next: {
-    viewTransitionName: newTransition,
-  },
-  old: {
-    viewTransitionName: oldTransition,
-  },
-});
+import { breakpoints } from 'lib/mediaQuery';
+import { oldTransition, newTransition } from './animation';
 
 css.global({
   [ps.fn.viewTransitionOld(oldTransition)]: {
@@ -48,7 +21,7 @@ css.global({
     borderRadius: 4,
     boxShadow: '0 0 2px -0.5px rgb(0 0 0 / 0.4)',
     transition: 'all 0.8s',
-    [MD]: {
+    [breakpoints.md]: {
       width: '100%',
       overflow: 'auto',
     },
@@ -71,7 +44,7 @@ css.global({
     height: '100%',
     padding: 0,
     margin: 0,
-    [MD]: {
+    [breakpoints.md]: {
       WebkitTextSizeAdjust: 'none',
     },
   },
@@ -88,7 +61,7 @@ css.global({
     textAlign: 'center',
     wordBreak: 'break-all',
     backgroundColor: '#fffffe',
-    [MD]: {
+    [breakpoints.md]: {
       width: '100%',
       padding: '0 24px',
       fontSize: 12,
@@ -101,7 +74,7 @@ css.global({
     width: 506,
     minHeight: '100vh',
     textAlign: 'left',
-    [MD]: {
+    [breakpoints.md]: {
       top: 40,
       width: '100%',
       padding: '0 24px',
@@ -143,7 +116,7 @@ css.global({
   h1: {
     fontSize: 20,
     fontWeight: 'normal',
-    [MD]: {
+    [breakpoints.md]: {
       fontSize: 18,
     },
   },
@@ -154,7 +127,7 @@ css.global({
     fontSize: 18,
     fontWeight: 'normal',
     color: 'rgb(117, 117, 117)',
-    [MD]: {
+    [breakpoints.md]: {
       fontSize: 16,
     },
   },

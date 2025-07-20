@@ -1,6 +1,5 @@
 import { css, ps, px } from '@plumeria/core';
-
-const MD = css.media.maxWidth(800);
+import { breakpoints } from 'lib/mediaQuery';
 
 export const styles = css.create({
   list: {
@@ -10,7 +9,7 @@ export const styles = css.create({
     [px('& a', ps.hover)]: {
       background: '#eeeeee',
     },
-    [MD]: {
+    [breakpoints.md]: {
       width: '100%',
       '& a': {
         width: '100%',
@@ -43,7 +42,7 @@ export const styles = css.create({
     marginLeft: 3,
     fontWeight: '400',
     color: 'gray',
-    [MD]: {
+    [breakpoints.md]: {
       display: 'none',
     },
   },

@@ -1,15 +1,16 @@
 import { JSX } from 'react';
-import { styles } from './styles';
+import { css } from '@plumeria/core';
+import { breakpoints } from 'lib/mediaQuery';
 
 const Footer = (): JSX.Element => {
   const time = new Date();
   const year = time.getFullYear();
 
   return (
-    <footer className={styles.$footer_main}>
-      <div className={styles.$footer_container}>
-        <div className={styles.$footer_text}>{year + ' © Refirst.'}</div>
-        <div className={styles.$footer_icon}>
+    <footer className={css.props(styles.footer_main)}>
+      <div className={css.props(styles.footer_container)}>
+        <div className={css.props(styles.footer_text)}>{year + ' © Refirst.'}</div>
+        <div className={css.props(styles.footer_icon)}>
           <a href="https://github.com/refirst11">Github</a>
         </div>
       </div>
@@ -18,3 +19,44 @@ const Footer = (): JSX.Element => {
 };
 
 export default Footer;
+
+const styles = css.create({
+  footer_text: {
+    position: 'relative',
+    fontSize: 12,
+    color: 'gray',
+    textAlign: 'left',
+    userSelect: 'none',
+    [breakpoints.md]: {
+      left: 24,
+    },
+  },
+
+  footer_main: {
+    position: 'absolute',
+    right: 64,
+    bottom: 20,
+    left: 0,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    width: 800,
+    height: 80,
+    [breakpoints.md]: {
+      right: 36,
+      width: 'auto',
+    },
+  },
+
+  footer_container: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '100%',
+  },
+
+  footer_icon: {
+    display: 'flex',
+    gap: 12,
+  },
+});
