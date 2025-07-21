@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@plumeria/core':
-        specifier: 0.14.2
-        version: 0.14.2
+        specifier: 0.14.5
+        version: 0.14.5
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -332,8 +332,8 @@ packages:
     resolution: {integrity: sha512-Xrcd/Bm7y/Jlzbxm08y6u+ObLX8yXcPvbtEoZVI96YvBjlAfToF0tra8PxpWViMsjtgy3V5S5ImYY6CS605sbQ==}
     hasBin: true
 
-  '@plumeria/core@0.14.2':
-    resolution: {integrity: sha512-xd2BzDSeGJdySTHTmKMVfp+pPaCyvI9M3JTyvNaYJe/htAXpasYoAoWSjr+G7gT1gAGc18+HxjxWCSDTZLVpHA==}
+  '@plumeria/core@0.14.5':
+    resolution: {integrity: sha512-WJWYz0OPckeb7vz4MiGk/of7GnK16pkTIeqvA0/KNmnxrMmhoVlF3ZTRcjKim3FTJzkIN82icc3hRzSGfNoRVQ==}
 
   '@plumeria/eslint-plugin@0.2.5':
     resolution: {integrity: sha512-w1lEETTl32WAhl0Iy2HxgN1QBfe1PuIsCYBBzRh71w/VnUA0pMaM9xKr6sgHgbe2jk2b5N+Dr05nJUNAPLJEMw==}
@@ -1412,8 +1412,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zss-engine@0.2.67:
-    resolution: {integrity: sha512-09MOGKtYbEsy/KVqRZb2Ew9EFcJAHbvd027EqeNm2wvWPopyNAmcpe2vLlrAkmgI592LSf4HyqL+5317xf9enA==}
+  zss-engine@0.2.69:
+    resolution: {integrity: sha512-QCANXzXErAuNN0fm/h1r9i2UUVNJW7Dkr+fDwUDDuo6RmhBoTF0qc7Ms3JqurGLMqGzLVOAod6JDyCU31+KTEQ==}
 
   zss-utils@0.2.4:
     resolution: {integrity: sha512-FPgERlp/upSkQ20XEgHCperRzVi+IIzBGYDzq9eK3ORvRhrmWbhoYxx/ulXU/fFTbuHOu319aOQAmBO00X23ew==}
@@ -1625,9 +1625,9 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@0.14.2':
+  '@plumeria/core@0.14.5':
     dependencies:
-      zss-engine: 0.2.67
+      zss-engine: 0.2.69
       zss-utils: 0.2.4
 
   '@plumeria/eslint-plugin@0.2.5': {}
@@ -2824,7 +2824,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zss-engine@0.2.67:
+  zss-engine@0.2.69:
     dependencies:
       csstype: 3.1.3
 
