@@ -9,7 +9,7 @@
     "compile": "css"
   },
   "dependencies": {
-    "@plumeria/core": "0.14.8",
+    "@plumeria/core": "0.14.9",
     "gray-matter": "^4.0.3",
     "next": "^15.3.2",
     "next-link-transitions": "^0.2.1",
