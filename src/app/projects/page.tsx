@@ -9,8 +9,8 @@ export const metadata: Metadata = generateSEOData({ title: 'Projects - Refirst' 
 
 const Page = (): JSX.Element => {
   return (
-    <>
-      <div className={css.props(styles.list)}>
+    <div className={css.props(styles.list)}>
+      <div className={css.props(styles.spacing)}>
         <ListItem
           href={'https://github.com/rust-gear-project/rust-gear'}
           date="2025"
@@ -19,41 +19,20 @@ const Page = (): JSX.Element => {
           @rust-gear/glob
         </ListItem>
         <ListItem
-          href="https://github.com/refirst11/kpx"
-          date="2025"
-          subti="TypeScript Module Loader(Key Process Execute)"
-        >
-          kpx
-        </ListItem>
-        <ListItem
           href="https://github.com/refirst11/rscute"
           date="2025"
           subti="Faster executor for TypeScript with path resolution"
         >
           rscute
         </ListItem>
-        <ListItem
-          href="https://github.com/refirst11/next-link-transitions"
-          date="2025"
-          subti="View Transition API for Next SC"
-        >
-          next-link-transitions
+        <ListItem href="https://plumeria.dev" date="2025" subti="CSS in JS with scalable and optimized styling">
+          @plumeria/core
         </ListItem>
         <ListItem href="https://github.com/zss-in-js/zss-utils" date="2025" subti="Zero-Runtime StyleSheet Utilities">
           zss-utils
         </ListItem>
         <ListItem href="https://github.com/zss-in-js/zss-engine" date="2025" subti="Zero-Runtime StyleSheet Engine">
           zss-engine
-        </ListItem>
-        <ListItem
-          href="https://github.com/zss-in-js/eslint-plugin-zss-lint"
-          date="2025"
-          subti="Linting for object CSS in JS"
-        >
-          eslint-plugin-zss-lint
-        </ListItem>
-        <ListItem href="https://plumeria.dev" date="2025" subti="CSS in JS with faster development cycle">
-          Plumeria
         </ListItem>
         <ListItem
           href="https://github.com/zss-in-js/typedcssx"
@@ -87,7 +66,7 @@ const Page = (): JSX.Element => {
           React Magic Card
         </ListItem>
       </div>
-    </>
+    </div>
   );
 };
 

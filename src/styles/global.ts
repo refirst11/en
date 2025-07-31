@@ -51,11 +51,14 @@ css.global({
 
   body: {
     position: 'relative',
+    zIndex: 0,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     width: 506,
-    margin: '0 auto',
+    minHeight: '100vh',
+    padding: '80px 0',
+    margin: 'auto',
     fontSize: '14px',
     color: 'rgb(55 65 81)',
     textAlign: 'center',
@@ -69,15 +72,10 @@ css.global({
   },
 
   main: {
-    position: 'absolute',
-    top: 200,
-    width: 506,
-    minHeight: '100vh',
+    height: 'fit-content',
     textAlign: 'left',
     [breakpoints.md]: {
-      top: 40,
       width: '100%',
-      padding: '0 24px',
       transition: 'all 0.7s',
       opacity: 1,
     },

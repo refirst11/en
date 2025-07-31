@@ -10,9 +10,7 @@ const Footer = (): JSX.Element => {
     <footer className={css.props(styles.footer_main)}>
       <div className={css.props(styles.footer_container)}>
         <div className={css.props(styles.footer_text)}>{year + ' © Refirst.'}</div>
-        <div className={css.props(styles.footer_icon)}>
-          <a href="https://github.com/refirst11">Github</a>
-        </div>
+        <a href="https://github.com/refirst11">Github</a>
       </div>
     </footer>
   );
@@ -37,13 +35,14 @@ const styles = css.create({
     right: 64,
     bottom: 20,
     left: 0,
+
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    width: 800,
+    width: 506,
     height: 80,
     [breakpoints.md]: {
-      right: 36,
+      right: 24,
       width: 'auto',
     },
   },
@@ -53,10 +52,5 @@ const styles = css.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     width: '100%',
-  },
-
-  footer_icon: {
-    display: 'flex',
-    gap: 12,
   },
 });

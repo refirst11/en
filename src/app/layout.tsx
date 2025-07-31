@@ -4,8 +4,10 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import '@plumeria/core/stylesheet.css';
 import 'styles/global';
 import { ServerCSS } from '@plumeria/next';
+import Footer from 'components/Footer';
+import { Icon } from 'components/Icon';
 
-const geist = Geist({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
+const geist = Geist({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700'] });
 const geist_mono = Geist_Mono({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--geist-mono' });
 
 type RootLayoutProps = {
@@ -26,7 +28,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
       </head>
       <body className={font}>
         <Header />
+        <Icon />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
