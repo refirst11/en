@@ -2,18 +2,37 @@ import { css, ps, px } from '@plumeria/core';
 import { breakpoints } from 'lib/mediaQuery';
 
 export const styles = css.create({
+  wordline: {
+    transform: 'translate(-140px, -20px)',
+    [breakpoints.md]: {
+      transform: 'translate(-80px, -20px)',
+    },
+  },
+
   list: {
-    position: 'relative',
-    top: 40,
+    position: 'absolute',
+    top: 160,
+    right: '0',
+    left: '0',
     width: 'fit-content',
+    margin: '0 auto',
+    marginTop: 'auto',
     [px('& a', ps.hover)]: {
       background: '#eeeeee',
     },
     [breakpoints.md]: {
+      position: 'relative',
+      top: 20,
       width: '100%',
       '& a': {
         width: '100%',
       },
+    },
+  },
+
+  spacing: {
+    [breakpoints.md]: {
+      margin: '120px 0',
     },
   },
 

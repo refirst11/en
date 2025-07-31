@@ -10,9 +10,18 @@ export const styles = css.create({
 
   post: {
     position: 'relative',
-    transform: 'translateY(-100px)',
+    zIndex: 1,
+
     [breakpoints.md]: {
       transform: 'none',
+    },
+  },
+
+  spacing: {
+    marginBottom: '40px',
+    [breakpoints.md]: {
+      marginTop: 60,
+      marginBottom: 120,
     },
   },
 

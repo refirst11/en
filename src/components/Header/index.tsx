@@ -27,8 +27,8 @@ const Header = (): JSX.Element => {
 
   return (
     <header className={css.props(styles.header_main)}>
-      {!pathname.includes('personal/') && (
-        <nav className={css.props(styles.header_nav)}>
+      <nav className={css.props(styles.header_nav)}>
+        {!pathname.includes('personal/') && (
           <ul className={css.props(styles.header_ul)}>
             {Headers.map(({ name, href }) => (
               <Link
@@ -42,8 +42,8 @@ const Header = (): JSX.Element => {
               </Link>
             ))}
           </ul>
-        </nav>
-      )}
+        )}
+      </nav>
     </header>
   );
 };
@@ -59,16 +59,16 @@ const styles = css.create({
   },
   header_nav: {
     position: 'absolute',
-    top: 0,
+    top: 140,
     right: 0,
     display: 'flex',
     alignItems: 'flex-end',
     width: 'max-content',
-    height: 220,
+    height: 10,
     [breakpoints.md]: {
-      top: 30,
-      right: 16,
+      top: 110,
       height: 18,
+      marginRight: 24,
     },
   },
 

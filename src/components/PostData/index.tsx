@@ -21,9 +21,11 @@ const ReturnLink = () => {
 const PostData = ({ post }: PostProps) => {
   return (
     <div className={css.props(styles.post)}>
-      <ReturnLink />
-      <h1 className={css.props(styles.color_h1)}>{post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <div className={css.props(styles.spacing)}>
+        <ReturnLink />
+        <h1 className={css.props(styles.color_h1)}>{post.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      </div>
     </div>
   );
 };

@@ -12,10 +12,8 @@ async function getPosts() {
   return posts;
 }
 
-async function Page() {
+export default async function DPage() {
   const posts = await getPosts();
 
   return <PostsData posts={posts} />;
 }
-
-export default Page;
