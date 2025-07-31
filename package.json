@@ -9,7 +9,7 @@
     "compile": "css"
   },
   "dependencies": {
-    "@plumeria/core": "0.14.9",
+    "@plumeria/core": "0.14.10",
     "gray-matter": "^4.0.3",
     "next": "^15.3.2",
     "next-link-transitions": "^0.2.1",
@@ -25,7 +25,7 @@
     "@eslint/js": "^9.21.0",
     "@plumeria/compiler": "^0.14.8",
     "@plumeria/eslint-plugin": "^0.2.6",
-    "@plumeria/next": "^0.7.0",
+    "@plumeria/next": "^0.8.1",
     "@shikijs/rehype": "^2.5.0",
     "@types/node": "^22.14.0",
     "@types/react": "19.0.0",
