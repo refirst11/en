@@ -1,4 +1,5 @@
 import type { NextConfig } from 'next';
+import { withPlumeria } from '@plumeria/next-plugin';
 
 const securityHeaders = [
   {
@@ -27,8 +28,7 @@ const securityHeaders = [
   },
 ];
 
-const nextConfig: NextConfig = {
-  reactStrictMode: false,
+const nextConfig: NextConfig = withPlumeria({
   async headers() {
     return [
       {
@@ -37,6 +37,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-};
+});
 
 export default nextConfig;

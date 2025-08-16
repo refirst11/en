@@ -3,7 +3,6 @@ import { ReactNode } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
 import '@plumeria/core/stylesheet.css';
 import 'styles/global';
-import { ServerCSS } from '@plumeria/next';
 import Footer from 'components/Footer';
 import { Icon } from 'components/Icon';
 
@@ -23,7 +22,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
-        <ServerCSS />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={font}>
