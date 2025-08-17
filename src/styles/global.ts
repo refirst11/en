@@ -1,14 +1,14 @@
-import { css, ps } from '@plumeria/core';
+import { css } from '@plumeria/core';
 import { breakpoints } from 'lib/mediaQuery';
 import { oldTransition, newTransition } from './animation';
 
 css.global({
-  [ps.fn.viewTransitionOld(oldTransition)]: {
+  [`::view-transition-old(${oldTransition})`]: {
     animationName: oldTransition,
     animationDuration: '0.3s',
     animationTimingFunction: 'ease',
   },
-  [ps.fn.viewTransitionNew(newTransition)]: {
+  [`::view-transition-new(${newTransition})`]: {
     animationName: newTransition,
     animationDuration: '0.3s',
     animationTimingFunction: 'ease',

@@ -4,8 +4,9 @@ import { usePathname } from 'next/navigation';
 import isCurrentLink from 'lib/isCurrentLink';
 import { Link } from 'next-link-transitions';
 import { JSX } from 'react';
-import { css, ps } from '@plumeria/core';
+import { css } from '@plumeria/core';
 import { breakpoints } from 'lib/mediaQuery';
+import { ps } from 'lib/pseudos';
 import { animation } from 'styles/animation';
 
 const Header = (): JSX.Element => {
