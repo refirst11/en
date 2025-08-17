@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "css & next dev",
+    "dev": "css && next dev",
     "build": "css --type-check && next build",
     "start": "next start"
   },

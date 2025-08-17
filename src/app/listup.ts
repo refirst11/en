@@ -1,4 +1,4 @@
-import { css, ps, px } from '@plumeria/core';
+import { css } from '@plumeria/core';
 import { breakpoints } from 'lib/mediaQuery';
 
 export const styles = css.create({
@@ -17,9 +17,6 @@ export const styles = css.create({
     width: 'fit-content',
     margin: '0 auto',
     marginTop: 'auto',
-    [px('& a', ps.hover)]: {
-      background: '#eeeeee',
-    },
     [breakpoints.md]: {
       position: 'relative',
       top: 20,
@@ -28,11 +25,8 @@ export const styles = css.create({
         width: '100%',
       },
     },
-  },
-
-  spacing: {
-    [breakpoints.md]: {
-      margin: '120px 0',
+    ['& a:hover']: {
+      background: '#eeeeee',
     },
   },
 
