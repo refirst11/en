@@ -8,18 +8,12 @@ importers:
 
   .:
     dependencies:
-      '@plumeria/core':
-        specifier: ^0.15.2
-        version: 0.15.2
-      '@plumeria/next-plugin':
-        specifier: ^0.15.2
-        version: 0.15.2
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
       next:
-        specifier: ^15.3.2
-        version: 15.4.6(@babel/core@7.28.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.50.0)
+        specifier: ^15.4.5
+        version: 15.4.5(@babel/core@7.28.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.50.0)
       next-link-transitions:
         specifier: ^0.2.1
         version: 0.2.2
@@ -49,11 +43,17 @@ importers:
         specifier: ^9.21.0
         version: 9.33.0
       '@plumeria/compiler':
-        specifier: ^0.15.2
-        version: 0.15.2
+        specifier: ^0.15.4
+        version: 0.15.4
+      '@plumeria/core':
+        specifier: ^0.15.4
+        version: 0.15.4
       '@plumeria/eslint-plugin':
-        specifier: ^0.15.2
-        version: 0.15.2
+        specifier: ^0.15.4
+        version: 0.15.4
+      '@plumeria/next-plugin':
+        specifier: ^0.15.4
+        version: 0.15.4
       '@shikijs/rehype':
         specifier: ^2.5.0
         version: 2.5.0
@@ -411,53 +411,53 @@ packages:
   '@jridgewell/trace-mapping@0.3.30':
     resolution: {integrity: sha512-GQ7Nw5G2lTu/BtHTKfXhKHok2WGetd4XYcVKGx00SjAk8GMwgJM3zr6zORiPGuOE+/vkc90KtTosSSvaCjKb2Q==}
 
-  '@next/env@15.4.6':
-    resolution: {integrity: sha512-yHDKVTcHrZy/8TWhj0B23ylKv5ypocuCwey9ZqPyv4rPdUdRzpGCkSi03t04KBPyU96kxVtUqx6O3nE1kpxASQ==}
+  '@next/env@15.4.5':
+    resolution: {integrity: sha512-ruM+q2SCOVCepUiERoxOmZY9ZVoecR3gcXNwCYZRvQQWRjhOiPJGmQ2fAiLR6YKWXcSAh7G79KEFxN3rwhs4LQ==}
 
-  '@next/swc-darwin-arm64@15.4.6':
-    resolution: {integrity: sha512-667R0RTP4DwxzmrqTs4Lr5dcEda9OxuZsVFsjVtxVMVhzSpo6nLclXejJVfQo2/g7/Z9qF3ETDmN3h65mTjpTQ==}
+  '@next/swc-darwin-arm64@15.4.5':
+    resolution: {integrity: sha512-84dAN4fkfdC7nX6udDLz9GzQlMUwEMKD7zsseXrl7FTeIItF8vpk1lhLEnsotiiDt+QFu3O1FVWnqwcRD2U3KA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@15.4.6':
-    resolution: {integrity: sha512-KMSFoistFkaiQYVQQnaU9MPWtp/3m0kn2Xed1Ces5ll+ag1+rlac20sxG+MqhH2qYWX1O2GFOATQXEyxKiIscg==}
+  '@next/swc-darwin-x64@15.4.5':
+    resolution: {integrity: sha512-CL6mfGsKuFSyQjx36p2ftwMNSb8PQog8y0HO/ONLdQqDql7x3aJb/wB+LA651r4we2pp/Ck+qoRVUeZZEvSurA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@15.4.6':
-    resolution: {integrity: sha512-PnOx1YdO0W7m/HWFeYd2A6JtBO8O8Eb9h6nfJia2Dw1sRHoHpNf6lN1U4GKFRzRDBi9Nq2GrHk9PF3Vmwf7XVw==}
+  '@next/swc-linux-arm64-gnu@15.4.5':
+    resolution: {integrity: sha512-1hTVd9n6jpM/thnDc5kYHD1OjjWYpUJrJxY4DlEacT7L5SEOXIifIdTye6SQNNn8JDZrcN+n8AWOmeJ8u3KlvQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@15.4.6':
-    resolution: {integrity: sha512-XBbuQddtY1p5FGPc2naMO0kqs4YYtLYK/8aPausI5lyOjr4J77KTG9mtlU4P3NwkLI1+OjsPzKVvSJdMs3cFaw==}
+  '@next/swc-linux-arm64-musl@15.4.5':
+    resolution: {integrity: sha512-4W+D/nw3RpIwGrqpFi7greZ0hjrCaioGErI7XHgkcTeWdZd146NNu1s4HnaHonLeNTguKnL2Urqvj28UJj6Gqw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@15.4.6':
-    resolution: {integrity: sha512-+WTeK7Qdw82ez3U9JgD+igBAP75gqZ1vbK6R8PlEEuY0OIe5FuYXA4aTjL811kWPf7hNeslD4hHK2WoM9W0IgA==}
+  '@next/swc-linux-x64-gnu@15.4.5':
+    resolution: {integrity: sha512-N6Mgdxe/Cn2K1yMHge6pclffkxzbSGOydXVKYOjYqQXZYjLCfN/CuFkaYDeDHY2VBwSHyM2fUjYBiQCIlxIKDA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@15.4.6':
-    resolution: {integrity: sha512-XP824mCbgQsK20jlXKrUpZoh/iO3vUWhMpxCz8oYeagoiZ4V0TQiKy0ASji1KK6IAe3DYGfj5RfKP6+L2020OQ==}
+  '@next/swc-linux-x64-musl@15.4.5':
+    resolution: {integrity: sha512-YZ3bNDrS8v5KiqgWE0xZQgtXgCTUacgFtnEgI4ccotAASwSvcMPDLua7BWLuTfucoRv6mPidXkITJLd8IdJplQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-win32-arm64-msvc@15.4.6':
-    resolution: {integrity: sha512-FxrsenhUz0LbgRkNWx6FRRJIPe/MI1JRA4W4EPd5leXO00AZ6YU8v5vfx4MDXTvN77lM/EqsE3+6d2CIeF5NYg==}
+  '@next/swc-win32-arm64-msvc@15.4.5':
+    resolution: {integrity: sha512-9Wr4t9GkZmMNcTVvSloFtjzbH4vtT4a8+UHqDoVnxA5QyfWe6c5flTH1BIWPGNWSUlofc8dVJAE7j84FQgskvQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@15.4.6':
-    resolution: {integrity: sha512-T4ufqnZ4u88ZheczkBTtOF+eKaM14V8kbjud/XrAakoM5DKQWjW09vD6B9fsdsWS2T7D5EY31hRHdta7QKWOng==}
+  '@next/swc-win32-x64-msvc@15.4.5':
+    resolution: {integrity: sha512-voWk7XtGvlsP+w8VBz7lqp8Y+dYw/MTI4KeS0gTVtfdhdJ5QwhXLmNrndFOin/MDoCvUaLWMkYKATaCoUkt2/A==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -474,21 +474,21 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@plumeria/compiler@0.15.2':
-    resolution: {integrity: sha512-OWOF1nbBOoelTCTkiUEJGOi1SdUYNWRByy89YS55fqitA9Plu+HSt9ib1ipp5cmPNxh3otymTfCmgwQTaUBkqg==}
+  '@plumeria/compiler@0.15.4':
+    resolution: {integrity: sha512-vuDaQ1gKwApqA1/p9qxa7csPV69okNX6Hw3vUIh6LZUAtGfYSuw1XycR2+SgfXMgReszVmPBztWhtlcwrXs3OA==}
     hasBin: true
 
-  '@plumeria/core@0.15.2':
-    resolution: {integrity: sha512-aJsOjMVoeULJzktPUGuN6pgJm9xf7oGPaN01Ie/sz5gyuN19AJUuuDWEaAyqItJyZsnmZtrj8K2dPTQWOkRlew==}
+  '@plumeria/core@0.15.4':
+    resolution: {integrity: sha512-XBqMsQJLaX3I5aPNglYT07Enx/+tvedFdwMZZHpnePh4wogWdmSBCw0viDvOgkAAKojJKkNfCooF029f9onnPA==}
 
-  '@plumeria/eslint-plugin@0.15.2':
-    resolution: {integrity: sha512-pXfJUYF7NqMU+bPeK+JoeQ28OQGz+ZHvh3ZsrBDtJRTgp3x3t73kRhod1rCf2EL6zPi0WYAeZZgtj2JHv3nB1g==}
+  '@plumeria/eslint-plugin@0.15.4':
+    resolution: {integrity: sha512-n+MjH+MtfI6XWmodh56S+a9E2+PHM2KOK5AF9IuoBCnFrIDzpVh3C08kmcl+bem+RvqF5uZtZq/EyqBDBoh4KQ==}
 
-  '@plumeria/next-plugin@0.15.2':
-    resolution: {integrity: sha512-GbaTHBeCpZnAC8brGQF9KQA/LQN22WU+wsCMTxI5+ZkqCUBn3tCjdeTazlRsbMg8GXyUw/suikvsDSy2dSgaBQ==}
+  '@plumeria/next-plugin@0.15.4':
+    resolution: {integrity: sha512-3bblOZzVkIFCCc4suH0VM6CWNuQZNqktObYjz5eCWYlifOdJ70/cnKAf7di3/0WaCR/PmV+JTtSJmnoijrr1sg==}
 
-  '@plumeria/webpack-plugin@0.15.2':
-    resolution: {integrity: sha512-2DlwhRijDLhC5t1hv3+yooDX3u58F5y2lZ6gY6LfCaINv6uqtUil1vmsEvYrDbVMueJFaAiAaxpF687FVksgCA==}
+  '@plumeria/webpack-plugin@0.15.4':
+    resolution: {integrity: sha512-kn+KCb4C/EzhK1BsPbchG9AIrkUjCAmDaMXvc8NwJ3Euy0ZyVSiZOil7xIZAL2UOHUmVqhCn60waeuRY2nNLYQ==}
 
   '@rust-gear/glob-darwin-arm64@0.2.2':
     resolution: {integrity: sha512-u2RhNepEuJrjTY00gN+H+k75UKLSVab8DZpC683Cbs9pw0u3MAnPbTqlFdiOtp+k0Tl3grjCG6FI/LJOGJ1jEQ==}
@@ -882,8 +882,8 @@ packages:
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
 
-  electron-to-chromium@1.5.202:
-    resolution: {integrity: sha512-NxbYjRmiHcHXV1Ws3fWUW+SLb62isauajk45LUJ/HgIOkUA7jLZu/X2Iif+X9FBNK8QkF9Zb4Q2mcwXCcY30mg==}
+  electron-to-chromium@1.5.203:
+    resolution: {integrity: sha512-uz4i0vLhfm6dLZWbz/iH88KNDV+ivj5+2SA+utpgjKaj9Q0iDLuwk6Idhe9BTxciHudyx6IvTvijhkPvFGUQ0g==}
 
   emoji-regex-xs@1.0.0:
     resolution: {integrity: sha512-LRlerrMYoIDrT6jgpeZ2YYl/L8EulRTt5hQcYjy5AInh7HWXKimpqx68aknBFpGL2+/IcogTcaydJEgaTmOpDg==}
@@ -1294,8 +1294,8 @@ packages:
   next-link-transitions@0.2.2:
     resolution: {integrity: sha512-PvHqfAkbT7YG/2MDMO593gZgF0iSyvCkZuUrldn7LxkrZ6H3vAAmy85faAKo8WK9NJRHLyi3CjOTgp+igopqtw==}
 
-  next@15.4.6:
-    resolution: {integrity: sha512-us++E/Q80/8+UekzB3SAGs71AlLDsadpFMXVNM/uQ0BMwsh9m3mr0UNQIfjKed8vpWXsASe+Qifrnu1oLIcKEQ==}
+  next@15.4.5:
+    resolution: {integrity: sha512-nJ4v+IO9CPmbmcvsPebIoX3Q+S7f6Fu08/dEWu0Ttfa+wVwQRh9epcmsyCPjmL2b8MxC+CkBR97jgDhUUztI3g==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
     hasBin: true
     peerDependencies:
@@ -1612,8 +1612,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zss-engine@0.2.75:
-    resolution: {integrity: sha512-jzREUKJPdchUH8NOsrizsdzm8gCZhQozM+Mtd0XcwU9jr3thWEYgRxDA7ZEgTqOzdN6oD6Y+zN9i8CUOi6XHJw==}
+  zss-engine@0.2.77:
+    resolution: {integrity: sha512-u7ZKJiAZdq6JWloVel3Qf2RTNIohSpHpncQa/ghAkB7EYaFe56TcO3PONinF1ZZUWhBOXz6isFJnb5VPVIO2WQ==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -1977,30 +1977,30 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@next/env@15.4.6': {}
+  '@next/env@15.4.5': {}
 
-  '@next/swc-darwin-arm64@15.4.6':
+  '@next/swc-darwin-arm64@15.4.5':
     optional: true
 
-  '@next/swc-darwin-x64@15.4.6':
+  '@next/swc-darwin-x64@15.4.5':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@15.4.6':
+  '@next/swc-linux-arm64-gnu@15.4.5':
     optional: true
 
-  '@next/swc-linux-arm64-musl@15.4.6':
+  '@next/swc-linux-arm64-musl@15.4.5':
     optional: true
 
-  '@next/swc-linux-x64-gnu@15.4.6':
+  '@next/swc-linux-x64-gnu@15.4.5':
     optional: true
 
-  '@next/swc-linux-x64-musl@15.4.6':
+  '@next/swc-linux-x64-musl@15.4.5':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@15.4.6':
+  '@next/swc-win32-arm64-msvc@15.4.5':
     optional: true
 
-  '@next/swc-win32-x64-msvc@15.4.6':
+  '@next/swc-win32-x64-msvc@15.4.5':
     optional: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -2015,7 +2015,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@plumeria/compiler@0.15.2':
+  '@plumeria/compiler@0.15.4':
     dependencies:
       '@rust-gear/glob': 0.2.2
       '@swc/core': 1.13.3
@@ -2027,19 +2027,19 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@0.15.2':
+  '@plumeria/core@0.15.4':
     dependencies:
-      zss-engine: 0.2.75
+      zss-engine: 0.2.77
 
-  '@plumeria/eslint-plugin@0.15.2': {}
+  '@plumeria/eslint-plugin@0.15.4': {}
 
-  '@plumeria/next-plugin@0.15.2':
+  '@plumeria/next-plugin@0.15.4':
     dependencies:
-      '@plumeria/webpack-plugin': 0.15.2
+      '@plumeria/webpack-plugin': 0.15.4
     transitivePeerDependencies:
       - supports-color
 
-  '@plumeria/webpack-plugin@0.15.2':
+  '@plumeria/webpack-plugin@0.15.4':
     dependencies:
       '@babel/core': 7.28.3
       '@babel/preset-typescript': 7.27.1(@babel/core@7.28.3)
@@ -2359,7 +2359,7 @@ snapshots:
   browserslist@4.25.2:
     dependencies:
       caniuse-lite: 1.0.30001735
-      electron-to-chromium: 1.5.202
+      electron-to-chromium: 1.5.203
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.2)
 
@@ -2446,7 +2446,7 @@ snapshots:
     dependencies:
       dequal: 2.0.3
 
-  electron-to-chromium@1.5.202: {}
+  electron-to-chromium@1.5.203: {}
 
   emoji-regex-xs@1.0.0: {}
 
@@ -2926,9 +2926,9 @@ snapshots:
 
   next-link-transitions@0.2.2: {}
 
-  next@15.4.6(@babel/core@7.28.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.50.0):
+  next@15.4.5(@babel/core@7.28.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.50.0):
     dependencies:
-      '@next/env': 15.4.6
+      '@next/env': 15.4.5
       '@swc/helpers': 0.5.15
       caniuse-lite: 1.0.30001735
       postcss: 8.4.31
@@ -2936,14 +2936,14 @@ snapshots:
       react-dom: 19.1.1(react@19.1.1)
       styled-jsx: 5.1.6(@babel/core@7.28.3)(react@19.1.1)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 15.4.6
-      '@next/swc-darwin-x64': 15.4.6
-      '@next/swc-linux-arm64-gnu': 15.4.6
-      '@next/swc-linux-arm64-musl': 15.4.6
-      '@next/swc-linux-x64-gnu': 15.4.6
-      '@next/swc-linux-x64-musl': 15.4.6
-      '@next/swc-win32-arm64-msvc': 15.4.6
-      '@next/swc-win32-x64-msvc': 15.4.6
+      '@next/swc-darwin-arm64': 15.4.5
+      '@next/swc-darwin-x64': 15.4.5
+      '@next/swc-linux-arm64-gnu': 15.4.5
+      '@next/swc-linux-arm64-musl': 15.4.5
+      '@next/swc-linux-x64-gnu': 15.4.5
+      '@next/swc-linux-x64-musl': 15.4.5
+      '@next/swc-win32-arm64-msvc': 15.4.5
+      '@next/swc-win32-x64-msvc': 15.4.5
       sass: 1.50.0
       sharp: 0.34.3
     transitivePeerDependencies:
@@ -3276,7 +3276,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zss-engine@0.2.75:
+  zss-engine@0.2.77:
     dependencies:
       csstype: 3.1.3
 
