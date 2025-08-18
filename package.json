@@ -3,15 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "css && next dev",
+    "dev": "css & next dev",
     "build": "css --type-check && next build",
     "start": "next start"
   },
   "dependencies": {
-    "@plumeria/core": "^0.15.2",
-    "@plumeria/next-plugin": "^0.15.2",
     "gray-matter": "^4.0.3",
-    "next": "^15.3.2",
+    "next": "^15.4.5",
     "next-link-transitions": "^0.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -23,8 +21,10 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
-    "@plumeria/compiler": "^0.15.2",
-    "@plumeria/eslint-plugin": "^0.15.2",
+    "@plumeria/compiler": "^0.15.4",
+    "@plumeria/core": "^0.15.4",
+    "@plumeria/eslint-plugin": "^0.15.4",
+    "@plumeria/next-plugin": "^0.15.4",
     "@shikijs/rehype": "^2.5.0",
     "@types/node": "^22.14.0",
     "@types/react": "19.0.0",
