@@ -1,0 +1,166 @@
+@keyframes oldTransition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes newTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+::view-transition-old(oldTransition) {
+  animation-name: oldTransition;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+
+::view-transition-new(newTransition) {
+  animation-name: newTransition;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  html {
+    -webkit-text-size-adjust: none;
+  }
+}
+
+body {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 506px;
+  min-height: 100vh;
+  padding: 80px 0;
+  margin: auto;
+  font-size: 14px;
+  color: rgb(55 65 81);
+  text-align: center;
+  word-break: break-all;
+  background-color: #fffffe;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    padding: 0 24px;
+    font-size: 12px;
+  }
+}
+
+main {
+  height: fit-content;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    transition: all 0.7s;
+    opacity: 1;
+  }
+}
+
+main li {
+  margin: 8px 16px;
+  list-style: disc;
+}
+
+pre {
+  width: 506px;
+  padding: 20px;
+  margin: 0 0 32px 0;
+  overflow: auto;
+  border-radius: 4px;
+  box-shadow: 0 0 2px -0.5px rgb(0 0 0 / 0.4);
+  transition: all 0.8s;
+}
+
+@media (max-width: 768px) {
+  pre {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+pre span {
+  font-size: 12px;
+}
+
+code {
+  font-family: var(--geist-mono), Menlo, Monaco, Consolas, 'Droid Sans Mono', 'Liberation Mono', 'Courier New',
+    monospace;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+a {
+  color: rgb(117, 117, 117);
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  padding: 8px;
+  margin: 0;
+  line-height: 1.68;
+  white-space: pre-wrap;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+}
+
+h2 {
+  width: fit-content;
+  height: fit-content;
+  font-size: 18px;
+  font-weight: normal;
+  color: rgb(117, 117, 117);
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 16px;
+  }
+}
