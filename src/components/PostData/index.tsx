@@ -2,17 +2,12 @@ import React from 'react';
 import PostProps from 'types/PostProps';
 import { Link } from 'next-link-transitions';
 import { styles } from './styles';
-import { animation } from 'styles/animation';
+import { transition } from 'styles/animation';
 import { css } from '@plumeria/core';
 
 const ReturnLink = () => {
   return (
-    <Link
-      className={css.props(styles.back)}
-      href="/personal"
-      old={css.props(animation.old)}
-      next={css.props(animation.next)}
-    >
+    <Link className={css.props(styles.back)} href="/personal" viewTransitionName={css.props(transition.name)}>
       back
     </Link>
   );
