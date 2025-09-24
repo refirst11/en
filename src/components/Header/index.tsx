@@ -7,7 +7,7 @@ import { JSX } from 'react';
 import { css } from '@plumeria/core';
 import { breakpoints } from 'lib/mediaQuery';
 import { ps } from 'lib/pseudos';
-import { animation } from 'styles/animation';
+import { transition } from 'styles/animation';
 
 const Header = (): JSX.Element => {
   const pathname = usePathname();
@@ -36,8 +36,7 @@ const Header = (): JSX.Element => {
                 key={href}
                 href={href}
                 className={css.props(styles.link_container, isCurrentLink(href, pathname) && styles.after_color)}
-                next={css.props(animation.next)}
-                old={css.props(animation.old)}
+                viewTransitionName={css.props(transition.name)}
               >
                 {name}
               </Link>
