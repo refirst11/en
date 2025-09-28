@@ -11,7 +11,7 @@ export const styles = css.create({
 
   list: {
     position: 'absolute',
-    top: 160,
+    top: 200,
     right: '0',
     left: '0',
     width: 'fit-content',
@@ -27,6 +27,7 @@ export const styles = css.create({
     },
     ['& a:hover']: {
       background: '#eeeeee',
+      opacity: 0.8,
     },
   },
 

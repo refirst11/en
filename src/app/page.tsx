@@ -7,12 +7,7 @@ import { styles } from './listup';
 export const metadata: Metadata = generateSEOData({ title: 'Refirst' });
 
 const Page = (): JSX.Element => {
-  return (
-    <div className={css.props(styles.list, styles.wordline)}>
-      Cherish the feeling
-      <br /> you get always fresh forever.
-    </div>
-  );
+  return <div className={css.props(styles.list, styles.wordline)}></div>;
 };
 
 export default Page;

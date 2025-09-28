@@ -27,7 +27,7 @@ const Header = (): JSX.Element => {
   ];
 
   return (
-    <header className={css.props(styles.header_main)}>
+    <header className={css.props(styles.header_main, pathname === '/' && styles.top)}>
       <nav className={css.props(styles.header_nav)}>
         {!pathname.includes('personal/') && (
           <ul className={css.props(styles.header_ul)}>
@@ -51,11 +51,22 @@ const Header = (): JSX.Element => {
 export default Header;
 
 const styles = css.create({
+  top: {
+    right: 40,
+    marginTop: 350,
+    transition: '0.8s ease',
+    [breakpoints.md]: {
+      right: 0,
+      marginTop: 140,
+    },
+  },
   header_main: {
     position: 'absolute',
     top: 0,
     zIndex: 1,
     width: '100%',
+    transition: '0.8s ease',
+    viewTransitionName: 'none',
   },
   header_nav: {
     position: 'absolute',
