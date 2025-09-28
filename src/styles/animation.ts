@@ -13,11 +13,11 @@ const fadeIn = css.keyframes({
 const longCrossFade = css.viewTransition({
   old: {
     animation: fadeOut,
-    animationDuration: '1.4s',
+    animationDuration: '1.12s',
   },
   new: {
     animation: fadeIn,
-    animationDuration: '1.4s',
+    animationDuration: '1.12s',
   },
 });
 
