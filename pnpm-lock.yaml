@@ -43,17 +43,17 @@ importers:
         specifier: ^9.21.0
         version: 9.35.0
       '@plumeria/compiler':
-        specifier: ^0.20.0
-        version: 0.20.0
+        specifier: ^0.20.1
+        version: 0.20.1
       '@plumeria/core':
-        specifier: ^0.20.0
-        version: 0.20.0
+        specifier: ^0.20.1
+        version: 0.20.1
       '@plumeria/eslint-plugin':
-        specifier: ^0.20.0
-        version: 0.20.0
+        specifier: ^0.20.1
+        version: 0.20.1
       '@plumeria/next-plugin':
-        specifier: ^0.20.0
-        version: 0.20.0
+        specifier: ^0.20.1
+        version: 0.20.1
       '@shikijs/rehype':
         specifier: ^2.5.0
         version: 2.5.0
@@ -484,21 +484,21 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@plumeria/compiler@0.20.0':
-    resolution: {integrity: sha512-UUIaE5kEohmdxj83MS8Mb9XuYjpegmkQqEm0UvTEGmw06NewpjPk4svdQcCDbkhMoqrbw0giFtscDUR4h/OF1g==}
+  '@plumeria/compiler@0.20.1':
+    resolution: {integrity: sha512-k9czX5G0AuP7IftgJI+FcZpDIi2GQcZw54wml6j6mPo35r6teLqVusfmCAAYrW8c47HV/xO/3Nqg+oY5F4gWgQ==}
     hasBin: true
 
-  '@plumeria/core@0.20.0':
-    resolution: {integrity: sha512-UAExsrKVvCrS8kRvvBSORs3LqIKvrZDYUOZ3+Pt2H1q9e3d7PJhFeXoohiTEqiFbP2JhfmK9W8dPlmpmue1+kw==}
+  '@plumeria/core@0.20.1':
+    resolution: {integrity: sha512-ONNGV0jg4WHehx9td2mKkS8B4BS3v9oPnHqXcbd/DZcGukDjDEkKw84UT0I4g4JAvrX6G6xyTfgo4fmGPpqB6A==}
 
-  '@plumeria/eslint-plugin@0.20.0':
-    resolution: {integrity: sha512-g56mN7pvDCkxR8uRicpQ9p8e6o47uw/SIKSbTRItwG+EfzF3iGkh4JOer2YKHxJYFqD7tS7zo+xY3LvXmqJwnQ==}
+  '@plumeria/eslint-plugin@0.20.1':
+    resolution: {integrity: sha512-ClHRoIiIUptIXx3nkE+eWOMGFTCPJh2q1h1Qa9Vdf6kh435owvL1QPsYYSsUcebTvQYi/KfkAHAgSV3MZEsGuQ==}
 
-  '@plumeria/next-plugin@0.20.0':
-    resolution: {integrity: sha512-qpas/Ko2Sc+3JHavRzIzkFnIddJb1v2dKuAaCk0OSJB9zULWKW5wmbyq3xA20s7JpOfmyRaqfUZGT+nVBPMraw==}
+  '@plumeria/next-plugin@0.20.1':
+    resolution: {integrity: sha512-NMiYZXBlsUfyHAPh2lvbQns0q+uv3HSz6D90wlkk56h9Zb0W4mWmnGYFbCcuRX9Ok6n5TzJxSGS/rSdr8HBN3Q==}
 
-  '@plumeria/webpack-plugin@0.20.0':
-    resolution: {integrity: sha512-8h6GXIZ6Nof+dLhwPH5crayv6Il2RSew/XNmzRxG8a/jgOKTkBr4wBXnErGtVagrIh/NST1QNCWd10KpOtzTwg==}
+  '@plumeria/webpack-plugin@0.20.1':
+    resolution: {integrity: sha512-zwrL3i3f4TNJV7rCN6tTEWNZbp4MyPXOW8IA5C4RnBJEgghx6nvnguVfiP2+4mjp6qD/q/Tgg2C1BxqOERx75A==}
 
   '@rust-gear/glob-darwin-arm64@0.2.2':
     resolution: {integrity: sha512-u2RhNepEuJrjTY00gN+H+k75UKLSVab8DZpC683Cbs9pw0u3MAnPbTqlFdiOtp+k0Tl3grjCG6FI/LJOGJ1jEQ==}
@@ -1523,8 +1523,8 @@ packages:
     engines: {node: 20 || >=22}
     hasBin: true
 
-  rscute@0.2.7:
-    resolution: {integrity: sha512-Pwza3cPcgd6xIYR6KngicAwGmqvpbxgJeqY2Nnuqcziw/HrCu7xKRWRAtkhEIVd0YtKOSUbqY4Qy3OBsptGPMw==}
+  rscute@0.2.8:
+    resolution: {integrity: sha512-0KiqGoQHocVTQPEX7x9KaE8CBH8efE7egltchI5CUnAaI3ssjsPlhpaFVAr+BjYSMc5egkYczq5dealul8Vd8g==}
     hasBin: true
 
   run-parallel@1.2.0:
@@ -2144,7 +2144,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@plumeria/compiler@0.20.0':
+  '@plumeria/compiler@0.20.1':
     dependencies:
       '@rust-gear/glob': 0.2.2
       '@swc/core': 1.13.5
@@ -2152,23 +2152,23 @@ snapshots:
       lightningcss: 1.30.1
       postcss: 8.5.6
       postcss-combine-media-query: 2.0.0(postcss@8.5.6)
-      rscute: 0.2.7
+      rscute: 0.2.8
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@0.20.0':
+  '@plumeria/core@0.20.1':
     dependencies:
       zss-engine: 0.2.90
 
-  '@plumeria/eslint-plugin@0.20.0': {}
+  '@plumeria/eslint-plugin@0.20.1': {}
 
-  '@plumeria/next-plugin@0.20.0':
+  '@plumeria/next-plugin@0.20.1':
     dependencies:
-      '@plumeria/webpack-plugin': 0.20.0
+      '@plumeria/webpack-plugin': 0.20.1
     transitivePeerDependencies:
       - supports-color
 
-  '@plumeria/webpack-plugin@0.20.0':
+  '@plumeria/webpack-plugin@0.20.1':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/preset-typescript': 7.27.1(@babel/core@7.28.4)
@@ -3271,7 +3271,7 @@ snapshots:
       glob: 11.0.3
       package-json-from-dist: 1.0.1
 
-  rscute@0.2.7:
+  rscute@0.2.8:
     dependencies:
       '@swc/core': 1.13.5
     transitivePeerDependencies:
