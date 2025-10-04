@@ -52,12 +52,12 @@ export default Header;
 
 const styles = css.create({
   top: {
+    top: '50%',
     right: 40,
-    marginTop: 350,
+    marginTop: -150,
     transition: '0.8s ease',
     [breakpoints.md]: {
       right: 0,
-      marginTop: 140,
     },
   },
   header_main: {
