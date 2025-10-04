@@ -11,10 +11,6 @@ export const styles = css.create({
   post: {
     position: 'relative',
     zIndex: 1,
-
-    [breakpoints.md]: {
-      transform: 'none',
-    },
   },
 
   spacing: {

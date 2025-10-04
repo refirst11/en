@@ -4,15 +4,13 @@ import { usePathname } from 'next/navigation';
 import { css } from '@plumeria/core';
 import { ps } from 'lib/pseudos';
 import { rotation } from './animation';
-import { breakpoints } from 'lib/mediaQuery';
 
 const styles = css.create({
   top: {
-    marginTop: 350,
+    position: 'absolute',
+    top: '50%',
+    marginTop: -130,
     transition: '0.8s ease',
-    [breakpoints.md]: {
-      marginTop: 128,
-    },
   },
   image: {
     position: 'absolute',
@@ -26,11 +24,6 @@ const styles = css.create({
     [ps.hover]: {
       animationName: rotation,
       animationDuration: '0.5s',
-    },
-    [breakpoints.md]: {
-      top: 30,
-      right: 'auto',
-      left: 0,
     },
   },
 });
