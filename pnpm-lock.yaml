@@ -43,17 +43,17 @@ importers:
         specifier: ^9.21.0
         version: 9.35.0
       '@plumeria/compiler':
-        specifier: ^0.20.1
-        version: 0.20.1
+        specifier: ^0.20.2
+        version: 0.20.2
       '@plumeria/core':
-        specifier: ^0.20.1
-        version: 0.20.1
+        specifier: ^0.20.2
+        version: 0.20.2
       '@plumeria/eslint-plugin':
-        specifier: ^0.20.1
-        version: 0.20.1
+        specifier: ^0.20.2
+        version: 0.20.2
       '@plumeria/next-plugin':
-        specifier: ^0.20.1
-        version: 0.20.1
+        specifier: ^0.20.2
+        version: 0.20.2
       '@shikijs/rehype':
         specifier: ^2.5.0
         version: 2.5.0
@@ -66,6 +66,9 @@ importers:
       eslint:
         specifier: 9.36.0
         version: 9.36.0(jiti@2.6.0)
+      postcss-combine-duplicated-selectors:
+        specifier: ^10.0.3
+        version: 10.0.3(postcss@8.5.6)
       prettier:
         specifier: ^2.8.8
         version: 2.8.8
@@ -484,21 +487,21 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@plumeria/compiler@0.20.1':
-    resolution: {integrity: sha512-k9czX5G0AuP7IftgJI+FcZpDIi2GQcZw54wml6j6mPo35r6teLqVusfmCAAYrW8c47HV/xO/3Nqg+oY5F4gWgQ==}
+  '@plumeria/compiler@0.20.2':
+    resolution: {integrity: sha512-gpXye9PVWUr1o4mjNckJpxV7IPU/CfQF9GKVwc/C4ca8HyrLx7Wu342u3ghtiwfTKR2NXciOvUtXaLJfBfaAwA==}
     hasBin: true
 
-  '@plumeria/core@0.20.1':
-    resolution: {integrity: sha512-ONNGV0jg4WHehx9td2mKkS8B4BS3v9oPnHqXcbd/DZcGukDjDEkKw84UT0I4g4JAvrX6G6xyTfgo4fmGPpqB6A==}
+  '@plumeria/core@0.20.2':
+    resolution: {integrity: sha512-iUvuSXy4WKpVWZI4uuVuxMwX3G7LfNpjseb6Pv/1pmCW8LH9HNeKfHnPfSQettvUFXNneTKu1OIh05Rk/Sqabw==}
 
-  '@plumeria/eslint-plugin@0.20.1':
-    resolution: {integrity: sha512-ClHRoIiIUptIXx3nkE+eWOMGFTCPJh2q1h1Qa9Vdf6kh435owvL1QPsYYSsUcebTvQYi/KfkAHAgSV3MZEsGuQ==}
+  '@plumeria/eslint-plugin@0.20.2':
+    resolution: {integrity: sha512-5B0+5lXMZ4BjVsffpUjzUNjsttbo+M1U4wNUZ+mjWd5r6KIMhu2DcaKvKacZKiuaptUSUCioCo/o2nQGZPWFfw==}
 
-  '@plumeria/next-plugin@0.20.1':
-    resolution: {integrity: sha512-NMiYZXBlsUfyHAPh2lvbQns0q+uv3HSz6D90wlkk56h9Zb0W4mWmnGYFbCcuRX9Ok6n5TzJxSGS/rSdr8HBN3Q==}
+  '@plumeria/next-plugin@0.20.2':
+    resolution: {integrity: sha512-wb8CcnbYP7U4wHtmNt2TEB/d7D3HUneyzXajlPCI2hoOMK2OwBEfLb5w6DDT/AIBtJjNc7y/RtUNz3Uaso4dtQ==}
 
-  '@plumeria/webpack-plugin@0.20.1':
-    resolution: {integrity: sha512-zwrL3i3f4TNJV7rCN6tTEWNZbp4MyPXOW8IA5C4RnBJEgghx6nvnguVfiP2+4mjp6qD/q/Tgg2C1BxqOERx75A==}
+  '@plumeria/webpack-plugin@0.20.2':
+    resolution: {integrity: sha512-S42vMCbVkPThBzgYpx4cpsWwr9l01BJzS5JDNj3AqV123QLzoAqlbDPe2tQGOLercTW7hXXwZ8t812Rr1NCZsQ==}
 
   '@rust-gear/glob-darwin-arm64@0.2.2':
     resolution: {integrity: sha512-u2RhNepEuJrjTY00gN+H+k75UKLSVab8DZpC683Cbs9pw0u3MAnPbTqlFdiOtp+k0Tl3grjCG6FI/LJOGJ1jEQ==}
@@ -873,6 +876,11 @@ packages:
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
+
+  cssesc@3.0.0:
+    resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
+    engines: {node: '>=4'}
+    hasBin: true
 
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
@@ -1446,11 +1454,21 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
+  postcss-combine-duplicated-selectors@10.0.3:
+    resolution: {integrity: sha512-IP0BmwFloCskv7DV7xqvzDXqMHpwdczJa6ZvIW8abgHdcIHs9mCJX2ltFhu3EwA51ozp13DByng30+Ke+eIExA==}
+    engines: {node: ^10.0.0 || ^12.0.0 || >=14.0.0}
+    peerDependencies:
+      postcss: ^8.1.0
+
   postcss-combine-media-query@2.0.0:
     resolution: {integrity: sha512-LrztcKEbp/zR2TjLjkgK+Ji/37bY7vDKPjkdJ9L1Zb/pJtuovQlvxK0yeCJHeKUeyT9CwnnchJrZ8SMZ/s8Peg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       postcss: ^8.0.0
+
+  postcss-selector-parser@6.1.2:
+    resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
+    engines: {node: '>=4'}
 
   postcss@8.4.31:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
@@ -1695,6 +1713,9 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
+
+  util-deprecate@1.0.2:
+    resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
   vfile-message@4.0.3:
     resolution: {integrity: sha512-QTHzsGd1EhbZs4AsQ20JX1rC3cOlt/IWJruk893DfLRr57lcnOeMaWG4K0JrRta4mIJZKth2Au3mM3u03/JWKw==}
@@ -2144,7 +2165,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@plumeria/compiler@0.20.1':
+  '@plumeria/compiler@0.20.2':
     dependencies:
       '@rust-gear/glob': 0.2.2
       '@swc/core': 1.13.5
@@ -2156,19 +2177,19 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@0.20.1':
+  '@plumeria/core@0.20.2':
     dependencies:
       zss-engine: 0.2.90
 
-  '@plumeria/eslint-plugin@0.20.1': {}
+  '@plumeria/eslint-plugin@0.20.2': {}
 
-  '@plumeria/next-plugin@0.20.1':
+  '@plumeria/next-plugin@0.20.2':
     dependencies:
-      '@plumeria/webpack-plugin': 0.20.1
+      '@plumeria/webpack-plugin': 0.20.2
     transitivePeerDependencies:
       - supports-color
 
-  '@plumeria/webpack-plugin@0.20.1':
+  '@plumeria/webpack-plugin@0.20.2':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/preset-typescript': 7.27.1(@babel/core@7.28.4)
@@ -2561,6 +2582,8 @@ snapshots:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+
+  cssesc@3.0.0: {}
 
   csstype@3.1.3: {}
 
@@ -3192,9 +3215,19 @@ snapshots:
 
   picomatch@2.3.1: {}
 
+  postcss-combine-duplicated-selectors@10.0.3(postcss@8.5.6):
+    dependencies:
+      postcss: 8.5.6
+      postcss-selector-parser: 6.1.2
+
   postcss-combine-media-query@2.0.0(postcss@8.5.6):
     dependencies:
       postcss: 8.5.6
+
+  postcss-selector-parser@6.1.2:
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
 
   postcss@8.4.31:
     dependencies:
@@ -3475,6 +3508,8 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
+
+  util-deprecate@1.0.2: {}
 
   vfile-message@4.0.3:
     dependencies:
