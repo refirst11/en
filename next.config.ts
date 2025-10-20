@@ -28,7 +28,7 @@ const securityHeaders = [
   },
 ];
 
-const nextConfig: NextConfig = withPlumeria({
+const nextConfig: NextConfig = {
   async headers() {
     return [
       {
@@ -37,6 +37,6 @@ const nextConfig: NextConfig = withPlumeria({
       },
     ];
   },
-});
+};
 
-export default nextConfig;
+export default withPlumeria(nextConfig);
