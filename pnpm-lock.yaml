@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@rust-gear/glob':
+        specifier: ^0.2.3
+        version: 0.2.3
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -43,17 +46,17 @@ importers:
         specifier: ^9.21.0
         version: 9.35.0
       '@plumeria/compiler':
-        specifier: ^0.22.4
-        version: 0.22.4
+        specifier: ^0.23.0
+        version: 0.23.0
       '@plumeria/core':
-        specifier: ^0.22.4
-        version: 0.22.4
+        specifier: ^0.23.0
+        version: 0.23.0
       '@plumeria/eslint-plugin':
-        specifier: ^0.22.4
-        version: 0.22.4
+        specifier: ^0.23.0
+        version: 0.23.0
       '@plumeria/next-plugin':
-        specifier: ^0.22.4
-        version: 0.22.4
+        specifier: ^0.23.0
+        version: 0.23.0
       '@shikijs/rehype':
         specifier: ^2.5.0
         version: 2.5.0
@@ -66,9 +69,6 @@ importers:
       eslint:
         specifier: 9.36.0
         version: 9.36.0(jiti@2.6.0)
-      postcss-combine-duplicated-selectors:
-        specifier: ^10.0.3
-        version: 10.0.3(postcss@8.5.6)
       prettier:
         specifier: ^2.8.8
         version: 2.8.8
@@ -487,21 +487,21 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@plumeria/compiler@0.22.4':
-    resolution: {integrity: sha512-bhZkeBSBXuCnFAF8dlSUiiaJfU7kC7yh69V4nolACTrw8Avu0u6vCPndUEfaAHokXJP0snDNZ5WXpRMeVmotNQ==}
+  '@plumeria/compiler@0.23.0':
+    resolution: {integrity: sha512-BaGjJ19LQYpNtdBLXd3m+v4mpCH59Sn/vphUo5ZoVcrLionhLABMVKXft+hhfzHq12beJWL1Xe7+6uPl8Ia0AA==}
     hasBin: true
 
-  '@plumeria/core@0.22.4':
-    resolution: {integrity: sha512-T0siUlkjvlq3EMSLD3VzEIZ6NimOe7ueYEmvshxy8u+4UjtNPkKRZ8NnjS4iL2R5br0ndfBjp0OzAMwWfQj/og==}
+  '@plumeria/core@0.23.0':
+    resolution: {integrity: sha512-N1PZBFcvF8/XUxqoHsSpAvkcS6XRhW9wDNXvc4sPFiJ59HynleaqfKXsG1VKzCpmqfVwZc49q2DmW7VDDBJKMA==}
 
-  '@plumeria/eslint-plugin@0.22.4':
-    resolution: {integrity: sha512-1s0uqNnVR75nUjbiYecemwM+o2gQ7kKg6H0tiaXQfggcmM6XpDMUsWR5tZltO14JLT5lTBHWabcnEM67/+fs7A==}
+  '@plumeria/eslint-plugin@0.23.0':
+    resolution: {integrity: sha512-WEy8YQPdrQf5EiIUVhNOA8/w06M49ogwUfiRhiVAB7xgBUVzEX133Oe95AKd3I2gKsvtBh5y4OlBhmqpxDavlw==}
 
-  '@plumeria/next-plugin@0.22.4':
-    resolution: {integrity: sha512-O4/2FK2GyHygJxp9d+YINpNVTe6etgS/w0HdVlp3tLiU++MSAs6yHOOixuKHBFg7jXg8OwJ8NZf/7KeArXlf9A==}
+  '@plumeria/next-plugin@0.23.0':
+    resolution: {integrity: sha512-2p04fpu3/CN/NJc/f376GgFCfk0UBJaz4H+O0uK4tG/aMszyuDbu+hmHi/So9XSZv5wbqMkBu3CdaOqxi2AN9w==}
 
-  '@plumeria/webpack-plugin@0.22.4':
-    resolution: {integrity: sha512-MUIppLytMq5N4AyypRFUXa92mW57hML0b1zEvcNHYbr1X/wQHzJTa0D6Bp9UFrK1VshVKt+EoeSTm+5FtrkcKw==}
+  '@plumeria/webpack-plugin@0.23.0':
+    resolution: {integrity: sha512-RiEKh/F30wmK6LxxnVORofgMxvKNmFqTfjmJg+Y5R0hcsnX6WVPbRBMf4g0Nq3qZ1dc0Q2CON+KMrS82ZzzTUA==}
 
   '@rust-gear/glob-darwin-arm64@0.2.3':
     resolution: {integrity: sha512-JWkeuhQpOGrJnpuye1lEcNaXjgWKXh399Bk5tNIVwpmCUq9xnNAJLVTuQT67u5rN69D5yHpDt6BEhh56+R0q1A==}
@@ -876,11 +876,6 @@ packages:
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
-
-  cssesc@3.0.0:
-    resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
-    engines: {node: '>=4'}
-    hasBin: true
 
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
@@ -1454,21 +1449,11 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
-  postcss-combine-duplicated-selectors@10.0.3:
-    resolution: {integrity: sha512-IP0BmwFloCskv7DV7xqvzDXqMHpwdczJa6ZvIW8abgHdcIHs9mCJX2ltFhu3EwA51ozp13DByng30+Ke+eIExA==}
-    engines: {node: ^10.0.0 || ^12.0.0 || >=14.0.0}
-    peerDependencies:
-      postcss: ^8.1.0
-
   postcss-combine-media-query@2.0.0:
     resolution: {integrity: sha512-LrztcKEbp/zR2TjLjkgK+Ji/37bY7vDKPjkdJ9L1Zb/pJtuovQlvxK0yeCJHeKUeyT9CwnnchJrZ8SMZ/s8Peg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       postcss: ^8.0.0
-
-  postcss-selector-parser@6.1.2:
-    resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
-    engines: {node: '>=4'}
 
   postcss@8.4.31:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
@@ -1713,9 +1698,6 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
-
-  util-deprecate@1.0.2:
-    resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
   vfile-message@4.0.3:
     resolution: {integrity: sha512-QTHzsGd1EhbZs4AsQ20JX1rC3cOlt/IWJruk893DfLRr57lcnOeMaWG4K0JrRta4mIJZKth2Au3mM3u03/JWKw==}
@@ -2165,9 +2147,8 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@plumeria/compiler@0.22.4':
+  '@plumeria/compiler@0.23.0':
     dependencies:
-      '@rust-gear/glob': 0.2.3
       '@swc/core': 1.13.5
       find-up: 7.0.0
       lightningcss: 1.30.1
@@ -2177,19 +2158,19 @@ snapshots:
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@0.22.4':
+  '@plumeria/core@0.23.0':
     dependencies:
       zss-engine: 0.2.94
 
-  '@plumeria/eslint-plugin@0.22.4': {}
+  '@plumeria/eslint-plugin@0.23.0': {}
 
-  '@plumeria/next-plugin@0.22.4':
+  '@plumeria/next-plugin@0.23.0':
     dependencies:
-      '@plumeria/webpack-plugin': 0.22.4
+      '@plumeria/webpack-plugin': 0.23.0
     transitivePeerDependencies:
       - supports-color
 
-  '@plumeria/webpack-plugin@0.22.4':
+  '@plumeria/webpack-plugin@0.23.0':
     dependencies:
       '@babel/core': 7.28.4
       '@babel/preset-typescript': 7.27.1(@babel/core@7.28.4)
@@ -2582,8 +2563,6 @@ snapshots:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
-
-  cssesc@3.0.0: {}
 
   csstype@3.1.3: {}
 
@@ -3215,19 +3194,9 @@ snapshots:
 
   picomatch@2.3.1: {}
 
-  postcss-combine-duplicated-selectors@10.0.3(postcss@8.5.6):
-    dependencies:
-      postcss: 8.5.6
-      postcss-selector-parser: 6.1.2
-
   postcss-combine-media-query@2.0.0(postcss@8.5.6):
     dependencies:
       postcss: 8.5.6
-
-  postcss-selector-parser@6.1.2:
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
 
   postcss@8.4.31:
     dependencies:
@@ -3508,8 +3477,6 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
-
-  util-deprecate@1.0.2: {}
 
   vfile-message@4.0.3:
     dependencies:
