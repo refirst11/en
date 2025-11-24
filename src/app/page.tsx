@@ -1,13 +1,9 @@
 import { Metadata } from 'next';
 import generateSEOData from 'lib/generateSEOData';
-import { css } from '@plumeria/core';
 import { JSX } from 'react';
-import { styles } from './listup';
 
-export const metadata: Metadata = generateSEOData({ title: 'Refirst' });
+export const metadata: Metadata = generateSEOData({ title: 'Refirst 11' });
 
-const Page = (): JSX.Element => {
-  return <div className={css.props(styles.list, styles.wordline)}></div>;
-};
+const Page = (): JSX.Element => <></>;
 
 export default Page;
