@@ -1,13 +1,7 @@
 import { css } from '@plumeria/core';
 
-export const rotation = css.keyframes({
-  '0%': {
-    transform: 'rotate(0deg)',
-  },
-  '50%': {
-    transform: 'rotate(14deg)',
-  },
-  '100%': {
-    transform: 'rotate(0deg)',
-  },
+export const scaling = css.keyframes({
+  '0%': { scale: 1 },
+  '50%': { scale: 3 },
+  '100%': { scale: 1 },
 });
