@@ -1,5 +1,5 @@
 import type { NextConfig } from 'next';
-import { withPlumeria } from '@plumeria/next-plugin';
+import { withPlumeria } from '@plumeria/next-plugin/turbopack';
 
 const securityHeaders = [
   {
@@ -29,7 +29,6 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  turbopack: {},
   async headers() {
     return [
       {
