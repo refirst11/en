@@ -2,7 +2,6 @@ import Header from 'components/Header';
 import { ReactNode } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
 import 'styles/global.css';
-import '@plumeria/core/stylesheet.css';
 import Footer from 'components/Footer';
 import { Icon } from 'components/Icon';
 
