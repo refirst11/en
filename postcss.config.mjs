@@ -1,7 +1,7 @@
 export default {
   plugins: {
     '@plumeria/postcss-plugin': {
-      include: '**/*.{ts,tsx}',
+      include: ['**/*.{ts,tsx}'],
       exclude: ['**/node_modules/**', '**/.next/**'],
     },
   },
