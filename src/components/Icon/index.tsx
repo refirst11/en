@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { css } from '@plumeria/core';
+import * as css from "@plumeria/core";
 import { Link } from 'next-link-transitions';
 import { breakpoints } from 'lib/mediaQuery';
 import { useState } from 'react';

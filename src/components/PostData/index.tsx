@@ -3,7 +3,7 @@ import PostProps from 'types/PostProps';
 import { Link } from 'next-link-transitions';
 import { styles } from './styles';
 import { transition } from 'styles/animation';
-import { css } from '@plumeria/core';
+import * as css from "@plumeria/core";
 
 const ReturnLink = () => {
   return (

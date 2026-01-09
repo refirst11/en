@@ -1,4 +1,4 @@
-import { css } from '@plumeria/core';
+import * as css from "@plumeria/core";
 
 const fadeOut = css.keyframes({
   from: { opacity: 1 },
