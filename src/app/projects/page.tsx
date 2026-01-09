@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import generateSEOData from 'lib/generateSEOData';
 import { JSX } from 'react';
 import { styles } from 'app/listup';
-import { css } from '@plumeria/core';
+import * as css from "@plumeria/core";
 import { ListItem } from 'components/ListItem';
 
 export const metadata: Metadata = generateSEOData({ title: 'Projects - Refirst' });

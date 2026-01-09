@@ -1,4 +1,4 @@
-import { css } from '@plumeria/core';
+import * as css from "@plumeria/core";
 import { styles } from 'app/listup';
 import { Link } from 'next-link-transitions';
 import { transition } from 'styles/animation';
