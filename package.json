@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "next": "^16.0.7",
+    "next": "16.1.1",
     "next-link-transitions": "^0.2.3",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
@@ -23,10 +23,10 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
-    "@plumeria/core": "^5.0.1",
-    "@plumeria/postcss-plugin": "^5.0.1",
-    "@plumeria/next-plugin": "^5.0.1",
-    "@plumeria/eslint-plugin": "^5.0.1",
+    "@plumeria/core": "^6.1.0",
+    "@plumeria/postcss-plugin": "^6.1.0",
+    "@plumeria/next-plugin": "^6.1.0",
+    "@plumeria/eslint-plugin": "^6.1.0",
     "@shikijs/rehype": "^3.15.0",
     "@types/node": "^22.14.0",
     "@types/react": "19.2.7",
