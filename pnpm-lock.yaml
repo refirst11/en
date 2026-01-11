@@ -13,16 +13,19 @@ importers:
         version: 4.0.3
       next:
         specifier: 16.1.1
-        version: 16.1.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(sass@1.50.0)
+        version: 16.1.1(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(sass@1.50.0)
       next-link-transitions:
         specifier: ^0.2.3
         version: 0.2.3
+      prune:
+        specifier: ^0.0.2
+        version: 0.0.2
       react:
-        specifier: ^19.2.1
-        version: 19.2.1
+        specifier: ^19.2.3
+        version: 19.2.3
       react-dom:
-        specifier: ^19.2.1
-        version: 19.2.1(react@19.2.1)
+        specifier: ^19.2.3
+        version: 19.2.3(react@19.2.3)
       rehype-stringify:
         specifier: ^10.0.1
         version: 10.0.1
@@ -43,17 +46,17 @@ importers:
         specifier: ^9.36.0
         version: 9.39.1
       '@plumeria/core':
-        specifier: ^6.1.1
-        version: 6.1.1
+        specifier: ^6.2.0
+        version: 6.2.0
       '@plumeria/eslint-plugin':
-        specifier: ^6.1.1
-        version: 6.1.1
+        specifier: ^6.2.0
+        version: 6.2.0
       '@plumeria/next-plugin':
-        specifier: ^6.1.1
-        version: 6.1.1
+        specifier: ^6.2.0
+        version: 6.2.0
       '@plumeria/postcss-plugin':
-        specifier: ^6.1.1
-        version: 6.1.1
+        specifier: ^6.2.0
+        version: 6.2.0
       '@shikijs/rehype':
         specifier: ^3.15.0
         version: 3.19.0
@@ -383,30 +386,30 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@plumeria/compiler@6.1.1':
-    resolution: {integrity: sha512-ml74WVWYnNPUFJic0v5Qxznb8n+RqOYahJZZp1IPbVST6/bye1ep7h3NNyo1Er9uY7U0vS/o7YUXfsLS4Kk+Xw==}
+  '@plumeria/compiler@6.2.0':
+    resolution: {integrity: sha512-M1NKdB+tBur07mrqEiMWDlEbTCkbgvQ9Nn+YsyR+6IgSfiqdrpw3J93vVxQpi4m0DhFgJqLsCD1d2LA0Kk00CA==}
 
-  '@plumeria/core@6.1.1':
-    resolution: {integrity: sha512-wIYObgGBZAkKVNMvtChUvRoQCxb3DHY+E9c8Gzl4N0gnmx1Rr8/sFbEMwiZCX/gQftlDo9bCK1ydF/a9AP55sQ==}
+  '@plumeria/core@6.2.0':
+    resolution: {integrity: sha512-Ds+rrlyTi9Nc9yBpetOn/YO4eC5JJUaLr7WjT22h0JdcHEYHc5nLrp32j64FZexR03WKj+dNugqFa2Cnb4TbEg==}
 
-  '@plumeria/eslint-plugin@6.1.1':
-    resolution: {integrity: sha512-mOnkoPGiPmIE9MOjgKj0SEH9vAMOsblrCARy/WWX2ILptWU21snEsUxS2+KI3OHVSnjpSMdJBdWmJMT+k+W+AA==}
+  '@plumeria/eslint-plugin@6.2.0':
+    resolution: {integrity: sha512-Wh2Xl0DFeasRLaMqlfRoZ15nn46lrij5i+v4q8N5kLc9+HVAxN6buxLGum2dH4gDOeh8ZgN0K/ubhtwDMrhk/g==}
     hasBin: true
 
-  '@plumeria/next-plugin@6.1.1':
-    resolution: {integrity: sha512-sIyICLkPO477ZQb0eswmQQ7NgK++s25XzdNIgcjG2dfn3iZ73/t+mwiv3HgeOAJrB+mQvzLjifHMkyWJljLiZQ==}
+  '@plumeria/next-plugin@6.2.0':
+    resolution: {integrity: sha512-0a6n74yFQ23TgiIlpYRbbkqitnIL516p3TGhHCm7aJ6O4ODqoTnTkjXtcKZ/OvnT9PYX1c758SeNAMgSZFEMMw==}
 
-  '@plumeria/postcss-plugin@6.1.1':
-    resolution: {integrity: sha512-X176MQXvZeAqqctx8jZor0aqyWEPqA7LA3EC71lImtR3UAUeG+OANTo6ur7/Q69YOfLDu2tqdfastrvKmlsZQw==}
+  '@plumeria/postcss-plugin@6.2.0':
+    resolution: {integrity: sha512-YnJhxNFV9iWQNuSVb5U+sAeJSo3MX0USNEltTwBP8msQzpw7pkWAPDl5JfluoEdSmpQ19BqEuqA1Bk6A3XhNgQ==}
 
-  '@plumeria/turbopack-loader@6.1.1':
-    resolution: {integrity: sha512-qE8PY905eela/SKDF6rph2xpo5YTFi7QI1e9xXhBcgWrjcbdEf+59zmhg3Sw2JlGsdjbhwRjs/tMuDKVVKXLAA==}
+  '@plumeria/turbopack-loader@6.2.0':
+    resolution: {integrity: sha512-TNPmp95srLvq4FqaUOW55SgK6CWUcJBT4H1zQ8uR7xzdkH+eer/ubTk5S7cAIrDfi0QLI93PPpaqqrpZZx8K6Q==}
 
-  '@plumeria/utils@6.1.1':
-    resolution: {integrity: sha512-pEPCttnKRvO3Qho4HYVjf+vJ2aeRwj0b4UY+KdDmSYvzZe3mqmIXvVO3P4SCnwIQbk7fM79gjMikD0CjnxqK9A==}
+  '@plumeria/utils@6.2.0':
+    resolution: {integrity: sha512-b++6aKrUlRCmckc1rdTsTWh/xTCjFmNgZ8W8JZJXYHmdjBy5MVoR/J/YOlC+TJlglCWi6xmArsdeSlPNyX5uPg==}
 
-  '@plumeria/webpack-plugin@6.1.1':
-    resolution: {integrity: sha512-GW3YPy3KrdNx2WOjAK9fQQOmqLkmnNUk19WC4e6I0L92ltz3VSGANJFUBKG/gDo/6EleyQEF52FfTtg4mUM0dQ==}
+  '@plumeria/webpack-plugin@6.2.0':
+    resolution: {integrity: sha512-x7yJ1ngIC3eOLEbOsTxQL9ikwmpootIEdjlZr5zAyAPhwD3ZgnbqNQyF7/NCnE2+jTtIQKB0fq/jlBPxi+ZzpQ==}
 
   '@shikijs/core@3.19.0':
     resolution: {integrity: sha512-L7SrRibU7ZoYi1/TrZsJOFAnnHyLTE1SwHG1yNWjZIVCqjOEmCSuK2ZO9thnRbJG6TOkPp+Z963JmpCNw5nzvA==}
@@ -1020,6 +1023,9 @@ packages:
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
+  lodash@4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+
   lru-cache@11.2.4:
     resolution: {integrity: sha512-B5Y16Jr9LB9dHVkh6ZevG+vAbOsNOYCX+sXvFWFu7B3Iz5mijW3zdbMyhsh8ANd2mSWBYdJgnqi+mL7/LrOPYg==}
     engines: {node: 20 || >=22}
@@ -1234,17 +1240,20 @@ packages:
   property-information@7.1.0:
     resolution: {integrity: sha512-TwEZ+X+yCJmYfL7TPUOcvBZ4QfoT5YenQiJuX//0th53DE6w0xxLEtfK3iyryQFddXuvkIk51EEgrJQ0WJkOmQ==}
 
+  prune@0.0.2:
+    resolution: {integrity: sha512-5ZDNTaYgyOElBdXH5kRWFvyrAj2yHkuR32g9lBftm0SjC3xaq9tU30Ft6TOMHDrQJKGeTtMzPt+KKF85qOOJbg==}
+
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  react-dom@19.2.1:
-    resolution: {integrity: sha512-ibrK8llX2a4eOskq1mXKu/TGZj9qzomO+sNfO98M6d9zIPOEhlBkMkBUBLd1vgS0gQsLDBzA+8jJBVXDnfHmJg==}
+  react-dom@19.2.3:
+    resolution: {integrity: sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==}
     peerDependencies:
-      react: ^19.2.1
+      react: ^19.2.3
 
-  react@19.2.1:
-    resolution: {integrity: sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==}
+  react@19.2.3:
+    resolution: {integrity: sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==}
     engines: {node: '>=0.10.0'}
 
   readdirp@3.6.0:
@@ -1319,6 +1328,9 @@ packages:
 
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
+
+  sproutid@0.0.5:
+    resolution: {integrity: sha512-b4ToovLPYmdRzfvFhNS8DoHmv+TTW0AebcipzsrTcrHE8WMG3eGlDIJn584bXK95CbCktGQazNSA39Y9qgTDyA==}
 
   stringify-entities@4.0.4:
     resolution: {integrity: sha512-IwfBptatlO+QCJUo19AqvrPNqlVMpW9YEL2LIVY+Rpv2qsjCGxaDLNRgeGsQWJhfItebuJhsGSLjaBbNSQ+ieg==}
@@ -1430,8 +1442,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zss-engine@2.1.2:
-    resolution: {integrity: sha512-ZMZLP1t+nXLq9beHib7T5pde2dvqK/K5t9AVJTMsk+how+tPF+kF0mpjQaORQbfJj4F1qfRLS29jEBmdeLrbhw==}
+  zss-engine@2.2.0:
+    resolution: {integrity: sha512-jQfPkbhkW+lS4qvmGzM5DfNghv5tVQsLwwwe+TKguVnWjZ6ozgFKO0p9+gxS/dfnqoLvGTjKwpem1HLHdW9Nrg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -1653,50 +1665,50 @@ snapshots:
   '@oxlint/win32-x64@1.34.0':
     optional: true
 
-  '@plumeria/compiler@6.1.1':
+  '@plumeria/compiler@6.2.0':
     dependencies:
-      '@plumeria/utils': 6.1.1
+      '@plumeria/utils': 6.2.0
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@6.1.1':
+  '@plumeria/core@6.2.0':
     dependencies:
       csstype: 3.2.3
 
-  '@plumeria/eslint-plugin@6.1.1': {}
+  '@plumeria/eslint-plugin@6.2.0': {}
 
-  '@plumeria/next-plugin@6.1.1':
+  '@plumeria/next-plugin@6.2.0':
     dependencies:
-      '@plumeria/turbopack-loader': 6.1.1
-      '@plumeria/webpack-plugin': 6.1.1
+      '@plumeria/turbopack-loader': 6.2.0
+      '@plumeria/webpack-plugin': 6.2.0
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/postcss-plugin@6.1.1':
+  '@plumeria/postcss-plugin@6.2.0':
     dependencies:
-      '@plumeria/compiler': 6.1.1
+      '@plumeria/compiler': 6.2.0
       lightningcss: 1.30.2
       postcss: 8.5.6
       postcss-combine-media-query: 2.1.0(postcss@8.5.6)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/turbopack-loader@6.1.1':
+  '@plumeria/turbopack-loader@6.2.0':
     dependencies:
-      '@plumeria/utils': 6.1.1
+      '@plumeria/utils': 6.2.0
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/utils@6.1.1':
+  '@plumeria/utils@6.2.0':
     dependencies:
       '@swc/core': 1.15.8
-      zss-engine: 2.1.2
+      zss-engine: 2.2.0
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/webpack-plugin@6.1.1':
+  '@plumeria/webpack-plugin@6.2.0':
     dependencies:
-      '@plumeria/utils': 6.1.1
+      '@plumeria/utils': 6.2.0
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -2312,6 +2324,8 @@ snapshots:
 
   lodash.merge@4.6.2: {}
 
+  lodash@4.17.21: {}
+
   lru-cache@11.2.4: {}
 
   mdast-util-from-markdown@2.0.2:
@@ -2502,16 +2516,16 @@ snapshots:
 
   next-link-transitions@0.2.3: {}
 
-  next@16.1.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(sass@1.50.0):
+  next@16.1.1(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(sass@1.50.0):
     dependencies:
       '@next/env': 16.1.1
       '@swc/helpers': 0.5.15
       baseline-browser-mapping: 2.9.11
       caniuse-lite: 1.0.30001759
       postcss: 8.4.31
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
-      styled-jsx: 5.1.6(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
+      styled-jsx: 5.1.6(react@19.2.3)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.1.1
       '@next/swc-darwin-x64': 16.1.1
@@ -2608,14 +2622,19 @@ snapshots:
 
   property-information@7.1.0: {}
 
+  prune@0.0.2:
+    dependencies:
+      lodash: 4.17.21
+      sproutid: 0.0.5
+
   punycode@2.3.1: {}
 
-  react-dom@19.2.1(react@19.2.1):
+  react-dom@19.2.3(react@19.2.3):
     dependencies:
-      react: 19.2.1
+      react: 19.2.3
       scheduler: 0.27.0
 
-  react@19.2.1: {}
+  react@19.2.3: {}
 
   readdirp@3.6.0:
     dependencies:
@@ -2731,6 +2750,10 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
+  sproutid@0.0.5:
+    dependencies:
+      lodash: 4.17.21
+
   stringify-entities@4.0.4:
     dependencies:
       character-entities-html4: 2.1.0
@@ -2740,10 +2763,10 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.6(react@19.2.1):
+  styled-jsx@5.1.6(react@19.2.3):
     dependencies:
       client-only: 0.0.1
-      react: 19.2.1
+      react: 19.2.3
 
   supports-color@7.2.0:
     dependencies:
@@ -2842,7 +2865,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zss-engine@2.1.2:
+  zss-engine@2.2.0:
     dependencies:
       csstype: 3.2.3
 
