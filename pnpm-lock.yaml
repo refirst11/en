@@ -46,17 +46,17 @@ importers:
         specifier: ^9.36.0
         version: 9.39.1
       '@plumeria/core':
-        specifier: ^6.2.0
-        version: 6.2.0
+        specifier: ^6.2.1
+        version: 6.2.1
       '@plumeria/eslint-plugin':
-        specifier: ^6.2.0
-        version: 6.2.0
+        specifier: ^6.2.1
+        version: 6.2.1
       '@plumeria/next-plugin':
-        specifier: ^6.2.0
-        version: 6.2.0
+        specifier: ^6.2.1
+        version: 6.2.1
       '@plumeria/postcss-plugin':
-        specifier: ^6.2.0
-        version: 6.2.0
+        specifier: ^6.2.1
+        version: 6.2.1
       '@shikijs/rehype':
         specifier: ^3.15.0
         version: 3.19.0
@@ -386,30 +386,30 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@plumeria/compiler@6.2.0':
-    resolution: {integrity: sha512-M1NKdB+tBur07mrqEiMWDlEbTCkbgvQ9Nn+YsyR+6IgSfiqdrpw3J93vVxQpi4m0DhFgJqLsCD1d2LA0Kk00CA==}
+  '@plumeria/compiler@6.2.1':
+    resolution: {integrity: sha512-XgneoDf51Pwsosuxn+ixtHBC1cwq4q1BNReUcKDU9+rR0zx69sZ00Oi+FQokjgGlobXkW2oFo+lCd4NvYyQLCw==}
 
-  '@plumeria/core@6.2.0':
-    resolution: {integrity: sha512-Ds+rrlyTi9Nc9yBpetOn/YO4eC5JJUaLr7WjT22h0JdcHEYHc5nLrp32j64FZexR03WKj+dNugqFa2Cnb4TbEg==}
+  '@plumeria/core@6.2.1':
+    resolution: {integrity: sha512-Epa/SgeXcCNEBXtcU3Mw9rdjIVULJwZbCPCLOdBIMdD2XXMgZQweqquuBlbKzB123OxDiRR567tCijRafHZOSA==}
 
-  '@plumeria/eslint-plugin@6.2.0':
-    resolution: {integrity: sha512-Wh2Xl0DFeasRLaMqlfRoZ15nn46lrij5i+v4q8N5kLc9+HVAxN6buxLGum2dH4gDOeh8ZgN0K/ubhtwDMrhk/g==}
+  '@plumeria/eslint-plugin@6.2.1':
+    resolution: {integrity: sha512-l0hfvUd8drWrJaWPCigpxPPm9SzNyNvC5Fk1JD9RdtybMF7Evdx7ovzlwCaXQrrrhNeEinJMKHyu9dcM0t+hiA==}
     hasBin: true
 
-  '@plumeria/next-plugin@6.2.0':
-    resolution: {integrity: sha512-0a6n74yFQ23TgiIlpYRbbkqitnIL516p3TGhHCm7aJ6O4ODqoTnTkjXtcKZ/OvnT9PYX1c758SeNAMgSZFEMMw==}
+  '@plumeria/next-plugin@6.2.1':
+    resolution: {integrity: sha512-LccF/X5iOG7zOzWsnZAee5TP0cQr8909OeNgPWmnsDuSOLfLvAnAMR0h69It4LAWXSakuIAtFC9AvaQpn/wbxA==}
 
-  '@plumeria/postcss-plugin@6.2.0':
-    resolution: {integrity: sha512-YnJhxNFV9iWQNuSVb5U+sAeJSo3MX0USNEltTwBP8msQzpw7pkWAPDl5JfluoEdSmpQ19BqEuqA1Bk6A3XhNgQ==}
+  '@plumeria/postcss-plugin@6.2.1':
+    resolution: {integrity: sha512-wnn6cV5rPipojauSNxfjS9uE3gdSx+U+a1HDDusdz+H+9kQzK+uXJimyLJMAQxgU8gnaR4K8a0B1XNNYx7aNCA==}
 
-  '@plumeria/turbopack-loader@6.2.0':
-    resolution: {integrity: sha512-TNPmp95srLvq4FqaUOW55SgK6CWUcJBT4H1zQ8uR7xzdkH+eer/ubTk5S7cAIrDfi0QLI93PPpaqqrpZZx8K6Q==}
+  '@plumeria/turbopack-loader@6.2.1':
+    resolution: {integrity: sha512-/Ekc3mPd3AqPI7J9vsncPejRz/OvlcNjLgXTAbZATikGgS//5wx0v19aGSaYufA/X8tM1yCZXVVZaLQdc7zsqA==}
 
-  '@plumeria/utils@6.2.0':
-    resolution: {integrity: sha512-b++6aKrUlRCmckc1rdTsTWh/xTCjFmNgZ8W8JZJXYHmdjBy5MVoR/J/YOlC+TJlglCWi6xmArsdeSlPNyX5uPg==}
+  '@plumeria/utils@6.2.1':
+    resolution: {integrity: sha512-QaTPPlxwCE3E+Czr0LGLq7pbyGrY34vyhfFF2/py5jfSXCDhQu/5xNjJlwMhOxwwPxQJF0SDQSYt8E2MBhTytA==}
 
-  '@plumeria/webpack-plugin@6.2.0':
-    resolution: {integrity: sha512-x7yJ1ngIC3eOLEbOsTxQL9ikwmpootIEdjlZr5zAyAPhwD3ZgnbqNQyF7/NCnE2+jTtIQKB0fq/jlBPxi+ZzpQ==}
+  '@plumeria/webpack-plugin@6.2.1':
+    resolution: {integrity: sha512-VSl8zqzKRRTP9qHPNGTKFFgeltStfnqN8cJYkAJE28ELrqwBTE+sgWptgs12mGnzH3LoQ7ZZ1otKoGgZRhX6GA==}
 
   '@shikijs/core@3.19.0':
     resolution: {integrity: sha512-L7SrRibU7ZoYi1/TrZsJOFAnnHyLTE1SwHG1yNWjZIVCqjOEmCSuK2ZO9thnRbJG6TOkPp+Z963JmpCNw5nzvA==}
@@ -1665,50 +1665,50 @@ snapshots:
   '@oxlint/win32-x64@1.34.0':
     optional: true
 
-  '@plumeria/compiler@6.2.0':
+  '@plumeria/compiler@6.2.1':
     dependencies:
-      '@plumeria/utils': 6.2.0
+      '@plumeria/utils': 6.2.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@6.2.0':
+  '@plumeria/core@6.2.1':
     dependencies:
       csstype: 3.2.3
 
-  '@plumeria/eslint-plugin@6.2.0': {}
+  '@plumeria/eslint-plugin@6.2.1': {}
 
-  '@plumeria/next-plugin@6.2.0':
+  '@plumeria/next-plugin@6.2.1':
     dependencies:
-      '@plumeria/turbopack-loader': 6.2.0
-      '@plumeria/webpack-plugin': 6.2.0
+      '@plumeria/turbopack-loader': 6.2.1
+      '@plumeria/webpack-plugin': 6.2.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/postcss-plugin@6.2.0':
+  '@plumeria/postcss-plugin@6.2.1':
     dependencies:
-      '@plumeria/compiler': 6.2.0
+      '@plumeria/compiler': 6.2.1
       lightningcss: 1.30.2
       postcss: 8.5.6
       postcss-combine-media-query: 2.1.0(postcss@8.5.6)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/turbopack-loader@6.2.0':
+  '@plumeria/turbopack-loader@6.2.1':
     dependencies:
-      '@plumeria/utils': 6.2.0
+      '@plumeria/utils': 6.2.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/utils@6.2.0':
+  '@plumeria/utils@6.2.1':
     dependencies:
       '@swc/core': 1.15.8
       zss-engine: 2.2.0
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/webpack-plugin@6.2.0':
+  '@plumeria/webpack-plugin@6.2.1':
     dependencies:
-      '@plumeria/utils': 6.2.0
+      '@plumeria/utils': 6.2.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
