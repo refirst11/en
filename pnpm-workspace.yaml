@@ -1,2 +1,5 @@
 onlyBuiltDependencies:
   - '@swc/core'
+
+packages:
+  - 'src/*'
