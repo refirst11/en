@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import * as css from "@plumeria/core";
+import * as css from '@plumeria/core';
 import { Link } from 'next-link-transitions';
 import { breakpoints } from 'lib/mediaQuery';
 import { useState } from 'react';
@@ -16,13 +16,13 @@ const styles = css.create({
     transition: '0.8s ease',
   },
   article: {
-    top: -28,
-    left: -50,
-    scale: 0.56,
+    top: -30,
+    left: -48,
+    scale: 0.4,
     [breakpoints.md]: {
-      top: -45,
-      left: -45,
-      scale: 0.32,
+      top: -44,
+      left: -32,
+      scale: 0.3,
     },
   },
   sentence: {
