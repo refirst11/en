@@ -5,9 +5,9 @@
 
 ## Uses and Respect
 
-- [Next.js](https://nextjs.org/) - is a standard web React Framework
-- [shiki](https://shiki.matsu.io/) - is a beautiful Syntax Highlighter
-- [plumeria](https://plumeria.dev) - is a Command-line Zero-Runtime CSS-in-JS
+- [Next.js](https://nextjs.org/) - is a standard React Framework
+- [Shiki](https://shiki.matsu.io/) - is a beautiful Syntax Highlighter
+- [Plumeria](https://plumeria.dev) - is a type-only CSS extract
 
 ## License
 
