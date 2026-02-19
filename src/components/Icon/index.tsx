@@ -9,11 +9,31 @@ import { scaling } from './animation';
 import { transition } from 'styles/animation';
 
 const styles = css.create({
+  image: {
+    position: 'absolute',
+    top: 26,
+    left: 0,
+    zIndex: 1,
+    borderRadius: '50%',
+    transition: '0.8s ease',
+    viewTransitionName: 'none',
+    [breakpoints.md]: {
+      top: -10,
+      left: 4,
+      scale: 0.75,
+    },
+  },
   top: {
     position: 'absolute',
     top: '50%',
     marginTop: -130,
+    scale: 1,
     transition: '0.8s ease',
+    [breakpoints.md]: {
+      top: '50%',
+      left: 0,
+      scale: 1,
+    },
   },
   article: {
     top: -30,
@@ -44,16 +64,6 @@ const styles = css.create({
   animation: {
     animationName: scaling,
     animationDuration: '2s',
-  },
-  image: {
-    position: 'absolute',
-    top: 26,
-    left: 0,
-    zIndex: 1,
-    display: 'block',
-    borderRadius: '50%',
-    transition: '0.8s ease',
-    viewTransitionName: 'none',
   },
 });
 
