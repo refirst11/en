@@ -40,17 +40,17 @@ importers:
         specifier: ^9.36.0
         version: 9.39.1
       '@plumeria/core':
-        specifier: ^7.5.5
-        version: 7.5.5
+        specifier: ^8.0.1
+        version: 8.0.1
       '@plumeria/eslint-plugin':
-        specifier: ^7.5.5
-        version: 7.5.5
+        specifier: ^8.0.1
+        version: 8.0.1
       '@plumeria/next-plugin':
-        specifier: ^7.5.5
-        version: 7.5.5
+        specifier: ^8.0.1
+        version: 8.0.1
       '@plumeria/postcss-plugin':
-        specifier: ^7.5.5
-        version: 7.5.5
+        specifier: ^8.0.1
+        version: 8.0.1
       '@shikijs/rehype':
         specifier: ^3.15.0
         version: 3.19.0
@@ -70,11 +70,11 @@ importers:
         specifier: ^1.34.0
         version: 1.34.0
       prettier:
-        specifier: ^3.5.3
-        version: 3.7.4
+        specifier: ^3.8.1
+        version: 3.8.1
       prettier-plugin-insert-comma:
         specifier: ^1.1.1
-        version: 1.1.1(prettier@3.7.4)
+        version: 1.1.1(prettier@3.8.1)
       rimraf:
         specifier: ^6.0.1
         version: 6.1.2
@@ -383,27 +383,27 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@plumeria/compiler@7.5.5':
-    resolution: {integrity: sha512-/sOM4+sDLx6qmg+afMrr6a8hwjnAhNcJ1q9D1jLzOkiXe6dYYk9/x3gBM+tenA2K1nXzCvJMrjLhQFhECeMKfQ==}
+  '@plumeria/compiler@8.0.1':
+    resolution: {integrity: sha512-RO+wgZrerV8ERlCeYFA+oip0QHJqwymw9tSX9dxi57Eys3Os+R1tdrWLGKNgG3P09EUsxdtaVbKzg7TaMkqUsA==}
 
-  '@plumeria/core@7.5.5':
-    resolution: {integrity: sha512-JQPfyuCxfPRWO8/Kzg4vOHjVPUTeRKsJEC8JGGrk/PUozfPWMLyXCLhGgZU/mUzY8cGD+4Kk5pua9HVnVA0DcQ==}
+  '@plumeria/core@8.0.1':
+    resolution: {integrity: sha512-BhG2sfxg4nRYO9VWNzE7ExviFcxmEwF98kehcBjRrO2UkCfEw+JOXf8EmueF3k27eMkoKizbTZsGWnNUt56M1Q==}
 
-  '@plumeria/eslint-plugin@7.5.5':
-    resolution: {integrity: sha512-Met/3eHE0kZc1USpmEstODEkaLaHGQZW21VnKOOjotdsiezEqz2Q8mnvJQpEzuEeN4Zm3PE2NejF+fhNSo0JNg==}
+  '@plumeria/eslint-plugin@8.0.1':
+    resolution: {integrity: sha512-MGSu5T79Kus2nW7cD8tpyUhp157o4SHID1gShtih9zXmw6tqmd+jlg845loJXHGLZ/cb/wj7hViTPqDI5kbO3A==}
     hasBin: true
 
-  '@plumeria/next-plugin@7.5.5':
-    resolution: {integrity: sha512-EVgcaQSMUwqZPIoHFyCnsf1enzb4mPZg0SvIE2I0iIwIdzDDJP7OKbHwFf+xKK//r02QLSizcRiq9gT01fz7qg==}
+  '@plumeria/next-plugin@8.0.1':
+    resolution: {integrity: sha512-+jcgDkrYAqdc0/kKlcXlFe5ZIPNfh5BEGHhcPCnpNpqCruAiz8wjy7G9I2zEGbzGMAsI3lGaFNGAAV34avP3TA==}
 
-  '@plumeria/postcss-plugin@7.5.5':
-    resolution: {integrity: sha512-qto/su/KiTPguo0WmIw8D/laL5di67lrUOaqUDTfXjIYP0qpqzfZJ79VomFEDzMZE62AN32IGjLky0JR2ZAx1g==}
+  '@plumeria/postcss-plugin@8.0.1':
+    resolution: {integrity: sha512-RO46OD2Z1933CV10X/fAn56JAKw0lPn46QLTV/nwT6mAFoZs4xxlyJGxnjMI5sFZYGta3LMR48SaIidWFasZAA==}
 
-  '@plumeria/turbopack-loader@7.5.5':
-    resolution: {integrity: sha512-2/UbDofayR0TM+i+gTNxdZuQWZ6K7gO5NIsAXzHpqoSbSp2sGeQdHZMm06yHT6ndYHwqqafJyZ67ZhnTREtuZw==}
+  '@plumeria/turbopack-loader@8.0.1':
+    resolution: {integrity: sha512-WNo7pxnyOwieHRMClqoZshgrww1wK8qN5MdM8es40Bmz5OOQ3oMhbcrR90AwlBFPIwVu597A0qmK8kEvMdjanw==}
 
-  '@plumeria/utils@7.5.5':
-    resolution: {integrity: sha512-7lcaQXMkr21VpC77Cx76CEZ+9EFPosJdG8nh7h2jWOy0mc5Cae1uOwwdZ7KWHyrsmpoNFEfAkpNCSZQKuiu3LQ==}
+  '@plumeria/utils@8.0.1':
+    resolution: {integrity: sha512-Hb2HGgGlx+DPz2nTF+1OY2ZCYbfXSJNqfgtjKknMNTLF0donhlHo33KFGCWpZ86AMDtyr9CYVXs4nRzzUIQ+vQ==}
 
   '@shikijs/core@3.19.0':
     resolution: {integrity: sha512-L7SrRibU7ZoYi1/TrZsJOFAnnHyLTE1SwHG1yNWjZIVCqjOEmCSuK2ZO9thnRbJG6TOkPp+Z963JmpCNw5nzvA==}
@@ -1228,8 +1228,8 @@ packages:
     peerDependencies:
       prettier: ^3.0
 
-  prettier@3.7.4:
-    resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
+  prettier@3.8.1:
+    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1655,38 +1655,38 @@ snapshots:
   '@oxlint/win32-x64@1.34.0':
     optional: true
 
-  '@plumeria/compiler@7.5.5':
+  '@plumeria/compiler@8.0.1':
     dependencies:
-      '@plumeria/utils': 7.5.5
+      '@plumeria/utils': 8.0.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@7.5.5':
+  '@plumeria/core@8.0.1':
     dependencies:
       csstype: 3.2.3
 
-  '@plumeria/eslint-plugin@7.5.5': {}
+  '@plumeria/eslint-plugin@8.0.1': {}
 
-  '@plumeria/next-plugin@7.5.5':
+  '@plumeria/next-plugin@8.0.1':
     dependencies:
-      '@plumeria/turbopack-loader': 7.5.5
+      '@plumeria/turbopack-loader': 8.0.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/postcss-plugin@7.5.5':
+  '@plumeria/postcss-plugin@8.0.1':
     dependencies:
-      '@plumeria/compiler': 7.5.5
+      '@plumeria/compiler': 8.0.1
       postcss: 8.5.6
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/turbopack-loader@7.5.5':
+  '@plumeria/turbopack-loader@8.0.1':
     dependencies:
-      '@plumeria/utils': 7.5.5
+      '@plumeria/utils': 8.0.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/utils@7.5.5':
+  '@plumeria/utils@8.0.1':
     dependencies:
       '@swc/core': 1.15.8
       lightningcss: 1.30.2
@@ -2611,11 +2611,11 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-insert-comma@1.1.1(prettier@3.7.4):
+  prettier-plugin-insert-comma@1.1.1(prettier@3.8.1):
     dependencies:
-      prettier: 3.7.4
+      prettier: 3.8.1
 
-  prettier@3.7.4: {}
+  prettier@3.8.1: {}
 
   property-information@7.1.0: {}
 
