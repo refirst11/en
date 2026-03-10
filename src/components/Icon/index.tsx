@@ -83,9 +83,9 @@ export const Icon = () => {
   };
 
   return (
-    <Link href="/" viewTransitionName={css.props(transition.name)}>
+    <Link href="/" viewTransitionName={css.use(transition.name)}>
       <img
-        className={css.props(
+        className={css.use(
           styles.image,
           state && styles.animation,
           pathname === '/' && styles.top,
@@ -99,7 +99,7 @@ export const Icon = () => {
       />
       <span
         onClick={(e) => handleClick(e as unknown as MouseEvent)}
-        className={css.props(styles.sentence, pathname !== '/' && styles.opacity)}
+        className={css.use(styles.sentence, pathname !== '/' && styles.opacity)}
       >
         hyper happy {state ? '!' : '?'}
       </span>

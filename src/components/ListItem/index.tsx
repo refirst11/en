@@ -13,11 +13,11 @@ export const ListItem = ({
   href: string;
 }) => {
   return (
-    <a className={css.props(styles.link)} href={href}>
+    <a className={css.use(styles.link)} href={href}>
       <span>{children}</span>
-      <span className={css.props(styles.tag)}>{subti}</span>
-      <div className={css.props(styles.divTag)} />
-      <span className={css.props(styles.date)}>{date}</span>
+      <span className={css.use(styles.tag)}>{subti}</span>
+      <div className={css.use(styles.divTag)} />
+      <span className={css.use(styles.date)}>{date}</span>
     </a>
   );
 };
