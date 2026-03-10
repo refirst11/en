@@ -35,7 +35,6 @@ const styles = css.create({
     right: 64,
     bottom: 20,
     left: 0,
-
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',

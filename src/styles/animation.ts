@@ -1,13 +1,21 @@
 import * as css from "@plumeria/core";
 
 const fadeOut = css.keyframes({
-  from: { opacity: 1 },
-  to: { opacity: 1 },
+  from: {
+    opacity: 1
+  },
+  to: {
+    opacity: 1
+  },
 });
 
 const fadeIn = css.keyframes({
-  from: { opacity: 0 },
-  to: { opacity: 1 },
+  from: {
+    opacity: 0
+  },
+  to: {
+    opacity: 1
+  },
 });
 
 const longCrossFade = css.viewTransition({

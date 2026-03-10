@@ -40,5 +40,7 @@ export async function GET() {
           .join('')}
       </channel>
     </rss>`;
-  return new Response(xml, { headers: { 'content-type': 'application/xml' } });
+  return new Response(xml, { headers: {
+    'content-type': 'application/xml'
+  } });
 }
