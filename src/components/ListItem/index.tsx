@@ -1,4 +1,4 @@
-import * as css from '@plumeria/core';
+import * as style from '@plumeria/core';
 import { styles } from 'app/listup';
 
 export const ListItem = ({
@@ -13,11 +13,11 @@ export const ListItem = ({
   href: string;
 }) => {
   return (
-    <a className={css.use(styles.link)} href={href}>
+    <a className={style.use(styles.link)} href={href}>
       <span>{children}</span>
-      <span className={css.use(styles.tag)}>{subti}</span>
-      <div className={css.use(styles.divTag)} />
-      <span className={css.use(styles.date)}>{date}</span>
+      <span className={style.use(styles.tag)}>{subti}</span>
+      <div className={style.use(styles.divTag)} />
+      <span className={style.use(styles.date)}>{date}</span>
     </a>
   );
 };

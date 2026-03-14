@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import isCurrentLink from 'lib/isCurrentLink';
 import { Link } from 'next-link-transitions';
 import { JSX } from 'react';
-import * as css from "@plumeria/core";
+import * as style from '@plumeria/core';
 import { breakpoints } from 'lib/mediaQuery';
 import { ps } from 'lib/pseudos';
 import { transition } from 'styles/animation';
@@ -27,16 +27,16 @@ const Header = (): JSX.Element => {
   ];
 
   return (
-    <header className={css.use(styles.header_main, pathname === '/' && styles.top)}>
-      <nav className={css.use(styles.header_nav)}>
+    <header className={style.use(styles.header_main, pathname === '/' && styles.top)}>
+      <nav className={style.use(styles.header_nav)}>
         {!pathname.includes('personal/') && (
-          <ul className={css.use(styles.header_ul)}>
+          <ul className={style.use(styles.header_ul)}>
             {Headers.map(({ name, href }) => (
               <Link
                 key={href}
                 href={href}
-                className={css.use(styles.link_container, isCurrentLink(href, pathname) && styles.after_color)}
-                viewTransitionName={css.use(transition.name)}
+                className={style.use(styles.link_container, isCurrentLink(href, pathname) && styles.after_color)}
+                viewTransitionName={style.use(transition.name)}
               >
                 {name}
               </Link>
@@ -50,7 +50,7 @@ const Header = (): JSX.Element => {
 
 export default Header;
 
-const styles = css.create({
+const styles = style.create({
   top: {
     top: '50%',
     right: 40,

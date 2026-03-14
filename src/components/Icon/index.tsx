@@ -1,14 +1,14 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import * as css from '@plumeria/core';
+import * as style from '@plumeria/core';
 import { Link } from 'next-link-transitions';
 import { breakpoints } from 'lib/mediaQuery';
 import { useState } from 'react';
 import { scaling } from './animation';
 import { transition } from 'styles/animation';
 
-const styles = css.create({
+const styles = style.create({
   image: {
     position: 'absolute',
     top: 26,
@@ -83,9 +83,9 @@ export const Icon = () => {
   };
 
   return (
-    <Link href="/" viewTransitionName={css.use(transition.name)}>
+    <Link href="/" viewTransitionName={style.use(transition.name)}>
       <img
-        className={css.use(
+        className={style.use(
           styles.image,
           state && styles.animation,
           pathname === '/' && styles.top,
@@ -99,7 +99,7 @@ export const Icon = () => {
       />
       <span
         onClick={(e) => handleClick(e as unknown as MouseEvent)}
-        className={css.use(styles.sentence, pathname !== '/' && styles.opacity)}
+        className={style.use(styles.sentence, pathname !== '/' && styles.opacity)}
       >
         hyper happy {state ? '!' : '?'}
       </span>

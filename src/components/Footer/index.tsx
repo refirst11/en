@@ -1,5 +1,5 @@
 import { JSX } from 'react';
-import * as css from "@plumeria/core";
+import * as style from '@plumeria/core';
 import { breakpoints } from 'lib/mediaQuery';
 
 const Footer = (): JSX.Element => {
@@ -7,9 +7,9 @@ const Footer = (): JSX.Element => {
   const year = time.getFullYear();
 
   return (
-    <footer className={css.use(styles.footer_main)}>
-      <div className={css.use(styles.footer_container)}>
-        <div className={css.use(styles.footer_text)}>{year + ' © Refirst 11.'}</div>
+    <footer className={style.use(styles.footer_main)}>
+      <div className={style.use(styles.footer_container)}>
+        <div className={style.use(styles.footer_text)}>{year + ' © Refirst 11.'}</div>
         <a href="https://github.com/refirst11">Github</a>
       </div>
     </footer>
@@ -18,7 +18,7 @@ const Footer = (): JSX.Element => {
 
 export default Footer;
 
-const styles = css.create({
+const styles = style.create({
   footer_text: {
     position: 'relative',
     fontSize: 12,

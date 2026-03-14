@@ -1,24 +1,24 @@
-import * as css from "@plumeria/core";
+import * as style from '@plumeria/core';
 
-const fadeOut = css.keyframes({
+const fadeOut = style.keyframes({
   from: {
-    opacity: 1
+    opacity: 1,
   },
   to: {
-    opacity: 1
+    opacity: 1,
   },
 });
 
-const fadeIn = css.keyframes({
+const fadeIn = style.keyframes({
   from: {
-    opacity: 0
+    opacity: 0,
   },
   to: {
-    opacity: 1
+    opacity: 1,
   },
 });
 
-const longCrossFade = css.viewTransition({
+const longCrossFade = style.viewTransition({
   old: {
     animation: fadeOut,
     animationDuration: '1.12s',
@@ -29,7 +29,7 @@ const longCrossFade = css.viewTransition({
   },
 });
 
-export const transition = css.create({
+export const transition = style.create({
   name: {
     viewTransitionName: longCrossFade,
   },

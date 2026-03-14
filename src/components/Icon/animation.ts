@@ -1,13 +1,13 @@
-import * as css from "@plumeria/core";
+import * as style from '@plumeria/core';
 
-export const scaling = css.keyframes({
+export const scaling = style.keyframes({
   '0%': {
-    scale: 1
+    scale: 1,
   },
   '50%': {
-    scale: 3
+    scale: 3,
   },
   '100%': {
-    scale: 1
+    scale: 1,
   },
 });
