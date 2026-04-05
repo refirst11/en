@@ -8,6 +8,46 @@ import { useState } from 'react';
 import { scaling } from './animation';
 import { transition } from 'styles/animation';
 
+export const Icon = () => {
+  const pathname = usePathname();
+  const [state, setState] = useState(false);
+
+  const handleClick = (e: MouseEvent) => {
+    e.preventDefault();
+    // e.stopPropagation();
+
+    if (state) {
+      return;
+    }
+
+    setState(true);
+  };
+
+  return (
+    <Link href="/" viewTransitionName={css.use(transition.name)}>
+      <img
+        styleName={[
+          styles.image,
+          state && styles.animation,
+          pathname === '/' && styles.top,
+          pathname.includes('personal/') && styles.article,
+        ]}
+        width={160}
+        height={160}
+        src="/icon.png"
+        alt="static"
+        onAnimationEnd={() => setState(false)}
+      />
+      <span
+        onClick={(e) => handleClick(e as unknown as MouseEvent)}
+        styleName={[styles.sentence, pathname !== '/' && styles.opacity]}
+      >
+        hyper happy {state ? '!' : '?'}
+      </span>
+    </Link>
+  );
+};
+
 const styles = css.create({
   image: {
     position: 'absolute',
@@ -66,43 +106,3 @@ const styles = css.create({
     animationDuration: '2s',
   },
 });
-
-export const Icon = () => {
-  const pathname = usePathname();
-  const [state, setState] = useState(false);
-
-  const handleClick = (e: MouseEvent) => {
-    e.preventDefault();
-    // e.stopPropagation();
-
-    if (state) {
-      return;
-    }
-
-    setState(true);
-  };
-
-  return (
-    <Link href="/" viewTransitionName={css.use(transition.name)}>
-      <img
-        className={css.use(
-          styles.image,
-          state && styles.animation,
-          pathname === '/' && styles.top,
-          pathname.includes('personal/') && styles.article,
-        )}
-        width={160}
-        height={160}
-        src="/icon.png"
-        alt="static"
-        onAnimationEnd={() => setState(false)}
-      />
-      <span
-        onClick={(e) => handleClick(e as unknown as MouseEvent)}
-        className={css.use(styles.sentence, pathname !== '/' && styles.opacity)}
-      >
-        hyper happy {state ? '!' : '?'}
-      </span>
-    </Link>
-  );
-};
