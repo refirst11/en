@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 import generateSEOData from 'lib/generateSEOData';
 import { JSX } from 'react';
 import { styles } from 'app/listup';
-import * as css from '@plumeria/core';
+import '@plumeria/core';
 import { ListItem } from 'components/ListItem';
 
 export const metadata: Metadata = generateSEOData({ title: 'Projects - Refirst' });
 
 const Page = (): JSX.Element => {
   return (
-    <div className={css.use(styles.list)}>
+    <div styleName={styles.list}>
       <ListItem
         href={'https://github.com/rust-gear-project/rust-gear'}
         date="2025"
