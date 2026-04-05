@@ -1,11 +1,11 @@
 import PostsProps from 'types/PostsProps';
 import { styles } from 'app/listup';
 import { LinkItem } from 'components/LinkItem';
-import * as css from "@plumeria/core";
+import '@plumeria/core';
 
 const PostsData = ({ posts }: PostsProps) => {
   return (
-    <div className={css.use(styles.list)}>
+    <div styleName={styles.list}>
       {posts.map(({ slug, title, date }) => (
         <LinkItem key={slug} href={`/personal/${slug}`} date={date}>
           {title}
