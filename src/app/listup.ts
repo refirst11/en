@@ -19,8 +19,9 @@ export const styles = css.create({
     marginTop: 'auto',
     [breakpoints.md]: {
       position: 'relative',
-      top: 20,
+      top: 0,
       width: '100%',
+      marginTop: 160,
     },
   },
 
