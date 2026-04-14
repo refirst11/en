@@ -1,13 +1,13 @@
 # @Refirst's Website
 
-- [https://refirst.vercel.app](https://refirst.vercel.app)
+- [https://refirst11.vercel.app](https://refirst11.vercel.app)
 - [https://projects-refirst.vercel.app](https://projects-refirst.vercel.app)
 
 ## Uses and Respect
 
 - [Next.js](https://nextjs.org/) - is a standard React Framework
 - [Shiki](https://shiki.matsu.io/) - is a beautiful Syntax Highlighter
-- [Plumeria](https://plumeria.dev) - is a type-only CSS extract
+- [Plumeria](https://plumeria.dev) - is a styling system that disappears
 
 ## License
 
