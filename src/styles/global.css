@@ -104,6 +104,11 @@ button {
 a {
   color: rgb(117, 117, 117);
   text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  color: rgb(95, 95, 95);
 }
 
 ul {
@@ -126,6 +131,20 @@ h1 {
   font-weight: normal;
 }
 
+blockquote {
+  position: relative;
+  right: 12px;
+  font-style: italic;
+  font-weight: 300;
+  margin: 20px 0;
+  font-size: 14px;
+  color: rgb(55 65 81);
+  border-left: 4px solid rgb(100, 100, 100);
+}
+
+blockquote p {
+  padding: 2 16px;
+}
 @media (max-width: 768px) {
   h1 {
     font-size: 18px;
