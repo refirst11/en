@@ -5,6 +5,9 @@ import plumeria from '@plumeria/eslint-plugin';
 
 export default defineConfig(eslint.configs.recommended, tseslint.configs.recommended, plumeria.configs.recommended, {
   files: ['**/*.{ts,tsx}'],
+  languageOptions: {
+    parserOptions: { projectService: true },
+  },
   rules: {
     '@typescript-eslint/no-unused-expressions': 'off',
   },
