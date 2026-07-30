@@ -26,7 +26,7 @@ export const Icon = () => {
   return (
     <Link href="/" viewTransitionName={css.use(transition.name)}>
       <img
-        styleName={[
+        classStyle={[
           styles.image,
           state && styles.animation,
           pathname === '/' && styles.top,
@@ -40,7 +40,7 @@ export const Icon = () => {
       />
       <span
         onClick={(e) => handleClick(e as unknown as MouseEvent)}
-        styleName={[styles.sentence, pathname !== '/' && styles.opacity]}
+        classStyle={[styles.sentence, pathname !== '/' && styles.opacity]}
       >
         hyper happy {state ? '!' : '?'}
       </span>
