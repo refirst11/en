@@ -7,9 +7,9 @@ const Footer = (): JSX.Element => {
   const year = time.getFullYear();
 
   return (
-    <footer styleName={styles.footer_main}>
-      <div styleName={styles.footer_container}>
-        <div styleName={styles.footer_text}>{year + ' © Refirst 11.'}</div>
+    <footer classStyle={styles.footer_main}>
+      <div classStyle={styles.footer_container}>
+        <div classStyle={styles.footer_text}>{year + ' © Refirst 11.'}</div>
         <a href="https://github.com/refirst11">Github</a>
       </div>
     </footer>
