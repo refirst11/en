@@ -5,10 +5,10 @@ import { transition } from 'styles/animation';
 
 export const LinkItem = ({ children, date, href }: { children: React.ReactNode; date: string; href: string }) => {
   return (
-    <Link styleName={styles.link} href={href} viewTransitionName={css.use(transition.name)}>
+    <Link classStyle={styles.link} href={href} viewTransitionName={css.use(transition.name)}>
       <span>{children}</span>
       <div />
-      <span styleName={styles.date}>{date}</span>
+      <span classStyle={styles.date}>{date}</span>
     </Link>
   );
 };
