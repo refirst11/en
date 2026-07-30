@@ -6,7 +6,7 @@ import * as css from '@plumeria/core';
 
 const ReturnLink = () => {
   return (
-    <Link styleName={styles.back} href="/personal" viewTransitionName={css.use(transition.name)}>
+    <Link classStyle={styles.back} href="/personal" viewTransitionName={css.use(transition.name)}>
       back
     </Link>
   );
@@ -14,10 +14,10 @@ const ReturnLink = () => {
 
 const PostData = ({ post }: PostProps) => {
   return (
-    <div styleName={styles.post}>
-      <div styleName={styles.spacing}>
+    <div classStyle={styles.post}>
+      <div classStyle={styles.spacing}>
         <ReturnLink />
-        <h1 styleName={styles.color_h1}>{post.title}</h1>
+        <h1 classStyle={styles.color_h1}>{post.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </div>
     </div>
