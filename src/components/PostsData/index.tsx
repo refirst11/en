@@ -5,7 +5,7 @@ import '@plumeria/core';
 
 const PostsData = ({ posts }: PostsProps) => {
   return (
-    <div styleName={styles.list}>
+    <div classStyle={styles.list}>
       {posts.map(({ slug, title, date }) => (
         <LinkItem key={slug} href={`/personal/${slug}`} date={date}>
           {title}
