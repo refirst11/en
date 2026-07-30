@@ -9,7 +9,7 @@ export const metadata: Metadata = generateSEOData({ title: 'Projects - Refirst' 
 
 const Page = (): JSX.Element => {
   return (
-    <div styleName={styles.list}>
+    <div classStyle={styles.list}>
       <ListItem
         href={'https://github.com/rust-gear-project/rust-gear'}
         date="2025"
