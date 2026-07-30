@@ -27,15 +27,15 @@ const Header = (): JSX.Element => {
   ];
 
   return (
-    <header styleName={[styles.header_main, pathname === '/' && styles.top]}>
-      <nav styleName={styles.header_nav}>
+    <header classStyle={[styles.header_main, pathname === '/' && styles.top]}>
+      <nav classStyle={styles.header_nav}>
         {!pathname.includes('personal/') && (
-          <ul styleName={styles.header_ul}>
+          <ul classStyle={styles.header_ul}>
             {Headers.map(({ name, href }) => (
               <Link
                 key={href}
                 href={href}
-                styleName={[styles.link_container, isCurrentLink(href, pathname) && styles.after_color]}
+                classStyle={[styles.link_container, isCurrentLink(href, pathname) && styles.after_color]}
                 viewTransitionName={css.use(transition.name)}
               >
                 {name}
