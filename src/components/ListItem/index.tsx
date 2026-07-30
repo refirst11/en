@@ -13,11 +13,11 @@ export const ListItem = ({
   href: string;
 }) => {
   return (
-    <a styleName={styles.link} href={href}>
+    <a classStyle={styles.link} href={href}>
       <span>{children}</span>
-      <span styleName={styles.tag}>{subti}</span>
-      <div styleName={styles.divTag} />
-      <span styleName={styles.date}>{date}</span>
+      <span classStyle={styles.tag}>{subti}</span>
+      <div classStyle={styles.divTag} />
+      <span classStyle={styles.date}>{date}</span>
     </a>
   );
 };
