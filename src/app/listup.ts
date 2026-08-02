@@ -10,16 +10,10 @@ export const styles = css.create({
   },
 
   list: {
-    position: 'absolute',
-    top: 200,
-    right: '0',
-    left: '0',
+    position: 'relative',
     width: 'fit-content',
-    margin: '0 auto',
-    marginTop: 'auto',
+    margin: '120px auto 0',
     [breakpoints.md]: {
-      position: 'relative',
-      top: 0,
       width: '100%',
       marginTop: 160,
     },
