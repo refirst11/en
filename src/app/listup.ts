@@ -11,10 +11,12 @@ export const styles = css.create({
 
   list: {
     position: 'relative',
-    width: 'fit-content',
-    margin: '120px auto 0',
+    width: 520,
+    marginInline: 'calc((100% - 520px) / 2)',
+    marginTop: 120,
     [breakpoints.md]: {
       width: '100%',
+      marginInline: '0',
       marginTop: 160,
     },
   },
