@@ -40,14 +40,14 @@ importers:
         specifier: ^9.36.0
         version: 9.39.1
       '@plumeria/core':
-        specifier: ^18.1.6
-        version: 18.1.6
+        specifier: ^18.1.8
+        version: 18.1.8
       '@plumeria/eslint-plugin':
-        specifier: ^18.1.6
-        version: 18.1.6(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)
+        specifier: ^18.1.8
+        version: 18.1.8(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)
       '@plumeria/next-plugin':
-        specifier: ^18.1.6
-        version: 18.1.6
+        specifier: ^18.1.8
+        version: 18.1.8
       '@shikijs/rehype':
         specifier: ^3.15.0
         version: 3.19.0
@@ -410,24 +410,24 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@plumeria/compiler@18.1.6':
-    resolution: {integrity: sha512-sEjn9MsJjBeOXu0c523W8HyNhFstPyKmbC30LenhZ0Xq6Lu9cq+c9d39rTjumaZ+Ll3cMqrCylzuD8GNd0oRWg==}
+  '@plumeria/compiler@18.1.8':
+    resolution: {integrity: sha512-BX7qhWdx3tpRrQut10uL2xXNX1NDBHTfaWOPTv1jGWKCtNkfJlP9hZU42kYftpBVmmoxz/R4SfBkjBYz24IGwg==}
 
-  '@plumeria/core@18.1.6':
-    resolution: {integrity: sha512-b1mm9MywI5Xg8ukfbuMzuAJLMeEKHeB7hPCg8mIS9bC8xIwAFLUqCEYYUuL+szvzj4mXdbNJq8IP7Vo6LqaO+g==}
+  '@plumeria/core@18.1.8':
+    resolution: {integrity: sha512-MgCMFUCKf28nRNMVwPofuuimj3t70EuvTE3FJnqBkTgflWw1DN3iZhCXrWnN3ElLEt14FbcBwKfZzLCXSJQmGg==}
 
-  '@plumeria/eslint-plugin@18.1.6':
-    resolution: {integrity: sha512-rFRUsc0qi+Hv0JG68j+rX+n4O87Jp1h6JgYFz9tCtIt5iAuj+Iyv5T+MhpNv/3eu75jz0hnhO5H2wUt05s/evw==}
+  '@plumeria/eslint-plugin@18.1.8':
+    resolution: {integrity: sha512-v5FIsXMxPjNd3ANt8va7wHGzbFdbNwowT1+QzpuuS/zqIO8j2a9FgKMl3j+GbR62HNxl8CwLa+Q+a1r9iozj7g==}
     hasBin: true
 
-  '@plumeria/next-plugin@18.1.6':
-    resolution: {integrity: sha512-r7HavPgt6WO5gHFK+Q/VJ50MC0WWDgGOuiP11+rX1mcv47Ik4QG8VPjmKpm7Kxxpib7LjJCQHKCXWOdhErhkDQ==}
+  '@plumeria/next-plugin@18.1.8':
+    resolution: {integrity: sha512-rDyslrjSdbRZy5auVns6Crtb656V4z5zG90GxEVgxhnac/73y1hq94pYLNfEBGoAZYrSszrlRqqzWBo1S67/9g==}
 
-  '@plumeria/turbopack-loader@18.1.6':
-    resolution: {integrity: sha512-ERXd8LCpiaba8tLNX03cFSAnLhKQ0m4gAKO3/6H3HcXqxZ0CiNur0WK6ZuJYQy6Uj37RUAzBVDsC1E/CmjkmHg==}
+  '@plumeria/turbopack-loader@18.1.8':
+    resolution: {integrity: sha512-i+S4ZJcyCj8vK05Hfyx6BvneyG4J8BRtBolZpd3SVr5hpt63VpNtF85wPgjS4ZUKCjB3J1lYlGFUyYmyvKrgTg==}
 
-  '@plumeria/utils@18.1.6':
-    resolution: {integrity: sha512-xtuFP6Uxu1uxFkZ7Sj8RvwPKgJoqntNxrFzdsktgkHhdDuAHe3TDRYUwqqXgwODym+oPU/yQOT2ws+KTesVfhA==}
+  '@plumeria/utils@18.1.8':
+    resolution: {integrity: sha512-0ofzsvz+4UL9tbZ8+dfFvBFFzWA60BIgSNTjYWYtcmWfnIgZcr9PfYIGourM8aoJ3F2AJJbNxijQRI00puGykw==}
 
   '@rust-gear/glob-darwin-arm64@1.1.0':
     resolution: {integrity: sha512-olr+i03pY+kqOZXsTY6GFz3Bq0G+puKEDE834GuJIk3ktRpULlj/0aq/vWBdbXfWyLDDQtjXR7mLYumYVRxIGw==}
@@ -1247,6 +1247,11 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  nanoid@3.3.17:
+    resolution: {integrity: sha512-xQLf0A3HOMlgHq0n247/LRuAOYmB7dXJ/DvAxGvsSBij45XtBSmQycu+F8ODbHwns/XyFZagyL1+J0Offw1E0g==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
@@ -1338,8 +1343,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.15:
-    resolution: {integrity: sha512-FfR8sjd4em2T6fb3I2MwAJU7HWVMr9zba+enmQeeWFfCbm+UOC/0X4DS8XtpUTMwWMGbjKYP7xjfNekzyGmB3A==}
+  postcss@8.5.25:
+    resolution: {integrity: sha512-DTPx3RWSSnWyzLxQnlH0rJP+EW5ekl16ZU4/psbIhA0e53kJfdgaN5vKM+xP7yJtXVu+nfdVFmlgFDEKAe4Pyw==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -1770,15 +1775,15 @@ snapshots:
   '@oxlint/win32-x64@1.34.0':
     optional: true
 
-  '@plumeria/compiler@18.1.6':
+  '@plumeria/compiler@18.1.8':
     dependencies:
-      '@plumeria/utils': 18.1.6
+      '@plumeria/utils': 18.1.8
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@18.1.6': {}
+  '@plumeria/core@18.1.8': {}
 
-  '@plumeria/eslint-plugin@18.1.6(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)':
+  '@plumeria/eslint-plugin@18.1.8(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)':
     dependencies:
       '@typescript-eslint/utils': 8.60.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)
       known-css-properties: 0.37.0
@@ -1787,26 +1792,26 @@ snapshots:
       - supports-color
       - typescript
 
-  '@plumeria/next-plugin@18.1.6':
+  '@plumeria/next-plugin@18.1.8':
     dependencies:
-      '@plumeria/turbopack-loader': 18.1.6
+      '@plumeria/turbopack-loader': 18.1.8
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/turbopack-loader@18.1.6':
+  '@plumeria/turbopack-loader@18.1.8':
     dependencies:
-      '@plumeria/compiler': 18.1.6
-      '@plumeria/utils': 18.1.6
+      '@plumeria/compiler': 18.1.8
+      '@plumeria/utils': 18.1.8
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/utils@18.1.6':
+  '@plumeria/utils@18.1.8':
     dependencies:
       '@rust-gear/glob': 1.1.0
       '@swc/core': 1.15.47
       lightningcss: 1.32.0
-      postcss: 8.5.15
-      postcss-combine-media-query: 2.1.0(postcss@8.5.15)
+      postcss: 8.5.25
+      postcss-combine-media-query: 2.1.0(postcss@8.5.25)
       zss-engine: 2.3.2
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -2683,6 +2688,8 @@ snapshots:
 
   nanoid@3.3.12: {}
 
+  nanoid@3.3.17: {}
+
   natural-compare@1.4.0: {}
 
   next-link-transitions@0.2.3: {}
@@ -2766,9 +2773,9 @@ snapshots:
 
   picomatch@4.0.3: {}
 
-  postcss-combine-media-query@2.1.0(postcss@8.5.15):
+  postcss-combine-media-query@2.1.0(postcss@8.5.25):
     dependencies:
-      postcss: 8.5.15
+      postcss: 8.5.25
 
   postcss@8.4.31:
     dependencies:
@@ -2776,9 +2783,9 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.15:
+  postcss@8.5.25:
     dependencies:
-      nanoid: 3.3.12
+      nanoid: 3.3.17
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
