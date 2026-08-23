@@ -40,14 +40,14 @@ importers:
         specifier: ^9.36.0
         version: 9.39.1
       '@plumeria/core':
-        specifier: ^18.2.19
-        version: 18.2.19
+        specifier: ^18.2.28
+        version: 18.2.28
       '@plumeria/eslint-plugin':
-        specifier: ^18.2.19
-        version: 18.2.19(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)
+        specifier: ^18.2.28
+        version: 18.2.28(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)
       '@plumeria/next-plugin':
-        specifier: ^18.2.19
-        version: 18.2.19(@swc/helpers@0.5.23)
+        specifier: ^18.2.28
+        version: 18.2.28(@swc/helpers@0.5.23)
       '@shikijs/rehype':
         specifier: ^3.15.0
         version: 3.19.0
@@ -405,85 +405,85 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@plumeria/compiler@18.2.19':
-    resolution: {integrity: sha512-tX/d+IgmHihZXusm+nPYXSyQFrSFLysYAJW9+W90JYDJnm5Zdwq0jfFB22rwmHytQE/NP5/M5ZSNFdHAqRunCw==}
+  '@plumeria/compiler@18.2.28':
+    resolution: {integrity: sha512-otIab7siV362/S/yTVhtwNv63RqxWHThko6+JJoxrFCQ0gKzd0l+FMRdcvkI8v91rp7HdFmuASGRKtbVkatk3A==}
 
-  '@plumeria/core@18.2.19':
-    resolution: {integrity: sha512-1iFAsUNHozNHrV6lyOo/IOEZEJOluyPlrJuGk5k55VfxeK+ISRPuox7WvCOl2x/IMZraMSL/y5gNo6nYJLfZwg==}
+  '@plumeria/core@18.2.28':
+    resolution: {integrity: sha512-rAu0kkL7YYF3qh2tmTcx64fnKh9hkmLoeLHvZieIZZ1Lc0FJ1oKfANGAdxz+n38dGwP8obfYPZKBGoDL13bwsA==}
 
-  '@plumeria/eslint-plugin@18.2.19':
-    resolution: {integrity: sha512-6O/vRlKPh0PLF333C1Jn9aXcoiK//XHwsmQuQ21OCj21mLYG0g4tZqQnlM6/S5ZTeNOYy89VlWWi4LaQj50N3Q==}
+  '@plumeria/eslint-plugin@18.2.28':
+    resolution: {integrity: sha512-8oFJrDJbKznshcLYmIONc6X2KGtOjG5cj6nEymGQgXvZLZmU4aEdosHw4rEL5ebFSiMkdWVsh8+gn3dWJKL0aQ==}
     hasBin: true
 
-  '@plumeria/next-plugin@18.2.19':
-    resolution: {integrity: sha512-7yLi0CgZ1IXCoBsZ0+AHTJan+2LBXw4Q7cpZ2J5QFwEk9Xbt7VevVioN8//GASKBpsy1VSewXWFuJIjzM6Oa8A==}
+  '@plumeria/next-plugin@18.2.28':
+    resolution: {integrity: sha512-yGkCIuJjIn4A+5oDylIThnLjxs013rkezWCwzDUu2dYRaJO9WT8EasrX7atSqkDmjeCMqA1OPeRDuHgdgvOnTg==}
 
-  '@plumeria/turbopack-loader@18.2.19':
-    resolution: {integrity: sha512-wbkoPNYs3/KLHj15Qt2cWP4buHyej1D9DFFHwa7MeRa5snhJdrXPdUsALsSBsfCaYMBXzGDQ+qt4TPQcTeubCg==}
+  '@plumeria/turbopack-loader@18.2.28':
+    resolution: {integrity: sha512-oMt2Lr4oVoJFVNbDqvkJ18QkdaAseaBoU9gLTxZienhIcV7yGbxHTlFEAYCR88LbtX2xDcBbCBWzvHZV7VbpDA==}
 
-  '@plumeria/utils@18.2.19':
-    resolution: {integrity: sha512-t5Q/xx8lQ1SnKfqb/vHZJvi74MQS5dRcaSOQyLgL8A5KohPeweGridbz75VEBwbPrRjiZeTrzP3u7WgWGCNUZA==}
+  '@plumeria/utils@18.2.28':
+    resolution: {integrity: sha512-VE+pDFBlV75XHGbGAt0UaZYn0EO86fBxP1Vg/E3d2puwVrxoOztPnOR6gpQQRviko4wNITtmn4905C+8JNXzGw==}
 
-  '@rust-gear/glob-darwin-arm64@1.1.0':
-    resolution: {integrity: sha512-olr+i03pY+kqOZXsTY6GFz3Bq0G+puKEDE834GuJIk3ktRpULlj/0aq/vWBdbXfWyLDDQtjXR7mLYumYVRxIGw==}
+  '@rust-gear/glob-darwin-arm64@1.1.1':
+    resolution: {integrity: sha512-CbFos1AwQR955N6FqeMBE3LOTL5BW/jz9H6lFAfB207KsyTEkT+luhqUKfLyW8HXnNKX9LMwNKPHJmWszI/nDg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@rust-gear/glob-darwin-x64@1.1.0':
-    resolution: {integrity: sha512-nTmnzXhlaclqzVfJIG0XqFS+YzDBRuxWzVsV0+tq5muuW8529SGduEMRQ/J/vx8KWvny+tM6K4adhdtMgJWwpQ==}
+  '@rust-gear/glob-darwin-x64@1.1.1':
+    resolution: {integrity: sha512-TrhFoxcjMGf+zvlkVVVD2vL1LM68LYXwTlEMU0BPm/XIAK69Dxib8bBN7oXUpVLzRcWk4Lz3IZFWiXqGC493qg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@rust-gear/glob-linux-arm64-gnu@1.1.0':
-    resolution: {integrity: sha512-wTWGBT76vDJqaf3Yqp+o/ZJgBsFEsN/1xAUCEoFwxYA9S07uppIKxtAId+3tkksu0LUfah48M7ZqsWoACEKGoQ==}
+  '@rust-gear/glob-linux-arm64-gnu@1.1.1':
+    resolution: {integrity: sha512-6EdBoH+sASFJc6BmXcI8+woSB80pRRNMIJgpu4zKU//nodif1QWOzcQTEphTch9GJaSyAnhJO/vrw0hajTXwpg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@rust-gear/glob-linux-arm64-musl@1.1.0':
-    resolution: {integrity: sha512-xeoqD6bytIuRMz9BVEBv6akT57LicBi1rfvL5OCnTEo+5AXy2lCQjaTKnDt5fY59ytUFy0xhM+MYLc9FDyAb5A==}
+  '@rust-gear/glob-linux-arm64-musl@1.1.1':
+    resolution: {integrity: sha512-LHJj59/iMqC1z/goPW60DHgNHCP5OzvBMkr0+IoAARY5gqo1/4o3VMvqFVysdLhczJoil4bUoIchEInObZBZ4g==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@rust-gear/glob-linux-x64-gnu@1.1.0':
-    resolution: {integrity: sha512-91I8v8NyFp849/xuFPdTgA5NrzFSdC7+ky+jyTcVPVbJbdwwtCMCdeII1jl8w3zD8LyGO9OaXC+koyfhXxo2Rw==}
+  '@rust-gear/glob-linux-x64-gnu@1.1.1':
+    resolution: {integrity: sha512-bMsy2Qk5nD+XTBIQJKbA3m5x8DQZxZxlHz0YuVDYWHeTpaTS0n9vEZhqubiRzSWu5TI4P6Om/YJE0m74/y2TdQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@rust-gear/glob-linux-x64-musl@1.1.0':
-    resolution: {integrity: sha512-tZlGmT2K1ZReBi4kh2lUs4qwcqXSFlrxmF/71sG6yFeIavZXPShstizIdPOJzbeCMtcC+x6N9/qK+45ZkRhSrA==}
+  '@rust-gear/glob-linux-x64-musl@1.1.1':
+    resolution: {integrity: sha512-tCTO4UR3pviyPjRUBpDJKkgFbtvsI4bctPWS2P6XtL2MI6FhT9ppu2tqGqI9SjZXYdVT9xNfs5d3Z6a4BKJRCQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@rust-gear/glob-win32-arm64-msvc@1.1.0':
-    resolution: {integrity: sha512-hWrITd46Lh5hxHNriw4wNhqR8fm9PneHEAIq9jFbEiFRqWE8O8Q5S/UrABfc1WZmcxGwuFnnHJ2VuOr7JF/URA==}
+  '@rust-gear/glob-win32-arm64-msvc@1.1.1':
+    resolution: {integrity: sha512-VxpcHGpV6U+hL+mVeUfYONIh7QVzOs8leoyNwfwce5q7w2/OHDbDk9vrRKADbEDH26ITavbSNUr3dwNGo2yWGA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@rust-gear/glob-win32-ia32-msvc@1.1.0':
-    resolution: {integrity: sha512-Fpf+YxcLmZGMedD/7BFrZ2AOsPzO40M+COXKuLmJoNK/SCNtny3gJcuMVYmVXQhMEgRmvUHKfpVyocH41oK8fw==}
+  '@rust-gear/glob-win32-ia32-msvc@1.1.1':
+    resolution: {integrity: sha512-YaM1Jhjeb200qEK8vZFzqrwhVLyPR81RbO9eYgnqYouaztUaqODn38FcpLSzdgx/9mjxdMAMBtWpH1s73v5yjA==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@rust-gear/glob-win32-x64-msvc@1.1.0':
-    resolution: {integrity: sha512-xdrFY+J7uVcZQqPoWF5idJVaLNYtdsA2JMfDj9S9bwyzl5+E0RTYoXlyzAVpVP0zKUUYs8f8SC4MBxMcgIflqw==}
+  '@rust-gear/glob-win32-x64-msvc@1.1.1':
+    resolution: {integrity: sha512-FWt+0Y2XWu8kxH0NSiVnsGgTRpNt2C0avVc+YQ3pqoZeYBxdw6YqOtoKGd3jBUrgJ3wae55G3jDQxJckb8Lp3A==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
 
-  '@rust-gear/glob@1.1.0':
-    resolution: {integrity: sha512-r7vMFkvP3MSPbhj8JsUBWTrlvylcJwwPBmcIRjqw+Dxi8ozL0kXrzWuYYcx/WgGvcPeSvATNpSDowAkZ8FZI6Q==}
+  '@rust-gear/glob@1.1.1':
+    resolution: {integrity: sha512-Y1RWXed7qkXuhSi3ZHpA1qkSFIK9elfns01IbbOjUEuClC6YoCANlMLPT2UW/YGD7kO31LlVXwWRKekjliwCPw==}
     engines: {node: '>=10'}
 
   '@shikijs/core@3.19.0':
@@ -1318,8 +1318,8 @@ packages:
     resolution: {integrity: sha512-g50586zr4bZmwFiTlflMu8E0bDTb5I5gertgwAKmsdUlTQIhZtunzUlD1WSzwcVWPoAVpsrA6vlfCD7oXvRwgg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.25:
-    resolution: {integrity: sha512-DTPx3RWSSnWyzLxQnlH0rJP+EW5ekl16ZU4/psbIhA0e53kJfdgaN5vKM+xP7yJtXVu+nfdVFmlgFDEKAe4Pyw==}
+  postcss@8.5.26:
+    resolution: {integrity: sha512-u82N74LFzG8ca+dD8puPnplTXoGH4fTPpVGuIbt36G3qvNlkvfD0lEAZSxaly3KX8TS/L1A1gsCEmvKmBcVbkQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -1754,15 +1754,15 @@ snapshots:
   '@oxlint/win32-x64@1.34.0':
     optional: true
 
-  '@plumeria/compiler@18.2.19(@swc/helpers@0.5.23)':
+  '@plumeria/compiler@18.2.28(@swc/helpers@0.5.23)':
     dependencies:
-      '@plumeria/utils': 18.2.19(@swc/helpers@0.5.23)
+      '@plumeria/utils': 18.2.28(@swc/helpers@0.5.23)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@18.2.19': {}
+  '@plumeria/core@18.2.28': {}
 
-  '@plumeria/eslint-plugin@18.2.19(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)':
+  '@plumeria/eslint-plugin@18.2.28(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)':
     dependencies:
       '@typescript-eslint/utils': 8.60.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)
       known-css-properties: 0.37.0
@@ -1772,67 +1772,67 @@ snapshots:
       - supports-color
       - typescript
 
-  '@plumeria/next-plugin@18.2.19(@swc/helpers@0.5.23)':
+  '@plumeria/next-plugin@18.2.28(@swc/helpers@0.5.23)':
     dependencies:
-      '@plumeria/turbopack-loader': 18.2.19(@swc/helpers@0.5.23)
+      '@plumeria/turbopack-loader': 18.2.28(@swc/helpers@0.5.23)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/turbopack-loader@18.2.19(@swc/helpers@0.5.23)':
+  '@plumeria/turbopack-loader@18.2.28(@swc/helpers@0.5.23)':
     dependencies:
-      '@plumeria/compiler': 18.2.19(@swc/helpers@0.5.23)
-      '@plumeria/utils': 18.2.19(@swc/helpers@0.5.23)
+      '@plumeria/compiler': 18.2.28(@swc/helpers@0.5.23)
+      '@plumeria/utils': 18.2.28(@swc/helpers@0.5.23)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/utils@18.2.19(@swc/helpers@0.5.23)':
+  '@plumeria/utils@18.2.28(@swc/helpers@0.5.23)':
     dependencies:
-      '@rust-gear/glob': 1.1.0
+      '@rust-gear/glob': 1.1.1
       '@swc/core': 1.15.47(@swc/helpers@0.5.23)
       lightningcss: 1.32.0
-      postcss: 8.5.25
+      postcss: 8.5.26
       zss-engine: 2.6.0
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@rust-gear/glob-darwin-arm64@1.1.0':
+  '@rust-gear/glob-darwin-arm64@1.1.1':
     optional: true
 
-  '@rust-gear/glob-darwin-x64@1.1.0':
+  '@rust-gear/glob-darwin-x64@1.1.1':
     optional: true
 
-  '@rust-gear/glob-linux-arm64-gnu@1.1.0':
+  '@rust-gear/glob-linux-arm64-gnu@1.1.1':
     optional: true
 
-  '@rust-gear/glob-linux-arm64-musl@1.1.0':
+  '@rust-gear/glob-linux-arm64-musl@1.1.1':
     optional: true
 
-  '@rust-gear/glob-linux-x64-gnu@1.1.0':
+  '@rust-gear/glob-linux-x64-gnu@1.1.1':
     optional: true
 
-  '@rust-gear/glob-linux-x64-musl@1.1.0':
+  '@rust-gear/glob-linux-x64-musl@1.1.1':
     optional: true
 
-  '@rust-gear/glob-win32-arm64-msvc@1.1.0':
+  '@rust-gear/glob-win32-arm64-msvc@1.1.1':
     optional: true
 
-  '@rust-gear/glob-win32-ia32-msvc@1.1.0':
+  '@rust-gear/glob-win32-ia32-msvc@1.1.1':
     optional: true
 
-  '@rust-gear/glob-win32-x64-msvc@1.1.0':
+  '@rust-gear/glob-win32-x64-msvc@1.1.1':
     optional: true
 
-  '@rust-gear/glob@1.1.0':
+  '@rust-gear/glob@1.1.1':
     optionalDependencies:
-      '@rust-gear/glob-darwin-arm64': 1.1.0
-      '@rust-gear/glob-darwin-x64': 1.1.0
-      '@rust-gear/glob-linux-arm64-gnu': 1.1.0
-      '@rust-gear/glob-linux-arm64-musl': 1.1.0
-      '@rust-gear/glob-linux-x64-gnu': 1.1.0
-      '@rust-gear/glob-linux-x64-musl': 1.1.0
-      '@rust-gear/glob-win32-arm64-msvc': 1.1.0
-      '@rust-gear/glob-win32-ia32-msvc': 1.1.0
-      '@rust-gear/glob-win32-x64-msvc': 1.1.0
+      '@rust-gear/glob-darwin-arm64': 1.1.1
+      '@rust-gear/glob-darwin-x64': 1.1.1
+      '@rust-gear/glob-linux-arm64-gnu': 1.1.1
+      '@rust-gear/glob-linux-arm64-musl': 1.1.1
+      '@rust-gear/glob-linux-x64-gnu': 1.1.1
+      '@rust-gear/glob-linux-x64-musl': 1.1.1
+      '@rust-gear/glob-win32-arm64-msvc': 1.1.1
+      '@rust-gear/glob-win32-ia32-msvc': 1.1.1
+      '@rust-gear/glob-win32-x64-msvc': 1.1.1
 
   '@shikijs/core@3.19.0':
     dependencies:
@@ -2750,7 +2750,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.25:
+  postcss@8.5.26:
     dependencies:
       nanoid: 3.3.17
       picocolors: 1.1.1
