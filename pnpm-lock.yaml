@@ -40,14 +40,14 @@ importers:
         specifier: ^9.36.0
         version: 9.39.1
       '@plumeria/core':
-        specifier: ^18.2.31
-        version: 18.2.31
+        specifier: ^18.2.34
+        version: 18.2.34
       '@plumeria/eslint-plugin':
-        specifier: ^18.2.31
-        version: 18.2.31(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)
+        specifier: ^18.2.34
+        version: 18.2.34(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)
       '@plumeria/next-plugin':
-        specifier: ^18.2.31
-        version: 18.2.31(@swc/helpers@0.5.23)
+        specifier: ^18.2.34
+        version: 18.2.34(@swc/helpers@0.5.23)
       '@shikijs/rehype':
         specifier: ^3.15.0
         version: 3.19.0
@@ -405,24 +405,24 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@plumeria/compiler@18.2.31':
-    resolution: {integrity: sha512-YC/ISn1bI1ycQj32Tb279q8Mp3N595TWBRHbj/YxB5eQGMLC/DtFoHo5dFLZS+TGE5vKX+3edyrtKIjE2Ya6sQ==}
+  '@plumeria/compiler@18.2.34':
+    resolution: {integrity: sha512-afa5vU1l6EaMpeT8VA83DXG26IdOQzRad/tOXiRVGPXZcUT1nOuTEeby295MtpQT8j7oBtuRGnFrDrMd6R4oxA==}
 
-  '@plumeria/core@18.2.31':
-    resolution: {integrity: sha512-la0UJAeK8aQhUQhZPllW+2GIvjWn4bZD1VCbwnmLXtkiIAGuAQ5vuKNja0PsnIJwabGgbHjehwxtsumNiBFI8w==}
+  '@plumeria/core@18.2.34':
+    resolution: {integrity: sha512-Trn0w7yemu73Qtgf69wsV5VuYBc8J4kInaGmYQ0Mi/33+ruhcIzQKULUxXIo+T7YWtvdD11EPkYgSffdTX1J7A==}
 
-  '@plumeria/eslint-plugin@18.2.31':
-    resolution: {integrity: sha512-0OuqHQwryYAP9U/jJJulqiXDJdgHTpsoo0bZH9uJaQLfXNZ+exHpZuB7k2loipn1hc21YUuEG8n0AE9Z2p/3NA==}
+  '@plumeria/eslint-plugin@18.2.34':
+    resolution: {integrity: sha512-mK3nEZf4lu2g6GVZhCnza87bC4gwUNJItpMetrw2mpc6ZUPB+pIIXIUP1nCDXZL23Yz0X7C3f1f9iLDe7r2sBw==}
     hasBin: true
 
-  '@plumeria/next-plugin@18.2.31':
-    resolution: {integrity: sha512-wmYCFY+LAi5fXRPeFzPKF9SvlgTRue+7QU7QbTgwb4YUZLa2OKSAV8iSR9itTgQhKK+bKNy0AlR+tQhDPQn20A==}
+  '@plumeria/next-plugin@18.2.34':
+    resolution: {integrity: sha512-TEDWJOSv7XmA7QMJhba2kQTXlaRmrpqisBtOYD5O5L54r1kSYxs/y7uT8dJReoNCPZ1Ydxf930Q3wug7suTmRw==}
 
-  '@plumeria/turbopack-loader@18.2.31':
-    resolution: {integrity: sha512-XVwfeZsL+plyvreroGKGPhaah/2zvVVd94LxBxL1cIkshnkjILowGW4L+hcTWHPQQIS7KrQAotDr3VPKVvO/GQ==}
+  '@plumeria/turbopack-loader@18.2.34':
+    resolution: {integrity: sha512-5TjfS3gWdTTS9POf7v6Wc5C65Npwd4spH5jpefIib6YgpQBXlCbX34w615n4dP1IcqVXXg1ItkbpqbSvrS/JkQ==}
 
-  '@plumeria/utils@18.2.31':
-    resolution: {integrity: sha512-UXqUCdC9wMxmMHVRhp8w4Qf8lXglMsg3dv7BggHdri1eppXtWK6BUgeHMdsIuUztWctB5stR1Eh36pt/WMtOcw==}
+  '@plumeria/utils@18.2.34':
+    resolution: {integrity: sha512-GYoQBE665bKfH2NZK4BdTCu/8Rb9aXOuaA5FIC8jZwxazjEtZBE79xKng1f1HQBMbOn5OIiPqOl9VauOT+wpDw==}
 
   '@rust-gear/glob-darwin-arm64@1.1.1':
     resolution: {integrity: sha512-CbFos1AwQR955N6FqeMBE3LOTL5BW/jz9H6lFAfB207KsyTEkT+luhqUKfLyW8HXnNKX9LMwNKPHJmWszI/nDg==}
@@ -1754,15 +1754,15 @@ snapshots:
   '@oxlint/win32-x64@1.34.0':
     optional: true
 
-  '@plumeria/compiler@18.2.31(@swc/helpers@0.5.23)':
+  '@plumeria/compiler@18.2.34(@swc/helpers@0.5.23)':
     dependencies:
-      '@plumeria/utils': 18.2.31(@swc/helpers@0.5.23)
+      '@plumeria/utils': 18.2.34(@swc/helpers@0.5.23)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@18.2.31': {}
+  '@plumeria/core@18.2.34': {}
 
-  '@plumeria/eslint-plugin@18.2.31(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)':
+  '@plumeria/eslint-plugin@18.2.34(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)':
     dependencies:
       '@typescript-eslint/utils': 8.60.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.2)
       known-css-properties: 0.37.0
@@ -1772,20 +1772,20 @@ snapshots:
       - supports-color
       - typescript
 
-  '@plumeria/next-plugin@18.2.31(@swc/helpers@0.5.23)':
+  '@plumeria/next-plugin@18.2.34(@swc/helpers@0.5.23)':
     dependencies:
-      '@plumeria/turbopack-loader': 18.2.31(@swc/helpers@0.5.23)
+      '@plumeria/turbopack-loader': 18.2.34(@swc/helpers@0.5.23)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/turbopack-loader@18.2.31(@swc/helpers@0.5.23)':
+  '@plumeria/turbopack-loader@18.2.34(@swc/helpers@0.5.23)':
     dependencies:
-      '@plumeria/compiler': 18.2.31(@swc/helpers@0.5.23)
-      '@plumeria/utils': 18.2.31(@swc/helpers@0.5.23)
+      '@plumeria/compiler': 18.2.34(@swc/helpers@0.5.23)
+      '@plumeria/utils': 18.2.34(@swc/helpers@0.5.23)
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/utils@18.2.31(@swc/helpers@0.5.23)':
+  '@plumeria/utils@18.2.34(@swc/helpers@0.5.23)':
     dependencies:
       '@rust-gear/glob': 1.1.1
       '@swc/core': 1.15.47(@swc/helpers@0.5.23)
