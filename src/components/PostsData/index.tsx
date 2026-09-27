@@ -1,7 +1,6 @@
 import PostsProps from 'types/PostsProps';
 import { styles } from 'app/listup';
 import { LinkItem } from 'components/LinkItem';
-import '@plumeria/core';
 
 const PostsData = ({ posts }: PostsProps) => {
   return (
