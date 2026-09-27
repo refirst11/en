@@ -1,4 +1,3 @@
-import '@plumeria/core';
 import { styles } from 'app/listup';
 
 export const ListItem = ({
