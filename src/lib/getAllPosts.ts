@@ -4,13 +4,16 @@ import path from 'path';
 import PostsData from 'types/PostsData';
 import PostsDataMap from 'types/PostsDataMap';
 
+const dateKey = (date: string) => {
+  const [year, month, day] = date.split(/[/-]/).map(Number);
+  return year * 10000 + month * 100 + day;
+};
+
 const getAllPosts = async (skip?: number, limit?: number): Promise<PostsData[]> => {
   const folder = path.join(process.cwd(), '/src/entries');
   const files = await fs.readdir(folder);
   const posts = await Promise.all(
     files
-      .reverse()
-      .slice(skip, limit)
       .map(async (fileName) => {
         const fullPath = path.join(folder, fileName);
         const file = await fs.readFile(fullPath, 'utf8');
@@ -24,7 +27,7 @@ const getAllPosts = async (skip?: number, limit?: number): Promise<PostsData[]> 
         };
       })
   );
-  return posts;
+  return posts.sort((a, b) => dateKey(b.date) - dateKey(a.date)).slice(skip, limit);
 };
 
 export default getAllPosts;
