@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
+import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypeShiki from '@shikijs/rehype';
@@ -16,6 +17,7 @@ const getPostData = async (slug: string): Promise<PostData> => {
   const { data, content } = matter<string, PostDatMap>(file);
   const processedContent = await unified()
     .use(remarkParse)
+    .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypeShiki, {
       theme: 'github-light',
