@@ -130,6 +130,40 @@ h1 {
   font-weight: normal;
 }
 
+table {
+  width: 100%;
+  margin: 8px 0 32px;
+  font-size: 13px;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    font-size: 12px;
+  }
+}
+
+th,
+td {
+  padding: 6px 8px;
+  white-space: nowrap;
+  border-bottom: 1px solid rgb(229 231 235);
+}
+
+th {
+  font-weight: 500;
+  color: rgb(20, 20, 20);
+  border-bottom-color: rgb(156 163 175);
+}
+
+th:not([align]),
+td:not([align]) {
+  text-align: left;
+}
+
 blockquote {
   position: relative;
   right: 12px;
