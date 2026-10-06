@@ -6,7 +6,7 @@ import * as css from '@plumeria/core';
 
 const ReturnLink = () => {
   return (
-    <Link classStyle={styles.back} href="/personal" viewTransitionName={css.use(transition.name)}>
+    <Link classStyle={styles.back} href="/posts" viewTransitionName={css.use(transition.name)}>
       back
     </Link>
   );
