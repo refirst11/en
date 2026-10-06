@@ -17,19 +17,19 @@ const Header = (): JSX.Element => {
       href: '/',
     },
     {
-      name: 'personal',
-      href: '/personal',
+      name: 'posts',
+      href: '/posts',
     },
     {
-      name: 'projects',
-      href: '/projects',
+      name: 'laboratory',
+      href: '/laboratory',
     },
   ];
 
   return (
     <header classStyle={[styles.header_main, pathname === '/' && styles.top]}>
       <nav classStyle={styles.header_nav}>
-        {!pathname.includes('personal/') && (
+        {!pathname.includes('posts/') && !pathname.includes('laboratory/') && (
           <ul classStyle={styles.header_ul}>
             {Headers.map(({ name, href }) => (
               <Link
@@ -93,8 +93,9 @@ const styles = css.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: 60,
+    minWidth: 60,
     height: 40,
+    paddingInline: 4,
     [ps.hover]: {
       color: '#515151',
       textDecoration: 'underline',
