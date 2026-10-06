@@ -29,6 +29,20 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/personal/:path*',
+        destination: '/posts/:path*',
+        permanent: true,
+      },
+      {
+        source: '/projects/:path*',
+        destination: '/laboratory/:path*',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
