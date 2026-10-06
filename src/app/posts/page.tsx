@@ -4,7 +4,7 @@ import generateSEOData from 'lib/generateSEOData';
 import PostsData from 'components/PostsData';
 
 export const metadata: Metadata = generateSEOData({
-  title: 'Personal - Refirst',
+  title: 'Posts - Refirst',
 });
 
 async function getPosts() {
