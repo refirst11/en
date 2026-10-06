@@ -30,7 +30,7 @@ export const Icon = () => {
           styles.image,
           state && styles.animation,
           pathname === '/' && styles.top,
-          pathname.includes('personal/') && styles.article,
+          (pathname.includes('posts/') || pathname.includes('laboratory/')) && styles.article,
         ]}
         width={160}
         height={160}
