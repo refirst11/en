@@ -31,6 +31,8 @@ body {
   text-align: center;
   word-break: break-all;
   background-color: #fffffe;
+  /* react-magic-card sets body overflow inline on hover, which shows a scrollbar on body */
+  overflow: visible !important;
 }
 
 @media (max-width: 768px) {
