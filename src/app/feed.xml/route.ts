@@ -31,8 +31,8 @@ export async function GET() {
                 <description>
                   <![CDATA[ ${subtitle} ]]>
                 </description>
-                <link>/${slug}</link>
-                <guid isPermaLink="true">/${slug}</guid>
+                <link>${URL}/posts/${slug}</link>
+                <guid isPermaLink="true">${URL}/posts/${slug}</guid>
                 <pubDate>${new Date(date).toUTCString()}</pubDate>
               </item>
             `
