@@ -6,7 +6,7 @@ const PostsData = ({ posts }: PostsProps) => {
   return (
     <div classStyle={styles.list}>
       {posts.map(({ slug, title, date }) => (
-        <LinkItem key={slug} href={`/personal/${slug}`} date={date}>
+        <LinkItem key={slug} href={`/posts/${slug}`} date={date}>
           {title}
         </LinkItem>
       ))}
