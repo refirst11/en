@@ -9,7 +9,7 @@ const Footer = (): JSX.Element => {
   return (
     <footer classStyle={styles.footer_main}>
       <div classStyle={styles.footer_container}>
-        <div classStyle={styles.footer_text}>{year + ' © Refirst 11.'}</div>
+        <div classStyle={styles.footer_text}>{year + ' © refirst11'}</div>
         <a href="https://github.com/refirst11">Github</a>
       </div>
     </footer>
