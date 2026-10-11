@@ -86,7 +86,9 @@ const styles = css.create({
   header_ul: {
     display: 'flex',
     margin: 0,
-    borderBottom: 'solid 1px rgb(233, 233, 233)',
+    borderBottomColor: 'rgb(233, 233, 233)',
+    borderBottomStyle: 'solid',
+    borderBottomWidth: '1px',
   },
 
   link_container: {
