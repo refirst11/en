@@ -14,6 +14,7 @@ const getAllPosts = async (skip?: number, limit?: number): Promise<PostsData[]> 
   const files = await fs.readdir(folder);
   const posts = await Promise.all(
     files
+      .filter((fileName) => fileName.endsWith('.md'))
       .map(async (fileName) => {
         const fullPath = path.join(folder, fileName);
         const file = await fs.readFile(fullPath, 'utf8');
