@@ -5,7 +5,7 @@ const getSlugPath = async () => {
   const folder = path.join(process.cwd(), '/src/entries');
   const files = await fs.readdir(folder);
   const posts = await Promise.all(
-    files.map((fileName) => {
+    files.filter((fileName) => fileName.endsWith('.md')).map((fileName) => {
       return {
         slug: fileName.replace(/\.md$/, ''),
       };
