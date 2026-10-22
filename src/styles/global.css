@@ -45,6 +45,7 @@ body {
 }
 
 main {
+  width: 100%;
   height: fit-content;
   align-self: flex-start;
   text-align: left;
