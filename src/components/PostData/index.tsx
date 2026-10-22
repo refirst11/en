@@ -1,12 +1,11 @@
 import PostProps from 'types/PostProps';
-import { Link } from 'next-link-transitions';
+import Link from 'next/link';
 import { styles } from './styles';
-import { transition } from 'styles/animation';
-import * as css from '@plumeria/core';
+import '@plumeria/core';
 
 const ReturnLink = () => {
   return (
-    <Link classStyle={styles.back} href="/posts" viewTransitionName={css.use(transition.name)}>
+    <Link classStyle={styles.back} href="/posts">
       back
     </Link>
   );
