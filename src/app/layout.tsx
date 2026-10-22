@@ -1,9 +1,12 @@
 import Header from 'components/Header';
-import { ReactNode } from 'react';
+import { ReactNode, ViewTransition } from 'react';
 import { Geist, Geist_Mono } from 'next/font/google';
 import 'styles/global.css';
+import '@plumeria/core';
 import Footer from 'components/Footer';
 import { Icon } from 'components/Icon';
+
+import { fade } from 'styles/animation';
 
 const geist = Geist({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700'] });
 const geist_mono = Geist_Mono({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--geist-mono' });
@@ -26,7 +29,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={font}>
         <Header />
         <Icon />
-        <main>{children}</main>
+        <ViewTransition default={fade}>
+          <main>{children}</main>
+        </ViewTransition>
         <Footer />
       </body>
     </html>
