@@ -2,12 +2,11 @@
 
 import { usePathname } from 'next/navigation';
 import isCurrentLink from 'lib/isCurrentLink';
-import { Link } from 'next-link-transitions';
+import Link from 'next/link';
 import { JSX } from 'react';
 import * as css from '@plumeria/core';
 import { breakpoints } from 'lib/mediaQuery';
 import { ps } from 'lib/pseudos';
-import { transition } from 'styles/animation';
 
 const Header = (): JSX.Element => {
   const pathname = usePathname();
@@ -36,7 +35,6 @@ const Header = (): JSX.Element => {
                 key={href}
                 href={href}
                 classStyle={[styles.link_container, isCurrentLink(href, pathname) && styles.after_color]}
-                viewTransitionName={css.use(transition.name)}
               >
                 {name}
               </Link>
