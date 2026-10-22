@@ -2,11 +2,10 @@
 
 import { usePathname } from 'next/navigation';
 import * as css from '@plumeria/core';
-import { Link } from 'next-link-transitions';
+import Link from 'next/link';
 import { breakpoints } from 'lib/mediaQuery';
 import { useState } from 'react';
 import { scaling } from './animation';
-import { transition } from 'styles/animation';
 
 export const Icon = () => {
   const pathname = usePathname();
@@ -24,7 +23,7 @@ export const Icon = () => {
   };
 
   return (
-    <Link href="/" viewTransitionName={css.use(transition.name)}>
+    <Link href="/">
       <img
         classStyle={[
           styles.image,
@@ -86,16 +85,18 @@ const styles = css.create({
     },
   },
   sentence: {
-    display: 'block',
-    marginTop: -54,
-    marginLeft: -40,
+    position: 'absolute',
+    top: '50%',
+    left: 0,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 160,
+    height: 41,
+    marginTop: 38,
     color: 'initial',
+    whiteSpace: 'nowrap',
     cursor: 'help',
-    [breakpoints.md]: {
-      marginTop: -80,
-      marginLeft: 140,
-      whiteSpace: 'nowrap',
-    },
   },
   opacity: {
     display: 'none',
