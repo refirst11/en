@@ -1,7 +1,6 @@
-import * as css from '@plumeria/core';
-import { Link } from 'next-link-transitions';
+import '@plumeria/core';
+import Link from 'next/link';
 import { styles } from 'app/listup';
-import { transition } from 'styles/animation';
 
 type ListItemProps = {
   children: React.ReactNode;
@@ -22,7 +21,7 @@ export const ListItem = ({ children, subti, date, href }: ListItemProps) => {
 
   if (href.startsWith('/')) {
     return (
-      <Link classStyle={styles.link} href={href} viewTransitionName={css.use(transition.name)}>
+      <Link classStyle={styles.link} href={href}>
         {content}
       </Link>
     );
