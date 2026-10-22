@@ -5,7 +5,7 @@ const fadeOut = css.keyframes({
     opacity: 1
   },
   to: {
-    opacity: 1
+    opacity: 0
   },
 });
 
@@ -18,19 +18,13 @@ const fadeIn = css.keyframes({
   },
 });
 
-const longCrossFade = css.viewTransition({
+export const fade = css.viewTransitionClass({
   old: {
-    animation: fadeOut,
+    animationName: fadeOut,
     animationDuration: '1.12s',
   },
   new: {
-    animation: fadeIn,
+    animationName: fadeIn,
     animationDuration: '1.12s',
-  },
-});
-
-export const transition = css.create({
-  name: {
-    viewTransitionName: longCrossFade,
   },
 });
