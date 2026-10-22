@@ -1,8 +1,7 @@
 import { ReactNode } from 'react';
 import * as css from '@plumeria/core';
-import { Link } from 'next-link-transitions';
+import Link from 'next/link';
 import { breakpoints } from 'lib/mediaQuery';
-import { transition } from 'styles/animation';
 
 type LaboratoryDemoProps = {
   title: string;
@@ -14,7 +13,7 @@ type LaboratoryDemoProps = {
 const LaboratoryDemo = ({ title, subtitle, repository, children }: LaboratoryDemoProps) => {
   return (
     <article classStyle={styles.post}>
-      <Link classStyle={styles.back} href="/laboratory" viewTransitionName={css.use(transition.name)}>
+      <Link classStyle={styles.back} href="/laboratory">
         back
       </Link>
       <h1 classStyle={styles.title}>{title}</h1>
