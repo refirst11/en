@@ -32,12 +32,12 @@ export const styles = css.create({
     color: 'black',
     listStyle: 'none',
     borderRadius: 12,
-    [breakpoints.md]: {
-      width: '100%',
-    },
     ':hover': {
       background: '#eeeeee',
       opacity: 0.8,
+    },
+    [breakpoints.md]: {
+      width: '100%',
     },
   },
 
