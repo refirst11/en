@@ -23,6 +23,10 @@ const Header = (): JSX.Element => {
       name: 'laboratory',
       href: '/laboratory',
     },
+    {
+      name: 'zenn',
+      href: '/zenn',
+    },
   ];
 
   return (
