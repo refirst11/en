@@ -51,16 +51,20 @@ export const styles = css.create({
   },
 
   tag: {
+    flexShrink: 0,
     marginLeft: 3,
     fontWeight: '400',
     color: 'gray',
+    whiteSpace: 'nowrap',
     [breakpoints.md]: {
       display: 'none',
     },
   },
   date: {
+    flexShrink: 0,
     marginLeft: 4,
     fontWeight: '400',
     color: 'gray',
+    whiteSpace: 'nowrap',
   },
 });
