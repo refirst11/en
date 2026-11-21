@@ -8,7 +8,7 @@ export const metadata: Metadata = generateSEOData({ title: 'Laboratory - Refirst
 
 const Page = (): JSX.Element => {
   return (
-    <div classStyle={styles.list}>
+    <div sx={styles.list}>
       <ListItem href="https://plumeria.dev/playground" date="2025" subti="crazy fast interfaces by oxc + rust">
         Plumeria
       </ListItem>
