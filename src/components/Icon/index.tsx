@@ -25,7 +25,7 @@ export const Icon = () => {
   return (
     <Link href="/">
       <img
-        classStyle={[
+        sx={[
           styles.image,
           state && styles.animation,
           pathname === '/' && styles.top,
@@ -39,7 +39,7 @@ export const Icon = () => {
       />
       <span
         onClick={(e) => handleClick(e as unknown as MouseEvent)}
-        classStyle={[styles.sentence, pathname !== '/' && styles.opacity]}
+        sx={[styles.sentence, pathname !== '/' && styles.opacity]}
       >
         hyper happy {state ? '!' : '?'}
       </span>
