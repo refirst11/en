@@ -12,12 +12,12 @@ type LaboratoryDemoProps = {
 
 const LaboratoryDemo = ({ title, subtitle, repository, children }: LaboratoryDemoProps) => {
   return (
-    <article classStyle={styles.post}>
-      <Link classStyle={styles.back} href="/laboratory">
+    <article sx={styles.post}>
+      <Link sx={styles.back} href="/laboratory">
         back
       </Link>
-      <h1 classStyle={styles.title}>{title}</h1>
-      <div classStyle={styles.meta}>
+      <h1 sx={styles.title}>{title}</h1>
+      <div sx={styles.meta}>
         <span>{subtitle}</span>
         <a href={repository}>GitHub →</a>
       </div>
