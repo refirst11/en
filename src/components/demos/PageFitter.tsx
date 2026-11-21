@@ -11,9 +11,9 @@ export const PageFitter = () => {
   const isFit = useFitter('#fuku', { parentBox: !viewport ? '#room' : undefined });
 
   return (
-    <div id="room" classStyle={[styles.room, !viewport && styles.outline]}>
+    <div id="room" sx={[styles.room, !viewport && styles.outline]}>
       <div>isFit → {isFit === undefined ? 'undefined' : String(isFit)}</div>
-      <button classStyle={[styles.view, viewport && styles.outline]} onClick={() => setViewport(!viewport)}>
+      <button sx={[styles.view, viewport && styles.outline]} onClick={() => setViewport(!viewport)}>
         viewport
       </button>
       <Fukuwarai>
