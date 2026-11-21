@@ -16,8 +16,8 @@ export const MagicCard = () => {
   const [circle, setCircle] = useState(false);
 
   return (
-    <div classStyle={styles.container}>
-      <button classStyle={styles.toggle} onClick={() => setCircle(!circle)}>
+    <div sx={styles.container}>
+      <button sx={styles.toggle} onClick={() => setCircle(!circle)}>
         {circle ? 'StraightInfinity' : 'CircleRotation'} →
       </button>
       {circle ? (
