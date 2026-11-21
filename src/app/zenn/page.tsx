@@ -13,7 +13,7 @@ export default async function Page() {
   const items = await getZennItems();
 
   return (
-    <div classStyle={styles.list} lang="ja">
+    <div sx={styles.list} lang="ja">
       {items.map(({ slug, title, url, date, type }) => (
         <ListItem key={slug} href={url} date={date} subti={type === 'book' ? 'book' : undefined}>
           {title}
