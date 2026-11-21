@@ -13,22 +13,22 @@ export const ListItem = ({ children, subti, date, href }: ListItemProps) => {
   const content = (
     <>
       <span>{children}</span>
-      <span classStyle={styles.tag}>{subti}</span>
-      <div classStyle={styles.divTag} />
-      <span classStyle={styles.date}>{date}</span>
+      <span sx={styles.tag}>{subti}</span>
+      <div sx={styles.divTag} />
+      <span sx={styles.date}>{date}</span>
     </>
   );
 
   if (href.startsWith('/')) {
     return (
-      <Link classStyle={styles.link} href={href}>
+      <Link sx={styles.link} href={href}>
         {content}
       </Link>
     );
   }
 
   return (
-    <a classStyle={styles.link} href={href}>
+    <a sx={styles.link} href={href}>
       {content}
     </a>
   );
